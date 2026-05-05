@@ -1,0 +1,19 @@
+# Luminary Technicals
+
+Luminary Technicals is a personal tech ecosystem founded and built by AR. Abhinav Ranjan.
+
+## Key Information
+- **Founder:** AR. Abhinav Ranjan
+- **Tagline:** Build. Manage. Scale.
+- **Divisions:**
+  - Luminary Servers: Hosting & Cloud Infrastructure
+  - Luminary Developers: Web & UI/UX Development
+  - Luminary Cares: Tech Support & Mentorship
+  - Luminary Kits: Project Starter Frameworks
+
+## Core Purpose
+To provide a structured, intentional digital entity for designing, managing, and scaling high-quality tech projects.
+
+## Contact
+Email: contact@luminarytechnicals.com
+Portfolio: https://abhinavranjan.netlify.app

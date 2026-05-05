@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://luminarytechnicals.com/index.html</loc><priority>1.0</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/owner.html</loc><priority>0.9</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/organs.html</loc><priority>0.8</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/projects.html</loc><priority>0.8</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/collab.html</loc><priority>0.8</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/faq.html</loc><priority>0.7</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/privacy-policy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://luminarytechnicals.com/frontend/terms.html</loc><priority>0.5</priority></url>
+</urlset>
