@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initMobileMenu();
   initScrollAnimations();
-  initCustomCursor();
+
   initCookieConsent();
   initModals();
   initFAQAccordion();
@@ -71,21 +71,6 @@ function initScrollAnimations() {
   els.forEach(el => obs.observe(el));
 }
 
-/* ── CUSTOM CURSOR ── */
-function initCustomCursor() {
-  if (window.matchMedia('(pointer:coarse)').matches) return;
-  const cursor = document.createElement('div');
-  cursor.className = 'custom-cursor';
-  document.body.appendChild(cursor);
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  });
-  document.querySelectorAll('a, button, .faq-question, .tab-btn').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-  });
-}
 
 /* ── COOKIE CONSENT ── */
 function initCookieConsent() {

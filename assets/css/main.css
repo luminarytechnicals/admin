@@ -216,9 +216,6 @@ p{color:var(--slate);max-width:720px}
 .social-links{display:flex;gap:12px}
 .social-links a{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(245,197,24,0.08);color:var(--accent);border:1px solid rgba(245,197,24,0.15);transition:all var(--transition);font-size:1.1rem}
 .social-links a:hover{background:var(--accent);color:var(--bg);transform:translateY(-3px)}
-/* CUSTOM CURSOR */
-.custom-cursor{position:fixed;width:20px;height:20px;border-radius:50%;background:rgba(245,197,24,0.3);pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width 0.2s,height 0.2s,background 0.2s;mix-blend-mode:screen}
-.custom-cursor.hover{width:40px;height:40px;background:rgba(245,197,24,0.15)}
 /* CAROUSEL (mobile division swipe) */
 .carousel-wrapper{overflow-x:auto;scroll-snap-type:x mandatory;display:flex;gap:20px;padding:8px 0;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .carousel-wrapper::-webkit-scrollbar{display:none}
