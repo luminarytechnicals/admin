@@ -70,7 +70,4 @@
   .nav-search-btn,.nav-hamburger{min-width:44px;min-height:44px}
 }
 
-/* Hide custom cursor on touch devices */
-@media(pointer:coarse),(hover:none){
-  .custom-cursor{display:none!important}
-}
+

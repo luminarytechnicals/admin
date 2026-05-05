@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v2';
+const CACHE_NAME = 'luminary-v4';
 const OFFLINE_URL = '/offline.html';
 
 const ASSETS = [
@@ -25,7 +25,11 @@ const ASSETS = [
   '/assets/js/pwa.js',
   '/configuration/config.js',
   '/configuration/search-index.json',
-  '/assets/images/logo-luminarytechnicals.png'
+  '/assets/images/logo-luminarytechnicals.png',
+  '/icons/icon-96.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+  '/manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
