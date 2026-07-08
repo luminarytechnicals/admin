@@ -1,0 +1,70 @@
+# Netlify Configuration
+
+# Redirect all www and http variants to dpdns domain
+[[redirects]]
+  from = "https://www.luminarytechnicals.netlify.app/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.luminarytechnicals.netlify.app/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://luminarytechnicals.netlify.app/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://luminarytechnicals.netlify.app/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+# Catch old domain references
+[[redirects]]
+  from = "https://www.luminarytechnicals.com/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.luminarytechnicals.com/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://luminarytechnicals.com/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://luminarytechnicals.com/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+# Redirect www dpdns variants to non-www
+[[redirects]]
+  from = "https://www.luminarytechnicals.dpdns.org/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.luminarytechnicals.dpdns.org/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://luminarytechnicals.dpdns.org/*"
+  to = "https://luminarytechnicals.dpdns.org/:splat"
+  status = 301
+  force = true
