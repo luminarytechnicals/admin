@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /privacy-policy.html
-Disallow: /terms.html
-
 Sitemap: https://luminarytechnicals.dpdns.org/sitemap.xml
