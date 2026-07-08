@@ -1,7 +1,3 @@
-# Redirect all www variants to dpdns domain
-http://www.luminarytechnicals.dpdns.org/* https://luminarytechnicals.dpdns.org/:splat 301!
-http://luminarytechnicals.dpdns.org/* https://luminarytechnicals.dpdns.org/:splat 301!
-
 # Redirect all netlify variants to dpdns domain
 https://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
 http://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
