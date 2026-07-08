@@ -1,3 +1,31 @@
+# Luminary Technicals robots.txt
+# Allow all search engines to crawl the site
+
 User-agent: *
 Allow: /
+Disallow: /configuration/
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Crawl-delay and Request-rate
+Crawl-delay: 1
+Request-rate: 30/60
+
+# Sitemap
 Sitemap: https://luminarytechnicals.dpdns.org/sitemap.xml
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

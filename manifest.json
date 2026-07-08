@@ -1,41 +1,98 @@
 {
   "name": "Luminary Technicals",
   "short_name": "Luminary",
-  "description": "Personal tech ecosystem by AR. Abhinav Ranjan.",
-  "start_url": "/index.html",
+  "description": "Personal tech ecosystem by AR. Abhinav Ranjan — Building, managing, and scaling digital solutions with intention and precision.",
+  "start_url": "https://luminarytechnicals.dpdns.org/index.html",
+  "scope": "https://luminarytechnicals.dpdns.org/",
   "display": "standalone",
   "background_color": "#080b1a",
   "theme_color": "#F5C518",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
+  "categories": ["technology", "business", "productivity"],
   "icons": [
     {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
+      "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png",
+      "sizes": "96x96",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "https://luminarytechnicals.dpdns.org/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://luminarytechnicals.dpdns.org/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://luminarytechnicals.dpdns.org/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "https://luminarytechnicals.dpdns.org/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "shortcuts": [
     {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Luminary Technicals Home",
+      "url": "https://luminarytechnicals.dpdns.org/index.html",
+      "icons": [{ "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
       "name": "Projects",
-      "url": "/frontend/projects.html",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "short_name": "Projects",
+      "description": "View Luminary Projects",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/projects.html",
+      "icons": [{ "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png", "sizes": "96x96" }]
     },
     {
       "name": "Owner",
-      "url": "/frontend/owner.html",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "short_name": "Owner",
+      "description": "Meet the Founder",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/owner.html",
+      "icons": [{ "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png", "sizes": "96x96" }]
     },
     {
-      "name": "Collab",
-      "url": "/frontend/collab.html",
-      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+      "name": "Collaborate",
+      "short_name": "Collab",
+      "description": "Start a Collaboration",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/collab.html",
+      "icons": [{ "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png", "sizes": "96x96" }]
     }
-  ]
+  ],
+  "screenshots": [
+    {
+      "src": "https://luminarytechnicals.dpdns.org/assets/images/og-default.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "https://luminarytechnicals.dpdns.org/assets/images/og-default.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "share_target": {
+    "action": "/frontend/collab.html",
+    "method": "POST",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }
