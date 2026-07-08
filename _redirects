@@ -11,5 +11,5 @@ http://luminarytechnicals.com/* https://luminarytechnicals.dpdns.org/:splat 301!
 
 # Redirect all netlify variants to dpdns domain
 https://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
-http://www.luminarytechnicals..netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
-http://luminarytechnicals..netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
+http://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
+http://luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
