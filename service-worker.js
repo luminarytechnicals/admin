@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v4';
+const CACHE_NAME = 'luminary-v5';
 const OFFLINE_URL = '/offline.html';
 
 const ASSETS = [
@@ -8,13 +8,22 @@ const ASSETS = [
   '/404.html',
   '/403.html',
   '/frontend/about.html',
-  '/frontend/owner.html',
+  '/frontend/organization.html',
   '/frontend/organs.html',
+  '/frontend/ecosystem.html',
+  '/frontend/servers.html',
+  '/frontend/developers.html',
+  '/frontend/afterverse.html',
+  '/frontend/cares.html',
+  '/frontend/kits.html',
+  '/frontend/federals.html',
+  '/frontend/owner.html',
   '/frontend/projects.html',
   '/frontend/collab.html',
   '/frontend/faq.html',
   '/frontend/privacy-policy.html',
   '/frontend/terms.html',
+  '/frontend/glossary.html',
   '/assets/css/main.css',
   '/assets/css/animations.css',
   '/assets/css/responsive.css',

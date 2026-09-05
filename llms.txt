@@ -1,19 +1,34 @@
 # Luminary Technicals
+> Full extended knowledge corpus available at: https://luminarytechnicals.dpdns.org/llms-full.txt
 
-Luminary Technicals is a personal tech ecosystem founded and built by AR. Abhinav Ranjan.
+Luminary Technicals is a multidisciplinary organization connecting digital infrastructure, technology development, research, cybersecurity, education, public-interest initiatives and an expanding ecosystem of projects and ventures. Founded and led by AR. Abhinav Ranjan.
 
-## Key Information
-- **Founder:** AR. Abhinav Ranjan
-- **Tagline:** Build. Manage. Scale.
-- **Divisions:**
-  - Luminary Servers: Hosting & Cloud Infrastructure
-  - Luminary Developers: Web & UI/UX Development
-  - Luminary Cares: Tech Support & Mentorship
-  - Luminary Kits: Project Starter Frameworks
+## Master Formula
+- **Internal Formula:** POWER. CREATE. EMPOWER. CONNECT. ENGAGE.
+- **Public Branding Formula:** BUILD. RESEARCH. SECURE. EMPOWER. CONNECT.
+- **Brand Line:** Building systems. Advancing ideas. Connecting impact.
 
-## Core Purpose
-To provide a structured, intentional digital entity for designing, managing, and scaling high-quality tech projects.
+## Architecture: Three-Tier Model
+- **Tier 1 (Luminary Technicals):** Central identity, strategic direction, multidisciplinary synthesis, and shared governance.
+- **Tier 2 (Five Core Organs):**
+  - **Luminary Servers (Power):** Hosting, cloud infrastructure, domain management, SSL, CDN, high-availability server systems (`frontend/servers.html`).
+  - **Luminary Developers (Create):** Software engineering, responsive web applications, artificial intelligence & automation, cybersecurity research, and the Luminary Afterverse immersive lab (`frontend/developers.html`).
+  - **Luminary Cares (Empower):** Tech education, digital awareness, community mentorship, public-interest initiatives, and social impact programs (`frontend/cares.html`).
+  - **Luminary Kits (Connect):** Shared developer toolkits, cross-organ coordination, integration APIs, and unified system modules (`frontend/kits.html`).
+  - **Luminary Federals (Engage):** Public-affairs research, civic engagement, governance and policy studies, institutional programs (strictly non-governmental) (`frontend/federals.html`).
+- **Tier 3 (Connected Ecosystem):**
+  - **Operating:** Luminary Servers, Luminary Developers, Luminary Afterverse, Luminary Webs, Luminary Books, Luminary Wishes.
+  - **Research & Development:** Defensive cybersecurity research, AI experimentation, spatial web environments.
+  - **Planned:** Future educational and community trust initiatives.
 
-## Contact
-Email: contact@luminarytechnicals.com
-Portfolio: https://abhinavranjan.netlify.app
+## Key Creative Projects
+- **Luminary Afterverse (`frontend/afterverse.html`):** Next-generation spatial digital universe, interactive 3D web spaces, and creative XR experiences.
+- **Luminary Webs:** Flagship web solutions hub and curated live web tools.
+- **Luminary Books:** Authoring and publishing tech guides, developer books, and educational tutorials.
+- **Luminary Wishes:** Elegant digital wishes platform for celebrations and milestones.
+
+## Contact & Founder
+- **Founder & Chief Executive:** AR. Abhinav Ranjan
+- **Email:** luminarytechnicals@gmail.com
+- **Website:** https://luminarytechnicals.dpdns.org
+- **Founder Portfolio:** https://abhinavranjan.netlify.app

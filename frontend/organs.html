@@ -3,17 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <title>Organs | Luminary Technicals</title>
-<meta name="description" content="Explore the divisions of Luminary Technicals — Servers, Developers, Cares, and Kits. Each organ powers a unique part of the ecosystem.">
-<meta name="keywords" content="Luminary Technicals, divisions, organs, Luminary Servers, Luminary Developers, Luminary Cares, Luminary Kits">
+<meta name="description" content="Explore the five core organs of Luminary Technicals — Servers (Power), Developers (Create), Cares (Empower), Kits (Connect), and Federals (Engage).">
+<meta name="keywords" content="Luminary Technicals, organs, servers, developers, cares, kits, federals, power create empower connect engage">
 <meta name="author" content="AR. Abhinav Ranjan">
 <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="geo.position" content="20.5937;78.9629">
+  <meta name="ICBM" content="20.5937, 78.9629">
+  <meta name="coverage" content="Worldwide">
+  <meta name="distribution" content="Global">
 <link rel="canonical" href="https://luminarytechnicals.dpdns.org/frontend/organs.html">
-<meta property="og:title" content="Organs — Divisions | Luminary Technicals">
-<meta property="og:description" content="Explore the divisions of Luminary Technicals — each organ powers a unique part of the ecosystem.">
+<meta property="og:title" content="Organs | Luminary Technicals">
+<meta property="og:description" content="The Five Core Organs and functions of Luminary Technicals: Servers, Developers, Cares, Kits, and Federals.">
 <meta property="og:image" content="../assets/images/og-default.png">
 <meta property="og:url" content="https://luminarytechnicals.dpdns.org/frontend/organs.html">
 <meta property="og:type" content="website">
@@ -21,6 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@luminarytechnicals">
 <meta name="twitter:title" content="Organs | Luminary Technicals">
+<meta name="twitter:description" content="The Five Core Organs and functions of Luminary Technicals: Servers, Developers, Cares, Kits, and Federals.">
 <meta name="theme-color" content="#0A0F1E">
 <link rel="icon" href="../assets/images/logo-luminarytechnicals.png" type="image/png">
 <link rel="manifest" href="../manifest.json">
@@ -37,7 +44,7 @@
 <script src="../assets/js/pwa.js" defer></script>
 <script src="../assets/js/contact.js" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Organs - Luminary Technicals Divisions","url":"https://luminarytechnicals.dpdns.org/frontend/organs.html","isPartOf":{"@type":"WebSite","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org"},"publisher":{"@type":"Organization","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org","logo":"https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.png"}}
+{"@context":"https://schema.org","@type":"WebPage","name":"Organs of Luminary Technicals","url":"https://luminarytechnicals.dpdns.org/frontend/organs.html","isPartOf":{"@type":"WebSite","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org"},"publisher":{"@type":"Organization","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org","logo":"https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.png"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://luminarytechnicals.dpdns.org/index.html"},{"@type":"ListItem","position":2,"name":"Organs","item":"https://luminarytechnicals.dpdns.org/frontend/organs.html"}]}
@@ -46,20 +53,89 @@
 <body>
 <div id="preloader" aria-hidden="true"><div class="loader"></div></div>
 <a href="#main-content" class="skip-link">Skip to main content</a>
-<nav class="navbar"><div class="container"><a href="../index.html" class="nav-logo"><img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38"><span>Luminary Technicals</span></a></div></nav>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+      <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+      <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="organization.html">Organization</a></li>
+      <li><a href="organs.html" class="active">Organs</a></li>
+      <li><a href="ecosystem.html">Ecosystem</a></li>
+      <li><a href="owner.html">Owner</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="collab.html">Collab</a></li>
+      <li><a href="faq.html">FAQ</a>
+        <a href="glossary.html">Glossary</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-search-btn" aria-label="Open search">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
 <div class="mobile-menu-overlay"></div>
-<div class="mobile-menu"><button class="close-btn" aria-label="Close menu">&times;</button><a href="../index.html" data-nav>Home</a><a href="about.html" data-nav>About</a><a href="owner.html" data-nav>Owner</a><a href="organs.html" data-nav class="active">Organs</a><a href="projects.html" data-nav>Projects</a><a href="collab.html" data-nav>Collab</a><a href="faq.html" data-nav>FAQ</a></div>
-<div class="search-overlay"><button class="search-close" aria-label="Close search">&times;</button><div class="search-container"><div class="search-input-wrap"><span class="search-input-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span><input type="text" class="search-input" placeholder="Search..." aria-label="Search"></div><div class="search-results" role="listbox"></div></div></div>
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="../index.html" data-nav>Home</a>
+  <a href="about.html" data-nav>About</a>
+  <a href="organization.html" data-nav>Organization</a>
+  <a href="organs.html" data-nav class="active">Organs</a>
+  <a href="ecosystem.html" data-nav>Ecosystem</a>
+  <a href="owner.html" data-nav>Owner</a>
+  <a href="projects.html" data-nav>Projects</a>
+  <a href="collab.html" data-nav>Collab</a>
+  <a href="faq.html" data-nav>FAQ</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" role="dialog" aria-label="Search">
+  <button class="search-close" aria-label="Close search">&times;</button>
+  <div class="search-container">
+    <div class="search-input-wrap">
+      <span class="search-input-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+      <input type="text" class="search-input" placeholder="Search Luminary Technicals..." aria-label="Search">
+    </div>
+    <div class="search-results" role="listbox"></div>
+  </div>
+</div>
 
 <main id="main-content">
-  <section class="page-hero"><div class="grain-overlay"></div><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><span>Organs</span></nav><h1>The <span class="text-accent">Organs</span> of Luminary</h1></div></section>
+  <section class="page-hero">
+    <div class="grain-overlay"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><span>Organs</span></nav>
+      <h1>The <span class="text-accent">Five Core Organs</span></h1>
+      <p style="max-width:680px;margin:0 auto;color:var(--slate);">Five distinct capabilities powering the Luminary Technicals ecosystem through specialized mandates and connected collaboration.</p>
+      
+      <div class="formula-strip" style="margin-top:24px;">
+        <span class="formula-pill">SERVERS: POWER.</span>
+        <span class="formula-pill">DEVELOPERS: CREATE.</span>
+        <span class="formula-pill">CARES: EMPOWER.</span>
+        <span class="formula-pill">KITS: CONNECT.</span>
+        <span class="formula-pill">FEDERALS: ENGAGE.</span>
+      </div>
+    </div>
+  </section>
 
   <!-- INTRO -->
   <section class="section" id="organs-intro">
     <div class="container">
       <div class="definition-block animate-on-scroll">
-        <strong>What are the Organs of Luminary Technicals?</strong>
-        <p>The organs are the core divisions of Luminary Technicals. Each organ handles a specific domain — from hosting and development to education and community support — operating independently yet in harmony.</p>
+        <strong>What are the Five Core Functions?</strong>
+        <p>The organs are Tier 2 of the organizational architecture. Each organ handles a specific fundamental domain: <strong>Servers (Power)</strong> provides infrastructure; <strong>Developers (Create)</strong> builds software & AI; <strong>Cares (Empower)</strong> leads education & community; <strong>Kits (Connect)</strong> coordinates cross-organ integration; and <strong>Federals (Engage)</strong> conducts civic & public affairs research. A single project or Tier 3 initiative can connect to one, several, or all five organs.</p>
       </div>
     </div>
   </section>
@@ -67,38 +143,134 @@
   <!-- DIVISION CARDS -->
   <section class="section" id="divisions" style="background:var(--bg2);">
     <div class="container">
-      <div class="section-title animate-on-scroll"><h2>Divisions in Detail</h2></div>
+      <div class="section-title animate-on-scroll">
+        <h2>The Organs & Their Core Functions</h2>
+        <p>Detailed overview of each organ's operational scope, core function, and focus areas.</p>
+      </div>
 
       <!-- Servers -->
       <div class="glass-card animate-on-scroll mb-40" id="organ-servers">
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="font-size:2.5rem;">🖥️</span><div><h3>Luminary Servers</h3><span class="badge">Hosting & Infrastructure</span></div></div>
-        <p style="margin-bottom:16px;">Enterprise-grade hosting, domain management, and cloud infrastructure solutions built for performance and reliability. Luminary Servers is the backbone that powers all digital initiatives.</p>
-        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Services:</h4>
-        <div class="skill-tags"><span class="skill-tag">Web Hosting</span><span class="skill-tag">Domain Management</span><span class="skill-tag">Cloud Infrastructure</span><span class="skill-tag">SSL & Security</span><span class="skill-tag">CDN Services</span></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-size:2.5rem;">🖥️</span>
+            <div>
+              <h3 style="margin-bottom:4px;">Luminary Servers</h3>
+              <span class="badge">Infrastructure & Digital Systems</span>
+            </div>
+          </div>
+          <span class="organ-func-badge">Core Function: Power.</span>
+        </div>
+        <p style="margin-bottom:12px;">Luminary Servers represents the infrastructure capability of Luminary Technicals. Modern digital organizations depend on reliable systems — websites, applications, AI platforms, data services and research environments all require underlying infrastructure, and Luminary Servers focuses on the systems that make digital activity possible.</p>
+        <p style="margin-bottom:16px;">Its purpose is not simply to sell hosting. Its broader role is to provide the foundation other Luminary initiatives operate on — a research project needing a computing environment, an educational platform needing web infrastructure, or an application needing databases and deployment systems.</p>
+        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Areas of Capability:</h4>
+        <div class="skill-tags mb-20"><span class="skill-tag">Web Hosting</span><span class="skill-tag">Domain Management</span><span class="skill-tag">Cloud Infrastructure</span><span class="skill-tag">SSL & Security</span><span class="skill-tag">CDN Services</span><span class="skill-tag">AI Infrastructure</span><span class="skill-tag">Data Systems</span></div>
+        <div style="margin-top:16px;">
+          <a href="servers.html" class="btn btn-primary btn-sm">Explore Servers Portal &rarr;</a>
+        </div>
       </div>
 
       <!-- Developers -->
       <div class="glass-card animate-on-scroll mb-40" id="organ-developers">
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="font-size:2.5rem;">⚙️</span><div><h3>Luminary Developers</h3><span class="badge">Web Dev & UI/UX</span></div></div>
-        <p style="margin-bottom:16px;">Full-stack web development, responsive design, and modern UI/UX engineering for digital products that stand out. This division handles every pixel and every interaction.</p>
-        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Services:</h4>
-        <div class="skill-tags"><span class="skill-tag">Full-Stack Development</span><span class="skill-tag">UI/UX Design</span><span class="skill-tag">PWA & Mobile Web</span><span class="skill-tag">API Development</span><span class="skill-tag">Performance Optimization</span></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-size:2.5rem;">⚙️</span>
+            <div>
+              <h3 style="margin-bottom:4px;">Luminary Developers</h3>
+              <span class="badge">Technology, Development & Innovation</span>
+            </div>
+          </div>
+          <span class="organ-func-badge">Core Function: Create.</span>
+        </div>
+        <p style="margin-bottom:12px;">Luminary Developers represents the creation and development capability of the organization. Technology development spans far more than websites — software systems, web platforms, automation, artificial intelligence, algorithms, data systems, experimental technologies and digital products all fall within its scope.</p>
+        <p style="margin-bottom:16px;">Luminary Developers provides the environment through which concepts become systems and systems become usable projects, including a technical environment for research, experimentation and defensive cybersecurity research conducted with proper authorization and responsible disclosure.</p>
+        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Areas of Capability:</h4>
+        <div class="skill-tags mb-20"><span class="skill-tag">Full-Stack Development</span><span class="skill-tag">UI/UX Design</span><span class="skill-tag">PWA & Mobile Web</span><span class="skill-tag">API Development</span><span class="skill-tag">AI Development</span><span class="skill-tag">Cybersecurity Research</span></div>
+        <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:12px;">
+          <a href="developers.html" class="btn btn-primary btn-sm">Explore Developers Portal &rarr;</a>
+          <a href="afterverse.html" class="btn btn-outline btn-sm" style="border-color:#38bdf8;color:#38bdf8;">🌌 Luminary Afterverse Lab</a>
+        </div>
+      </div>
+
+      <!-- Afterverse Special Feature -->
+      <div class="glass-card animate-on-scroll mb-40" id="organ-afterverse" style="border-color:rgba(56,189,248,0.4);background:radial-gradient(ellipse at top right,rgba(124,58,237,0.15),var(--bg3));">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-size:2.5rem;">🌌</span>
+            <div>
+              <h3 style="margin-bottom:4px;color:#38bdf8;">Luminary Afterverse</h3>
+              <span class="badge" style="background:linear-gradient(135deg,#7c3aed,#0284c7);color:#fff;">Immersive XR & Spatial Universe</span>
+            </div>
+          </div>
+          <span class="organ-func-badge" style="background:#38bdf8;color:#030712;">Special Lab</span>
+        </div>
+        <p style="margin-bottom:12px;">The frontier of spatial web experiences, 3D interactive canvases, and creative multimedia worlds created under Luminary Developers. Designed to expand web interfaces beyond 2D boundaries into interactive digital universes.</p>
+        <div class="skill-tags mb-20"><span class="skill-tag">Spatial Computing</span><span class="skill-tag">WebGL Graphics</span><span class="skill-tag">3D Interactive Canvases</span><span class="skill-tag">Metaverse Architecture</span><span class="skill-tag">Generative Visuals</span></div>
+        <div style="margin-top:16px;">
+          <a href="afterverse.html" class="afterverse-portal" style="padding:10px 24px;font-size:0.85rem;">Launch Afterverse Experience &rarr;</a>
+        </div>
       </div>
 
       <!-- Cares -->
       <div class="glass-card animate-on-scroll mb-40" id="organ-cares">
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="font-size:2.5rem;">💛</span><div><h3>Luminary Cares</h3><span class="badge">Support & Community</span></div></div>
-        <p style="margin-bottom:16px;">Dedicated support, tech mentorship, and community-driven initiatives for those navigating the digital landscape. Luminary Cares is the human side of the ecosystem.</p>
-        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Services:</h4>
-        <div class="skill-tags"><span class="skill-tag">Tech Support</span><span class="skill-tag">Mentorship</span><span class="skill-tag">Community Events</span><span class="skill-tag">Digital Literacy</span><span class="skill-tag">Guidance</span></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-size:2.5rem;">💛</span>
+            <div>
+              <h3 style="margin-bottom:4px;">Luminary Cares</h3>
+              <span class="badge">Community, Education & Social Impact</span>
+            </div>
+          </div>
+          <span class="organ-func-badge">Core Function: Empower.</span>
+        </div>
+        <p style="margin-bottom:12px;">Luminary Cares represents the human and social dimension of Luminary Technicals. Technology has limited value when people cannot access, understand or safely use it — Luminary Cares exists to connect knowledge and technological capability with communities, learners, and public-interest initiatives.</p>
+        <p style="margin-bottom:16px;">Its work spans technology education, cybersecurity awareness, digital literacy, student mentorship, workshops, community programs, hackathons and public-awareness initiatives. Where a trust, foundation or NGO exists as a legally independent entity, its actual relationship to Luminary Technicals is stated accurately rather than implied.</p>
+        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Areas of Capability:</h4>
+        <div class="skill-tags mb-20"><span class="skill-tag">Technology Education</span><span class="skill-tag">Cyber Safety Awareness</span><span class="skill-tag">Digital Literacy</span><span class="skill-tag">Mentorship</span><span class="skill-tag">Community Programs</span><span class="skill-tag">Hackathons</span></div>
+        <div style="margin-top:16px;">
+          <a href="cares.html" class="btn btn-primary btn-sm">Explore Cares Portal &rarr;</a>
+        </div>
       </div>
 
       <!-- Kits -->
-      <div class="glass-card animate-on-scroll" id="organ-kits">
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><span style="font-size:2.5rem;">📦</span><div><h3>Luminary Kits</h3><span class="badge">Project Kits & Collaboration</span></div></div>
-        <p style="margin-bottom:16px;">Ready-made project kits, templates, and collaborative frameworks that accelerate development and creative workflows. Designed for builders who move fast.</p>
-        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Services:</h4>
-        <div class="skill-tags"><span class="skill-tag">Project Templates</span><span class="skill-tag">Starter Kits</span><span class="skill-tag">Collaboration Tools</span><span class="skill-tag">Frameworks</span><span class="skill-tag">Resources</span></div>
+      <div class="glass-card animate-on-scroll mb-40" id="organ-kits">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-size:2.5rem;">📦</span>
+            <div>
+              <h3 style="margin-bottom:4px;">Luminary Kits</h3>
+              <span class="badge">Coordination & Ecosystem Integration</span>
+            </div>
+          </div>
+          <span class="organ-func-badge">Core Function: Connect.</span>
+        </div>
+        <p style="margin-bottom:12px;">Luminary Kits is the connective and coordination layer of the Luminary Technicals ecosystem. Not every project can be developed by a single organ — a conference may need infrastructure, software, public engagement and institutional coordination all at once. Luminary Kits exists to connect these capabilities.</p>
+        <p style="margin-bottom:16px;">Its role includes cross-organ coordination, project frameworks, shared resources, collaborative systems and implementation support, transforming separate capabilities into connected projects that span Servers, Developers, Cares and Federals.</p>
+        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Areas of Capability:</h4>
+        <div class="skill-tags mb-20"><span class="skill-tag">Project Coordination</span><span class="skill-tag">Ecosystem Integration</span><span class="skill-tag">Shared Resources</span><span class="skill-tag">Project Frameworks</span><span class="skill-tag">Implementation Support</span></div>
+        <div style="margin-top:16px;">
+          <a href="kits.html" class="btn btn-primary btn-sm">Explore Kits Portal &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Federals -->
+      <div class="glass-card animate-on-scroll" id="organ-federals">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <span style="font-size:2.5rem;">🏛️</span>
+            <div>
+              <h3 style="margin-bottom:4px;">Luminary Federals</h3>
+              <span class="badge">Public Affairs, Civic & Institutional Initiatives</span>
+            </div>
+          </div>
+          <span class="organ-func-badge">Core Function: Engage.</span>
+        </div>
+        <p style="margin-bottom:12px;">Luminary Federals is the civic and institutional organ within Luminary Technicals, defined around civic engagement, governance research, public affairs, technology policy, institutional coordination and public-interest initiatives.</p>
+        <p style="margin-bottom:16px;">Luminary Federals is an independent civic, public-affairs and institutional initiative operating within the Luminary Technicals ecosystem. It should never be understood as a government, parliament, police organization, military force, intelligence agency, or United Nations body — it studies and engages with the systems through which public institutions, democratic processes, technology and society interact.</p>
+        <h4 style="margin-bottom:10px;font-size:0.95rem;color:var(--accent);">Areas of Capability:</h4>
+        <div class="skill-tags mb-20"><span class="skill-tag">Public Affairs Research</span><span class="skill-tag">Parliamentary & Democratic Studies</span><span class="skill-tag">Technology & AI Policy</span><span class="skill-tag">Civic Advocacy</span><span class="skill-tag">Institutional Programs</span></div>
+        <div style="margin-top:16px;">
+          <a href="federals.html" class="btn btn-primary btn-sm">Explore Federals Portal &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -108,7 +280,7 @@
     <div class="container">
       <div class="cta-banner animate-on-scroll">
         <h2>Want to be part of the ecosystem?</h2>
-        <p>Whether it's a collaboration, a project idea, or a publishing proposal — we'd love to hear from you.</p>
+        <p>Whether it's a collaboration, a research program, or a publishing proposal — we'd love to connect with you.</p>
         <a href="collab.html" class="btn btn-primary">Start a Collab</a>
       </div>
     </div>
@@ -117,7 +289,109 @@
   <div id="ad-sidebar"></div>
 </main>
 
-<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="../index.html" class="nav-logo"><img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38"><span>Luminary Technicals</span></a></div></div><div class="footer-bottom"><p>&copy; <span id="footer-year"></span> Luminary Technicals. All rights reserved.</p></div></div></footer>
-<div class="cookie-banner"><p>We use cookies to improve your experience.</p><button class="btn btn-primary cookie-accept">Accept</button><a href="#" class="btn btn-outline cookie-learn">Learn More</a></div>
+<!-- FOOTER -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+          <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+          <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+        </a>
+        <p>A multidisciplinary organization connecting digital infrastructure, technology development, research, education and public-interest initiatives.</p>
+        <div class="formula-strip" style="justify-content:flex-start;margin:16px 0 0;">
+          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">POWER</span>
+          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">CREATE</span>
+          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">EMPOWER</span>
+          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">CONNECT</span>
+          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">ENGAGE</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Organs & Hubs</h4>
+        <a href="servers.html">Servers (Power)</a>
+        <a href="developers.html">Developers (Create)</a>
+        <a href="afterverse.html">Afterverse (XR Lab)</a>
+        <a href="cares.html">Cares (Empower)</a>
+        <a href="kits.html">Kits (Connect)</a>
+        <a href="federals.html">Federals (Engage)</a>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="organization.html">Organization</a>
+        <a href="organs.html">Organs Hub</a>
+        <a href="ecosystem.html">Ecosystem</a>
+        <a href="projects.html">Projects</a>
+        <a href="owner.html">Owner</a>
+        <a href="collab.html">Collab</a>
+        <a href="faq.html">FAQ</a>
+        <a href="glossary.html">Glossary</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal & Contact</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="#" class="cookie-retrigger">Cookie Settings</a>
+        <a href="mailto:luminarytechnicals@gmail.com" style="margin-top:12px;display:block;">luminarytechnicals@gmail.com</a>
+        <p style="font-size:0.85rem;color:var(--slate);margin-top:4px;">India • Global</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> Luminary Technicals. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" role="alert">
+  <p>We use cookies to improve your experience.</p>
+  <button class="btn btn-primary cookie-accept">Accept</button>
+  <a href="#" class="btn btn-outline cookie-learn">Learn More</a>
+</div>
+
+<!-- PRIVACY MODAL -->
+<div class="modal-overlay" id="modal-privacy">
+  <div class="modal" role="dialog" aria-label="Privacy Policy">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <h2>Privacy Policy</h2>
+    <p><em>Last updated: January 1, 2025</em></p>
+    <h3>Data Collection</h3>
+    <p>Luminary Technicals collects minimal data necessary for site functionality, including form submissions and basic analytics when enabled.</p>
+    <h3>Usage of Data</h3>
+    <p>Collected data is used solely to improve user experience, respond to inquiries, and manage collaborations. No personal data is sold or shared with third parties for marketing.</p>
+    <h3>Cookies</h3>
+    <p>This site uses essential cookies for functionality and optional analytics cookies. You can manage your cookie preferences at any time via the cookie settings in the footer.</p>
+    <h3>Third-Party Services</h3>
+    <p>When enabled, the site may use Google Analytics and Google AdSense. These services have their own privacy policies governing data collection.</p>
+    <h3>Your Rights</h3>
+    <p>You have the right to access, correct, or delete any personal data we hold. Contact us at luminarytechnicals@gmail.com for data requests.</p>
+    <h3>Contact</h3>
+    <p>For privacy-related concerns, reach out to <a href="mailto:luminarytechnicals@gmail.com">luminarytechnicals@gmail.com</a>.</p>
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div class="modal-overlay" id="modal-terms">
+  <div class="modal" role="dialog" aria-label="Terms of Service">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <h2>Terms of Service</h2>
+    <p><em>Last updated: January 1, 2025</em></p>
+    <h3>Acceptance of Terms</h3>
+    <p>By accessing and using the Luminary Technicals website, you agree to be bound by these Terms of Service.</p>
+    <h3>Use of Site</h3>
+    <p>You may use this website for lawful purposes only. You agree not to misuse, scrape, or attempt to compromise the site's functionality or security.</p>
+    <h3>Intellectual Property</h3>
+    <p>All content, designs, code, and branding on this site are the intellectual property of Luminary Technicals and Abhinav Ranjan unless otherwise stated.</p>
+    <h3>Limitation of Liability</h3>
+    <p>Luminary Technicals is provided "as is" without warranties. We are not liable for any damages arising from use of this website.</p>
+    <h3>Changes to Terms</h3>
+    <p>We reserve the right to update these terms at any time. Continued use of the site constitutes acceptance of any changes.</p>
+    <h3>Contact</h3>
+    <p>For questions about these terms, email <a href="mailto:luminarytechnicals@gmail.com">luminarytechnicals@gmail.com</a>.</p>
+  </div>
+</div>
+
 </body>
 </html>

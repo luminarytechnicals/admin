@@ -3,35 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <title>Offline | Luminary Technicals</title>
-<meta name="description" content="You appear to be offline. Please check your internet connection.">
+<meta name="description" content="You appear to be offline. Please check your internet connection to reach the live Luminary Technicals ecosystem.">
+<meta name="robots" content="noindex, follow">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="geo.position" content="20.5937;78.9629">
+  <meta name="ICBM" content="20.5937, 78.9629">
+  <meta name="coverage" content="Worldwide">
+  <meta name="distribution" content="Global">
 <link rel="canonical" href="https://luminarytechnicals.dpdns.org/offline.html">
+<link rel="icon" href="assets/images/logo-luminarytechnicals.png" type="image/png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <script src="configuration/config.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/automation.js" defer></script>
+<script src="assets/js/lazy-load.js" defer></script>
 </head>
 <body>
 <div id="preloader" aria-hidden="true"><div class="loader"></div></div>
-<nav class="navbar"><div class="container"><a href="index.html" class="nav-logo"><img src="assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38"><span>Luminary Technicals</span></a></div></nav>
-<main class="error-page offline-page">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+      <img src="assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+      <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="frontend/about.html">About</a></li>
+      <li><a href="frontend/organization.html">Organization</a></li>
+      <li><a href="frontend/organs.html">Organs</a></li>
+      <li><a href="frontend/ecosystem.html">Ecosystem</a></li>
+      <li><a href="frontend/owner.html">Owner</a></li>
+      <li><a href="frontend/projects.html">Projects</a></li>
+      <li><a href="frontend/collab.html">Collab</a></li>
+      <li><a href="frontend/faq.html">FAQ</a>
+        <a href="frontend/glossary.html">Glossary</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main-content" class="error-page">
   <div class="error-glow"></div>
   <div class="container">
     <div class="error-content animate-on-scroll">
-      <div class="error-code" style="opacity: 0.8; filter: none;">🛜</div>
-      <h1>You are <span class="text-accent">Offline</span></h1>
-      <p class="error-msg">It seems you've lost your connection. Luminary Technicals requires an active link to power the ecosystem.</p>
+      <div class="error-code">⚡</div>
+      <h1>Connection <span class="text-accent">Lost</span></h1>
+      <p class="error-msg">You are currently offline. Check your network connection to explore the live ecosystem.</p>
       <div class="error-actions">
-        <button onclick="location.reload()" class="btn btn-primary">Try Reconnecting</button>
-        <a href="index.html" class="btn btn-outline">Go Home</a>
+        <button onclick="window.location.reload()" class="btn btn-primary">Try Again</button>
       </div>
     </div>
   </div>
 </main>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38">
+          <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+        </a>
+        <p>Luminary Technicals is a multidisciplinary organization connecting technology, digital infrastructure, research, education and public-interest initiatives.</p>
+        <div class="formula-strip" style="margin-top:16px;">
+          <span class="formula-word">POWER</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">CREATE</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">EMPOWER</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">CONNECT</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">ENGAGE</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Organs & Hubs</h4>
+        <a href="frontend/servers.html">Luminary Servers</a>
+        <a href="frontend/developers.html">Luminary Developers</a>
+        <a href="frontend/afterverse.html">Luminary Afterverse</a>
+        <a href="frontend/cares.html">Luminary Cares</a>
+        <a href="frontend/kits.html">Luminary Kits</a>
+        <a href="frontend/federals.html">Luminary Federals</a>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="frontend/about.html">About</a>
+        <a href="frontend/organization.html">Organization</a>
+        <a href="frontend/organs.html">Organs Hub</a>
+        <a href="frontend/ecosystem.html">Ecosystem</a>
+        <a href="frontend/projects.html">Projects</a>
+        <a href="frontend/owner.html">Owner</a>
+        <a href="frontend/collab.html">Collab</a>
+        <a href="frontend/faq.html">FAQ</a>
+        <a href="frontend/glossary.html">Glossary</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal & Contact</h4>
+        <a href="frontend/privacy-policy.html">Privacy Policy</a>
+        <a href="frontend/terms.html">Terms of Service</a>
+        <a href="mailto:luminarytechnicals@gmail.com" style="margin-top:12px;display:inline-block;">luminarytechnicals@gmail.com</a>
+        <p style="font-size:0.85rem;color:var(--slate);margin-top:6px;">India &bull; Global</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> Luminary Technicals. All rights reserved. &bull; AR. Abhinav Ranjan</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

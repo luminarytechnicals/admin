@@ -12,7 +12,7 @@ The `CONFIG` object is divided into logical nodes:
 - **`site`**: Branding assets (Logo, Favicon, Theme Colors).
 - **`owner`**: Founder's bio, skills, and personal social handles.
 - **`seo`**: Default meta tags, OG images, and Twitter handles.
-- **`organs`**: Data-driven descriptions for the 4 core divisions.
+- **`organs`**: Data-driven descriptions for the 5 core divisions.
 - **`projects`**: Dynamic list of ecosystem products.
 - **`faqs`**: Tab-categorized help data.
 - **`contact`**: Verified communication routes (WhatsApp, Telegram, Email).

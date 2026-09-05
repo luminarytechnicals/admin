@@ -3,52 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <title>Terms of Service | Luminary Technicals</title>
-<meta name="description" content="Terms of Service of Luminary Technicals. Read our policies and terms governing website usage.">
+<meta name="description" content="Terms of Service of Luminary Technicals. Guidelines and legal agreements for using our platforms.">
 <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="geo.position" content="20.5937;78.9629">
+  <meta name="ICBM" content="20.5937, 78.9629">
+  <meta name="coverage" content="Worldwide">
+  <meta name="distribution" content="Global">
 <link rel="canonical" href="https://luminarytechnicals.dpdns.org/frontend/terms.html">
 <meta property="og:title" content="Terms of Service | Luminary Technicals">
-<meta property="og:description" content="Terms of Service of Luminary Technicals.">
+<meta property="og:description" content="Terms of Service of Luminary Technicals. Guidelines and legal agreements for using our platforms.">
+<meta property="og:image" content="../assets/images/og-default.png">
 <meta property="og:url" content="https://luminarytechnicals.dpdns.org/frontend/terms.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luminary Technicals">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@luminarytechnicals">
+<meta name="twitter:title" content="Terms of Service | Luminary Technicals">
+<meta name="twitter:description" content="Terms of Service of Luminary Technicals. Guidelines and legal agreements for using our platforms.">
+<meta name="twitter:image" content="../assets/images/og-default.png">
+<meta name="theme-color" content="#0A0F1E">
 <link rel="icon" href="../assets/images/logo-luminarytechnicals.png" type="image/png">
 <link rel="manifest" href="../manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/css/animations.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
 <script src="../configuration/config.js" defer></script>
 <script src="../assets/js/main.js" defer></script>
 <script src="../assets/js/automation.js" defer></script>
 <script src="../assets/js/search.js" defer></script>
+<script src="../assets/js/lazy-load.js" defer></script>
+<script src="../assets/js/pwa.js" defer></script>
+<script src="../assets/js/contact.js" defer></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","name":"Terms of Service - Luminary Technicals","url":"https://luminarytechnicals.dpdns.org/frontend/terms.html","isPartOf":{"@type":"WebSite","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org"},"publisher":{"@type":"Organization","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org","logo":"https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.png"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://luminarytechnicals.dpdns.org/index.html"},{"@type":"ListItem","position":2,"name":"Terms of Service","item":"https://luminarytechnicals.dpdns.org/frontend/terms.html"}]}
 </script>
 </head>
 <body>
 <div id="preloader" aria-hidden="true"><div class="loader"></div></div>
-<nav class="navbar"><div class="container"><a href="../index.html" class="nav-logo"><img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38"><span>Luminary Technicals</span></a></div></nav>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main id="main-content" style="padding-top: 120px; padding-bottom: 100px;">
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+      <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+      <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="organization.html">Organization</a></li>
+      <li><a href="organs.html">Organs</a></li>
+      <li><a href="ecosystem.html">Ecosystem</a></li>
+      <li><a href="owner.html">Owner</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="collab.html">Collab</a></li>
+      <li><a href="faq.html">FAQ</a>
+        <a href="glossary.html">Glossary</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-search-btn" aria-label="Open search">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="../index.html" data-nav>Home</a>
+  <a href="about.html" data-nav>About</a>
+  <a href="organization.html" data-nav>Organization</a>
+  <a href="organs.html" data-nav>Organs</a>
+  <a href="ecosystem.html" data-nav>Ecosystem</a>
+  <a href="owner.html" data-nav>Owner</a>
+  <a href="projects.html" data-nav>Projects</a>
+  <a href="collab.html" data-nav>Collab</a>
+  <a href="faq.html" data-nav>FAQ</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" role="dialog" aria-label="Search">
+  <button class="search-close" aria-label="Close search">&times;</button>
+  <div class="search-container">
+    <div class="search-input-wrap">
+      <span class="search-input-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+      <input type="text" class="search-input" placeholder="Search Luminary Technicals..." aria-label="Search">
+    </div>
+    <div class="search-results" role="listbox"></div>
+  </div>
+</div>
+
+<main id="main-content" style="padding-top: 120px; padding-bottom: 80px;">
   <div class="container" style="max-width: 800px;">
-    <h1>Terms of Service</h1>
-    <p style="margin-bottom: 40px;">Last Updated: May 2026</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><span>Terms of Service</span></nav>
+    <h1>Terms of <span class="text-accent">Service</span></h1>
+    <p style="margin-bottom: 40px; color: var(--slate);">Last Updated: January 1, 2025</p>
     
-    <h3>1. Use of Content</h3>
-    <p>All content on this website, including logos, designs, text, and code samples, is the property of Luminary Technicals and its founder, AR. Abhinav Ranjan. Unauthorized reproduction is prohibited.</p>
-    
-    <h3>2. No Liability</h3>
-    <p>Luminary Technicals provides information and digital services "as is". While we strive for accuracy, we are not liable for any errors, downtime, or damages resulting from the use of this site.</p>
-    
-    <h3>3. Collaboration</h3>
-    <p>Collaborative requests sent via this site do not constitute a binding contract until a formal agreement is reached between both parties.</p>
-    
-    <h3>4. Changes to Terms</h3>
-    <p>We reserve the right to update these terms at any time. Continued use of the site constitutes acceptance of the updated terms.</p>
+    <div class="glass-card" style="margin-bottom: 24px;">
+      <h3>1. Acceptance of Terms</h3>
+      <p>By accessing and using this website, you accept and agree to be bound by these terms. If you disagree with any part of these terms, please discontinue use of the site.</p>
+    </div>
+
+    <div class="glass-card" style="margin-bottom: 24px;">
+      <h3>2. Acceptable Use</h3>
+      <p>You agree to use this site for lawful purposes only. Unauthorized attempts to modify, disrupt, scrape, or compromise security protocols or digital infrastructure are strictly prohibited.</p>
+    </div>
+
+    <div class="glass-card" style="margin-bottom: 24px;">
+      <h3>3. Intellectual Property</h3>
+      <p>All original content, designs, architecture, branding, and codebases are the intellectual property of Luminary Technicals and AR. Abhinav Ranjan unless specified under an open-source license.</p>
+    </div>
+
+    <div class="glass-card" style="margin-bottom: 24px;">
+      <h3>4. Limitation of Liability</h3>
+      <p>Luminary Technicals and its associated organs provide content and digital tools on an "as-is" basis. We are not liable for any direct or indirect damages arising from use of our digital platforms.</p>
+    </div>
+
+    <div class="glass-card">
+      <h3>5. Governing Law & Contact</h3>
+      <p>These terms are governed in accordance with applicable laws. For questions regarding terms and conditions, contact <a href="mailto:luminarytechnicals@gmail.com">luminarytechnicals@gmail.com</a>.</p>
+    </div>
   </div>
 </main>
 
-<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; <span id="footer-year"></span> Luminary Technicals. All rights reserved.</p></div></div></footer>
+<!-- FOOTER -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38">
+          <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+        </a>
+        <p>Luminary Technicals is a multidisciplinary organization connecting technology, digital infrastructure, research, education and public-interest initiatives.</p>
+        <div class="formula-strip" style="margin-top:16px;">
+          <span class="formula-word">POWER</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">CREATE</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">EMPOWER</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">CONNECT</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">ENGAGE</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Organs & Hubs</h4>
+        <a href="servers.html">Luminary Servers</a>
+        <a href="developers.html">Luminary Developers</a>
+        <a href="afterverse.html">Luminary Afterverse</a>
+        <a href="cares.html">Luminary Cares</a>
+        <a href="kits.html">Luminary Kits</a>
+        <a href="federals.html">Luminary Federals</a>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="organization.html">Organization</a>
+        <a href="organs.html">Organs Hub</a>
+        <a href="ecosystem.html">Ecosystem</a>
+        <a href="projects.html">Projects</a>
+        <a href="owner.html">Owner</a>
+        <a href="collab.html">Collab</a>
+        <a href="faq.html">FAQ</a>
+        <a href="glossary.html">Glossary</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal & Contact</h4>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="#" class="cookie-retrigger">Cookie Settings</a>
+        <a href="mailto:luminarytechnicals@gmail.com" style="margin-top:12px;display:inline-block;">luminarytechnicals@gmail.com</a>
+        <p style="font-size:0.85rem;color:var(--slate);margin-top:6px;">India &bull; Global</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> Luminary Technicals. All rights reserved. &bull; AR. Abhinav Ranjan</p>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div class="cookie-banner" role="alert">
+  <p>We use cookies to improve your experience.</p>
+  <button class="btn btn-primary cookie-accept">Accept</button>
+  <a href="#" class="btn btn-outline cookie-learn">Learn More</a>
+</div>
+
+<!-- PRIVACY MODAL -->
+<div class="modal-overlay" id="modal-privacy">
+  <div class="modal" role="dialog" aria-label="Privacy Policy">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <h2>Privacy Policy</h2>
+    <p><em>Last updated: January 1, 2025</em></p>
+    <h3>Data Collection</h3>
+    <p>Luminary Technicals collects minimal data necessary for site functionality, including form submissions and basic analytics when enabled.</p>
+    <h3>Usage of Data</h3>
+    <p>Collected data is used solely to improve user experience, respond to inquiries, and manage collaborations. No personal data is sold or shared with third parties for marketing.</p>
+    <h3>Cookies</h3>
+    <p>This site uses essential cookies for functionality and optional analytics cookies. You can manage your cookie preferences at any time via the cookie settings in the footer.</p>
+    <h3>Third-Party Services</h3>
+    <p>When enabled, the site may use Google Analytics and Google AdSense. These services have their own privacy policies governing data collection.</p>
+    <h3>Your Rights</h3>
+    <p>You have the right to access, correct, or delete any personal data we hold. Contact us at luminarytechnicals@gmail.com for data requests.</p>
+    <h3>Contact</h3>
+    <p>For privacy-related concerns, reach out to <a href="mailto:luminarytechnicals@gmail.com">luminarytechnicals@gmail.com</a>.</p>
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div class="modal-overlay" id="modal-terms">
+  <div class="modal" role="dialog" aria-label="Terms of Service">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <h2>Terms of Service</h2>
+    <p><em>Last updated: January 1, 2025</em></p>
+    <h3>Acceptance of Terms</h3>
+    <p>By accessing and using the Luminary Technicals website, you agree to be bound by these Terms of Service.</p>
+    <h3>Use of Site</h3>
+    <p>You may use this website for lawful purposes only. You agree not to misuse, scrape, or attempt to compromise the site's functionality or security.</p>
+    <h3>Intellectual Property</h3>
+    <p>All content, designs, code, and branding on this site are the intellectual property of Luminary Technicals and Abhinav Ranjan unless otherwise stated.</p>
+    <h3>Limitation of Liability</h3>
+    <p>Luminary Technicals is provided "as is" without warranties. We are not liable for any damages arising from use of this website.</p>
+    <h3>Changes to Terms</h3>
+    <p>We reserve the right to update these terms at any time. Continued use of the site constitutes acceptance of any changes.</p>
+    <h3>Contact</h3>
+    <p>For questions about these terms, email <a href="mailto:luminarytechnicals@gmail.com">luminarytechnicals@gmail.com</a>.</p>
+  </div>
+</div>
+
 </body>
 </html>

@@ -3,23 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <title>403 — Forbidden | Luminary Technicals</title>
-<meta name="description" content="Access to this resource is forbidden. Please contact us if you believe this is an error.">
+<meta name="description" content="Access to this resource is forbidden. Please contact Luminary Technicals if you believe this is an error.">
+<meta name="robots" content="noindex, follow">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="geo.position" content="20.5937;78.9629">
+  <meta name="ICBM" content="20.5937, 78.9629">
+  <meta name="coverage" content="Worldwide">
+  <meta name="distribution" content="Global">
 <link rel="canonical" href="https://luminarytechnicals.dpdns.org/403.html">
+<link rel="icon" href="assets/images/logo-luminarytechnicals.png" type="image/png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/animations.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <script src="configuration/config.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/automation.js" defer></script>
+<script src="assets/js/search.js" defer></script>
+<script src="assets/js/lazy-load.js" defer></script>
+<script src="assets/js/pwa.js" defer></script>
+<script src="assets/js/contact.js" defer></script>
 </head>
 <body>
 <div id="preloader" aria-hidden="true"><div class="loader"></div></div>
-<nav class="navbar"><div class="container"><a href="index.html" class="nav-logo"><img src="assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38"><span>Luminary Technicals</span></a></div></nav>
-<main class="error-page">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+      <img src="assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+      <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="frontend/about.html">About</a></li>
+      <li><a href="frontend/organization.html">Organization</a></li>
+      <li><a href="frontend/organs.html">Organs</a></li>
+      <li><a href="frontend/ecosystem.html">Ecosystem</a></li>
+      <li><a href="frontend/owner.html">Owner</a></li>
+      <li><a href="frontend/projects.html">Projects</a></li>
+      <li><a href="frontend/collab.html">Collab</a></li>
+      <li><a href="frontend/faq.html">FAQ</a>
+        <a href="frontend/glossary.html">Glossary</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-search-btn" aria-label="Open search">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="index.html" data-nav>Home</a>
+  <a href="frontend/about.html" data-nav>About</a>
+  <a href="frontend/organization.html" data-nav>Organization</a>
+  <a href="frontend/organs.html" data-nav>Organs</a>
+  <a href="frontend/ecosystem.html" data-nav>Ecosystem</a>
+  <a href="frontend/owner.html" data-nav>Owner</a>
+  <a href="frontend/projects.html" data-nav>Projects</a>
+  <a href="frontend/collab.html" data-nav>Collab</a>
+  <a href="frontend/faq.html" data-nav>FAQ</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" role="dialog" aria-label="Search">
+  <button class="search-close" aria-label="Close search">&times;</button>
+  <div class="search-container">
+    <div class="search-input-wrap">
+      <span class="search-input-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+      <input type="text" class="search-input" placeholder="Search Luminary Technicals..." aria-label="Search">
+    </div>
+    <div class="search-results" role="listbox"></div>
+  </div>
+</div>
+
+<main id="main-content" class="error-page">
   <div class="error-glow"></div>
   <div class="container">
     <div class="error-content animate-on-scroll">
@@ -33,5 +107,64 @@
     </div>
   </div>
 </main>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals" width="38" height="38">
+          <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+        </a>
+        <p>Luminary Technicals is a multidisciplinary organization connecting technology, digital infrastructure, research, education and public-interest initiatives.</p>
+        <div class="formula-strip" style="margin-top:16px;">
+          <span class="formula-word">POWER</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">CREATE</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">EMPOWER</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">CONNECT</span>
+          <span class="formula-dot"></span>
+          <span class="formula-word">ENGAGE</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Organs & Hubs</h4>
+        <a href="frontend/servers.html">Luminary Servers</a>
+        <a href="frontend/developers.html">Luminary Developers</a>
+        <a href="frontend/afterverse.html">Luminary Afterverse</a>
+        <a href="frontend/cares.html">Luminary Cares</a>
+        <a href="frontend/kits.html">Luminary Kits</a>
+        <a href="frontend/federals.html">Luminary Federals</a>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="frontend/about.html">About</a>
+        <a href="frontend/organization.html">Organization</a>
+        <a href="frontend/organs.html">Organs Hub</a>
+        <a href="frontend/ecosystem.html">Ecosystem</a>
+        <a href="frontend/projects.html">Projects</a>
+        <a href="frontend/owner.html">Owner</a>
+        <a href="frontend/collab.html">Collab</a>
+        <a href="frontend/faq.html">FAQ</a>
+        <a href="frontend/glossary.html">Glossary</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal & Contact</h4>
+        <a href="frontend/privacy-policy.html">Privacy Policy</a>
+        <a href="frontend/terms.html">Terms of Service</a>
+        <a href="#" class="cookie-retrigger">Cookie Settings</a>
+        <a href="mailto:luminarytechnicals@gmail.com" style="margin-top:12px;display:inline-block;">luminarytechnicals@gmail.com</a>
+        <p style="font-size:0.85rem;color:var(--slate);margin-top:6px;">India &bull; Global</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> Luminary Technicals. All rights reserved. &bull; AR. Abhinav Ranjan</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

@@ -2,74 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://luminarytechnicals.dpdns.org/index.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/about.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://luminarytechnicals.dpdns.org/frontend/owner.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/organization.html</loc>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/organs.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/servers.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/developers.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/cares.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/kits.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/federals.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/afterverse.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/ecosystem.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/owner.html</loc>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/projects.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>bi-weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/collab.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/faq.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/privacy-policy.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/terms.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://luminarytechnicals.dpdns.org/404.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://luminarytechnicals.dpdns.org/403.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://luminarytechnicals.dpdns.org/offline.html</loc>
-    <lastmod>2026-07-08</lastmod>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/glossary.html</loc>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
