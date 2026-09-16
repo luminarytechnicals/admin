@@ -68,20 +68,23 @@ function initMobileMenu() {
   if (overlay) overlay.addEventListener('click', () => toggle(false));
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggle(false)));
 
-  // Swipe to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('open')) {
+      toggle(false);
+    }
+  });
+
+  // Swipe to close on touch devices
   let touchStartX = 0;
   let touchEndX = 0;
-  
   menu.addEventListener('touchstart', e => {
     touchStartX = e.changedTouches[0].screenX;
   }, { passive: true });
-  
   menu.addEventListener('touchmove', e => {
     touchEndX = e.changedTouches[0].screenX;
   }, { passive: true });
-  
-  menu.addEventListener('touchend', e => {
-    if (touchEndX - touchStartX > 50) { // Swipe right
+  menu.addEventListener('touchend', () => {
+    if (touchEndX - touchStartX > 50) {
       toggle(false);
     }
   });
