@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="view-transition" content="same-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luminary Technicals | Technology, Research, Infrastructure & Social Impact</title>
   <meta name="description"
@@ -18,7 +19,7 @@
   <meta name="coverage" content="Worldwide">
   <meta name="distribution" content="Global">
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com">
+    content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://abhinavranjan.qzz.io data:">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://luminarytechnicals.dpdns.org/index.html">
@@ -64,10 +65,10 @@
   "slogan": "Building systems. Advancing ideas. Connecting impact.",
   "founder": {
     "@type": "Person",
-    "@id": "https://luminarytechnicals.dpdns.org/frontend/owner.html#person",
+    "@id": "https://luminarytechnicals.dpdns.org/frontend/leadership.html#person",
     "name": "AR. Abhinav Ranjan",
     "jobTitle": "Founder & Digital Architect",
-    "url": "https://luminarytechnicals.dpdns.org/frontend/owner.html",
+    "url": "https://luminarytechnicals.dpdns.org/frontend/leadership.html",
     "sameAs": [
       "https://abhinavranjan.netlify.app",
       "https://github.com/DeveloperAbhinav"
@@ -109,34 +110,45 @@
     {
       "@type": "Organization",
       "name": "Luminary Servers",
+      "description": "Core Organ — POWER. Cloud infrastructure, bare-metal servers, DNS, CDN, and high-availability hosting.",
       "url": "https://luminarytechnicals.dpdns.org/frontend/servers.html"
     },
     {
       "@type": "Organization",
       "name": "Luminary Developers",
+      "description": "Core Organ — CREATE. Software engineering, AI systems, progressive web apps, and Luminary Afterverse spatial lab.",
       "url": "https://luminarytechnicals.dpdns.org/frontend/developers.html"
     },
     {
       "@type": "Organization",
-      "name": "Luminary Afterverse",
-      "url": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html"
-    },
-    {
-      "@type": "Organization",
       "name": "Luminary Cares",
+      "description": "Core Organ — EMPOWER. Technology education, digital literacy, mentorship, and community empowerment.",
       "url": "https://luminarytechnicals.dpdns.org/frontend/cares.html"
     },
     {
       "@type": "Organization",
       "name": "Luminary Kits",
+      "description": "Core Organ — CONNECT. Developer toolkits, APIs, SDKs, and ecosystem integrations including Luminary Webs.",
       "url": "https://luminarytechnicals.dpdns.org/frontend/kits.html"
     },
     {
       "@type": "Organization",
       "name": "Luminary Federals",
+      "description": "Core Organ — ENGAGE. Civic technology, public affairs research, governance studies, and Luminary News platform.",
       "url": "https://luminarytechnicals.dpdns.org/frontend/federals.html"
     }
-  ]
+  ],
+  "knowsAbout": [
+    "Digital Infrastructure", "Cloud Computing", "Artificial Intelligence",
+    "Cybersecurity Research", "Spatial Computing", "Progressive Web Apps", "Public Interest Technology",
+    "Precision Agriculture AI", "Civic Technology", "Technology Education"
+  ],
+  "member": {
+    "@type": "Organization",
+    "name": "Luminary Trust",
+    "description": "Direct Associated Entity of Luminary Technicals (not a core organ). Public-interest philanthropic ecosystem including the Radhika Research Foundation.",
+    "url": "https://luminarytechnicals.dpdns.org/frontend/trust.html"
+  }
 }
 </script>
 
@@ -181,18 +193,14 @@
             class="logo-sub">TECHNICALS</span></span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="frontend/about.html">About</a></li>
-        <li><a href="frontend/organization.html">Organization</a></li>
-        <li><a href="frontend/organs.html">Organs</a></li>
-        <li><a href="frontend/ecosystem.html">Ecosystem</a></li>
-        <li><a href="frontend/owner.html">Owner</a></li>
-        <li><a href="frontend/projects.html">Projects</a></li>
-        <li><a href="frontend/collab.html">Collab</a></li>
-        <li><a href="frontend/faq.html">FAQ</a>
-          <a href="frontend/glossary.html">Glossary</a>
-        </li>
-      </ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="frontend/about.html">About</a></li>
+              <li><a href="frontend/ecosystem.html">Ecosystem</a></li>
+              <li><a href="frontend/organs.html">Organs</a></li>
+              <li><a href="frontend/projects.html">Projects</a></li>
+              <li><a href="frontend/news.html">News</a></li>
+              <li><a href="frontend/collab.html">Collaborate</a></li>
+            </ul>
       <div class="nav-actions">
         <button class="theme-toggle" aria-label="Toggle theme"></button>
         <button class="nav-search-btn" aria-label="Open search">
@@ -214,13 +222,19 @@
     <button class="close-btn" aria-label="Close menu">&times;</button>
     <a href="index.html" data-nav class="active">Home</a>
     <a href="frontend/about.html" data-nav>About</a>
-    <a href="frontend/organization.html" data-nav>Organization</a>
-    <a href="frontend/organs.html" data-nav>Organs</a>
     <a href="frontend/ecosystem.html" data-nav>Ecosystem</a>
-    <a href="frontend/owner.html" data-nav>Owner</a>
+    <a href="frontend/organs.html" data-nav>Organs</a>
     <a href="frontend/projects.html" data-nav>Projects</a>
-    <a href="frontend/collab.html" data-nav>Collab</a>
+    <a href="frontend/agroscan.html" data-nav>AgroScan</a>
+    <a href="frontend/research.html" data-nav>Research</a>
+    <a href="frontend/technology.html" data-nav>Technology</a>
+    <a href="frontend/news.html" data-nav>News</a>
+    <a href="frontend/trust.html" data-nav>Luminary Trust</a>
+    <a href="frontend/leadership.html" data-nav>Leadership</a>
+    <a href="frontend/collab.html" data-nav>Collaborate</a>
+    <a href="frontend/contact.html" data-nav>Contact</a>
     <a href="frontend/faq.html" data-nav>FAQ</a>
+    <a href="frontend/glossary.html" data-nav>Glossary</a>
   </div>
 
   <!-- SEARCH OVERLAY -->
@@ -522,7 +536,7 @@
               <p style="margin-top: 15px;">AR. Abhinav Ranjan is the founder of Luminary Technicals and provides its
                 central direction as the organization develops across technology, infrastructure, research, education
                 and public-interest initiatives.</p>
-              <a href="frontend/owner.html" class="btn btn-primary">Meet the Founder</a>
+              <a href="frontend/leadership.html" class="btn btn-primary">Meet the Founder</a>
             </div>
           </div>
         </div>
@@ -591,7 +605,6 @@
   </main>
 
   <!-- FOOTER -->
-  <!-- FOOTER -->
   <footer class="footer" id="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
@@ -612,35 +625,46 @@
           </div>
         </div>
         <div class="footer-col">
-          <h4>Organs & Hubs</h4>
-          <a href="frontend/servers.html">Servers (Power)</a>
-          <a href="frontend/developers.html">Developers (Create)</a>
-          <a href="frontend/afterverse.html">Afterverse (XR Lab)</a>
-          <a href="frontend/cares.html">Cares (Empower)</a>
-          <a href="frontend/kits.html">Kits (Connect)</a>
-          <a href="frontend/federals.html">Federals (Engage)</a>
+          <h4>The Five Organs</h4>
+          <a href="frontend/servers.html">Luminary Servers &mdash; Power</a>
+          <a href="frontend/developers.html">Luminary Developers &mdash; Create</a>
+          <a href="frontend/cares.html">Luminary Cares &mdash; Empower</a>
+          <a href="frontend/kits.html">Luminary Kits &mdash; Connect</a>
+          <a href="frontend/federals.html">Luminary Federals &mdash; Engage</a>
+          <a href="frontend/trust.html" style="margin-top:8px;display:block;color:var(--accent);">&#x1F91D; Luminary Trust</a>
         </div>
         <div class="footer-col">
-          <h4>Navigation</h4>
+          <h4>Projects &amp; Platforms</h4>
+          <a href="frontend/agroscan.html">AgroScan (Revival 2027)</a>
+          <a href="frontend/afterverse.html">Luminary Afterverse</a>
+          <a href="frontend/news.html">Luminary News</a>
+          <a href="frontend/projects.html">All Projects</a>
+          <a href="frontend/research.html">Research Portal</a>
+          <a href="frontend/technology.html">Technology Hub</a>
+          <a href="frontend/resources.html">Resources</a>
+        </div>
+        <div class="footer-col">
+          <h4>Organization</h4>
           <a href="index.html">Home</a>
           <a href="frontend/about.html">About</a>
-          <a href="frontend/organization.html">Organization</a>
-          <a href="frontend/organs.html">Organs Hub</a>
           <a href="frontend/ecosystem.html">Ecosystem</a>
-          <a href="frontend/projects.html">Projects</a>
-          <a href="frontend/owner.html">Owner</a>
-          <a href="frontend/collab.html">Collab</a>
+          <a href="frontend/organization.html">Architecture</a>
+          <a href="frontend/leadership.html">Leadership</a>
+          <a href="frontend/collab.html">Collaborate</a>
+          <a href="frontend/contact.html">Contact</a>
           <a href="frontend/faq.html">FAQ</a>
           <a href="frontend/glossary.html">Glossary</a>
         </div>
         <div class="footer-col">
-          <h4>Legal & Contact</h4>
+          <h4>Legal &amp; Policies</h4>
           <a href="frontend/privacy-policy.html">Privacy Policy</a>
           <a href="frontend/terms.html">Terms of Service</a>
+          <a href="frontend/security.html">Security</a>
+          <a href="frontend/accessibility.html">Accessibility</a>
+          <a href="frontend/disclaimer.html">Disclaimer</a>
           <a href="#" class="cookie-retrigger">Cookie Settings</a>
-          <a href="mailto:luminarytechnicals@gmail.com"
-            style="margin-top:12px;display:block;">luminarytechnicals@gmail.com</a>
-          <p style="font-size:0.85rem;color:var(--slate);margin-top:4px;">India • Global</p>
+          <a href="mailto:luminarytechnicals@gmail.com" style="margin-top:12px;display:block;">luminarytechnicals@gmail.com</a>
+          <p style="font-size:0.85rem;color:var(--slate);margin-top:4px;">India &bull; Global Operations</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -661,7 +685,7 @@
     <div class="modal" role="dialog" aria-label="Privacy Policy">
       <button class="modal-close" aria-label="Close">&times;</button>
       <h2>Privacy Policy</h2>
-      <p><em>Last updated: January 1, 2025</em></p>
+      <p><em>Last updated: January 1, 2026</em></p>
       <h3>Data Collection</h3>
       <p>Luminary Technicals collects minimal data necessary for site functionality, including form submissions and
         basic analytics when enabled.</p>
@@ -688,7 +712,7 @@
     <div class="modal" role="dialog" aria-label="Terms of Service">
       <button class="modal-close" aria-label="Close">&times;</button>
       <h2>Terms of Service</h2>
-      <p><em>Last updated: January 1, 2025</em></p>
+      <p><em>Last updated: January 1, 2026</em></p>
       <h3>Acceptance of Terms</h3>
       <p>By accessing and using the Luminary Technicals website, you agree to be bound by these Terms of Service.</p>
       <h3>Use of Site</h3>

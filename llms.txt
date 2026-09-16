@@ -1,34 +1,38 @@
 # Luminary Technicals
 > Full extended knowledge corpus available at: https://luminarytechnicals.dpdns.org/llms-full.txt
 
-Luminary Technicals is a multidisciplinary organization connecting digital infrastructure, technology development, research, cybersecurity, education, public-interest initiatives and an expanding ecosystem of projects and ventures. Founded and led by AR. Abhinav Ranjan.
+Luminary Technicals is a multidisciplinary organization connecting digital infrastructure, technology development, research, cybersecurity, education, and public-interest initiatives across five core organs and a directly associated entity. Founded and led by AR. Abhinav Ranjan (Founder & CEO).
 
-## Master Formula
-- **Internal Formula:** POWER. CREATE. EMPOWER. CONNECT. ENGAGE.
+## Canonical Organizational Structure V2
+
+**Luminary Technicals** is the central parent organization with exactly **5 Core Organs**:
+
+- **Luminary Servers (POWER):** Cloud infrastructure, bare-metal servers, DNS, CDN, SSL, and high-availability hosting. (`frontend/servers.html`)
+- **Luminary Developers (CREATE):** Software engineering, AI systems, progressive web apps, and the Luminary Afterverse spatial computing lab. (`frontend/developers.html`)
+- **Luminary Cares (EMPOWER):** Technology education, digital literacy, mentorship, and community empowerment via Luminary Books. (`frontend/cares.html`)
+- **Luminary Kits (CONNECT):** Reusable developer toolkits, APIs, SDKs, and partner web collaborations including Luminary Webs. (`frontend/kits.html`)
+- **Luminary Federals (ENGAGE):** Civic technology, public affairs, governance research, and the official Luminary News platform. (`frontend/federals.html`)
+
+**Direct Associated Entity** (top-level, separate from the 5 organs):
+- **Luminary Trust:** Public-interest, philanthropic ecosystem directly associated with Luminary Technicals. Oversees the **Radhika Research Foundation**. (`frontend/trust.html`)
+
+## Organizational Formulas
+- **Internal / Master Formula:** POWER. CREATE. EMPOWER. CONNECT. ENGAGE.
 - **Public Branding Formula:** BUILD. RESEARCH. SECURE. EMPOWER. CONNECT.
 - **Brand Line:** Building systems. Advancing ideas. Connecting impact.
 
-## Architecture: Three-Tier Model
-- **Tier 1 (Luminary Technicals):** Central identity, strategic direction, multidisciplinary synthesis, and shared governance.
-- **Tier 2 (Five Core Organs):**
-  - **Luminary Servers (Power):** Hosting, cloud infrastructure, domain management, SSL, CDN, high-availability server systems (`frontend/servers.html`).
-  - **Luminary Developers (Create):** Software engineering, responsive web applications, artificial intelligence & automation, cybersecurity research, and the Luminary Afterverse immersive lab (`frontend/developers.html`).
-  - **Luminary Cares (Empower):** Tech education, digital awareness, community mentorship, public-interest initiatives, and social impact programs (`frontend/cares.html`).
-  - **Luminary Kits (Connect):** Shared developer toolkits, cross-organ coordination, integration APIs, and unified system modules (`frontend/kits.html`).
-  - **Luminary Federals (Engage):** Public-affairs research, civic engagement, governance and policy studies, institutional programs (strictly non-governmental) (`frontend/federals.html`).
-- **Tier 3 (Connected Ecosystem):**
-  - **Operating:** Luminary Servers, Luminary Developers, Luminary Afterverse, Luminary Webs, Luminary Books, Luminary Wishes.
-  - **Research & Development:** Defensive cybersecurity research, AI experimentation, spatial web environments.
-  - **Planned:** Future educational and community trust initiatives.
-
-## Key Creative Projects
-- **Luminary Afterverse (`frontend/afterverse.html`):** Next-generation spatial digital universe, interactive 3D web spaces, and creative XR experiences.
-- **Luminary Webs:** Flagship web solutions hub and curated live web tools.
-- **Luminary Books:** Authoring and publishing tech guides, developer books, and educational tutorials.
-- **Luminary Wishes:** Elegant digital wishes platform for celebrations and milestones.
+## Key Projects & Initiatives
+- **AgroScan** (`frontend/agroscan.html`): Flagship AI-driven precision agricultural diagnostics. Under Revival Program 2027.
+- **Luminary Afterverse** (`frontend/afterverse.html`): Spatial computing lab under Luminary Developers.
+- **Luminary News** (`frontend/news.html`): Official news platform under Luminary Federals.
+- **Luminary Webs / Luminary Wishes:** Web solutions under Luminary Kits.
+- **Luminary Books:** Publishing initiative under Luminary Cares.
+- **Luminary AI:** AI research initiative under Luminary Developers.
+- **Radhika Research Foundation:** Scientific foundation under Luminary Trust.
 
 ## Contact & Founder
-- **Founder & Chief Executive:** AR. Abhinav Ranjan
+- **Founder & CEO:** AR. Abhinav Ranjan
+- **Founder Page:** https://luminarytechnicals.dpdns.org/frontend/owner.html
+- **Founder Portfolio:** https://abhinavranjan.netlify.app
 - **Email:** luminarytechnicals@gmail.com
 - **Website:** https://luminarytechnicals.dpdns.org
-- **Founder Portfolio:** https://abhinavranjan.netlify.app

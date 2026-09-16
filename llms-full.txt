@@ -5,90 +5,175 @@
 
 ## 1. Executive Entity Summary
 - **Organization Legal / Operating Name:** Luminary Technicals
-- **Founder & Chief Architect:** AR. Abhinav Ranjan
+- **Founder & CEO:** AR. Abhinav Ranjan
 - **Founding Location:** India (Serving Global Audiences)
 - **Primary Domain:** https://luminarytechnicals.dpdns.org
 - **Primary Contact:** luminarytechnicals@gmail.com
 - **Classification:** Multidisciplinary Technology, Cloud Infrastructure, AI Development, Digital Research & Public Interest Organization
+- **Canonical Structure Version:** V2
 
 ---
 
-## 2. Core Organizational Ontologies & Formulas
-Luminary Technicals operates on dual structured formulas defining internal architecture and external brand delivery:
+## 2. Canonical Organizational Structure V2
 
-### The Master Organizational Formula (Five Organs)
-1. **POWER** — Luminary Servers: Enterprise cloud hosting, bare-metal server nodes, DNS management, edge caching, and 99.99% high-availability uptime.
-2. **CREATE** — Luminary Developers: Full-stack software engineering, AI agent workflows, WebGL spatial rendering, and the incubation of Luminary Afterverse.
-3. **EMPOWER** — Luminary Cares: Tech literacy programs, open community mentorship, accessible digital tooling, and developer empowerment grants.
-4. **CONNECT** — Luminary Kits: Modular SDKs, cross-platform UI tokens, developer command-line interfaces (CLI), and system interoperability APIs.
-5. **ENGAGE** — Luminary Federals: Civic-tech research, open institutional technology standards, sovereign data governance, and cybersecurity policy studies (non-governmental).
+Luminary Technicals is the **central parent organization and identity**. It is NOT a product or service — it is the umbrella entity governing a multidisciplinary ecosystem.
 
-### Public-Facing Mission Formula
+### 2.1 The Five Core Organs (Tier 2)
+Exactly five core organs operate under Luminary Technicals, each representing a fundamental function:
+
+1. **POWER — Luminary Servers** (`/frontend/servers.html`)
+   Enterprise cloud hosting, bare-metal server nodes, authoritative Anycast DNS routing, automated SSL provisioning, CDN mesh routing, DDoS mitigation, and high-availability infrastructure for all Luminary digital assets.
+
+2. **CREATE — Luminary Developers** (`/frontend/developers.html`)
+   Full-stack software engineering, progressive web apps (PWAs), artificial intelligence agent automation, spatial computing, cybersecurity research. Incubates the **Luminary Afterverse** spatial lab and **Luminary AI** research initiative.
+
+3. **EMPOWER — Luminary Cares** (`/frontend/cares.html`)
+   Technology literacy programs, open community mentorship, digital inclusion drives, accessibility compliance, and developer empowerment programs. Publishes free technical literature under **Luminary Books**.
+
+4. **CONNECT — Luminary Kits** (`/frontend/kits.html`)
+   Modular UI component libraries, developer CLI tools, REST & GraphQL integration APIs, cross-organ system connectors. Coordinates the **Luminary Webs** collaboration (→ Luminary Wishes).
+
+5. **ENGAGE — Luminary Federals** (`/frontend/federals.html`)
+   Civic-tech research, open institutional technology standards, sovereign digital protocols, technology governance studies, and institutional dialogues. Operates the **Luminary News** platform. (Strictly non-governmental, non-statutory civic research entity.)
+
+### 2.2 Direct Associated Entity (Top-Level — NOT a Core Organ)
+- **Luminary Trust** (`/frontend/trust.html`)
+  Directly associated with Luminary Technicals at the top level. Separate from the five technical/operational organs. Dedicated to public-interest initiatives, philanthropic endowments, and institutional scientific research.
+  - **Radhika Research Foundation:** Specialized scientific and social research foundation operating under Luminary Trust.
+
+### 2.3 Canonical Rules (Machine-Readable)
+- `organs.filter(o => o.type === "core-organ").length === 5` ✅
+- `LuminaryTrust.type === "associated-entity"` ✅ (NOT a core organ)
+- `LuminaryTrust.parent === "luminary-technicals"` ✅ (top-level direct association)
+- `LuminaryNews.parent === "luminary-federals"` ✅ (NOT standalone, NOT under Trust, NOT under Cares)
+- `LuminaryAfterverse.parent === "luminary-developers"` ✅
+- `RadhikaResearchFoundation.parent === "luminary-trust"` ✅
+
+---
+
+## 3. Organizational Formulas
+
+### Master Formula (Internal Architecture)
+> **POWER. CREATE. EMPOWER. CONNECT. ENGAGE.**
+Maps directly to: Servers · Developers · Cares · Kits · Federals
+
+### Public Mission Formula (External Branding)
 > **BUILD. RESEARCH. SECURE. EMPOWER. CONNECT.**
-- **Motto / Tagline:** Building systems. Advancing ideas. Connecting impact.
+
+### Brand Tagline
+> **Building systems. Advancing ideas. Connecting impact.**
+
+### Extended Tagline
+> Building technology, researching possibilities, securing digital infrastructure, empowering people, and connecting ideas.
 
 ---
 
-## 3. The Three-Tier Architectural Ecosystem
+## 4. Key Projects, Initiatives & Platforms
 
-### Tier 1: Central Entity (Luminary Technicals)
-The primary administrative, architectural, and governance foundation uniting all subordinate entities under a shared technical and ethical charter.
+### AgroScan (Flagship Research Project)
+- **Parent:** Luminary Developers
+- **Status:** Active — Revival Program 2027
+- **URL:** `/frontend/agroscan.html`
+- Precision agricultural AI diagnostics using Computer Vision (Vision Transformers & CNNs), offline-first PWA, and ESP32/LoRa IoT sensor telemetry for early crop disease detection and soil intelligence.
 
-### Tier 2: Five Core Organs (Dedicated Functional Portals)
-- **Luminary Servers (`/frontend/servers.html`):** Infrastructure backbone delivering resilient cloud compute, automated SSL provisioning, low-latency CDN mesh routing, and DDoS mitigation.
-- **Luminary Developers (`/frontend/developers.html`):** Software innovation division crafting modern PWAs, AI agent automation pipelines, generative tools, and interactive WebGL experiences.
-- **Luminary Afterverse (`/frontend/afterverse.html`):** Next-generation spatial computing laboratory exploring 3D interactive environments, node-graph universe simulations, and ambient neural UI design.
-- **Luminary Cares (`/frontend/cares.html`):** Community and social responsibility organ offering tech workshops, mentorship, accessibility compliance audits, and digital inclusion drives.
-- **Luminary Kits (`/frontend/kits.html`):** Developer tooling division publishing modular UI component libraries, CLI automation tools, and integration packages.
-- **Luminary Federals (`/frontend/federals.html`):** Civic and institutional technology think-tank researching open-source protocols, sovereign digital systems, and cyber defense frameworks.
+### Luminary Afterverse (Spatial Computing Lab)
+- **Parent:** Luminary Developers
+- **Status:** Operating Lab
+- **URL:** `/frontend/afterverse.html`
+- Creative technology lab exploring interactive 3D WebGL environments, real-time particle physics, ambient spatial audio, and next-generation sensory web navigation at 60 FPS.
 
-### Tier 3: Operating Projects & Active Platforms
-- **Luminary Webs:** Flagship web solutions directory and live web application showcase.
-- **Luminary Books:** Technical publishing imprint delivering developer guides, tutorials, and architectural whitepapers.
-- **Luminary Wishes:** Experiential greeting and digital wishes platform celebrating life milestones and achievements.
+### Luminary News (Information Platform)
+- **Parent:** Luminary Federals
+- **Type:** Official Initiative / Platform
+- **URL:** `/frontend/news.html`
+- The primary communications and public information platform. Delivers editorial updates, technical release notes, research announcements, and ecosystem milestones.
+
+### Luminary Webs (Web Collaboration)
+- **Parent:** Luminary Kits
+- **Status:** Operating
+- Curated web solutions directory and digital showcases under Luminary Kits.
+- **Sub-initiative:** Luminary Wishes (personalized digital celebrations)
+
+### Luminary AI (Research Initiative)
+- **Parent:** Luminary Developers
+- **Status:** Active R&D
+- Autonomous multi-agent reasoning, localized LLM pipelines, RAG systems, and computer vision workflows.
+
+### Luminary Books (Publishing)
+- **Parent:** Luminary Cares
+- Free open-access technical handbooks, programming manuals, AI guides, and cybersecurity awareness publications.
+
+### Radhika Research Foundation
+- **Parent:** Luminary Trust
+- **Type:** Foundation
+- Scientific and social research foundation under Luminary Trust.
 
 ---
 
-## 4. Technical Architecture & Stack
-- **Frontend Core:** Semantic HTML5, Vanilla CSS3 (Custom Design System with Zero Framework Lock-in), Modern Vanilla JavaScript (ES6+).
-- **Interactive & Spatial Engines:** HTML5 Canvas 2D Dynamic Node Simulations, WebGL 3D Shaders, Matrix Particle Physics.
-- **Progressive Web App (PWA):** Service Worker Cache Storage (`luminary-v5`), Offline Fallback (`offline.html`), Web App Manifest (`manifest.json`), Apple Touch Icons, and Background Sync.
-- **Search Architecture:** In-browser fuzzy search engine powered by pre-indexed inverted scoring index (`configuration/search-index.json`).
-- **Security & Hardening:** Strict Content Security Policy (CSP), nosniff headers, strict referrer policies, sanitized input validation.
+## 5. Technical Architecture
+
+- **Frontend Core:** Semantic HTML5, Vanilla CSS3 (Zero Framework), Modern Vanilla JavaScript (ES6+)
+- **Interactive Engines:** HTML5 Canvas 2D, WebGL Shaders, Particle Physics
+- **PWA:** Service Worker (`luminary-v5`), Offline Fallback (`offline.html`), Web App Manifest
+- **Search:** In-browser fuzzy search engine (`configuration/search-index.json`)
+- **Security:** Strict Content Security Policy (CSP), nosniff, strict referrer policies
+- **Data Layer:** `configuration/organization.js`, `organs.js`, `projects.js`, `research.js`, `news.js`, `faq.js`, `timeline.js`
 
 ---
 
-## 5. Frequently Asked Questions (Structured for Direct AI Retrieval)
+## 6. Frequently Asked Questions (Structured for Direct AI Retrieval)
 
 ### Q: What is Luminary Technicals?
 **A:** Luminary Technicals is a multidisciplinary organization connecting digital infrastructure, technology development, research, cybersecurity, education, and public-interest initiatives across five core organs: Servers (Power), Developers (Create), Cares (Empower), Kits (Connect), and Federals (Engage).
 
-### Q: Who is AR. Abhinav Ranjan?
-**A:** AR. Abhinav Ranjan is the Founder, Lead Developer, and Digital Architect of Luminary Technicals. He specializes in full-stack web engineering, cloud infrastructure, AI agents, and spatial digital experiences.
+### Q: How many organs does Luminary Technicals have?
+**A:** Exactly five core organs: Luminary Servers, Luminary Developers, Luminary Cares, Luminary Kits, and Luminary Federals. Luminary Trust is a directly associated entity (not a core organ).
 
-### Q: What is Luminary Afterverse?
-**A:** Luminary Afterverse is a spatial computing and creative universe laboratory incubated under Luminary Developers. It develops 60 FPS interactive particle canvases, 3D WebGL node graphs, and next-generation decentralized digital environments.
+### Q: Is Luminary Trust one of the five organs?
+**A:** No. Luminary Trust is a top-level entity directly associated with Luminary Technicals, separate from the five operational organs. It handles public-interest and philanthropic initiatives, including the Radhika Research Foundation.
+
+### Q: Where does Luminary News belong?
+**A:** Luminary News is an official initiative/platform under Luminary Federals (the 5th core organ). It is NOT an independent organ and NOT under Luminary Trust or Luminary Cares.
+
+### Q: Who is AR. Abhinav Ranjan?
+**A:** AR. Abhinav Ranjan is the Founder & CEO of Luminary Technicals. He provides central strategic direction, system architecture, and leadership across the entire ecosystem.
+
+### Q: What is AgroScan?
+**A:** AgroScan is a flagship AI-driven precision agricultural diagnostics platform under Luminary Developers. It uses Computer Vision (Vision Transformers/CNNs) and edge IoT sensors for crop disease identification. Currently under active development in the Revival Program 2027.
 
 ### Q: Is Luminary Technicals open for collaborations?
-**A:** Yes. Luminary Technicals actively collaborates with developers, researchers, organizations, academic institutions, and businesses across cloud infrastructure, AI development, tech education, and hackathons via `luminarytechnicals@gmail.com` or `/frontend/collab.html`.
+**A:** Yes. Luminary Technicals collaborates across cloud infrastructure, AI development, education, web projects, and research. Contact: luminarytechnicals@gmail.com or `/frontend/collab.html`.
 
 ---
 
-## 6. Official Canonical Resource Map
-- **Home Portal:** https://luminarytechnicals.dpdns.org/index.html
+## 7. Official Canonical Resource Map
+- **Home:** https://luminarytechnicals.dpdns.org/index.html
 - **About:** https://luminarytechnicals.dpdns.org/frontend/about.html
-- **Organization Hierarchy:** https://luminarytechnicals.dpdns.org/frontend/organization.html
+- **Organization Architecture:** https://luminarytechnicals.dpdns.org/frontend/organization.html
+- **Ecosystem Visualizer:** https://luminarytechnicals.dpdns.org/frontend/ecosystem.html
 - **Organs Directory:** https://luminarytechnicals.dpdns.org/frontend/organs.html
-- **Servers Portal:** https://luminarytechnicals.dpdns.org/frontend/servers.html
-- **Developers Portal:** https://luminarytechnicals.dpdns.org/frontend/developers.html
-- **Afterverse Spatial Lab:** https://luminarytechnicals.dpdns.org/frontend/afterverse.html
-- **Cares Portal:** https://luminarytechnicals.dpdns.org/frontend/cares.html
-- **Kits Portal:** https://luminarytechnicals.dpdns.org/frontend/kits.html
-- **Federals Portal:** https://luminarytechnicals.dpdns.org/frontend/federals.html
-- **Ecosystem:** https://luminarytechnicals.dpdns.org/frontend/ecosystem.html
-- **Founder Profile:** https://luminarytechnicals.dpdns.org/frontend/owner.html
+- **Luminary Servers:** https://luminarytechnicals.dpdns.org/frontend/servers.html
+- **Luminary Developers:** https://luminarytechnicals.dpdns.org/frontend/developers.html
+- **Luminary Cares:** https://luminarytechnicals.dpdns.org/frontend/cares.html
+- **Luminary Kits:** https://luminarytechnicals.dpdns.org/frontend/kits.html
+- **Luminary Federals:** https://luminarytechnicals.dpdns.org/frontend/federals.html
+- **Luminary Trust:** https://luminarytechnicals.dpdns.org/frontend/trust.html
+- **AgroScan:** https://luminarytechnicals.dpdns.org/frontend/agroscan.html
+- **Luminary Afterverse:** https://luminarytechnicals.dpdns.org/frontend/afterverse.html
+- **Luminary News:** https://luminarytechnicals.dpdns.org/frontend/news.html
+- **Research Portal:** https://luminarytechnicals.dpdns.org/frontend/research.html
+- **Technology Hub:** https://luminarytechnicals.dpdns.org/frontend/technology.html
+- **Leadership:** https://luminarytechnicals.dpdns.org/frontend/leadership.html
+- **Founder & Owner:** https://luminarytechnicals.dpdns.org/frontend/owner.html
 - **Projects:** https://luminarytechnicals.dpdns.org/frontend/projects.html
-- **Collab:** https://luminarytechnicals.dpdns.org/frontend/collab.html
+- **Collaborate:** https://luminarytechnicals.dpdns.org/frontend/collab.html
+- **Contact:** https://luminarytechnicals.dpdns.org/frontend/contact.html
+- **Resources:** https://luminarytechnicals.dpdns.org/frontend/resources.html
 - **FAQ:** https://luminarytechnicals.dpdns.org/frontend/faq.html
+- **Glossary:** https://luminarytechnicals.dpdns.org/frontend/glossary.html
 - **Privacy Policy:** https://luminarytechnicals.dpdns.org/frontend/privacy-policy.html
 - **Terms of Service:** https://luminarytechnicals.dpdns.org/frontend/terms.html
+- **Security:** https://luminarytechnicals.dpdns.org/frontend/security.html
+- **Accessibility:** https://luminarytechnicals.dpdns.org/frontend/accessibility.html
+- **Cookies Policy:** https://luminarytechnicals.dpdns.org/frontend/cookies.html
+- **Disclaimer:** https://luminarytechnicals.dpdns.org/frontend/disclaimer.html

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="view-transition" content="same-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://api.rss2json.com; img-src 'self' https://abhinavranjan.qzz.io data:">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <title>Luminary News — Official Wire Operated Under Luminary Federals | Luminary Technicals</title>
+  <meta name="description" content="Official news wire, announcements, press releases, technical milestones, and project updates across the Luminary Technicals ecosystem. Operated under Luminary Federals.">
+  <meta name="keywords" content="Luminary News, announcements, press wire, Luminary Federals, Luminary Technicals, technical releases, AgroScan Revival 2027, Afterverse">
+  <meta name="author" content="AR. Abhinav Ranjan">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <link rel="canonical" href="https://luminarytechnicals.dpdns.org/frontend/news.html">
+  <meta property="og:title" content="Luminary News — Official News Platform | Luminary Technicals">
+  <meta property="og:description" content="Verified announcements, architecture updates, releases, and research dispatches from Luminary Technicals.">
+  <meta property="og:image" content="../assets/images/og-default.png">
+  <meta property="og:url" content="https://luminarytechnicals.dpdns.org/frontend/news.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Luminary Technicals">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@luminarytechnicals">
+  <meta name="theme-color" content="#0A0F1E">
+  <link rel="icon" href="../assets/images/logo-luminarytechnicals.png" type="image/png">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <script src="../configuration/organization.js" defer></script>
+  <script src="../configuration/organs.js" defer></script>
+  <script src="../configuration/projects.js" defer></script>
+  <script src="../configuration/research.js" defer></script>
+  <script src="../configuration/news.js" defer></script>
+  <script src="../configuration/timeline.js" defer></script>
+  <script src="../configuration/faq.js" defer></script>
+  <script src="../configuration/config.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/automation.js" defer></script>
+  <script src="../assets/js/news-engine.js" defer></script>
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/lazy-load.js" defer></script>
+  <script src="../assets/js/pwa.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Luminary News",
+    "url": "https://luminarytechnicals.dpdns.org/frontend/news.html",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Luminary Federals",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Luminary Technicals",
+        "url": "https://luminarytechnicals.dpdns.org"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+<div id="preloader" aria-hidden="true"><div class="loader"></div></div>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+      <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+      <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+    </a>
+        <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="ecosystem.html">Ecosystem</a></li>
+              <li><a href="organs.html">Organs</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="collab.html">Collaborate</a></li>
+            </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-search-btn" aria-label="Open search">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="../index.html" data-nav>Home</a>
+  <a href="about.html" data-nav>About</a>
+  <a href="ecosystem.html" data-nav>Ecosystem</a>
+  <a href="organs.html" data-nav>Organs</a>
+  <a href="projects.html" data-nav>Projects</a>
+  <a href="agroscan.html" data-nav>AgroScan</a>
+  <a href="research.html" data-nav>Research</a>
+  <a href="technology.html" data-nav>Technology</a>
+  <a href="news.html" data-nav>News</a>
+  <a href="trust.html" data-nav>Luminary Trust</a>
+  <a href="leadership.html" data-nav>Leadership</a>
+  <a href="collab.html" data-nav>Collaborate</a>
+  <a href="contact.html" data-nav>Contact</a>
+  <a href="faq.html" data-nav>FAQ</a>
+  <a href="glossary.html" data-nav>Glossary</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" role="dialog" aria-label="Search">
+  <button class="search-close" aria-label="Close search">&times;</button>
+  <div class="search-container">
+    <div class="search-input-wrap">
+      <span class="search-input-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+      <input type="text" class="search-input" placeholder="Search news, announcements, releases..." aria-label="Search">
+    </div>
+    <div class="search-results" role="listbox"></div>
+  </div>
+</div>
+
+<main id="main-content">
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background: radial-gradient(circle at 50% 20%, rgba(16,185,129,0.12), transparent 70%);">
+    <div class="grain-overlay"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span class="sep">/</span>
+        <a href="federals.html">Luminary Federals</a><span class="sep">/</span>
+        <span class="text-accent">News</span>
+      </nav>
+      <div style="display:inline-flex; align-items:center; gap:8px; margin-bottom:16px;">
+        <span class="badge badge-initiative">LUMINARY FEDERALS · PLATFORM</span>
+        <span class="badge" style="background:rgba(255,255,255,0.06);">Official Wire</span>
+      </div>
+      <h1>Luminary <span class="text-accent">News</span></h1>
+      <p style="max-width:720px; margin:0 auto 24px; font-size:1.15rem;">
+        The official news wire, press releases, architectural dispatches, and technical announcements from Luminary Technicals. Operated under Luminary Federals (ENGAGE).
+      </p>
+
+      <!-- SEARCH & FILTER CONTROLS -->
+      <div style="max-width:600px; margin:0 auto 20px;">
+        <input type="text" id="news-search-input" class="form-input" placeholder="Filter articles by title, keyword, or tag..." style="text-align:center;">
+      </div>
+
+      <div class="tab-nav" style="margin-bottom:0;">
+        <button class="tab-btn news-filter-btn active" data-category="all">All Updates</button>
+        <button class="tab-btn news-filter-btn" data-category="Organization">Organization</button>
+        <button class="tab-btn news-filter-btn" data-category="Projects">Projects</button>
+        <button class="tab-btn news-filter-btn" data-category="Technology">Technology</button>
+        <button class="tab-btn news-filter-btn" data-category="Infrastructure">Infrastructure</button>
+        <button class="tab-btn news-filter-btn" data-category="Community">Community</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANONICAL AFFILIATION NOTICE -->
+  <section style="padding:14px 0; background:var(--bg3); border-y:1px solid var(--border);">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:0.85rem; color:var(--slate);">
+      <span>🏛️ <strong>Operating Organ:</strong> <a href="federals.html" style="color:var(--accent);">Luminary Federals (ENGAGE)</a></span>
+      <span><strong>Verification:</strong> Cryptographically Verified Dispatches</span>
+      <span><strong>RSS Feed:</strong> syndication ready</span>
+    </div>
+  </section>
+
+  <!-- LUMINARY NEWS MOTIVE / ABOUT -->
+  <section class="section" style="padding-bottom: 40px;">
+    <div class="container">
+      <div class="glass-card" style="display: grid; grid-template-columns: 1fr; gap: 24px; background: rgba(124,58,237,0.05); border-color: rgba(124,58,237,0.2);">
+        <div>
+          <h2 style="font-size: 1.8rem; margin-bottom: 12px;">The Motive Behind Luminary <span class="text-accent">News</span></h2>
+          <p style="font-size: 1.05rem; color: var(--white); margin-bottom: 16px;">
+            Luminary News was established under <strong>Luminary Federals</strong> to serve as an uncompromised, transparent wire for technology research, civic infrastructure updates, and organizational milestones. Our motive is simple: to democratize knowledge and provide cryptographically verified updates on the rapidly evolving digital frontier.
+          </p>
+          <p style="color: var(--slate); font-size: 0.95rem; margin-bottom: 0;">
+            We cut through the noise to bring you direct dispatches from the front lines of spatial computing, AI ethics, digital literacy, and public interest technology. Every article represents our commitment to open-source philosophy and civic engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES GRID -->
+  <section class="section">
+    <div class="container">
+      <div id="news-articles-grid" class="card-grid">
+        <!-- Dynamically rendered via assets/js/news-engine.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS / MEDIA CONTACT -->
+  <section class="section" style="background:var(--bg2);">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Press & Editorial Inquiries</h2>
+        <p>Journalists, researchers, and event organizers seeking official commentary, interviews, or media kits can reach the Luminary Federals communications office.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Media Office</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- CANONICAL 5-COLUMN FOOTER -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+        <div class="footer-grid-5">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+          <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+          <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+        </a>
+        <p style="font-size:0.88rem; color:var(--slate); margin-top:12px; line-height:1.6;">
+          Building technology. Researching possibilities. Securing infrastructure. Empowering people. Connecting ideas.
+        </p>
+        <div class="formula-strip" style="justify-content:flex-start; margin-top:14px;">
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">BUILD</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">RESEARCH</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">SECURE</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">EMPOWER</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">CONNECT</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Core Organs</h4>
+        <a href="servers.html">Luminary Servers</a>
+        <a href="developers.html">Luminary Developers</a>
+        <a href="cares.html">Luminary Cares</a>
+        <a href="kits.html">Luminary Kits</a>
+        <a href="federals.html">Luminary Federals</a>
+      </div>
+      <div class="footer-col">
+        <h4>Associated Entity</h4>
+        <a href="trust.html">Luminary Trust</a>
+        <a href="trust.html#radhika-foundation">Radhika Research Foundation</a>
+        <a href="about.html#governance">Public-Interest Charter</a>
+      </div>
+      <div class="footer-col">
+        <h4>Projects & Initiatives</h4>
+        <a href="agroscan.html">AgroScan (2027)</a>
+        <a href="afterverse.html">Luminary Afterverse</a>
+        <a href="projects.html#luminary-webs">Luminary Webs</a>
+        <a href="projects.html#luminary-wishes">Luminary Wishes</a>
+        <a href="technology.html#luminary-ai">Luminary AI</a>
+        <a href="news.html">Luminary News</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="research.html">Research</a>
+        <a href="technology.html">Technology</a>
+        <a href="resources.html">Documentation</a>
+        <a href="faq.html">FAQ Center</a>
+        <a href="security.html">Security</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> Luminary Technicals. Canonical Architecture V2. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

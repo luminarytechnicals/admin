@@ -1,9 +1,11 @@
 # Luminary Technicals robots.txt
-# Allow search engines to crawl public pages and render assets
+# Allow search engines and AI answer engines to crawl public pages and render assets
 
 User-agent: *
 Allow: /
 Allow: /assets/
+Allow: /llms.txt
+Allow: /llms-full.txt
 Disallow: /configuration/
 Disallow: /*.json$
 
@@ -19,7 +21,38 @@ Allow: /
 Allow: /assets/
 Crawl-delay: 0
 
-# Block known scrapers and spam bots
+# AI & Answer Engine Bots (AEO optimization: Allow indexing of knowledge base)
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Applebot-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Block known abusive scrapers
 User-agent: MJ12bot
 Disallow: /
 

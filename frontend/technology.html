@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="view-transition" content="same-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://abhinavranjan.qzz.io data:">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <title>Technology Architecture — Infrastructure, AI & Software Engineering | Luminary Technicals</title>
+  <meta name="description" content="Technical architecture of Luminary Technicals: cloud infrastructure, AI model quantization, zero-dependency web engineering, and defensive cybersecurity protocols.">
+  <meta name="keywords" content="Luminary Technology, cloud infrastructure, AI engineering, cybersecurity, Progressive Web Apps, WebGL, DNS routing, Luminary Servers, Luminary Developers">
+  <meta name="author" content="AR. Abhinav Ranjan">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <link rel="canonical" href="https://luminarytechnicals.dpdns.org/frontend/technology.html">
+  <meta property="og:title" content="Technology Architecture — Luminary Technicals">
+  <meta property="og:description" content="Engineering resilient digital infrastructure, edge AI, and zero-framework web systems.">
+  <meta property="og:image" content="../assets/images/og-default.png">
+  <meta property="og:url" content="https://luminarytechnicals.dpdns.org/frontend/technology.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Luminary Technicals">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@luminarytechnicals">
+  <meta name="theme-color" content="#0A0F1E">
+  <link rel="icon" href="../assets/images/logo-luminarytechnicals.png" type="image/png">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <script src="../configuration/organization.js" defer></script>
+  <script src="../configuration/organs.js" defer></script>
+  <script src="../configuration/projects.js" defer></script>
+  <script src="../configuration/research.js" defer></script>
+  <script src="../configuration/news.js" defer></script>
+  <script src="../configuration/timeline.js" defer></script>
+  <script src="../configuration/faq.js" defer></script>
+  <script src="../configuration/config.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/automation.js" defer></script>
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/lazy-load.js" defer></script>
+  <script src="../assets/js/pwa.js" defer></script>
+</head>
+<body>
+<div id="preloader" aria-hidden="true"><div class="loader"></div></div>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+      <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+      <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+    </a>
+        <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="ecosystem.html">Ecosystem</a></li>
+              <li><a href="organs.html">Organs</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="collab.html">Collaborate</a></li>
+            </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="nav-search-btn" aria-label="Open search">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <button class="close-btn" aria-label="Close menu">&times;</button>
+  <a href="../index.html" data-nav>Home</a>
+  <a href="about.html" data-nav>About</a>
+  <a href="ecosystem.html" data-nav>Ecosystem</a>
+  <a href="organs.html" data-nav>Organs</a>
+  <a href="projects.html" data-nav>Projects</a>
+  <a href="agroscan.html" data-nav>AgroScan</a>
+  <a href="research.html" data-nav>Research</a>
+  <a href="technology.html" data-nav>Technology</a>
+  <a href="news.html" data-nav>News</a>
+  <a href="trust.html" data-nav>Luminary Trust</a>
+  <a href="leadership.html" data-nav>Leadership</a>
+  <a href="collab.html" data-nav>Collaborate</a>
+  <a href="contact.html" data-nav>Contact</a>
+  <a href="faq.html" data-nav>FAQ</a>
+  <a href="glossary.html" data-nav>Glossary</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" role="dialog" aria-label="Search">
+  <button class="search-close" aria-label="Close search">&times;</button>
+  <div class="search-container">
+    <div class="search-input-wrap">
+      <span class="search-input-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></span>
+      <input type="text" class="search-input" placeholder="Search technology stack, specs, AI..." aria-label="Search">
+    </div>
+    <div class="search-results" role="listbox"></div>
+  </div>
+</div>
+
+<main id="main-content">
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background: radial-gradient(circle at 50% 20%, rgba(59,130,246,0.15), transparent 70%);">
+    <div class="grain-overlay"></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span class="sep">/</span>
+        <span class="text-accent">Technology</span>
+      </nav>
+      <span class="badge" style="background:rgba(59,130,246,0.15); color:#60a5fa; border-color:rgba(59,130,246,0.3); margin-bottom:16px;">
+        Engineering & Systems Architecture
+      </span>
+      <h1>Technology <span class="text-accent">Stack</span></h1>
+      <p style="max-width:760px; margin:0 auto 28px; font-size:1.15rem;">
+        An engineering overview of our cloud infrastructure, localized artificial intelligence models, zero-dependency web standards, and hardened cybersecurity defenses.
+      </p>
+    </div>
+  </section>
+
+  <!-- SIX TECH PILLARS -->
+  <section class="section">
+    <div class="container">
+      <div class="snapshot-grid">
+        <div class="snapshot-card" id="infrastructure">
+          <div style="font-size:2rem; color:#38bdf8;">🖥️</div>
+          <span class="badge badge-organ">Luminary Servers</span>
+          <h4 class="pillar-title">CLOUD INFRASTRUCTURE</h4>
+          <p style="color:var(--slate); font-size:0.9rem; line-height:1.6;">
+            Bare-metal cluster compute, automated Anycast DNS resolution, distributed SSL provisioning, edge caching nodes, and multi-region high availability routing.
+          </p>
+        </div>
+
+        <div class="snapshot-card" id="ai">
+          <div style="font-size:2rem; color:#10b981;">🤖</div>
+          <span class="badge badge-organ">Luminary Developers</span>
+          <h4 class="pillar-title">ARTIFICIAL INTELLIGENCE</h4>
+          <p style="color:var(--slate); font-size:0.9rem; line-height:1.6;">
+            Quantized Vision Transformers (ViT) for AgroScan, retrieval-augmented generation (RAG) pipelines, localized LLM agent tooling, and browser inference engines.
+          </p>
+        </div>
+
+        <div class="snapshot-card" id="software">
+          <div style="font-size:2rem; color:var(--accent);">⚙️</div>
+          <span class="badge badge-organ">Core Engineering</span>
+          <h4 class="pillar-title">SOFTWARE ENGINEERING</h4>
+          <p style="color:var(--slate); font-size:0.9rem; line-height:1.6;">
+            Zero-framework web engineering using semantic HTML5, pure CSS design tokens, and modular ES6+ JavaScript. Sub-100ms loading speeds with zero dependency bloat.
+          </p>
+        </div>
+
+        <div class="snapshot-card" id="cybersecurity">
+          <div style="font-size:2rem; color:#facc15;">🛡️</div>
+          <span class="badge badge-organ">Defensive Ops</span>
+          <h4 class="pillar-title">CYBERSECURITY</h4>
+          <p style="color:var(--slate); font-size:0.9rem; line-height:1.6;">
+            Strict Content Security Policy (CSP), HTTP Strict Transport Security (HSTS), nosniff headers, sanitized input validation, and zero public exposure of sensitive secrets.
+          </p>
+        </div>
+
+        <div class="snapshot-card" id="webtech">
+          <div style="font-size:2rem; color:#c084fc;">🌌</div>
+          <span class="badge badge-organ">Afterverse Lab</span>
+          <h4 class="pillar-title">SPATIAL WEB & WEBGL</h4>
+          <p style="color:var(--slate); font-size:0.9rem; line-height:1.6;">
+            Interactive 3D WebGL shaders, Canvas 2D physics nodes, spatial WebXR testbeds, and ambient audio-reactive user interfaces inside Luminary Afterverse.
+          </p>
+        </div>
+
+        <div class="snapshot-card" id="kits">
+          <div style="font-size:2rem; color:#34d399;">📦</div>
+          <span class="badge badge-organ">Luminary Kits</span>
+          <h4 class="pillar-title">DEVELOPER KITS & OPEN APIS</h4>
+          <p style="color:var(--slate); font-size:0.9rem; line-height:1.6;">
+            Shared UI design tokens, developer CLI utilities, cross-platform REST APIs, and collaborative web scaffolding powering initiatives like Luminary Webs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE BLUEPRINT TABLE -->
+  <section class="section" style="background:var(--bg2);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Architectural Technical Blueprint</h2>
+        <p>Verified parameters, standards, and performance specifications across our deployment grid.</p>
+      </div>
+
+      <table class="principle-table">
+        <thead>
+          <tr>
+            <th>Layer</th>
+            <th>Technology Specification</th>
+            <th>Design Rationale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frontend Runtime</td>
+            <td>Semantic HTML5, Vanilla CSS3, ES6+ ECMAScript</td>
+            <td>Eliminates framework bundle weight, ensuring instant sub-100ms first contentful paint and decade-long backward compatibility.</td>
+          </tr>
+          <tr>
+            <td>Progressive Web App</td>
+            <td>Service Worker (CacheStorage + IndexedDB), Web Manifest</td>
+            <td>Allows offline shell execution, background synchronization, and instant mobile installability without app store friction.</td>
+          </tr>
+          <tr>
+            <td>Edge Intelligence</td>
+            <td>INT8 Quantized Vision Transformers, ONNX Runtime Web</td>
+            <td>Permits on-device rural diagnostic classification without requiring cellular data connectivity in remote farm fields.</td>
+          </tr>
+          <tr>
+            <td>Search Engine</td>
+            <td>Inverted scoring index (search-index.json) with client fuzzy search</td>
+            <td>Sub-millisecond global search across all organs, projects, news, and research without external database latency.</td>
+          </tr>
+          <tr>
+            <td>Hosting & CDN</td>
+            <td>Bare-metal VPS clusters, Anycast Edge Routing, Automated SSL</td>
+            <td>Guarantees 99.98% high availability, DDoS mitigation, and low-latency global delivery via apex domain routing.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Build with Luminary Technologies</h2>
+        <p>Explore our open developer tools, APIs, and partner collaboration workflows.</p>
+        <a href="collab.html" class="btn btn-primary">Start a Technical Collaboration</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- CANONICAL 5-COLUMN FOOTER -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+        <div class="footer-grid-5">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
+          <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
+          <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+        </a>
+        <p style="font-size:0.88rem; color:var(--slate); margin-top:12px; line-height:1.6;">
+          Building technology. Researching possibilities. Securing infrastructure. Empowering people. Connecting ideas.
+        </p>
+        <div class="formula-strip" style="justify-content:flex-start; margin-top:14px;">
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">BUILD</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">RESEARCH</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">SECURE</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">EMPOWER</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">CONNECT</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Core Organs</h4>
+        <a href="servers.html">Luminary Servers</a>
+        <a href="developers.html">Luminary Developers</a>
+        <a href="cares.html">Luminary Cares</a>
+        <a href="kits.html">Luminary Kits</a>
+        <a href="federals.html">Luminary Federals</a>
+      </div>
+      <div class="footer-col">
+        <h4>Associated Entity</h4>
+        <a href="trust.html">Luminary Trust</a>
+        <a href="trust.html#radhika-foundation">Radhika Research Foundation</a>
+        <a href="about.html#governance">Public-Interest Charter</a>
+      </div>
+      <div class="footer-col">
+        <h4>Projects & Initiatives</h4>
+        <a href="agroscan.html">AgroScan (2027)</a>
+        <a href="afterverse.html">Luminary Afterverse</a>
+        <a href="projects.html#luminary-webs">Luminary Webs</a>
+        <a href="projects.html#luminary-wishes">Luminary Wishes</a>
+        <a href="technology.html#luminary-ai">Luminary AI</a>
+        <a href="news.html">Luminary News</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="research.html">Research</a>
+        <a href="technology.html">Technology</a>
+        <a href="resources.html">Documentation</a>
+        <a href="faq.html">FAQ Center</a>
+        <a href="security.html">Security</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> Luminary Technicals. Canonical Architecture V2. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

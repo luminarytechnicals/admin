@@ -72,13 +72,24 @@ const CONTACT = {
           const field = document.getElementById(validation.field);
           if (field) {
             field.focus();
+            field.setAttribute('aria-invalid', 'true');
+            field.classList.add('input-error-shake');
             field.style.borderColor = '#ef4444';
-            setTimeout(() => field.style.borderColor = '', 2000);
+            setTimeout(() => {
+              field.style.borderColor = '';
+              field.classList.remove('input-error-shake');
+            }, 2000);
           }
-          // Show inline error
+          // Show inline error toast
           this.showToast(validation.msg, 'error');
           return;
         }
+
+        // Reset aria-invalid on valid submission
+        ['collab-name', 'collab-email', 'collab-type', 'collab-message'].forEach(id => {
+          document.getElementById(id)?.removeAttribute('aria-invalid');
+        });
+
 
         let url = '';
         switch (channel) {

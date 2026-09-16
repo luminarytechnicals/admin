@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="view-transition" content="same-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://abhinavranjan.qzz.io data:">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <title>Security Architecture & Vulnerability Reporting | Luminary Technicals</title>
+  <meta name="description" content="Security architecture, Content Security Policy directives, and authorized vulnerability reporting protocols for Luminary Technicals.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://luminarytechnicals.dpdns.org/frontend/security.html">
+  <link rel="icon" href="../assets/images/logo-luminarytechnicals.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <script src="../configuration/config.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Logo" width="38" height="38">
+      <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
+    </a>
+        <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="ecosystem.html">Ecosystem</a></li>
+              <li><a href="organs.html">Organs</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="collab.html">Collaborate</a></li>
+            </ul>
+  </div>
+</nav>
+
+<main id="main-content" style="padding-top:120px;">
+  <section class="section">
+    <div class="container" style="max-width:840px;">
+      <span class="badge" style="margin-bottom:12px;">Defensive Engineering</span>
+      <h1>Security <span class="text-accent">Policy</span></h1>
+      <p style="color:var(--slate); margin-bottom:32px;">Last updated: September 17, 2026</p>
+
+      <div class="glass-card" style="margin-bottom:28px;">
+        <h3>Zero-Trust Architecture</h3>
+        <p style="color:var(--slate); font-size:0.95rem; line-height:1.7;">
+          Luminary Technicals builds and deploys systems under defense-in-depth and zero-trust principles. All public-facing web applications are constructed without runtime dependency trees, eliminating npm supply-chain compromise vectors.
+        </p>
+      </div>
+
+      <div class="glass-card" style="margin-bottom:28px;">
+        <h3>Security Headers & Hardening</h3>
+        <ul style="color:var(--slate); font-size:0.95rem; line-height:1.8; padding-left:24px;">
+          <li><strong>Content Security Policy (CSP):</strong> Strict default-src isolation prohibiting unauthorized cross-origin execution.</li>
+          <li><strong>X-Content-Type-Options:</strong> nosniff to prevent MIME confusion.</li>
+          <li><strong>Referrer-Policy:</strong> strict-origin-when-cross-origin.</li>
+          <li><strong>Zero Secret Exposure:</strong> No private database keys, administrative tokens, or private credentials exist in frontend code.</li>
+        </ul>
+      </div>
+
+      <div class="glass-card">
+        <h3>Vulnerability Disclosure Program</h3>
+        <p style="color:var(--slate); font-size:0.95rem; line-height:1.7;">
+          Security researchers discovering vulnerabilities are requested to notify us responsibly. Send complete reproduction details and scope analysis to:
+        </p>
+        <p style="font-family:var(--font-mono); color:var(--accent); font-weight:700; margin-top:12px;">
+          luminarytechnicals@gmail.com
+        </p>
+        <p style="font-size:0.85rem; color:var(--slate); margin-top:8px;">
+          We acknowledge receipt within 48 hours and coordinate prompt remediation.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <p>&copy; 2026 Luminary Technicals. Canonical Architecture V2. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

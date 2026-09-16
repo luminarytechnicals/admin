@@ -67,6 +67,24 @@ function initMobileMenu() {
   if (closeBtn) closeBtn.addEventListener('click', () => toggle(false));
   if (overlay) overlay.addEventListener('click', () => toggle(false));
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggle(false)));
+
+  // Swipe to close
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  menu.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  
+  menu.addEventListener('touchmove', e => {
+    touchEndX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  
+  menu.addEventListener('touchend', e => {
+    if (touchEndX - touchStartX > 50) { // Swipe right
+      toggle(false);
+    }
+  });
 }
 
 /* ── SCROLL ANIMATIONS ── */
@@ -274,48 +292,102 @@ function initAfterverseCanvas() {
   const ctx = canvas.getContext('2d');
   if (!ctx) return;
 
-  let width = canvas.width = canvas.parentElement.clientWidth || 600;
-  let height = canvas.height = canvas.parentElement.clientHeight || 280;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  let width = 600;
+  let height = 280;
+
+  function resize() {
+    const parent = canvas.parentElement;
+    if (!parent) return;
+    const rect = parent.getBoundingClientRect();
+    width = rect.width || 600;
+    height = rect.height || 280;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    ctx.setTransform(1, 0, 0, 1, 0, 0); // reset transform
+    ctx.scale(dpr, dpr);
+  }
+
+  resize();
 
   const particles = [];
-  const count = 45;
+  const count = window.innerWidth < 768 ? 35 : 55;
   const colors = ['#f5c518', '#7c3aed', '#00d4ff', '#a855f7', '#38bdf8'];
 
   for (let i = 0; i < count; i++) {
     particles.push({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.8,
-      vy: (Math.random() - 0.5) * 0.8,
+      vx: (Math.random() - 0.5) * 0.7,
+      vy: (Math.random() - 0.5) * 0.7,
       radius: Math.random() * 2 + 1,
       color: colors[Math.floor(Math.random() * colors.length)]
     });
   }
 
+  let mouse = { x: -1000, y: -1000, radius: 90 };
+
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    mouse.x = -1000;
+    mouse.y = -1000;
+  });
+
+  canvas.addEventListener('touchmove', (e) => {
+    if (e.touches.length > 0) {
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = e.touches[0].clientX - rect.left;
+      mouse.y = e.touches[0].clientY - rect.top;
+    }
+  }, { passive: true });
+
+  canvas.addEventListener('touchend', () => {
+    mouse.x = -1000;
+    mouse.y = -1000;
+  });
+
   let animFrame;
   function animate() {
     ctx.clearRect(0, 0, width, height);
-    // Draw connections
+
+    // Draw particle connections
+    const maxDist = window.innerWidth < 768 ? 65 : 85;
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 80) {
+        if (dist < maxDist) {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(124, 58, 237, ${1 - dist / 80 * 0.8})`;
+          ctx.strokeStyle = `rgba(124, 58, 237, ${1 - dist / maxDist * 0.8})`;
           ctx.lineWidth = 0.6;
           ctx.stroke();
         }
       }
     }
 
-    // Draw particles
+    // Update and draw particles
     particles.forEach(p => {
+      // Mouse interaction
+      const mdx = mouse.x - p.x;
+      const mdy = mouse.y - p.y;
+      const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+      if (mdist < mouse.radius && mdist > 0) {
+        const force = (mouse.radius - mdist) / mouse.radius;
+        p.x -= (mdx / mdist) * force * 2;
+        p.y -= (mdy / mdist) * force * 2;
+      }
+
       p.x += p.vx;
       p.y += p.vy;
+
       if (p.x < 0 || p.x > width) p.vx *= -1;
       if (p.y < 0 || p.y > height) p.vy *= -1;
 
@@ -332,10 +404,7 @@ function initAfterverseCanvas() {
 
   animate();
 
-  window.addEventListener('resize', () => {
-    if (!canvas.parentElement) return;
-    width = canvas.width = canvas.parentElement.clientWidth || 600;
-    height = canvas.height = canvas.parentElement.clientHeight || 280;
-  });
+  window.addEventListener('resize', resize, { passive: true });
 }
+
 

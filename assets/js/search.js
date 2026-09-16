@@ -84,35 +84,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Helper to safely escape regular expressions
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
   function renderResults(results, query) {
     if (!results.length) {
       resultsContainer.innerHTML = `<div class="search-no-results">No matches for "${query}"</div>`;
       return;
     }
 
+    const safeQ = escapeRegExp(query);
+    const regex = new RegExp(`(${safeQ})`, 'gi');
+
     resultsContainer.innerHTML = results.map(r => {
       let url = r.url;
       if (isFrontend) {
         if (url === 'index.html') url = '../index.html';
         else if (url.startsWith('frontend/')) url = url.replace('frontend/', '');
-      } else {
-        // If we are at root, keep frontend/ if it has it
       }
 
       // Highlight match in title
-      const highlightedTitle = r.title.replace(new RegExp(`(${query})`, 'gi'), '<mark>$1</mark>');
+      const highlightedTitle = r.title.replace(regex, '<mark>$1</mark>');
       
-      // Category detection from URL
-      let category = 'Page';
-      if (url.includes('#')) category = 'Section';
-      if (url.includes('projects.html')) category = 'Project';
-      if (url.includes('organs.html')) category = 'Division';
-      if (url.includes('collab.html')) category = 'Collab';
+      // Use explicit canonical badge or category from search-index.json
+      let categoryBadge = r.badge || r.category || 'Page';
+      if (r.title === 'Luminary Trust') categoryBadge = 'ASSOCIATED ENTITY';
+      if (r.title === 'Luminary News') categoryBadge = 'LUMINARY FEDERALS · INITIATIVE';
 
       return `
         <a href="${url}" class="search-result-item" role="option">
           <div class="sr-header">
-            <span class="sr-category">${category}</span>
+            <span class="sr-category">${categoryBadge}</span>
             <div class="sr-title">${highlightedTitle}</div>
           </div>
           <div class="sr-excerpt">${r.text ? truncateWithMatch(r.text, query) : r.url}</div>
@@ -131,7 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (start > 0) excerpt = '...' + excerpt;
     if (end < text.length) excerpt = excerpt + '...';
     
-    return excerpt.replace(new RegExp(`(${query})`, 'gi'), '<mark>$1</mark>');
+    const safeQ = escapeRegExp(query);
+    return excerpt.replace(new RegExp(`(${safeQ})`, 'gi'), '<mark>$1</mark>');
   }
 
   function updateFocus(items) {
@@ -139,3 +144,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (focusedIndex >= 0) items[focusedIndex].scrollIntoView({ block: 'nearest' });
   }
 });
+

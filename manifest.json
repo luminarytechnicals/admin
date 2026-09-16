@@ -57,10 +57,10 @@
       "icons": [{ "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png", "sizes": "96x96" }]
     },
     {
-      "name": "Owner",
-      "short_name": "Owner",
+      "name": "Leadership",
+      "short_name": "Leadership",
       "description": "Meet the Founder",
-      "url": "https://luminarytechnicals.dpdns.org/frontend/owner.html",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/leadership.html",
       "icons": [{ "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png", "sizes": "96x96" }]
     },
     {

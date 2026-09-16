@@ -11,34 +11,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const statsGrid = document.querySelector('.stats-grid');
     if (!statsGrid) return;
 
-    // Count Organs
-    const organCount = config.organs ? config.organs.length : 4;
-    const organEl = statsGrid.querySelector('.stat-label:contains("Divisions")')?.parentElement.querySelector('.stat-number') || 
-                    statsGrid.children[0]?.querySelector('.stat-number');
+    // Count Exactly 5 Core Organs
+    const organCount = 5;
     
-    if (organEl) {
-      organEl.dataset.count = organCount;
+    // Helper to find element by text content
+    const findLabelByText = (text) => {
+      return Array.from(statsGrid.querySelectorAll('.stat-label')).find(el => 
+        el.textContent.trim().toLowerCase().includes(text.toLowerCase())
+      );
+    };
+
+    const organLabel = findLabelByText('Organ') || findLabelByText('Division');
+    if (organLabel && organLabel.parentElement) {
+      const numEl = organLabel.parentElement.querySelector('.stat-number');
+      if (numEl) numEl.dataset.count = organCount;
     }
 
     // Count Projects
-    const projectCount = config.projects ? config.projects.length : 3;
-    const projectEl = statsGrid.querySelector('.stat-label:contains("Live Projects")')?.parentElement.querySelector('.stat-number') ||
-                      statsGrid.children[1]?.querySelector('.stat-number');
-    
-    if (projectEl) {
-      projectEl.dataset.count = projectCount;
+    const projectCount = (window.PROJECTS && window.PROJECTS.length) || (config.projects ? config.projects.length : 6);
+    const projectLabel = findLabelByText('Project');
+    if (projectLabel && projectLabel.parentElement) {
+      const numEl = projectLabel.parentElement.querySelector('.stat-number');
+      if (numEl) numEl.dataset.count = projectCount;
     }
-
-    // Custom "Contains" selector helper for vanilla JS
-    function findByText(text, selector) {
-      return Array.from(document.querySelectorAll(selector)).find(el => el.textContent.includes(text));
-    }
-    
-    const divisionsLabel = findByText("Divisions", ".stat-label");
-    if (divisionsLabel) divisionsLabel.parentElement.querySelector('.stat-number').dataset.count = organCount;
-    
-    const projectsLabel = findByText("Live Projects", ".stat-label");
-    if (projectsLabel) projectsLabel.parentElement.querySelector('.stat-number').dataset.count = projectCount;
   }
 
   /**
@@ -48,12 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function automateBranding() {
     // Sync Hero tagline if it matches a placeholder
     const heroTagline = document.querySelector('.hero-tagline');
-    if (heroTagline && config.site.tagline) {
+    if (heroTagline && config.site?.tagline) {
       heroTagline.textContent = config.site.tagline;
     }
 
     // Sync Page Titles if they are generic
-    if (document.title === "Luminary Technicals") {
+    if (document.title === "Luminary Technicals" && config.site?.name && config.site?.tagline) {
       document.title = `${config.site.name} — ${config.site.tagline}`;
     }
   }
@@ -71,15 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Helper for text matching in step 1
-  Element.prototype.containsText = function(text) {
-    return this.textContent.trim().toLowerCase().includes(text.toLowerCase());
-  };
-
-  // Run Automations
-  automateStats();
-  automateBranding();
-  automateLinks();
+  // Run Automations safely
+  try {
+    automateStats();
+    automateBranding();
+    automateLinks();
+  } catch (err) {
+    console.warn("Automation Engine Warning:", err);
+  }
   
   console.log("🚀 Luminary Automation Engine: Active");
 });
+

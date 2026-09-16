@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <meta name="view-transition" content="same-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://abhinavranjan.qzz.io data:">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <title>Luminary Afterverse | Next-Gen Immersive Experience & Digital Worlds</title>
@@ -28,6 +29,9 @@
 <meta name="twitter:site" content="@luminarytechnicals">
 <meta name="twitter:title" content="Luminary Afterverse | Immersive Digital Universes">
 <meta name="twitter:description" content="Step into the future with Luminary Afterverse: 3D web spaces, interactive particle canvases, and metaverse experiences.">
+<meta name="twitter:image" content="../assets/images/og-default.png">
+<meta property="article:author" content="AR. Abhinav Ranjan">
+<meta property="article:section" content="Spatial Computing & Creative Technology">
 <meta name="theme-color" content="#060913">
 <link rel="icon" href="../assets/images/logo-luminarytechnicals.png" type="image/png">
 <link rel="manifest" href="../manifest.json">
@@ -46,25 +50,122 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Luminary Afterverse — Immersive Experience & Digital Worlds",
-  "url": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html",
-  "description": "Next-generation metaverse architecture, spatial digital universe, and creative multimedia laboratory created under Luminary Developers.",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Luminary Technicals",
-    "url": "https://luminarytechnicals.dpdns.org"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://luminarytechnicals.dpdns.org/index.html" },
-    { "@type": "ListItem", "position": 2, "name": "Developers", "item": "https://luminarytechnicals.dpdns.org/frontend/developers.html" },
-    { "@type": "ListItem", "position": 3, "name": "Afterverse", "item": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html" }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html#webpage",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html",
+      "name": "Luminary Afterverse — Immersive Experience & Digital Worlds",
+      "description": "Next-generation spatial computing, 3D interactive canvases, cosmic particle systems, and metaverse architecture created under Luminary Developers.",
+      "inLanguage": "en-US",
+      "datePublished": "2025-01-01",
+      "dateModified": "2026-09-17",
+      "primaryImageOfPage": "https://luminarytechnicals.dpdns.org/assets/images/og-default.png",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://luminarytechnicals.dpdns.org/#website",
+        "name": "Luminary Technicals",
+        "url": "https://luminarytechnicals.dpdns.org"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://luminarytechnicals.dpdns.org/#organization",
+        "name": "Luminary Technicals",
+        "url": "https://luminarytechnicals.dpdns.org",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.png"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://luminarytechnicals.dpdns.org/frontend/leadership.html#person",
+        "name": "AR. Abhinav Ranjan",
+        "jobTitle": "Founder & Digital Architect",
+        "url": "https://luminarytechnicals.dpdns.org/frontend/owner.html"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Spatial Computing"
+        },
+        {
+          "@type": "Thing",
+          "name": "WebGL & 3D Interactive Graphics"
+        },
+        {
+          "@type": "Thing",
+          "name": "Metaverse Architecture"
+        }
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#afterverse-vision .definition-block strong", "#afterverse-vision .definition-block p", ".organ-hero-tag", "h1"]
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html#canvas-lab",
+      "name": "Luminary Afterverse Particle Matrix Lab",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All Modern Web Browsers",
+      "image": "https://luminarytechnicals.dpdns.org/assets/images/og-default.png",
+      "author": {
+        "@type": "Person",
+        "@id": "https://luminarytechnicals.dpdns.org/frontend/leadership.html#person",
+        "name": "AR. Abhinav Ranjan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://luminarytechnicals.dpdns.org/#organization",
+        "name": "Luminary Technicals"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Real-time particle node network rendered on a high-speed HTML5 2D/3D canvas without external framework overhead."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://luminarytechnicals.dpdns.org/index.html" },
+        { "@type": "ListItem", "position": 2, "name": "Developers", "item": "https://luminarytechnicals.dpdns.org/frontend/developers.html" },
+        { "@type": "ListItem", "position": 3, "name": "Afterverse", "item": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luminarytechnicals.dpdns.org/frontend/afterverse.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Luminary Afterverse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Luminary Afterverse is the forward-looking creative exploration initiative developed under Luminary Developers. It merges high-performance web graphics, spatial user interfaces, and generative digital atmospheres to build immersive online spaces for research, interactive storytelling, and community experiences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which organ powers Luminary Afterverse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Luminary Afterverse is engineered by Luminary Developers (Create), hosted on high-performance infrastructure by Luminary Servers (Power), interconnected using Luminary Kits (Connect), and integrated for educational labs by Luminary Cares (Empower)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies are used in the Afterverse particle simulation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Afterverse live laboratory runs a hardware-accelerated 60 FPS HTML5 canvas engine utilizing vanilla JavaScript, dynamic DPR scaling, proximity node linking algorithms, and interactive physics response without external libraries."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -80,18 +181,15 @@
       <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
       <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
     </a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="organization.html">Organization</a></li>
-      <li><a href="organs.html">Organs</a></li>
-      <li><a href="ecosystem.html">Ecosystem</a></li>
-      <li><a href="owner.html">Owner</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="collab.html">Collab</a></li>
-      <li><a href="faq.html">FAQ</a>
-        <a href="glossary.html">Glossary</a></li>
-    </ul>
+        <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="ecosystem.html">Ecosystem</a></li>
+              <li><a href="organs.html">Organs</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="collab.html">Collaborate</a></li>
+            </ul>
     <div class="nav-actions">
       <button class="theme-toggle" aria-label="Toggle theme"></button>
       <button class="nav-search-btn" aria-label="Open search">
@@ -110,13 +208,21 @@
   <button class="close-btn" aria-label="Close menu">&times;</button>
   <a href="../index.html" data-nav>Home</a>
   <a href="about.html" data-nav>About</a>
-  <a href="organization.html" data-nav>Organization</a>
-  <a href="organs.html" data-nav>Organs</a>
   <a href="ecosystem.html" data-nav>Ecosystem</a>
-  <a href="owner.html" data-nav>Owner</a>
-  <a href="projects.html" data-nav class="active">Projects</a>
-  <a href="collab.html" data-nav>Collab</a>
+  <a href="organs.html" data-nav>Organs</a>
+  <a href="projects.html" data-nav>Projects</a>
+  <a href="agroscan.html" data-nav>AgroScan</a>
+  <a href="afterverse.html" data-nav class="active">Luminary Afterverse</a>
+  <a href="research.html" data-nav>Research</a>
+  <a href="technology.html" data-nav>Technology</a>
+  <a href="news.html" data-nav>News</a>
+  <a href="trust.html" data-nav>Luminary Trust</a>
+  <a href="leadership.html" data-nav>Leadership</a>
+  <a href="owner.html" data-nav>Founder &amp; Owner</a>
+  <a href="collab.html" data-nav>Collaborate</a>
+  <a href="contact.html" data-nav>Contact</a>
   <a href="faq.html" data-nav>FAQ</a>
+  <a href="glossary.html" data-nav>Glossary</a>
 </div>
 
 <!-- SEARCH OVERLAY -->
@@ -141,7 +247,7 @@
         <a href="../index.html">Home</a><span class="sep">/</span><a href="developers.html">Developers</a><span class="sep">/</span><span>Afterverse</span>
       </nav>
       <div class="organ-hero-tag tag-afterverse">🌌 Spatial Computing & Creative Hub</div>
-      <h1 style="font-size:clamp(2.2rem,5vw,3.6rem);">Luminary <span style="background:linear-gradient(135deg,#38bdf8,#c084fc,#f5c518);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Afterverse</span></h1>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.6rem);">Luminary <span style="background:linear-gradient(135deg,#38bdf8,#c084fc,#f5c518);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">Afterverse</span></h1>
       <p style="max-width:720px;margin:0 auto;color:#cbd5e1;font-size:1.1rem;line-height:1.7;">Step beyond static pages into the spatial web. Luminary Afterverse is a digital frontier exploring 3D interactive canvases, cosmic particle systems, metaverse architecture, and next-generation creative simulations.</p>
       
       <div class="hero-cta" style="margin-top:28px;">
@@ -165,7 +271,7 @@
         <h3 style="font-size:1.5rem;color:var(--white);margin-bottom:6px;">Cosmic Particle Matrix Simulation</h3>
         <p style="color:var(--slate);font-size:0.9rem;max-width:560px;margin:0 auto;">Real-time particle node network rendered on a high-speed HTML5 2D/3D canvas without external framework overhead.</p>
         
-        <div class="interactive-canvas-container">
+        <div class="interactive-canvas-container afterverse-canvas-container">
           <canvas id="afterverse-canvas"></canvas>
         </div>
         <div style="font-family:var(--font-mono);font-size:0.8rem;color:var(--accent);">
@@ -231,56 +337,75 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" id="footer" role="contentinfo">
   <div class="container">
-    <div class="footer-grid">
+    <div class="footer-grid-5">
       <div class="footer-brand">
         <a href="../index.html" class="nav-logo" aria-label="Luminary Technicals Home">
           <img src="../assets/images/logo-luminarytechnicals.png" alt="Luminary Technicals Logo" width="38" height="38">
           <span class="nav-logo-text"><span class="logo-title">LUMINARY</span><span class="logo-sub">TECHNICALS</span></span>
         </a>
-        <p>A multidisciplinary organization connecting digital infrastructure, technology development, research, education and public-interest initiatives.</p>
-        <div class="formula-strip" style="justify-content:flex-start;margin:16px 0 0;">
-          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">POWER</span>
-          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">CREATE</span>
-          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">EMPOWER</span>
-          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">CONNECT</span>
-          <span class="formula-pill" style="font-size:0.75rem;padding:4px 10px;">ENGAGE</span>
+        <p style="font-size:0.88rem; color:var(--slate); margin-top:12px; line-height:1.6;">
+          A multidisciplinary organization connecting digital infrastructure, technology development, research, education and public-interest initiatives.
+        </p>
+        <div class="formula-strip" style="justify-content:flex-start; margin-top:14px;">
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">POWER</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">CREATE</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">EMPOWER</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">CONNECT</span>
+          <span class="formula-pill" style="font-size:0.7rem; padding:3px 10px;">ENGAGE</span>
         </div>
       </div>
       <div class="footer-col">
-        <h4>Organs & Hubs</h4>
-        <a href="servers.html">Servers (Power)</a>
-        <a href="developers.html">Developers (Create)</a>
-        <a href="afterverse.html">Afterverse (XR Lab)</a>
-        <a href="cares.html">Cares (Empower)</a>
-        <a href="kits.html">Kits (Connect)</a>
-        <a href="federals.html">Federals (Engage)</a>
+        <h4>The Five Organs</h4>
+        <a href="servers.html">Luminary Servers &mdash; Power</a>
+        <a href="developers.html">Luminary Developers &mdash; Create</a>
+        <a href="cares.html">Luminary Cares &mdash; Empower</a>
+        <a href="kits.html">Luminary Kits &mdash; Connect</a>
+        <a href="federals.html">Luminary Federals &mdash; Engage</a>
+        <a href="trust.html" style="margin-top:8px;display:block;color:var(--accent);">🤝 Luminary Trust</a>
       </div>
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h4>Projects &amp; Platforms</h4>
+        <a href="agroscan.html">AgroScan (Revival 2027)</a>
+        <a href="afterverse.html" class="active">Luminary Afterverse</a>
+        <a href="news.html">Luminary News</a>
+        <a href="projects.html">All Projects</a>
+        <a href="research.html">Research Portal</a>
+        <a href="technology.html">Technology Hub</a>
+        <a href="resources.html">Resources</a>
+      </div>
+      <div class="footer-col">
+        <h4>Organization</h4>
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="organization.html">Organization</a>
-        <a href="organs.html">Organs Hub</a>
         <a href="ecosystem.html">Ecosystem</a>
-        <a href="projects.html">Projects</a>
-        <a href="owner.html">Owner</a>
-        <a href="collab.html">Collab</a>
+        <a href="organization.html">Architecture</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="owner.html">Founder &amp; Owner</a>
+        <a href="collab.html">Collaborate</a>
+        <a href="contact.html">Contact</a>
         <a href="faq.html">FAQ</a>
         <a href="glossary.html">Glossary</a>
       </div>
       <div class="footer-col">
-        <h4>Legal & Contact</h4>
+        <h4>Legal &amp; Policies</h4>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
+        <a href="security.html">Security</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="cookies.html">Cookie Policy</a>
         <a href="#" class="cookie-retrigger">Cookie Settings</a>
         <a href="mailto:luminarytechnicals@gmail.com" style="margin-top:12px;display:block;">luminarytechnicals@gmail.com</a>
-        <p style="font-size:0.85rem;color:var(--slate);margin-top:4px;">India • Global</p>
+        <p style="font-size:0.85rem;color:var(--slate);margin-top:4px;">India &bull; Global Operations</p>
       </div>
     </div>
+    
     <div class="footer-bottom">
       <p>&copy; <span id="footer-year">2026</span> Luminary Technicals. All rights reserved.</p>
+      <p class="developer-credits" style="font-size:0.82rem;color:var(--slate);margin-top:6px;">Designed &amp; engineered by <a href="owner.html" style="color:var(--accent);text-decoration:none;font-weight:500;">AR. Abhinav Ranjan</a> &bull; Luminary Developers</p>
+      <p class="license-notice" style="font-size:0.75rem;color:var(--slate);margin-top:4px;">Content licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" style="color:var(--slate);text-decoration:underline;">CC BY-NC 4.0</a>. Code &amp; interactive demos under <a href="terms.html" style="color:var(--slate);text-decoration:underline;">MIT License</a>.</p>
     </div>
   </div>
 </footer>
