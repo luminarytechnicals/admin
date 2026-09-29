@@ -45,10 +45,159 @@
 <script src="../assets/js/pwa.js" defer></script>
 <script src="../assets/js/contact.js" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Luminary Technicals Organization","url":"https://luminarytechnicals.dpdns.org/frontend/organization.html","isPartOf":{"@type":"WebSite","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org"},"publisher":{"@type":"Organization","name":"Luminary Technicals","url":"https://luminarytechnicals.dpdns.org","logo":"https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.png"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://luminarytechnicals.dpdns.org/index.html"},{"@type":"ListItem","position":2,"name":"Organization","item":"https://luminarytechnicals.dpdns.org/frontend/organization.html"}]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://luminarytechnicals.dpdns.org/#organization",
+      "name": "Luminary Technicals",
+      "alternateName": [
+        "LuminaryTechnicals",
+        "Luminary Tech",
+        "LT"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.webp",
+        "width": 512,
+        "height": 512,
+        "caption": "Luminary Technicals Official Logo"
+      },
+      "image": "https://luminarytechnicals.dpdns.org/assets/images/og-default.webp",
+      "description": "A multidisciplinary technology organization connecting digital infrastructure, AI software development, cloud hosting, cybersecurity research, and civic innovation across five core organs.",
+      "slogan": "Building systems. Advancing ideas. Connecting impact.",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://luminarytechnicals.dpdns.org/frontend/leadership.html#person",
+        "name": "AR. Abhinav Ranjan",
+        "jobTitle": "Founder & Digital Architect",
+        "url": "https://luminarytechnicals.dpdns.org/frontend/leadership.html",
+        "sameAs": [
+          "https://abhinavranjan.netlify.app",
+          "https://github.com/DeveloperAbhinav",
+          "https://www.instagram.com/ar.abhinavranjan"
+        ]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "foundingLocation": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Worldwide"
+        }
+      ],
+      "knowsAbout": [
+        "Digital Infrastructure",
+        "Cloud Computing",
+        "Artificial Intelligence",
+        "Cybersecurity Research",
+        "Spatial Computing",
+        "Progressive Web Apps",
+        "Public Interest Technology",
+        "Precision Agriculture AI",
+        "Civic Technology",
+        "Technology Education"
+      ],
+      "sameAs": [
+        "https://abhinavranjan.netlify.app",
+        "https://github.com/DeveloperAbhinav",
+        "https://twitter.com/luminarytechnicals",
+        "https://www.instagram.com/luminary_technicals"
+      ],
+      "subOrganization": [
+        {
+          "@type": "Organization",
+          "name": "Luminary Servers",
+          "description": "Core Organ — POWER. Cloud infrastructure, bare-metal servers, DNS, CDN, and high-availability hosting.",
+          "url": "https://luminarytechnicals.dpdns.org/frontend/servers.html"
+        },
+        {
+          "@type": "Organization",
+          "name": "Luminary Developers",
+          "description": "Core Organ — CREATE. Software engineering, AI systems, progressive web apps, and Luminary Afterverse spatial lab.",
+          "url": "https://luminarytechnicals.dpdns.org/frontend/developers.html"
+        },
+        {
+          "@type": "Organization",
+          "name": "Luminary Cares",
+          "description": "Core Organ — EMPOWER. Technology education, digital literacy, mentorship, and community empowerment.",
+          "url": "https://luminarytechnicals.dpdns.org/frontend/cares.html"
+        },
+        {
+          "@type": "Organization",
+          "name": "Luminary Kits",
+          "description": "Core Organ — CONNECT. Developer toolkits, APIs, SDKs, and ecosystem integrations including Luminary Webs.",
+          "url": "https://luminarytechnicals.dpdns.org/frontend/kits.html"
+        },
+        {
+          "@type": "Organization",
+          "name": "Luminary Federals",
+          "description": "Core Organ — ENGAGE. Civic technology, public affairs research, governance studies, and Luminary News platform.",
+          "url": "https://luminarytechnicals.dpdns.org/frontend/federals.html"
+        }
+      ],
+      "member": {
+        "@type": "Organization",
+        "name": "Luminary Trust",
+        "description": "Direct Associated Entity of Luminary Technicals (not a core organ). Public-interest philanthropic ecosystem including the Radhika Research Foundation.",
+        "url": "https://luminarytechnicals.dpdns.org/frontend/trust.html"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://luminarytechnicals.dpdns.org/#website",
+      "name": "Luminary Technicals",
+      "alternateName": "LuminaryTechnicals",
+      "url": "https://luminarytechnicals.dpdns.org/",
+      "publisher": {
+        "@id": "https://luminarytechnicals.dpdns.org/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Luminary Technicals Organization",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/organization.html",
+      "isPartOf": {
+        "@id": "https://luminarytechnicals.dpdns.org/#website"
+      },
+      "publisher": {
+        "@id": "https://luminarytechnicals.dpdns.org/#organization"
+      },
+      "@id": "https://luminarytechnicals.dpdns.org/frontend/organization.html#webpage"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luminarytechnicals.dpdns.org/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Organization",
+          "item": "https://luminarytechnicals.dpdns.org/frontend/organization.html"
+        }
+      ]
+    }
+  ]
+}
 </script>
 </head>
 <body>

@@ -6,6 +6,7 @@ Allow: /
 Allow: /assets/
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /manifest.json
 Disallow: /configuration/
 Disallow: /*.json$
 

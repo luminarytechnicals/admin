@@ -74,10 +74,14 @@
   .navbar .nav-logo {
     gap: 0 !important;
   }
-  .navbar .nav-logo img {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
+  .navbar .nav-logo img,
+  .navbar .nav-logo picture img {
+    width: auto !important;
+    max-width: 38px !important;
+    height: auto !important;
+    max-height: 38px !important;
+    aspect-ratio: 1/1 !important;
+    object-fit: contain !important;
     display: block !important;
   }
   

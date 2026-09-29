@@ -1,4 +1,8 @@
+# Redirect /index.html to root canonical
+/index.html / 301!
+
 # Redirect all netlify variants to dpdns domain
 https://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
 http://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
 http://luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
+https://luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!

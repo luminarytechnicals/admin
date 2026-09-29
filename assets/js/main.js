@@ -251,14 +251,24 @@ function injectAnalytics() {
 document.addEventListener('click', (e) => {
   const btn = e.target.closest('.tab-btn');
   if (!btn) return;
-  const group = btn.closest('.tab-section');
-  if (!group) return;
-  group.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  // If tab button is custom filtered by specific scripts (like news-filter-btn), let specific script handle it
+  if (btn.classList.contains('news-filter-btn')) return;
+  
+  const container = btn.closest('.tab-section') || btn.closest('.container') || btn.closest('section') || document;
   const target = btn.dataset.tab;
-  group.querySelectorAll('.tab-content').forEach(c => {
-    c.classList.toggle('active', c.id === 'tab-' + target);
-  });
+  if (!target) return;
+
+  container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const tabContents = container.querySelectorAll('.tab-content');
+  if (target === 'all') {
+    tabContents.forEach(c => c.classList.add('active'));
+  } else {
+    tabContents.forEach(c => {
+      c.classList.toggle('active', c.id === 'tab-' + target);
+    });
+  }
 });
 
 /* ── THEME TOGGLE ── */
