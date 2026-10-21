@@ -40,9 +40,17 @@ const CONFIG = {
       instagram: "https://www.instagram.com/ar.abhinavranjan",
       linkedin: "https://linkedin.com/in/",
       twitter: "https://twitter.com/",
-      email: "luminarytechnicals@gmail.com",
+      email: "ceo@luminarytechnicals.dpdns.org",
       portfolio: "https://abhinavranjan.netlify.app"
     }
+  },
+
+  contact: {
+    email: "help@luminarytechnicals.dpdns.org",
+    ceoEmail: "ceo@luminarytechnicals.dpdns.org",
+    legalEmail: "legal@luminarytechnicals.dpdns.org",
+    supportEmail: "help@luminarytechnicals.dpdns.org",
+    fallbackEmail: "luminarytechnicals@gmail.com"
   },
 
   seo: {
@@ -76,11 +84,11 @@ const CONFIG = {
   // CANONICAL ARCHITECTURE MAPPINGS
   // Exactly 5 Core Organs:
   organs: organsList.length ? organsList : [
-    { id: "luminary-servers", name: "Luminary Servers", type: "core-organ", formula: "POWER", page: "servers.html", icon: "🖥️", tagline: "Infrastructure & Cloud Systems" },
-    { id: "luminary-developers", name: "Luminary Developers", type: "core-organ", formula: "CREATE", page: "developers.html", icon: "⚙️", tagline: "Software Engineering & AI Lab" },
-    { id: "luminary-cares", name: "Luminary Cares", type: "core-organ", formula: "EMPOWER", page: "cares.html", icon: "💛", tagline: "Education & Digital Literacy" },
-    { id: "luminary-kits", name: "Luminary Kits", type: "core-organ", formula: "CONNECT", page: "kits.html", icon: "📦", tagline: "Developer Toolkits & Integrations" },
-    { id: "luminary-federals", name: "Luminary Federals", type: "core-organ", formula: "ENGAGE", page: "federals.html", icon: "🏛️", tagline: "Civic Technology & News Platform" }
+    { id: "luminary-servers", name: "Luminary Servers", type: "core-organ", formula: "POWER", page: "servers.html", subdomain: "https://servers.luminarytechnicals.dpdns.org/", icon: "🖥️", tagline: "Infrastructure & Cloud Systems" },
+    { id: "luminary-developers", name: "Luminary Developers", type: "core-organ", formula: "CREATE", page: "developers.html", subdomain: "https://developers.luminarytechnicals.dpdns.org/", icon: "⚙️", tagline: "Software Engineering & AI Lab" },
+    { id: "luminary-cares", name: "Luminary Cares", type: "core-organ", formula: "EMPOWER", page: "cares.html", subdomain: "https://cares.luminarytechnicals.dpdns.org/", icon: "💛", tagline: "Education & Digital Literacy" },
+    { id: "luminary-kits", name: "Luminary Kits", type: "core-organ", formula: "CONNECT", page: "kits.html", subdomain: "https://kits.luminarytechnicals.dpdns.org/", icon: "📦", tagline: "Developer Toolkits & Integrations" },
+    { id: "luminary-federals", name: "Luminary Federals", type: "core-organ", formula: "ENGAGE", page: "federals.html", subdomain: "https://federals.luminarytechnicals.dpdns.org/", icon: "🏛️", tagline: "Civic Technology & News Platform" }
   ],
 
   // Direct Associated Entity:
@@ -104,14 +112,22 @@ const CONFIG = {
   faqs: faqData,
 
   contact: {
-    email: "luminarytechnicals@gmail.com",
+    email: "help@luminarytechnicals.dpdns.org",
+    ceoEmail: "ceo@luminarytechnicals.dpdns.org",
+    legalEmail: "legal@luminarytechnicals.dpdns.org",
     whatsapp: "+918294721929",
     telegram: "luminarytechnicalsinternational",
-    address: "India",
+    address: "Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka 560093, India",
+    mapsUrl: "https://share.google/V1pNWZPIrYMU6uPvo",
+    officesPage: "frontend/offices.html",
     channels: [
       { id: "whatsapp", label: "WhatsApp Official", icon: "💬", url: "https://wa.me/918294721929" },
-      { id: "email", label: "Email Luminary", icon: "📧", url: "mailto:luminarytechnicals@gmail.com" },
-      { id: "telegram", label: "Telegram Wire", icon: "✈️", url: "https://t.me/luminarytechnicalsinternational" }
+      { id: "email", label: "Email Support", icon: "📧", url: "mailto:help@luminarytechnicals.dpdns.org" },
+      { id: "ceo-email", label: "Executive Desk (CEO)", icon: "👔", url: "mailto:ceo@luminarytechnicals.dpdns.org" },
+      { id: "legal-email", label: "Legal & Compliance", icon: "⚖️", url: "mailto:legal@luminarytechnicals.dpdns.org" },
+      { id: "fallback-email", label: "Backup Email", icon: "📬", url: "mailto:luminarytechnicals@gmail.com" },
+      { id: "telegram", label: "Telegram Wire", icon: "✈️", url: "https://t.me/luminarytechnicalsinternational" },
+      { id: "maps", label: "Google Maps Profile", icon: "📍", url: "https://share.google/V1pNWZPIrYMU6uPvo" }
     ]
   },
 

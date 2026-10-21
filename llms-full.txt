@@ -8,7 +8,10 @@
 - **Founder & CEO:** AR. Abhinav Ranjan
 - **Founding Location:** India (Serving Global Audiences)
 - **Primary Domain:** https://luminarytechnicals.dpdns.org
-- **Primary Contact:** luminarytechnicals@gmail.com
+- **CEO Office:** ceo@luminarytechnicals.dpdns.org
+- **Help & General Inquiries:** help@luminarytechnicals.dpdns.org
+- **Legal & Compliance:** legal@luminarytechnicals.dpdns.org
+- **Fallback / Backup Contact:** luminarytechnicals@gmail.com (in case of dedicated email routing issues)
 - **Classification:** Multidisciplinary Technology, Cloud Infrastructure, AI Development, Digital Research & Public Interest Organization
 - **Canonical Structure Version:** V2
 
@@ -142,7 +145,7 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 **A:** AgroScan is a flagship AI-driven precision agricultural diagnostics platform under Luminary Developers. It uses Computer Vision (Vision Transformers/CNNs) and edge IoT sensors for crop disease identification. Currently under active development in the Revival Program 2027.
 
 ### Q: Is Luminary Technicals open for collaborations?
-**A:** Yes. Luminary Technicals collaborates across cloud infrastructure, AI development, education, web projects, and research. Contact: luminarytechnicals@gmail.com or `/frontend/collab.html`.
+**A:** Yes. Luminary Technicals collaborates across cloud infrastructure, AI development, education, web projects, and research. Contact: help@luminarytechnicals.dpdns.org or `/frontend/collab.html`.
 
 ---
 
@@ -152,12 +155,12 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 - **Organization Architecture:** https://luminarytechnicals.dpdns.org/frontend/organization.html
 - **Ecosystem Visualizer:** https://luminarytechnicals.dpdns.org/frontend/ecosystem.html
 - **Organs Directory:** https://luminarytechnicals.dpdns.org/frontend/organs.html
-- **Luminary Servers:** https://luminarytechnicals.dpdns.org/frontend/servers.html
-- **Luminary Developers:** https://luminarytechnicals.dpdns.org/frontend/developers.html
-- **Luminary Cares:** https://luminarytechnicals.dpdns.org/frontend/cares.html
-- **Luminary Kits:** https://luminarytechnicals.dpdns.org/frontend/kits.html
-- **Luminary Federals:** https://luminarytechnicals.dpdns.org/frontend/federals.html
-- **Luminary Trust:** https://luminarytechnicals.dpdns.org/frontend/trust.html
+- **Luminary Servers:** https://luminarytechnicals.dpdns.org/frontend/servers.html | Subdomain: https://servers.luminarytechnicals.dpdns.org/
+- **Luminary Developers:** https://luminarytechnicals.dpdns.org/frontend/developers.html | Subdomain: https://developers.luminarytechnicals.dpdns.org/
+- **Luminary Cares:** https://luminarytechnicals.dpdns.org/frontend/cares.html | Subdomain: https://cares.luminarytechnicals.dpdns.org/
+- **Luminary Kits:** https://luminarytechnicals.dpdns.org/frontend/kits.html | Subdomain: https://kits.luminarytechnicals.dpdns.org/
+- **Luminary Federals:** https://luminarytechnicals.dpdns.org/frontend/federals.html | Subdomain: https://federals.luminarytechnicals.dpdns.org/
+- **Luminary Trust:** https://luminarytechnicals.dpdns.org/frontend/trust.html | Domain: https://luminarytrust.dpdns.org/
 - **AgroScan:** https://luminarytechnicals.dpdns.org/frontend/agroscan.html
 - **Luminary Afterverse:** https://luminarytechnicals.dpdns.org/frontend/afterverse.html
 - **Luminary News:** https://luminarytechnicals.dpdns.org/frontend/news.html

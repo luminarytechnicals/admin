@@ -44,7 +44,11 @@ const FAQ_DATA = {
   organs: [
     {
       q: "What are the five core organs and their functions?",
-      a: "1. Luminary Servers (POWER): Cloud, hosting, VPS, DNS, AI infrastructure.<br>2. Luminary Developers (CREATE): Software engineering, AI, web applications, and Luminary Afterverse.<br>3. Luminary Cares (EMPOWER): Tech education, digital literacy, and community mentorship.<br>4. Luminary Kits (CONNECT): Shared developer tools, APIs, and collaborations like Luminary Webs.<br>5. Luminary Federals (ENGAGE): Public engagement, civic tech research, and the Luminary News wire."
+      a: "1. Luminary Servers (POWER): Cloud, hosting, VPS, DNS, AI infrastructure (<a href=\"https://servers.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">servers.luminarytechnicals.dpdns.org</a>).<br>2. Luminary Developers (CREATE): Software engineering, AI, web applications, and Luminary Afterverse (<a href=\"https://developers.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">developers.luminarytechnicals.dpdns.org</a>).<br>3. Luminary Cares (EMPOWER): Tech education, digital literacy, and community mentorship (<a href=\"https://cares.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">cares.luminarytechnicals.dpdns.org</a>).<br>4. Luminary Kits (CONNECT): Shared developer tools, APIs, and collaborations like Luminary Webs (<a href=\"https://kits.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">kits.luminarytechnicals.dpdns.org</a>).<br>5. Luminary Federals (ENGAGE): Public engagement, civic tech research, and the Luminary News wire (<a href=\"https://federals.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">federals.luminarytechnicals.dpdns.org</a>)."
+    },
+    {
+      q: "What are the dedicated subdomain portals for the five core organs?",
+      a: "Each of the five core organs has a dedicated live subdomain portal:<br>• <strong>Luminary Developers:</strong> <a href=\"https://developers.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">developers.luminarytechnicals.dpdns.org</a><br>• <strong>Luminary Kits:</strong> <a href=\"https://kits.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">kits.luminarytechnicals.dpdns.org</a><br>• <strong>Luminary Cares:</strong> <a href=\"https://cares.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">cares.luminarytechnicals.dpdns.org</a><br>• <strong>Luminary Servers:</strong> <a href=\"https://servers.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">servers.luminarytechnicals.dpdns.org</a><br>• <strong>Luminary Federals:</strong> <a href=\"https://federals.luminarytechnicals.dpdns.org/\" target=\"_blank\" rel=\"noopener\">federals.luminarytechnicals.dpdns.org</a>"
     },
     {
       q: "What is the role of Luminary Federals?",
@@ -127,7 +131,7 @@ const FAQ_DATA = {
     },
     {
       q: "How do I initiate a collaboration?",
-      a: "Visit the Collaborate page (/frontend/collab.html) to choose your collaboration pathway (Developer, Organization, Researcher, Creator, Partner) or reach out directly at luminarytechnicals@gmail.com."
+      a: "Visit the Collaborate page (/frontend/collab.html) to choose your collaboration pathway (Developer, Organization, Researcher, Creator, Partner) or reach out directly at help@luminarytechnicals.dpdns.org."
     }
   ],
 
@@ -149,14 +153,14 @@ const FAQ_DATA = {
     },
     {
       q: "How do I report a security vulnerability?",
-      a: "Security disclosures should be sent directly to luminarytechnicals@gmail.com with relevant reproduction details. We review and remediate authorized vulnerability reports promptly."
+      a: "Security disclosures should be sent directly to legal@luminarytechnicals.dpdns.org with relevant reproduction details. We review and remediate authorized vulnerability reports promptly."
     }
   ],
 
   contact: [
     {
       q: "What are the official contact channels?",
-      a: "Email: luminarytechnicals@gmail.com<br>WhatsApp: +91 8294721929<br>Telegram: @luminarytechnicalsinternational<br>GitHub: github.com/DeveloperAbhinav<br>Founder: AR. Abhinav Ranjan (abhinavranjan.netlify.app)"
+      a: "Support: help@luminarytechnicals.dpdns.org<br>CEO Desk: ceo@luminarytechnicals.dpdns.org<br>Legal: legal@luminarytechnicals.dpdns.org<br>Backup Email: luminarytechnicals@gmail.com (in case of dedicated email delivery issues)<br>WhatsApp: +91 8294721929<br>Telegram: @luminarytechnicalsinternational<br>GitHub: github.com/DeveloperAbhinav<br>Founder: AR. Abhinav Ranjan (abhinavranjan.netlify.app)"
     }
   ]
 };

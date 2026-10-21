@@ -13,6 +13,7 @@ const ORGANS = [
     tagline: "Infrastructure, Cloud Systems & High-Availability Operations",
     page: "servers.html",
     url: "frontend/servers.html",
+    subdomain: "https://servers.luminarytechnicals.dpdns.org/",
     description: "The computing and cloud backbone of the Luminary ecosystem. Manages bare-metal server infrastructure, high-availability VPS clusters, authoritative DNS routing, automated SSL provisioning, content delivery networks (CDN), and dedicated AI compute nodes.",
     focusAreas: [
       "Cloud & Bare-Metal Infrastructure",
@@ -37,6 +38,7 @@ const ORGANS = [
     tagline: "Software Engineering, AI Systems & Spatial Technology Lab",
     page: "developers.html",
     url: "frontend/developers.html",
+    subdomain: "https://developers.luminarytechnicals.dpdns.org/",
     description: "The primary software and emerging technology creation organ. Engineers responsive web platforms, Progressive Web Apps (PWAs), artificial intelligence agents, automation pipelines, and spatial computing environments.",
     focusAreas: [
       "Full-Stack Web & PWA Engineering",
@@ -77,6 +79,7 @@ const ORGANS = [
     tagline: "Technology Education, Digital Literacy & Community Empowerment",
     page: "cares.html",
     url: "frontend/cares.html",
+    subdomain: "https://cares.luminarytechnicals.dpdns.org/",
     description: "The empowerment and human-impact organ of Luminary Technicals. Committed to demystifying modern technology, delivering digital education workshops, offering open developer mentorship, and driving public-interest digital literacy programs.",
     focusAreas: [
       "Technology Education & Curriculum Guides",
@@ -112,6 +115,7 @@ const ORGANS = [
     tagline: "Shared Developer Toolkits, APIs & Ecosystem Integrations",
     page: "kits.html",
     url: "frontend/kits.html",
+    subdomain: "https://kits.luminarytechnicals.dpdns.org/",
     description: "The connective tissue of the Luminary Technicals ecosystem. Builds reusable UI token systems, CLI developer utilities, cross-platform software development kits (SDKs), interoperability protocols, and coordinates partner web collaborations.",
     focusAreas: [
       "Modular UI Component Libraries & Tokens",
@@ -152,6 +156,7 @@ const ORGANS = [
     tagline: "Civic Technology, Public Affairs & Institutional Communication",
     page: "federals.html",
     url: "frontend/federals.html",
+    subdomain: "https://federals.luminarytechnicals.dpdns.org/",
     description: "The public engagement, information, and institutional-dialogue organ of Luminary Technicals. Focuses on open technology governance, civic-tech research, sovereign digital infrastructure studies, public-interest communication, and publishing the official Luminary News wire. (Strictly a non-governmental, non-statutory civic research entity).",
     focusAreas: [
       "Public Engagement & Media Communication",

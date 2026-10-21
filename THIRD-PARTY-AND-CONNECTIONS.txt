@@ -1,0 +1,578 @@
+================================================================================
+  LUMINARY TECHNICALS — THIRD-PARTY SERVICES, ORGAN LINKAGES & CONNECTIONS MAP
+  Generated: October 2026
+  Maintainer: AR. Abhinav Ranjan (Founder & CEO)
+================================================================================
+
+
+================================================================================
+ 1.  ORGANIZATIONAL ARCHITECTURE & DOMAIN MAP
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                       LUMINARY TECHNICALS (Parent)                             │
+│                  https://luminarytechnicals.dpdns.org                          │
+│              "Building systems. Advancing ideas. Connecting impact."           │
+│                                                                               │
+│  Formula: BUILD. RESEARCH. SECURE. EMPOWER. CONNECT.                          │
+│  Master:  POWER. CREATE. EMPOWER. CONNECT. ENGAGE.                            │
+│                                                                               │
+│  ┌───────────────────── 5 CORE ORGANS ─────────────────────┐                  │
+│  │                                                         │                  │
+│  │  1. Luminary Servers      — POWER   (🖥️)               │                  │
+│  │     Main Page:    /frontend/servers.html                │                  │
+│  │     Subdomain:    https://servers.luminarytechnicals     │                  │
+│  │                   .dpdns.org/                           │                  │
+│  │     Function:     Infrastructure & Cloud Systems        │                  │
+│  │                                                         │                  │
+│  │  2. Luminary Developers   — CREATE  (⚙️)               │                  │
+│  │     Main Page:    /frontend/developers.html             │                  │
+│  │     Subdomain:    https://developers.luminarytechnicals  │                  │
+│  │                   .dpdns.org/                           │                  │
+│  │     Function:     Software Engineering & AI Lab         │                  │
+│  │                                                         │                  │
+│  │  3. Luminary Cares        — EMPOWER (💛)               │                  │
+│  │     Main Page:    /frontend/cares.html                  │                  │
+│  │     Subdomain:    https://cares.luminarytechnicals       │                  │
+│  │                   .dpdns.org/                           │                  │
+│  │     Function:     Education & Digital Literacy           │                  │
+│  │                                                         │                  │
+│  │  4. Luminary Kits         — CONNECT (📦)               │                  │
+│  │     Main Page:    /frontend/kits.html                   │                  │
+│  │     Subdomain:    https://kits.luminarytechnicals        │                  │
+│  │                   .dpdns.org/                           │                  │
+│  │     Function:     Developer Toolkits & Integrations     │                  │
+│  │                                                         │                  │
+│  │  5. Luminary Federals     — ENGAGE  (🏛️)               │                  │
+│  │     Main Page:    /frontend/federals.html               │                  │
+│  │     Subdomain:    https://federals.luminarytechnicals    │                  │
+│  │                   .dpdns.org/                           │                  │
+│  │     Function:     Civic Technology & News Platform      │                  │
+│  │                                                         │                  │
+│  └─────────────────────────────────────────────────────────┘                  │
+│                                                                               │
+│  ┌───────────── DIRECT ASSOCIATED ENTITY ──────────────────┐                  │
+│  │                                                         │                  │
+│  │  Luminary Trust (🤝)                                    │                  │
+│  │     Main Page:    /frontend/trust.html                  │                  │
+│  │     Subdomain:    https://luminarytrust.dpdns.org/      │                  │
+│  │     Function:     Public-Interest Philanthropic          │                  │
+│  │                   Ecosystem                             │                  │
+│  │     Initiative:   Radhika Research Foundation           │                  │
+│  │     NOTE: NOT a Core Organ — Direct Associated Entity   │                  │
+│  │                                                         │                  │
+│  └─────────────────────────────────────────────────────────┘                  │
+│                                                                               │
+│  ┌───────────────── PROJECTS & PLATFORMS ──────────────────┐                  │
+│  │                                                         │                  │
+│  │  • AgroScan — AI agricultural diagnostics               │                  │
+│  │    Page: /frontend/agroscan.html (Revival 2027)         │                  │
+│  │                                                         │                  │
+│  │  • Luminary Afterverse — Spatial computing lab           │                  │
+│  │    Page: /frontend/afterverse.html                      │                  │
+│  │                                                         │                  │
+│  │  • Luminary News — News platform (under Federals)       │                  │
+│  │    Page: /frontend/news.html                            │                  │
+│  │                                                         │                  │
+│  │  • Luminary Webs — Web services (under Kits)            │                  │
+│  │  • Luminary Books — Knowledge repository (under Cares)  │                  │
+│  │                                                         │                  │
+│  └─────────────────────────────────────────────────────────┘                  │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+ 2.  ALL DOMAINS & SUBDOMAINS
+================================================================================
+
+PRIMARY DOMAINS
+───────────────
+• https://luminarytechnicals.dpdns.org          — Main website (canonical)
+• https://luminarytechnicals.netlify.app         — Netlify origin (redirects → dpdns)
+• https://luminarytechnicals.com                 — Legacy domain (redirects → dpdns)
+• https://www.luminarytechnicals.dpdns.org       — WWW variant (redirects → dpdns)
+
+ORGAN SUBDOMAIN PORTALS (5 Dedicated Sites)
+────────────────────────────────────────────
+• https://servers.luminarytechnicals.dpdns.org/   — Luminary Servers
+• https://developers.luminarytechnicals.dpdns.org/ — Luminary Developers
+• https://cares.luminarytechnicals.dpdns.org/     — Luminary Cares
+• https://kits.luminarytechnicals.dpdns.org/      — Luminary Kits
+• https://federals.luminarytechnicals.dpdns.org/  — Luminary Federals
+
+ASSOCIATED ENTITY DOMAIN
+─────────────────────────
+• https://luminarytrust.dpdns.org/                — Luminary Trust
+
+FOUNDER PERSONAL DOMAINS
+─────────────────────────
+• https://abhinavranjan.netlify.app               — Founder portfolio site
+• https://abhinavranjan.qzz.io                    — Founder image CDN / assets
+
+
+================================================================================
+ 3.  THIRD-PARTY SERVICES & INTEGRATIONS
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────┐
+│  SERVICE              │  PURPOSE              │  STATUS         │
+├───────────────────────┼───────────────────────┼─────────────────┤
+│                                                                 │
+│  ── HOSTING & DEPLOYMENT ──                                     │
+│  Netlify              │ Static site hosting    │ ACTIVE          │
+│                       │ CDN, redirects, HTTPS  │                 │
+│                       │ Config: netlify.toml   │                 │
+│  dpdns.org            │ Custom domain (DDNS)   │ ACTIVE          │
+│                                                                 │
+│  ── GOOGLE SERVICES ──                                          │
+│  Google Fonts         │ Typography (Inter,     │ ACTIVE          │
+│                       │ Outfit, Roboto, etc.)  │                 │
+│                       │ fonts.googleapis.com   │                 │
+│                       │ fonts.gstatic.com      │                 │
+│  Google Maps Embed    │ Office location map    │ ACTIVE          │
+│                       │ maps.google.com        │                 │
+│                       │ www.google.com/maps    │                 │
+│  Google Maps Profile  │ Business listing       │ ACTIVE          │
+│                       │ share.google/V1pNWZ... │                 │
+│  Google Analytics     │ Site analytics         │ CONFIG-GATED    │
+│                       │ googletagmanager.com   │ (not active     │
+│                       │ gtag/js                │  unless enabled  │
+│                       │                        │  in config.js)  │
+│  Google AdSense       │ Display advertising    │ CONFIG-GATED    │
+│                       │ pagead2.google...      │ (not active     │
+│                       │                        │  unless enabled) │
+│  Google Search Console│ Search verification    │ ACTIVE          │
+│                       │ googlee3888ff11c6ba... │                 │
+│                                                                 │
+│  ── MICROSOFT SERVICES ──                                       │
+│  Microsoft Clarity    │ Heatmaps/session       │ CONFIG-GATED    │
+│                       │ replay analytics       │                 │
+│                       │ clarity.ms/tag/        │                 │
+│                                                                 │
+│  ── THIRD-PARTY APIs ──                                         │
+│  RSS2JSON (api.rss    │ RSS feed parsing for   │ ACTIVE          │
+│  2json.com)           │ Luminary News page     │ (news.html)     │
+│                                                                 │
+│  ── SCHEMA / STANDARDS ──                                       │
+│  schema.org           │ JSON-LD structured     │ ACTIVE          │
+│                       │ data on all pages      │ (SEO)           │
+│  sitemaps.org         │ Sitemap XML schema     │ ACTIVE          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+ 4.  SOCIAL MEDIA & EXTERNAL PROFILES
+================================================================================
+
+ORGANIZATION ACCOUNTS
+─────────────────────
+• Twitter/X:     https://twitter.com/luminarytechnicals
+• Instagram:     https://www.instagram.com/luminary_technicals
+• GitHub:        https://github.com/DeveloperAbhinav
+• GitHub (Org):  https://github.com/luminarytechnicals
+• Telegram:      https://t.me/luminarytechnicalsinternational
+• WhatsApp:      https://wa.me/918294721929
+
+FOUNDER PERSONAL ACCOUNTS (AR. Abhinav Ranjan)
+───────────────────────────────────────────────
+• Twitter/X:     https://twitter.com/arabhinavranjan
+• Instagram:     https://instagram.com/ar.abhinavranjan
+• LinkedIn:      https://linkedin.com/in/ar-abhinavranjan
+• GitHub:        https://github.com/ProAbhinavRanjan
+• GitHub (alt):  https://github.com/ar-abhinavranjan
+• Facebook:      https://www.facebook.com/ar.abhinavranjan/
+• Pinterest:     https://www.pinterest.com/arabhinavranjan/
+• Quora:         https://www.quora.com/profile/AR-Abhinav-Ranjan
+• Reddit:        https://www.reddit.com/user/ar-abhinavranjan/
+• Snapchat:      https://www.snapchat.com/add/arabhinavranjan
+• Telegram:      https://t.me/ar_abhinavranjan
+• Portfolio:     https://abhinavranjan.netlify.app
+
+
+================================================================================
+ 5.  EMAIL DIRECTORY
+================================================================================
+
+DEDICATED ORGANIZATIONAL EMAILS
+────────────────────────────────
+• ceo@luminarytechnicals.dpdns.org       — CEO / Executive Desk
+• help@luminarytechnicals.dpdns.org      — General Support & Help
+• legal@luminarytechnicals.dpdns.org     — Legal & Compliance
+
+FALLBACK / LEGACY EMAIL
+────────────────────────
+• luminarytechnicals@gmail.com           — Backup Gmail (for issues
+                                           with dedicated email)
+
+
+================================================================================
+ 6.  CONTACT CHANNELS (Full List)
+================================================================================
+
+ ID              │ LABEL                    │ URL/ADDRESS
+─────────────────┼──────────────────────────┼─────────────────────────────
+ email           │ Help & General Support   │ help@luminarytechnicals.dpdns.org
+ ceo-email       │ Executive Desk (CEO)     │ ceo@luminarytechnicals.dpdns.org
+ legal-email     │ Legal & Compliance       │ legal@luminarytechnicals.dpdns.org
+ fallback-email  │ Backup Email             │ luminarytechnicals@gmail.com
+ whatsapp        │ WhatsApp Official        │ +918294721929
+ telegram        │ Telegram Wire            │ @luminarytechnicalsinternational
+ maps            │ Google Maps Profile      │ share.google/V1pNWZPIrYMU6uPvo
+
+
+================================================================================
+ 7.  HEAD OFFICE
+================================================================================
+
+ Luminary Technicals — Head Office, Bengaluru
+ Nagavarapalya, C V Raman Nagar
+ Bengaluru, Karnataka 560093, India
+ Open 24 hours
+ Google Maps: https://share.google/V1pNWZPIrYMU6uPvo
+
+
+================================================================================
+ 8.  CONNECTION FLOWCHART — HOW EVERYTHING LINKS
+================================================================================
+
+                    ┌────────────────────────┐
+                    │  NETLIFY (HOSTING)     │
+                    │  luminarytechnicals    │
+                    │  .netlify.app          │
+                    └───────────┬────────────┘
+                                │ 301 redirect
+                                ▼
+        ┌─────────────────────────────────────────┐
+        │     https://luminarytechnicals.dpdns.org │
+        │            (MAIN WEBSITE)                │
+        │     35 HTML Pages │ PWA │ Service Worker │
+        └──────────┬────────┬────────┬────────────┘
+                   │        │        │
+       ┌───────────┘    ┌───┘        └──────────┐
+       │                │                       │
+       ▼                ▼                       ▼
+  ┌──────────┐   ┌──────────────┐       ┌──────────────────┐
+  │  CONFIG  │   │  FRONTEND    │       │  ASSETS          │
+  │  LAYER   │   │  35 PAGES    │       │  JS/CSS/IMAGES   │
+  ├──────────┤   ├──────────────┤       ├──────────────────┤
+  │config.js │   │index.html    │       │main.js           │
+  │org.js    │   │about.html    │       │search.js         │
+  │organs.js │   │ecosystem.html│       │contact.js        │
+  │faq.js    │   │organs.html   │       │automation.js     │
+  │projects  │   │projects.html │       │pwa.js            │
+  │news.js   │   │news.html     │       │lazy-load.js      │
+  │search-   │   │collab.html   │       │google-maps-nav.js│
+  │index.json│   │contact.html  │       │main.css          │
+  │google-   │   │faq.html      │       │animations.css    │
+  │maps-     │   │glossary.html │       │responsive.css    │
+  │details.js│   │leadership    │       └────────┬─────────┘
+  └────┬─────┘   │owner.html    │                │
+       │         │offices.html  │      ┌─────────┴──────────────┐
+       │         │...           │      │  3RD PARTY INJECTIONS  │
+       │         └──────┬───────┘      │  (via main.js)         │
+       │                │              ├────────────────────────┤
+       │                │              │ Google Analytics (GTM) │
+       │                │              │ Microsoft Clarity      │
+       │                │              │ Google AdSense         │
+       │                │              │  ↑ CONFIG-GATED        │
+       │                │              │  (only loads if        │
+       │                │              │   enabled in config)   │
+       │                │              └────────────────────────┘
+       │                │
+       │    ┌───────────┴────────────────────────────────────┐
+       │    │        ORGAN PAGES → SUBDOMAIN PORTALS         │
+       │    ├────────────────────────────────────────────────┤
+       │    │                                                │
+       │    │  servers.html ──→ servers.luminarytechnicals    │
+       │    │                    .dpdns.org                   │
+       │    │                                                │
+       │    │  developers.html → developers.luminarytechnicals│
+       │    │                    .dpdns.org                   │
+       │    │                                                │
+       │    │  cares.html ────→ cares.luminarytechnicals      │
+       │    │                    .dpdns.org                   │
+       │    │                                                │
+       │    │  kits.html ─────→ kits.luminarytechnicals       │
+       │    │                    .dpdns.org                   │
+       │    │                                                │
+       │    │  federals.html ─→ federals.luminarytechnicals   │
+       │    │                    .dpdns.org                   │
+       │    │                                                │
+       │    │  trust.html ────→ luminarytrust.dpdns.org       │
+       │    │                   (Associated Entity, NOT organ)│
+       │    └────────────────────────────────────────────────┘
+       │
+       │    ┌────────────────────────────────────────────────┐
+       │    │        GOOGLE SERVICES DEPENDENCY MAP         │
+       │    ├────────────────────────────────────────────────┤
+       │    │                                                │
+       │    │  fonts.googleapis.com ──→ Typography (Active)  │
+       │    │  fonts.gstatic.com ─────→ Font files (Active)  │
+       │    │  maps.google.com ──────→ Map embed (Active)    │
+       │    │  share.google/V1pN... ─→ Maps profile (Active) │
+       │    │  googletagmanager.com ─→ GTM/GA (Config-gated) │
+       │    │  pagead2.google... ────→ AdSense (Config-gated)│
+       │    │  googlee3888ff... ─────→ Search Console verify │
+       │    │                                                │
+       │    └────────────────────────────────────────────────┘
+       │
+       │    ┌────────────────────────────────────────────────┐
+       │    │        MICROSOFT SERVICES                      │
+       │    ├────────────────────────────────────────────────┤
+       │    │  clarity.ms/tag/ ──────→ Clarity heatmaps      │
+       │    │                          (Config-gated)        │
+       │    └────────────────────────────────────────────────┘
+       │
+       │    ┌────────────────────────────────────────────────┐
+       │    │        OTHER THIRD-PARTY APIs                  │
+       │    ├────────────────────────────────────────────────┤
+       │    │  api.rss2json.com ─────→ RSS feed parsing      │
+       │    │                          (news.html only)      │
+       │    └────────────────────────────────────────────────┘
+       │
+       │    ┌────────────────────────────────────────────────┐
+       │    │        SOCIAL MEDIA OUTBOUND LINKS             │
+       │    ├────────────────────────────────────────────────┤
+       │    │  twitter.com/luminarytechnicals (All footers)  │
+       │    │  instagram.com/luminary_technicals (All footers)│
+       │    │  github.com/DeveloperAbhinav (All footers)     │
+       │    │  t.me/luminarytechnicalsinternational (Contact)│
+       │    │  wa.me/918294721929 (Contact, Offices)         │
+       │    │                                                │
+       │    │  Founder Personal:                             │
+       │    │  twitter.com/arabhinavranjan (index)           │
+       │    │  instagram.com/ar.abhinavranjan (index)        │
+       │    │  linkedin.com/in/ar-abhinavranjan (index)      │
+       │    │  github.com/ProAbhinavRanjan (leadership,owner)│
+       │    │  facebook.com/ar.abhinavranjan (index)         │
+       │    │  pinterest.com/arabhinavranjan (index)         │
+       │    │  quora.com/profile/AR-Abhinav-Ranjan (index)   │
+       │    │  reddit.com/user/ar-abhinavranjan (index)      │
+       │    │  snapchat.com/add/arabhinavranjan (index)      │
+       │    │  t.me/ar_abhinavranjan (index)                 │
+       │    └────────────────────────────────────────────────┘
+
+
+================================================================================
+ 9.  FULL SITE MAP — ALL 35 HTML PAGES
+================================================================================
+
+ROOT LEVEL (4 pages):
+  /index.html              — Homepage
+  /404.html                — 404 Error Page
+  /403.html                — 403 Forbidden Page
+  /offline.html            — PWA Offline Fallback
+
+FRONTEND (31 pages):
+  Core Navigation:
+    /frontend/about.html           — About
+    /frontend/ecosystem.html       — Ecosystem
+    /frontend/organization.html    — Architecture
+
+  Organ Pages:
+    /frontend/organs.html          — All Organs Overview
+    /frontend/servers.html         — Luminary Servers
+    /frontend/developers.html      — Luminary Developers
+    /frontend/cares.html           — Luminary Cares
+    /frontend/kits.html            — Luminary Kits
+    /frontend/federals.html        — Luminary Federals
+    /frontend/trust.html           — Luminary Trust
+
+  Project Pages:
+    /frontend/projects.html        — All Projects
+    /frontend/agroscan.html        — AgroScan
+    /frontend/afterverse.html      — Luminary Afterverse
+
+  Information Pages:
+    /frontend/news.html            — Luminary News
+    /frontend/research.html        — Research Portal
+    /frontend/technology.html      — Technology Hub
+    /frontend/resources.html       — Resources
+
+  Leadership:
+    /frontend/leadership.html      — Leadership Team
+    /frontend/owner.html           — Founder / CEO
+
+  Contact & Collaboration:
+    /frontend/contact.html         — Contact
+    /frontend/collab.html          — Collaborate
+    /frontend/offices.html         — Offices & Locations
+    /frontend/faq.html             — FAQ
+    /frontend/glossary.html        — Glossary
+
+  Legal & Policy:
+    /frontend/privacy-policy.html  — Privacy Policy
+    /frontend/terms.html           — Terms of Service
+    /frontend/editorial-policy.html — Editorial Policy
+    /frontend/security.html        — Security
+    /frontend/accessibility.html   — Accessibility
+    /frontend/disclaimer.html      — Disclaimer
+    /frontend/cookies.html         — Cookie Policy
+
+SPECIAL FILES:
+  /googlee3888ff11c6ba4a0.html    — Google Search Console Verification
+  /manifest.json                   — PWA Manifest
+  /manifest.webmanifest            — PWA Manifest (alias)
+  /service-worker.js               — PWA Service Worker
+  /sitemap.xml                     — XML Sitemap
+  /robots.txt                      — Crawler directives
+  /netlify.toml                    — Netlify deployment config
+  /llms.txt                        — LLM context (short)
+  /llms-full.txt                   — LLM context (detailed)
+  /_headers                        — Netlify header rules
+  /_redirects                      — Netlify redirect rules
+
+
+================================================================================
+ 10.  CONFIG-GATED SERVICES — NOTES
+================================================================================
+
+The following services are coded into main.js but ONLY activate if their
+respective configuration keys are set in config.js:
+
+  1. Google Analytics / Tag Manager
+     Activates when: CONFIG.analytics.enabled = true
+                 AND CONFIG.analytics.googleAnalyticsId is set
+     Loads: https://www.googletagmanager.com/gtag/js?id=<ID>
+
+  2. Microsoft Clarity
+     Activates when: CONFIG.analytics.enabled = true
+                 AND CONFIG.analytics.clarityId is set
+     Loads: https://www.clarity.ms/tag/<ID>
+
+  3. Google AdSense
+     Activates when: CONFIG.ads.enabled = true
+                 AND CONFIG.ads.clientId is set
+     Loads: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+
+  ⚠️  CSP NOTE: The current Content-Security-Policy in HTML <meta> tags
+      does NOT whitelist these 3rd party script/connect domains. If you
+      enable analytics or ads in config, you MUST also update the CSP
+      meta tag across all 35 pages to include:
+        script-src: googletagmanager.com, clarity.ms, pagead2.googlesyndication.com
+        connect-src: google-analytics.com, clarity.ms
+
+
+================================================================================
+ 11.  DEPLOYMENT FLOW
+================================================================================
+
+   Local Codebase
+        │
+        ▼
+   Git Repository (e.g., GitHub)
+        │
+        ▼
+   ┌─────────────────────────┐
+   │   Netlify Build & CDN   │
+   │   luminarytechnicals    │
+   │   .netlify.app          │
+   └───────────┬─────────────┘
+               │ 301 redirect (netlify.toml)
+               ▼
+   ┌─────────────────────────────┐
+   │  luminarytechnicals.dpdns   │
+   │  .org (DDNS Custom Domain)  │
+   │  HTTPS via Netlify          │
+   └─────────────────────────────┘
+               │
+    ┌──────────┼──────────┐
+    ▼          ▼          ▼
+  Main       Organ       Trust
+  Site     Subdomains   Domain
+
+
+================================================================================
+  10. PHYSICAL HEADQUARTERS, GOOGLE MAPS & LOCATION SCHEMA
+================================================================================
+
+1. OFFICIAL HEADQUARTERS ADDRESS
+   - Organization: Luminary Technicals
+   - Category: Non-Governmental Organization / Technology Organization
+   - Street Address: Nagavarapalya, C V Raman Nagar
+   - City: Bengaluru
+   - State / Region: Karnataka (IN-KA)
+   - Postal Code / PIN: 560093
+   - Country: India (IN)
+   - Landmark: Near Versova Layout / Overhead Water Tank
+   - Full Address: Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka 560093, India
+
+2. GEOLOCATION COORDINATES & ACCURACY
+   - Latitude: 12.9934
+   - Longitude: 77.6616
+   - Region Code: IN-KA (Karnataka, India)
+   - Operating Hours: Open 24 Hours / 7 Days a week
+
+3. GOOGLE MAPS & PROFILE LINKAGES
+   - Google Business Profile Share: https://share.google/V1pNWZPIrYMU6uPvo
+   - Google Direct Search: https://www.google.com/search?q=Luminary+Technicals+Bengaluru
+   - Google Maps Location Query: https://www.google.com/maps/search/?api=1&query=Luminary+Technicals+Nagavarapalya+C+V+Raman+Nagar+Bengaluru+Karnataka+560093
+   - Google Maps Directions: https://www.google.com/maps/dir/?api=1&destination=Luminary+Technicals+Nagavarapalya+C+V+Raman+Nagar+Bengaluru+Karnataka+560093
+   - Google Maps Embed Iframe URL: https://www.google.com/maps?q=Luminary+Technicals+Nagavarapalya+C+V+Raman+Nagar+Bengaluru+Karnataka+560093&output=embed
+
+4. GEO META TAGS IMPLEMENTED ACROSS ALL HTML PAGES
+   -----------------------------------------------------------------------------
+   <meta name="geo.region" content="IN-KA">
+   <meta name="geo.placename" content="Bengaluru, Karnataka, India">
+   <meta name="geo.position" content="12.9934;77.6616">
+   <meta name="ICBM" content="12.9934, 77.6616">
+   -----------------------------------------------------------------------------
+
+5. JSON-LD STRUCTURED DATA SCHEMA SPECIFICATION
+   Applied across all ecosystem pages in the Organization graph:
+   -----------------------------------------------------------------------------
+   "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "Nagavarapalya, C V Raman Nagar",
+     "addressLocality": "Bengaluru",
+     "addressRegion": "Karnataka",
+     "postalCode": "560093",
+     "addressCountry": "IN"
+   },
+   "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": 12.9934,
+     "longitude": 77.6616
+   },
+   "hasMap": "https://share.google/V1pNWZPIrYMU6uPvo"
+   -----------------------------------------------------------------------------
+
+   Dedicated Place Schema (in contact.html and offices.html):
+   -----------------------------------------------------------------------------
+   {
+     "@type": "Place",
+     "@id": "https://luminarytechnicals.dpdns.org/frontend/contact.html#head-office",
+     "name": "Luminary Technicals Head Office",
+     "description": "Central operational headquarters housing executive administration, cloud operations center, and software engineering laboratories.",
+     "hasMap": "https://share.google/V1pNWZPIrYMU6uPvo",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "Nagavarapalya, C V Raman Nagar",
+       "addressLocality": "Bengaluru",
+       "addressRegion": "Karnataka",
+       "postalCode": "560093",
+       "addressCountry": "IN"
+     },
+     "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": 12.9934,
+       "longitude": 77.6616
+     },
+     "openingHoursSpecification": {
+       "@type": "OpeningHoursSpecification",
+       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+       "opens": "00:00",
+       "closes": "23:59"
+     }
+   }
+   -----------------------------------------------------------------------------
+
+6. CONFIGURATION SOURCE OF TRUTH
+   - Central Store: configuration/google-maps-details.js
+   - Interactive Presentation: frontend/contact.html, frontend/offices.html, index.html
+
+
+================================================================================
+  END OF DOCUMENT
+================================================================================

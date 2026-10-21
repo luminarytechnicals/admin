@@ -7,11 +7,11 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 
 **Luminary Technicals** is the central parent organization with exactly **5 Core Organs**:
 
-- **Luminary Servers (POWER):** Cloud infrastructure, bare-metal servers, DNS, CDN, SSL, and high-availability hosting. (`https://luminarytechnicals.dpdns.org/frontend/servers.html`)
-- **Luminary Developers (CREATE):** Software engineering, AI systems, progressive web apps, and the Luminary Afterverse spatial computing lab. (`https://luminarytechnicals.dpdns.org/frontend/developers.html`)
-- **Luminary Cares (EMPOWER):** Technology education, digital literacy, mentorship, and community empowerment via Luminary Books. (`https://luminarytechnicals.dpdns.org/frontend/cares.html`)
-- **Luminary Kits (CONNECT):** Reusable developer toolkits, APIs, SDKs, and partner web collaborations including Luminary Webs. (`https://luminarytechnicals.dpdns.org/frontend/kits.html`)
-- **Luminary Federals (ENGAGE):** Civic technology, public affairs, governance research, and the official Luminary News platform. (`https://luminarytechnicals.dpdns.org/frontend/federals.html`)
+- **Luminary Servers (POWER):** Cloud infrastructure, bare-metal servers, DNS, CDN, SSL, and high-availability hosting. Lead: `https://luminarytechnicals.dpdns.org/frontend/servers.html` | Dedicated Subdomain: `https://servers.luminarytechnicals.dpdns.org/`
+- **Luminary Developers (CREATE):** Software engineering, AI systems, progressive web apps, and the Luminary Afterverse spatial computing lab. Lead: `https://luminarytechnicals.dpdns.org/frontend/developers.html` | Dedicated Subdomain: `https://developers.luminarytechnicals.dpdns.org/`
+- **Luminary Cares (EMPOWER):** Technology education, digital literacy, mentorship, and community empowerment via Luminary Books. Lead: `https://luminarytechnicals.dpdns.org/frontend/cares.html` | Dedicated Subdomain: `https://cares.luminarytechnicals.dpdns.org/`
+- **Luminary Kits (CONNECT):** Reusable developer toolkits, APIs, SDKs, and partner web collaborations including Luminary Webs. Lead: `https://luminarytechnicals.dpdns.org/frontend/kits.html` | Dedicated Subdomain: `https://kits.luminarytechnicals.dpdns.org/`
+- **Luminary Federals (ENGAGE):** Civic technology, public affairs, governance research, and the official Luminary News platform. Lead: `https://luminarytechnicals.dpdns.org/frontend/federals.html` | Dedicated Subdomain: `https://federals.luminarytechnicals.dpdns.org/`
 
 **Direct Associated Entity** (top-level, separate from the 5 organs):
 - **Luminary Trust:** Public-interest, philanthropic ecosystem directly associated with Luminary Technicals. Oversees the **Radhika Research Foundation**. (`https://luminarytechnicals.dpdns.org/frontend/trust.html`)
@@ -33,6 +33,8 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 ## Founder & Contact
 - **Founder & Digital Architect:** AR. Abhinav Ranjan
 - **Founder Profile:** https://luminarytechnicals.dpdns.org/frontend/leadership.html
-- **Founder Portfolio:** https://abhinavranjan.netlify.app
-- **Email:** luminarytechnicals@gmail.com
+- **CEO Email:** ceo@luminarytechnicals.dpdns.org
+- **Help & General Inquiries:** help@luminarytechnicals.dpdns.org
+- **Legal & Compliance:** legal@luminarytechnicals.dpdns.org
+- **Fallback / Backup Email:** luminarytechnicals@gmail.com (in case of dedicated email delivery issues)
 - **Official Website:** https://luminarytechnicals.dpdns.org/

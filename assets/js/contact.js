@@ -4,7 +4,10 @@
  */
 
 const CONTACT = {
-  email: "luminarytechnicals@gmail.com",
+  email: "help@luminarytechnicals.dpdns.org",
+  ceoEmail: "ceo@luminarytechnicals.dpdns.org",
+  legalEmail: "legal@luminarytechnicals.dpdns.org",
+  fallbackEmail: "luminarytechnicals@gmail.com",
   whatsapp: "+918294721929",   // Update with real number
   telegram: "luminarytechnicalsinternational", // Update with real username
 
@@ -15,7 +18,7 @@ const CONTACT = {
     if (data.email) lines.push(`Email: ${data.email}`);
     if (data.type) lines.push(`Project Type: ${data.type}`);
     if (data.message) lines.push(`Message: ${data.message}`);
-    lines.push(`Sent via: luminarytechnicals.com`);
+    lines.push(`Sent via: luminarytechnicals.dpdns.org`);
     lines.push(`Date: ${new Date().toLocaleDateString('en-IN')}`);
     return lines.join('\n');
   },

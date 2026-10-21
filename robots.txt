@@ -7,8 +7,10 @@ Allow: /assets/
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /manifest.json
-Disallow: /configuration/
-Disallow: /*.json$
+Disallow: /configuration/google-maps-details.js
+# Note: /configuration/config.js, faq.js, organs.js etc. are allowed
+# so crawlers can render pages correctly.
+# manifest.json is explicitly allowed above.
 
 # Crawl-delay and Request-rate
 Crawl-delay: 1

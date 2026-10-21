@@ -33,6 +33,15 @@ const ORGANIZATION = {
     "luminary-federals"
   ],
 
+  // Dedicated Organ Subdomain Portals:
+  organSubdomains: {
+    "luminary-servers": "https://servers.luminarytechnicals.dpdns.org/",
+    "luminary-developers": "https://developers.luminarytechnicals.dpdns.org/",
+    "luminary-cares": "https://cares.luminarytechnicals.dpdns.org/",
+    "luminary-kits": "https://kits.luminarytechnicals.dpdns.org/",
+    "luminary-federals": "https://federals.luminarytechnicals.dpdns.org/"
+  },
+
   // Direct Associated Entity (Top-level, separate from the 5 core organs)
   associatedEntities: [
     "luminary-trust"
@@ -50,7 +59,7 @@ const ORGANIZATION = {
       instagram: "https://www.instagram.com/ar.abhinavranjan",
       linkedin: "https://linkedin.com/in/",
       twitter: "https://twitter.com/",
-      email: "luminarytechnicals@gmail.com",
+      email: "ceo@luminarytechnicals.dpdns.org",
       portfolio: "https://abhinavranjan.netlify.app"
     }
   },
@@ -65,14 +74,32 @@ const ORGANIZATION = {
   ],
 
   contact: {
-    email: "luminarytechnicals@gmail.com",
+    email: "help@luminarytechnicals.dpdns.org",
+    ceoEmail: "ceo@luminarytechnicals.dpdns.org",
+    legalEmail: "legal@luminarytechnicals.dpdns.org",
+    supportEmail: "help@luminarytechnicals.dpdns.org",
+    fallbackEmail: "luminarytechnicals@gmail.com",
     whatsapp: "+918294721929",
     telegram: "luminarytechnicalsinternational",
-    location: "India (Global Operations)",
+    location: "Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka 560093, India",
+    mapsUrl: "https://share.google/V1pNWZPIrYMU6uPvo",
+    headOffice: {
+      address: "Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka 560093",
+      city: "Bengaluru",
+      state: "Karnataka",
+      postalCode: "560093",
+      country: "India",
+      hours: "Open 24 hours",
+      mapsShareUrl: "https://share.google/V1pNWZPIrYMU6uPvo"
+    },
     channels: [
-      { id: "email", label: "Email Luminary", icon: "📧", url: "mailto:luminarytechnicals@gmail.com" },
+      { id: "email", label: "Help & General Support", icon: "📧", url: "mailto:help@luminarytechnicals.dpdns.org" },
+      { id: "ceo-email", label: "Executive Desk (CEO)", icon: "👔", url: "mailto:ceo@luminarytechnicals.dpdns.org" },
+      { id: "legal-email", label: "Legal & Compliance", icon: "⚖️", url: "mailto:legal@luminarytechnicals.dpdns.org" },
+      { id: "fallback-email", label: "Backup Email", icon: "📬", url: "mailto:luminarytechnicals@gmail.com" },
       { id: "whatsapp", label: "WhatsApp Official", icon: "💬", url: "https://wa.me/918294721929" },
       { id: "telegram", label: "Telegram Wire", icon: "✈️", url: "https://t.me/luminarytechnicalsinternational" },
+      { id: "maps", label: "Google Maps Profile", icon: "📍", url: "https://share.google/V1pNWZPIrYMU6uPvo" },
       { id: "github", label: "GitHub Organization", icon: "🐙", url: "https://github.com/DeveloperAbhinav" },
       { id: "instagram", label: "Instagram Channel", icon: "📸", url: "https://www.instagram.com/luminary_technicals" }
     ]

@@ -44,40 +44,40 @@
     "category": "ORGAN",
     "badge": "Core Organ · Power",
     "url": "frontend/servers.html",
-    "keywords": "servers hosting cloud vps dns ssl cdn infrastructure power bare metal high availability datacenter anycast",
-    "text": "Core organ responsible for cloud infrastructure, bare-metal server management, authoritative Anycast DNS routing, high-availability VPS hosting, and AI inference compute nodes. Formula: POWER."
+    "keywords": "servers servers.luminarytechnicals.dpdns.org hosting cloud vps dns ssl cdn infrastructure power bare metal high availability datacenter anycast",
+    "text": "Core organ responsible for cloud infrastructure, bare-metal server management, authoritative Anycast DNS routing, high-availability VPS hosting, and AI inference compute nodes. Dedicated portal: servers.luminarytechnicals.dpdns.org. Formula: POWER."
   },
   {
     "title": "Luminary Developers",
     "category": "ORGAN",
     "badge": "Core Organ · Create",
     "url": "frontend/developers.html",
-    "keywords": "developers software engineering web applications ai automation pwa afterverse create programming open source",
-    "text": "Core organ responsible for software engineering, artificial intelligence agent automation, progressive web apps, and incubating the Luminary Afterverse spatial computing lab. Formula: CREATE."
+    "keywords": "developers developers.luminarytechnicals.dpdns.org software engineering web applications ai automation pwa afterverse create programming open source",
+    "text": "Core organ responsible for software engineering, artificial intelligence agent automation, progressive web apps, and incubating the Luminary Afterverse spatial computing lab. Dedicated portal: developers.luminarytechnicals.dpdns.org. Formula: CREATE."
   },
   {
     "title": "Luminary Cares",
     "category": "ORGAN",
     "badge": "Core Organ · Empower",
     "url": "frontend/cares.html",
-    "keywords": "cares empower education community mentorship digital literacy inclusion books social impact outreach",
-    "text": "Core organ dedicated to technology education, open-access developer mentorship, digital literacy in underserved communities, and technical whitepapers through Luminary Books. Formula: EMPOWER."
+    "keywords": "cares cares.luminarytechnicals.dpdns.org empower education community mentorship digital literacy inclusion books social impact outreach",
+    "text": "Core organ dedicated to technology education, open-access developer mentorship, digital literacy in underserved communities, and technical whitepapers through Luminary Books. Dedicated portal: cares.luminarytechnicals.dpdns.org. Formula: EMPOWER."
   },
   {
     "title": "Luminary Kits",
     "category": "ORGAN",
     "badge": "Core Organ · Connect",
     "url": "frontend/kits.html",
-    "keywords": "kits connect developer toolkits apis sdks components integrations luminary webs collaboration libraries",
-    "text": "Core organ responsible for reusable UI tokens, CLI utilities, developer toolkits, cross-system APIs, and coordinating official partner web collaborations including Luminary Webs. Formula: CONNECT."
+    "keywords": "kits kits.luminarytechnicals.dpdns.org connect developer toolkits apis sdks components integrations luminary webs collaboration libraries",
+    "text": "Core organ responsible for reusable UI tokens, CLI utilities, developer toolkits, cross-system APIs, and coordinating official partner web collaborations including Luminary Webs. Dedicated portal: kits.luminarytechnicals.dpdns.org. Formula: CONNECT."
   },
   {
     "title": "Luminary Federals",
     "category": "ORGAN",
     "badge": "Core Organ · Engage",
     "url": "frontend/federals.html",
-    "keywords": "federals engage civic technology governance public affairs news media communication policy research",
-    "text": "Core organ focused on civic engagement, open technology governance, sovereign digital systems research, and operating the official Luminary News platform. Formula: ENGAGE."
+    "keywords": "federals federals.luminarytechnicals.dpdns.org engage civic technology governance public affairs news media communication policy research",
+    "text": "Core organ focused on civic engagement, open technology governance, sovereign digital systems research, and operating the official Luminary News platform. Dedicated portal: federals.luminarytechnicals.dpdns.org. Formula: ENGAGE."
   },
   {
     "title": "Luminary Trust",
@@ -270,5 +270,13 @@
     "url": "frontend/disclaimer.html",
     "keywords": "disclaimer legal liability third-party links warranties research informational purposes",
     "text": "General legal disclaimer regarding informational content, experimental technology, and external hyperlinks."
+  },
+  {
+    "title": "Offices & Global Headquarters",
+    "category": "ORGANIZATION",
+    "badge": "Head Office",
+    "url": "frontend/offices.html",
+    "keywords": "offices headquarters bengaluru karnataka google maps address location directions c v raman nagar nagavarapalya",
+    "text": "Official registered headquarters and operations hub of Luminary Technicals in Bengaluru, Karnataka, India with verified Google Maps profile."
   }
 ]

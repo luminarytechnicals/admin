@@ -6,7 +6,7 @@
    ========================================================================== */
 @media (max-width: 1280px) {
   .container { max-width: 1080px; padding: 0 24px; }
-  .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; }
+  .footer-grid, .footer-grid-5 { grid-template-columns: 2fr 1fr 1fr 1.15fr 1.1fr; gap: 28px; }
   .nav-links a { padding: 6px 10px; font-size: 0.84rem; }
   .stats-grid { gap: 20px; }
   .afterverse-canvas-container { height: 440px; }
@@ -32,7 +32,8 @@
   .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .card-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .value-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 24px; }
+  .footer-grid, .footer-grid-5 { grid-template-columns: repeat(4, 1fr); gap: 32px 20px; }
+  .footer-grid .footer-brand, .footer-grid-5 .footer-brand { grid-column: 1 / -1; max-width: 680px; }
   
   /* Feature Components */
   .profile-card { flex-direction: row; gap: 28px; }
@@ -49,7 +50,8 @@
    3. TABLETS (PORTRAIT) & LARGE PHONES (<= 860px)
    ========================================================================== */
 @media (max-width: 860px) {
-  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .footer-grid, .footer-grid-5 { grid-template-columns: repeat(2, 1fr); gap: 28px 24px; }
+  .footer-grid .footer-brand, .footer-grid-5 .footer-brand { grid-column: 1 / -1; max-width: 100%; }
   .profile-card { flex-direction: column; align-items: center; text-align: center; }
   .profile-img { width: 200px; height: 200px; }
   .owner-teaser { flex-direction: column; text-align: center; align-items: center; gap: 24px; }
@@ -95,11 +97,11 @@
   .value-grid { grid-template-columns: 1fr; gap: 16px; }
   
   /* Footer */
-  .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 32px; }
-  .footer-brand { display: flex; flex-direction: column; align-items: center; }
-  .footer-brand p { text-align: center; max-width: 480px; }
-  .footer-brand .formula-strip { justify-content: center !important; margin: 16px auto 0 !important; }
-  .footer-social { justify-content: center; }
+  .footer-grid, .footer-grid-5 { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; text-align: left; }
+  .footer-grid .footer-brand, .footer-grid-5 .footer-brand { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+  .footer-brand p { text-align: left; max-width: 100%; }
+  .footer-brand .formula-strip { justify-content: flex-start !important; margin: 14px 0 0 !important; }
+  .footer-social { justify-content: flex-start; }
   
   /* Hero & Actions */
   .hero { min-height: auto; padding: 100px 0 50px; }
@@ -199,6 +201,12 @@
   .matrix-row { flex-direction: column; align-items: flex-start; gap: 4px; }
   .contact-channel-btn { padding: 18px 12px; }
   
+  /* Footer */
+  .footer-grid, .footer-grid-5 { grid-template-columns: 1fr; gap: 26px; }
+  .footer-col { align-items: flex-start; text-align: left; }
+  .footer-col h4 { margin-bottom: 10px; }
+  .footer-bottom { flex-direction: column; text-align: center; justify-content: center; gap: 8px; }
+  
   body, html {
     overflow-x: hidden;
   }
@@ -245,5 +253,96 @@
   }
   .form-input, .form-textarea, .form-select, .search-input {
     font-size: 16px;
+  }
+}
+
+/* ==========================================================================
+   10. HQ & MAP SECTIONS (PHONES & SMALL PORTRAIT SCREENS <= 868px)
+   2 Horizontal Rows:
+   - Row 1: Map
+   - Row 2: Details
+   ========================================================================== */
+@media (max-width: 868px) {
+  .hq-banner-grid,
+  .office-showcase-grid,
+  .navigator-layout-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  /* 1ST HORIZONTAL ROW: MAP FIRST */
+  .hq-banner-grid > .hq-banner-map,
+  .office-showcase-grid > .office-showcase-map,
+  .navigator-layout-grid > .navigator-map,
+  .hq-banner-grid > :nth-child(2),
+  .office-showcase-grid > :nth-child(2),
+  .navigator-layout-grid > :nth-child(2) {
+    order: 1 !important;
+    width: 100% !important;
+    min-height: 280px !important;
+    height: 320px !important;
+    border-bottom: 1px solid var(--border) !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    position: relative !important;
+  }
+
+  .hq-banner-grid > .hq-banner-map iframe,
+  .office-showcase-grid > .office-showcase-map iframe,
+  .navigator-layout-grid > .navigator-map iframe,
+  .navigator-layout-grid > .navigator-map #address-descriptor-map,
+  .hq-banner-grid > :nth-child(2) iframe,
+  .office-showcase-grid > :nth-child(2) iframe,
+  .navigator-layout-grid > :nth-child(2) iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 240px !important;
+    flex-grow: 1 !important;
+    display: block !important;
+  }
+
+  /* 2ND HORIZONTAL ROW: DETAILS BELOW MAP */
+  .hq-banner-grid > .hq-banner-details,
+  .office-showcase-grid > .office-showcase-details,
+  .navigator-layout-grid > .navigator-details,
+  .hq-banner-grid > :nth-child(1),
+  .office-showcase-grid > :nth-child(1),
+  .navigator-layout-grid > :nth-child(1) {
+    order: 2 !important;
+    width: 100% !important;
+    padding: 30px 24px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hq-banner-grid > .hq-banner-map,
+  .office-showcase-grid > .office-showcase-map,
+  .navigator-layout-grid > .navigator-map,
+  .hq-banner-grid > :nth-child(2),
+  .office-showcase-grid > :nth-child(2),
+  .navigator-layout-grid > :nth-child(2) {
+    min-height: 240px !important;
+    height: 260px !important;
+  }
+
+  .hq-banner-grid > .hq-banner-map iframe,
+  .office-showcase-grid > .office-showcase-map iframe,
+  .navigator-layout-grid > .navigator-map iframe,
+  .navigator-layout-grid > .navigator-map #address-descriptor-map,
+  .hq-banner-grid > :nth-child(2) iframe,
+  .office-showcase-grid > :nth-child(2) iframe,
+  .navigator-layout-grid > :nth-child(2) iframe {
+    min-height: 200px !important;
+  }
+
+  .hq-banner-grid > .hq-banner-details,
+  .office-showcase-grid > .office-showcase-details,
+  .navigator-layout-grid > .navigator-details,
+  .hq-banner-grid > :nth-child(1),
+  .office-showcase-grid > :nth-child(1),
+  .navigator-layout-grid > :nth-child(1) {
+    padding: 22px 16px !important;
   }
 }
