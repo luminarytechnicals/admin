@@ -57,8 +57,7 @@ const ORGANIZATION = {
     social: {
       github: "https://github.com/ProAbhinavRanjan",
       instagram: "https://www.instagram.com/ar.abhinavranjan",
-      linkedin: "https://linkedin.com/in/",
-      twitter: "https://twitter.com/",
+      twitter: "https://twitter.com/luminarytechnicals",
       email: "ceo@luminarytechnicals.dpdns.org",
       portfolio: "https://abhinavranjan.netlify.app"
     }

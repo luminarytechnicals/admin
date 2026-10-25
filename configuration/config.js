@@ -38,8 +38,7 @@ const CONFIG = {
     social: {
       github: "https://github.com/ProAbhinavRanjan",
       instagram: "https://www.instagram.com/ar.abhinavranjan",
-      linkedin: "https://linkedin.com/in/",
-      twitter: "https://twitter.com/",
+      twitter: "https://twitter.com/luminarytechnicals",
       email: "ceo@luminarytechnicals.dpdns.org",
       portfolio: "https://abhinavranjan.netlify.app"
     }
@@ -65,7 +64,7 @@ const CONFIG = {
   pwa: {
     enabled: true,
     offlinePage: "/offline.html",
-    cacheName: "luminary-v9-seo"
+    cacheName: "luminary-v10-flow"
   },
 
   // CANONICAL NAVIGATION STRUCTURE

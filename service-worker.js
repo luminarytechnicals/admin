@@ -1,10 +1,9 @@
-const CACHE_NAME = 'luminary-v9-seo';
+const CACHE_NAME = 'luminary-v10-flow';
 const OFFLINE_URL = '/offline.html';
 
 // Core assets to pre-cache for complete offline availability
 const ASSETS = [
   '/',
-  '/index.html',
   '/offline.html',
   '/404.html',
   '/403.html',
@@ -55,7 +54,6 @@ const ASSETS = [
   '/configuration/search-index.json',
   '/assets/images/logo-luminarytechnicals.png',
   '/assets/images/logo-luminarytechnicals.webp',
-  '/assets/images/og-default.png',
   '/assets/images/og-default.webp',
   '/assets/images/instagram.webp',
   '/assets/images/telegram.webp',
