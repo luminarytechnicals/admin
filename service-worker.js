@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v8-canonical';
+const CACHE_NAME = 'luminary-v9-seo';
 const OFFLINE_URL = '/offline.html';
 
 // Core assets to pre-cache for complete offline availability
@@ -38,6 +38,7 @@ const ASSETS = [
   '/frontend/cookies.html',
   '/frontend/disclaimer.html',
   '/frontend/editorial-policy.html',
+  '/frontend/offices.html',
   '/assets/css/main.css',
   '/assets/css/animations.css',
   '/assets/css/responsive.css',
@@ -49,6 +50,8 @@ const ASSETS = [
   '/assets/js/pwa.js',
   '/assets/js/contact.js',
   '/configuration/config.js',
+  '/configuration/google-maps-details.js',
+  '/assets/js/google-maps-navigator.js',
   '/configuration/search-index.json',
   '/assets/images/logo-luminarytechnicals.png',
   '/assets/images/logo-luminarytechnicals.webp',
@@ -60,6 +63,8 @@ const ASSETS = [
   '/icons/icon-96.png',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
+  '/icons/icon-192-maskable.png',
+  '/icons/icon-512-maskable.png',
   '/manifest.json'
 ];
 
@@ -115,13 +120,21 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // All other assets (CSS, JS, Images, JSON) -> Cache First, fallback to network
+  // CSS / JS / JSON -> Stale-While-Revalidate (updates apply on next load, no manual version bump needed)
+  // Images and everything else -> Cache First. Only successful responses are cached.
+  const url = new URL(event.request.url);
+  const isCode = url.origin === self.location.origin && /\.(css|js|json)$/.test(url.pathname);
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request).then(netRes => {
-        caches.open(CACHE_NAME).then(cache => cache.put(event.request, netRes.clone()));
+    caches.match(event.request).then((cached) => {
+      const network = fetch(event.request).then((netRes) => {
+        if (netRes && netRes.ok && netRes.type !== 'opaque') {
+          const copy = netRes.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
+        }
         return netRes;
       });
+      if (isCode) return cached ? (network.catch(() => {}), cached) : network;
+      return cached || network;
     })
   );
 });

@@ -65,7 +65,7 @@ const CONFIG = {
   pwa: {
     enabled: true,
     offlinePage: "/offline.html",
-    cacheName: "luminary-v5"
+    cacheName: "luminary-v9-seo"
   },
 
   // CANONICAL NAVIGATION STRUCTURE
