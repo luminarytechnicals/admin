@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v10-flow';
+const CACHE_NAME = 'luminary-v11-fresh';
 const OFFLINE_URL = '/offline.html';
 
 // Core assets to pre-cache for complete offline availability
@@ -70,7 +70,11 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return Promise.allSettled(
-        ASSETS.map((asset) => cache.add(asset).catch((err) => console.warn(`Cache skip: ${asset}`, err)))
+        ASSETS.map((asset) =>
+          fetch(new Request(asset, { cache: 'no-cache' }))
+            .then((res) => (res.ok && !res.redirected ? cache.put(asset, res) : null))
+            .catch((err) => console.warn(`Cache skip: ${asset}`, err))
+        )
       );
     })
   );
@@ -124,7 +128,8 @@ self.addEventListener('fetch', (event) => {
   const isCode = url.origin === self.location.origin && /\.(css|js|json)$/.test(url.pathname);
   event.respondWith(
     caches.match(event.request).then((cached) => {
-      const network = fetch(event.request).then((netRes) => {
+      const netReq = isCode ? new Request(event.request, { cache: 'no-cache' }) : event.request;
+      const network = fetch(netReq).then((netRes) => {
         if (netRes && netRes.ok && netRes.type !== 'opaque') {
           const copy = netRes.clone();
           caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
@@ -135,13 +140,4 @@ self.addEventListener('fetch', (event) => {
       return cached || network;
     })
   );
-});
-
-// Background Sync Event Listener
-self.addEventListener('sync', (event) => {
-  if (event.tag === 'sync-news') {
-    event.waitUntil(
-      console.log('Background Sync: Syncing latest news data...')
-    );
-  }
 });

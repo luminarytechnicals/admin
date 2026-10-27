@@ -1,8 +1,2 @@
-# Redirect /index.html to root canonical
-/index.html / 301!
-
-# Redirect all netlify variants to dpdns domain
-https://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
-http://www.luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
-http://luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
-https://luminarytechnicals.netlify.app/* https://luminarytechnicals.dpdns.org/:splat 301!
+# All redirects live in netlify.toml (single source of truth).
+# Keep this file comment-only to avoid duplicate rules.

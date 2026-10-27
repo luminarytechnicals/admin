@@ -103,15 +103,5 @@
       "form_factor": "wide"
     }
   ],
-  "share_target": {
-    "action": "/frontend/collab.html",
-    "method": "POST",
-    "enctype": "application/x-www-form-urlencoded",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
-    }
-  },
   "id": "/"
 }
