@@ -59,7 +59,7 @@
       "items": [
         {
           "label": "Common",
-          "href": "/frontend/organization.html",
+          "href": "/frontend/common.html",
           "description": "Shared organization overview"
         },
         {
