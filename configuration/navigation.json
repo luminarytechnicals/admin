@@ -127,7 +127,7 @@
         },
         {
           "label": "JSET",
-          "href": "/frontend/projects.html#jset"
+          "href": "/frontend/jset.html"
         },
         {
           "label": "AgroScan",
@@ -139,8 +139,8 @@
           "external": true
         },
         {
-          "label": "Luminary News Project",
-          "href": "/frontend/projects.html#luminary-news-project"
+          "label": "Luminary Updates",
+          "href": "/frontend/updates.html"
         }
       ]
     },
