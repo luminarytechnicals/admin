@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "lastUpdated": "2026-10-28",
+  "version": 2,
+  "lastUpdated": "2026-10-29",
   "articles": [
     {
       "slug": "five-core-organs",
@@ -167,77 +167,156 @@
       ]
     },
     {
-      "slug": "seo-friendly-static-websites",
-      "title": "Building SEO-Friendly Static Websites: Clean URLs, Metadata, and Structured Content",
-      "description": "A practical overview of clean URLs, unique page titles, canonical links, structured data, sitemaps, and static-site content architecture.",
-      "category": "SEO & Web",
-      "author": "Luminary Technicals",
-      "datePublished": "2026-10-28",
-      "dateModified": "2026-10-28",
-      "excerpt": "SEO is not a single tag. Clear routes, useful page content, consistent metadata, internal links, and crawlable HTML work together to help people and search engines understand a site.",
+      "slug": "meaning-of-ar",
+      "title": "The Meaning of AR.",
+      "description": "Understand what AR. means within Luminary Technicals, its recorded origin, how it is used with Abhinav Ranjan, and why it is an organizational honorific—not a professional qualification.",
+      "category": "Identity & Branding",
+      "author": "AR. Abhinav Ranjan & Luminary Technicals",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "excerpt": "AR. means Authority Representative within Luminary Technicals. This article explains the designation’s stated meaning, recorded recognition date, organizational context, and distinction from initials or professional qualifications.",
       "tags": [
-        "SEO",
-        "Static Websites",
-        "Structured Data",
-        "Canonical URLs",
-        "Web Development"
+        "AR.",
+        "Authority Representative",
+        "AR. Abhinav Ranjan",
+        "Identity",
+        "Luminary Technicals"
       ],
       "sections": [
         {
-          "heading": "Start with useful, distinct pages",
+          "heading": "The stated meaning of AR.",
           "paragraphs": [
-            "Search-friendly architecture starts with content that answers a real question. Each important page should have a clear purpose, a descriptive heading, a concise summary, and enough original content to be useful on its own.",
-            "Directories, project profiles, articles, and official service destinations should not all repeat the same paragraph. Their internal links should help visitors move from a broad explanation to a specific topic or action."
+            "Within the organizational definition published by Luminary Technicals, AR. means Authority Representative. It is the formal, punctuated identity prefix used in the styled name AR. Abhinav Ranjan.",
+            "The expansion is Authority Representative. Authority and responsibility are associated values of the designation; they are not separate words replacing that stated expansion."
           ]
         },
         {
-          "heading": "Use clean and predictable URLs",
+          "heading": "The required written form",
           "paragraphs": [
-            "Readable URLs make a site's information architecture easier to understand. A path such as /frontend/articles/five-core-organs/ communicates both the content type and the topic. Consistent redirects help keep older .html links and preferred clean URLs from becoming competing versions of the same page.",
-            "Routing rules must be tested against real pages. A generic rule containing a placeholder is useful only when the hosting platform resolves it as intended; explicit paths can be safer for important pages and special cases."
+            "The designation is written as AR.: a capital A, a capital R immediately beside it, and one period immediately after the R. When it appears before the name, there is one ordinary space after the period: AR. Abhinav Ranjan.",
+            "The punctuation is part of the organization's published style. It should be kept consistent in page headings, biographies, editorial references, and relevant metadata."
           ]
         },
         {
-          "heading": "Give each page its own metadata",
+          "heading": "Origin and recorded recognition",
           "paragraphs": [
-            "Important pages should have a unique title and meta description that accurately reflect their content. Canonical URLs should point to the preferred version of that page, and social preview metadata should match the visible title and summary.",
-            "Metadata is a description of the page, not a substitute for helpful content. It must not promise features or facts that the page does not actually contain."
+            "The organizational record provided by Luminary Technicals associates the designation with Abhinav Ranjan and records formal recognition on 5 February 2023, his birthday.",
+            "That same account describes an early AR Tech concept beginning in 2019, followed by the development of the wider Luminary vision. These dates are presented here as the organization's stated history."
           ]
         },
         {
-          "heading": "Make structured data reflect the visible page",
+          "heading": "An identity designation, not a professional qualification",
           "paragraphs": [
-            "Schema.org JSON-LD can help describe pages as articles, organizations, breadcrumbs, or collections. Use the type that matches the page and include only information that is accurate and visible or otherwise legitimately represented by the page.",
-            "For articles, useful fields include headline, description, author, publication date, modified date, image, and the canonical page URL. Structured data does not guarantee a rich search result or higher ranking."
+            "Within Luminary Technicals, AR. is described as an organizational honorific and identity designation. It is not described as a government-issued academic, medical, legal, or other regulated professional qualification.",
+            "The designation should not be presented as a statutory credential or licence. Any legal protection of a name or brand would be a separate matter from the organization's own definition."
           ]
         },
         {
-          "heading": "Keep an XML sitemap and useful internal links",
+          "heading": "Responsibility, contribution, and stewardship",
           "paragraphs": [
-            "An XML sitemap helps search engines discover canonical URLs, while contextual internal links help visitors and crawlers understand how pages relate. Add new public article URLs to the sitemap when publishing them and remove outdated URLs if they cease to exist.",
-            "A sitemap is a discovery aid, not an indexing guarantee. Pages still need to be accessible, canonicalized sensibly, and useful to their intended audience."
+            "The organization's definition links the designation with creation, leadership, meaningful contribution, stewardship, and accountability. The emphasis is on responsibility for the originating vision and its continued development, rather than on status alone."
           ]
         },
         {
-          "heading": "Use JavaScript without hiding the substance",
+          "heading": "One recognized holder in the organizational definition",
           "paragraphs": [
-            "JavaScript is useful for search, filtering, article cards, and rendering a central content registry. For a search-friendly static site, each article should also resolve to its own published HTML page with its own title, canonical URL, article body, and structured data. The listing can be dynamic while the article itself remains directly accessible.",
-            "After changes are deployed, test representative URLs, links, redirects, page source, mobile layout, and the generated sitemap. The reliable outcome is a site that works for people first and presents its structure clearly to crawlers."
+            "The source record sets a maximum of one simultaneous official holder and identifies AR. Abhinav Ranjan as the recognized holder. This is the stated organizational rule for this designation, not a claim that the characters AR. cannot appear in unrelated names or contexts.",
+            "People may have the initials A and R in their own names, but initials alone do not establish that they hold the Luminary Technicals designation."
+          ]
+        },
+        {
+          "heading": "Name, designation, and office are different",
+          "paragraphs": [
+            "Abhinav Ranjan is the personal name. AR. is the organizational honorific used in the formal identity AR. Abhinav Ranjan. Founder & CEO is the organizational office identified by Luminary Technicals. Keeping these concepts separate makes the public identity clearer."
           ]
         }
       ],
       "relatedLinks": [
         {
-          "label": "Explore Articles",
+          "label": "Leadership at Luminary Technicals",
+          "url": "/frontend/leadership"
+        },
+        {
+          "label": "About Luminary Technicals",
+          "url": "/frontend/about"
+        },
+        {
+          "label": "AR. writing standard",
+          "url": "/frontend/articles/ar-writing-standard"
+        }
+      ]
+    },
+    {
+      "slug": "ar-writing-standard",
+      "title": "AR. Writing Standard: Capital A, Capital R, No Space, One Period",
+      "description": "The official writing rule for AR.: uppercase A and R together, followed immediately by one period, then a space before the person's name.",
+      "category": "Identity & Branding",
+      "author": "AR. Abhinav Ranjan & Luminary Technicals",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "excerpt": "The designation must always appear as AR.: capital A, capital R with no space between them, and exactly one period directly after R. Use a single space after the period before a person's name.",
+      "tags": [
+        "AR. formatting",
+        "Capital letters",
+        "Punctuation",
+        "Style guide",
+        "Brand consistency"
+      ],
+      "sections": [
+        {
+          "heading": "The required form is AR.",
+          "paragraphs": [
+            "Always write the designation as AR. The A is uppercase, the R is uppercase, there is no space between the two letters, and one period immediately follows the R.",
+            "When the designation precedes the person's name, use one regular space after the period: AR. Abhinav Ranjan. The space belongs between the designation and the name, not inside the designation."
+          ]
+        },
+        {
+          "heading": "The four parts of the rule",
+          "bullets": [
+            "Capital A: the first character must be uppercase.",
+            "Capital R: the second character must also be uppercase.",
+            "No internal space: A and R stay together as AR.",
+            "One period: place a single full stop directly after R, forming AR."
+          ],
+          "paragraphs": [
+            "The period is an intentional part of the official written style. Do not omit it, double it, or move it away from the R."
+          ]
+        },
+        {
+          "heading": "Correct and incorrect forms",
+          "paragraphs": [
+            "Correct standalone form: AR.",
+            "Correct name form: AR. Abhinav Ranjan.",
+            "Do not use these variants as the official styling: Ar., ar., A R., A.R., A.R, AR, AR ., or AR-.",
+            "These examples are typography guidance for the Luminary Technicals designation. Ordinary initials may have different forms in unrelated personal names or contexts."
+          ]
+        },
+        {
+          "heading": "Use the same form across public pages",
+          "paragraphs": [
+            "Keep the written form consistent in page titles, visible headings, founder biographies, article bylines, organization profiles, social descriptions, and relevant structured metadata. A page should not call the same designation AR. in one place and A.R. or AR in another.",
+            "A consistent spelling helps readers recognize the identity and prevents the official style from changing from page to page."
+          ]
+        },
+        {
+          "heading": "What the writing rule does—and does not—mean",
+          "paragraphs": [
+            "This article documents an organizational style rule. It does not turn the designation into a government credential, professional licence, or legal trademark by itself. The stated meaning within Luminary Technicals is Authority Representative, and the style rule preserves how that designation is written."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "label": "The meaning of AR.",
+          "url": "/frontend/articles/meaning-of-ar"
+        },
+        {
+          "label": "Luminary Technicals leadership",
+          "url": "/frontend/leadership"
+        },
+        {
+          "label": "All articles",
           "url": "/frontend/articles"
-        },
-        {
-          "label": "Technology Hub",
-          "url": "/frontend/technology"
-        },
-        {
-          "label": "Updates",
-          "url": "/frontend/updates"
         }
       ]
     }
