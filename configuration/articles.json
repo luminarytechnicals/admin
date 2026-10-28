@@ -418,6 +418,78 @@
           "url": "/frontend/articles"
         }
       ]
+    },
+    {
+      "slug": "legal-management-coordination-accountability",
+      "title": "Legal Management: Government-Related Challenges, Coordination and Accountability",
+      "description": "How Luminary Technicals approaches legal correspondence, records, deadline awareness, professional referrals, privacy, and accountability in government-related processes.",
+      "category": "Legal & Governance",
+      "author": "Luminary Technicals",
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-29",
+      "excerpt": "A practical overview of legal correspondence, document organisation, deadline awareness, qualified professional referrals, privacy, and accountability at Luminary Technicals. It does not claim any specific ongoing government dispute or court case.",
+      "tags": [
+        "Legal Management",
+        "Governance",
+        "Legal Correspondence",
+        "Accountability",
+        "Privacy",
+        "Luminary Technicals"
+      ],
+      "sections": [
+        {
+          "heading": "Why legal coordination matters",
+          "paragraphs": [
+            "A consistent process helps preserve source documents, track correspondence, identify follow-up actions, and route legal questions to appropriately qualified professionals."
+          ]
+        },
+        {
+          "heading": "Government-related processes",
+          "paragraphs": [
+            "The page describes general handling principles and does not confirm any particular government dispute, case, court proceeding, or allegation of misconduct."
+          ]
+        },
+        {
+          "heading": "Document and correspondence controls",
+          "bullets": [
+            "Document organisation and access control",
+            "Correspondence tracking and reference management",
+            "Deadline awareness with legal confirmation",
+            "Qualified professional review and referral",
+            "Careful communication and accountability"
+          ]
+        },
+        {
+          "heading": "Legal contact",
+          "paragraphs": [
+            "Luminary Technicals legal contact: legal@luminarytechnicals.dpdns.org. An email does not by itself establish a professional engagement."
+          ]
+        },
+        {
+          "heading": "Professional boundaries",
+          "paragraphs": [
+            "The article is informational and does not provide legal advice or claim that legal representation has been accepted in any matter."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "label": "Terms of Service",
+          "url": "/frontend/terms"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "/frontend/privacy-policy"
+        },
+        {
+          "label": "Disclaimer",
+          "url": "/frontend/disclaimer"
+        },
+        {
+          "label": "Contact",
+          "url": "/frontend/contact"
+        }
+      ]
     }
   ]
 }
