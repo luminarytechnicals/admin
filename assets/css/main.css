@@ -500,3 +500,20 @@ main .quote-block p {
   padding-bottom: .12rem;
   line-height: 1.9 !important;
 }
+
+
+/* Stronger, last-in-cascade biography spacing, including inline-styled profiles. */
+main .profile-info p:not(:last-child):not(.card-desc):not(.timeline-date):not(.stat-label):not(.eyebrow):not(.article-intro),
+main .biography p:not(:last-child):not(.card-desc):not(.timeline-date):not(.stat-label):not(.eyebrow):not(.article-intro),
+main .bio-content p:not(:last-child):not(.card-desc):not(.timeline-date):not(.stat-label):not(.eyebrow):not(.article-intro),
+main .leadership-bio p:not(:last-child):not(.card-desc):not(.timeline-date):not(.stat-label):not(.eyebrow):not(.article-intro) {
+  margin-bottom: 1.4rem !important;
+  padding-bottom: .18rem;
+  line-height: 1.88 !important;
+}
+main .profile-info p:last-child,
+main .biography p:last-child,
+main .bio-content p:last-child,
+main .leadership-bio p:last-child {
+  margin-bottom: 0 !important;
+}
