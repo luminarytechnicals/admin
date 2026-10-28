@@ -85,7 +85,7 @@
       ]
     },
     {
-      "title": "Companies",
+      "title": "Sub Companies",
       "icon": "▦",
       "items": [
         {
@@ -94,18 +94,15 @@
         },
         {
           "label": "James Web Networking",
-          "href": "https://jwn.qzz.io/",
-          "external": true
+          "href": "/frontend/james-web-networking"
         },
         {
           "label": "Luminary Webs",
-          "href": "https://luminarywebs.dpdns.org/",
-          "external": true
+          "href": "/frontend/luminary-webs"
         },
         {
           "label": "Luminary Books",
-          "href": "https://books.luminarytechnicals.dpdns.org/",
-          "external": true
+          "href": "/frontend/luminary-books"
         },
         {
           "label": "Luminary Afterverse",
