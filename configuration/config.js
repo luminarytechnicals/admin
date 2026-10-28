@@ -87,7 +87,7 @@ const CONFIG = {
     { id: "luminary-developers", name: "Luminary Developers", type: "core-organ", formula: "CREATE", page: "developers.html", subdomain: "https://developers.luminarytechnicals.dpdns.org/", icon: "⚙️", tagline: "Software Engineering & AI Lab" },
     { id: "luminary-cares", name: "Luminary Cares", type: "core-organ", formula: "EMPOWER", page: "cares.html", subdomain: "https://cares.luminarytechnicals.dpdns.org/", icon: "💛", tagline: "Education & Digital Literacy" },
     { id: "luminary-kits", name: "Luminary Kits", type: "core-organ", formula: "CONNECT", page: "kits.html", subdomain: "https://kits.luminarytechnicals.dpdns.org/", icon: "📦", tagline: "Developer Toolkits & Integrations" },
-    { id: "luminary-federals", name: "Luminary Federals", type: "core-organ", formula: "ENGAGE", page: "federals.html", subdomain: "https://federals.luminarytechnicals.dpdns.org/", icon: "🏛️", tagline: "Civic Technology & News Platform" }
+    { id: "luminary-federals", name: "Luminary Federals", type: "core-organ", formula: "ENGAGE", page: "federals.html", subdomain: "https://federals.luminarytechnicals.dpdns.org/", icon: "🏛️", tagline: "Civic Technology & Updates Platform" }
   ],
 
   // Direct Associated Entity:
