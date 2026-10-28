@@ -616,7 +616,7 @@
         {
           "heading": "Reported technology gap, handover, and 45-day development",
           "paragraphs": [
-            "The supplied project narrative says NAIRA governance was not correctly established or fully implemented by the government bodies involved because the available technology was missing or insufficiently capable. It states that the work was given to Luminary Technicals in February 2025 and that research began, with a working NAIRA system started within 45 days."
+            "The supplied project narrative says NAIRA governance had not been correctly established or fully implemented by the government bodies involved because the available technology was missing or insufficiently capable. It states that the work was given to Luminary Technicals in February 2025 and that research began, with a working NAIRA system started within 45 days."
           ]
         },
         {
@@ -634,7 +634,8 @@
         {
           "heading": "Reported budget framework",
           "paragraphs": [
-            "The supplied figures are an annual budget of ₹2 crore, a management allocation of ₹10 crore, and a separate special SET research allocation of ₹3 crore. Their relationship should be clarified in the source financial schedule rather than assuming they are additive."
+            "The supplied figures are an annual budget of ₹2 crore, a management allocation of ₹10 crore, and a special research allocation for SET of ₹3 crore.",
+            "The schedule should clarify whether ₹10 crore is the five-year total corresponding to the ₹2 crore annual budget, and whether the ₹3 crore SET allocation is included in or additional to another category. The existing JSET project entry separately displays ₹1.2 crore; that amount should not be treated as equivalent to these programme-level figures until their relationship is documented."
           ]
         },
         {
