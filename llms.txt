@@ -11,7 +11,7 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 - **Luminary Developers (CREATE):** Software engineering, AI systems, progressive web apps, and the Luminary Afterverse spatial computing lab. Lead: `https://luminarytechnicals.dpdns.org/frontend/developers.html` | Dedicated Subdomain: `https://developers.luminarytechnicals.dpdns.org/`
 - **Luminary Cares (EMPOWER):** Technology education, digital literacy, mentorship, and community empowerment via Luminary Books. Lead: `https://luminarytechnicals.dpdns.org/frontend/cares.html` | Dedicated Subdomain: `https://cares.luminarytechnicals.dpdns.org/`
 - **Luminary Kits (CONNECT):** Reusable developer toolkits, APIs, SDKs, and partner web collaborations including Luminary Webs. Lead: `https://luminarytechnicals.dpdns.org/frontend/kits.html` | Dedicated Subdomain: `https://kits.luminarytechnicals.dpdns.org/`
-- **Luminary Federals (ENGAGE):** Civic technology, public affairs, governance research, and the official Luminary Updates feed. Lead: `https://luminarytechnicals.dpdns.org/frontend/federals.html` | Dedicated Subdomain: `https://federals.luminarytechnicals.dpdns.org/`
+- **Luminary Federals (ENGAGE):** Civic technology, public affairs, governance research, and the official Updates feed. Lead: `https://luminarytechnicals.dpdns.org/frontend/federals.html` | Dedicated Subdomain: `https://federals.luminarytechnicals.dpdns.org/`
 
 **Direct Associated Entity** (top-level, separate from the 5 organs):
 - **Luminary Trust:** Public-interest, philanthropic ecosystem directly associated with Luminary Technicals. Oversees the **Radhika Research Foundation**. (`https://luminarytechnicals.dpdns.org/frontend/trust.html`)
@@ -19,20 +19,20 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 ## Key Projects & Initiatives
 - **AgroScan** (`https://luminarytechnicals.dpdns.org/frontend/agroscan.html`): AI-driven precision agricultural diagnostics.
 - **Luminary Afterverse** (`https://luminarytechnicals.dpdns.org/frontend/afterverse.html`): Spatial computing and 3D interactive laboratory.
-- **Luminary Updates** (`https://luminarytechnicals.dpdns.org/frontend/updates.html`): Official announcements, project changes, and ecosystem updates feed.
+- **Updates** (`https://luminarytechnicals.dpdns.org/frontend/updates.html`): Official announcements, project changes, and ecosystem updates feed.
 - **Luminary Webs / Luminary Wishes** (`https://luminarytechnicals.dpdns.org/frontend/projects.html`): Curated web platforms and applications.
-- **Luminary Books** (`https://luminarytechnicals.dpdns.org/frontend/resources.html#books`): Technical guides, manuals, and open-access literature under Luminary Cares.
+- **Luminary Books** (`https://luminarytechnicals.dpdns.org/frontend/resources#books`): Technical guides, manuals, and open-access literature under Luminary Cares.
 
 ## Policies & Governance
-- **Editorial Policy:** https://luminarytechnicals.dpdns.org/frontend/editorial-policy.html
-- **Privacy Policy:** https://luminarytechnicals.dpdns.org/frontend/privacy-policy.html
-- **Terms of Service:** https://luminarytechnicals.dpdns.org/frontend/terms.html
-- **Security:** https://luminarytechnicals.dpdns.org/frontend/security.html
-- **Accessibility:** https://luminarytechnicals.dpdns.org/frontend/accessibility.html
+- **Editorial Policy:** https://luminarytechnicals.dpdns.org/frontend/editorial-policy
+- **Privacy Policy:** https://luminarytechnicals.dpdns.org/frontend/privacy-policy
+- **Terms of Service:** https://luminarytechnicals.dpdns.org/frontend/terms
+- **Security:** https://luminarytechnicals.dpdns.org/frontend/security
+- **Accessibility:** https://luminarytechnicals.dpdns.org/frontend/accessibility
 
 ## Founder & Contact
 - **Founder & Digital Architect:** AR. Abhinav Ranjan
-- **Founder Profile:** https://luminarytechnicals.dpdns.org/frontend/leadership.html
+- **Founder Profile:** https://luminarytechnicals.dpdns.org/frontend/leadership
 - **CEO Email:** ceo@luminarytechnicals.dpdns.org
 - **Help & General Inquiries:** help@luminarytechnicals.dpdns.org
 - **Legal & Compliance:** legal@luminarytechnicals.dpdns.org
@@ -40,6 +40,20 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 - **Official Website:** https://luminarytechnicals.dpdns.org/
 
 ## Directory Pages
-- **Luminary Common:** https://luminarytechnicals.dpdns.org/frontend/common.html — shared starting point and links to the five core organs.
-- **JSET Project:** https://luminarytechnicals.dpdns.org/frontend/jset.html — dedicated JSET project detail page.
-- **Luminary Updates:** https://luminarytechnicals.dpdns.org/frontend/updates.html — repository JSON-driven platform updates.
+- **Luminary Common:** https://luminarytechnicals.dpdns.org/frontend/common — shared starting point and links to the five core organs.
+- **JSET Project:** https://luminarytechnicals.dpdns.org/frontend/jset — dedicated JSET project detail page.
+- **Updates:** https://luminarytechnicals.dpdns.org/frontend/updates — repository JSON-driven platform updates.
+
+
+## Article Library
+- **Articles overview:** https://luminarytechnicals.dpdns.org/frontend/articles
+- **Inside Luminary Technicals: How the Five Core Organs Work Together:** https://luminarytechnicals.dpdns.org/frontend/articles/five-core-organs
+- **Sub-companies, Projects, and Platforms:** https://luminarytechnicals.dpdns.org/frontend/articles/sub-companies-projects-platforms
+- **The Meaning of AR.:** https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar
+- **AR. Writing Standard:** https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard
+- **JSET — James Social Engineering Toolkit:** https://luminarytechnicals.dpdns.org/frontend/articles/jset-james-social-engineering-toolkit — proposed cognitive-security and networked-influence research concept; its proposed features are not claimed to be implemented.
+- **Legal Management: Government-Related Challenges, Coordination and Accountability:** https://luminarytechnicals.dpdns.org/frontend/articles/legal-management-coordination-accountability — general organisational process guidance. It does not assert a specific government dispute, court proceeding, or allegation of misconduct.
+
+## Legal & Compliance
+- **Legal contact:** legal@luminarytechnicals.dpdns.org
+- This is a contact channel, not confirmation that a legal professional has accepted a matter or established a professional engagement.
