@@ -455,3 +455,48 @@ h3.was-h4{font-size:clamp(1rem,2vw,1.4rem)}
 /* preloader failsafe: never keep the page covered if JS is slow or blocked */
 #preloader{animation:preloaderFailsafe .4s ease 3s forwards}
 @keyframes preloaderFailsafe{to{opacity:0;visibility:hidden;pointer-events:none}}
+
+
+/* SITE-WIDE EDITORIAL RHYTHM — paragraph spacing, readable content, and biographies */
+main p:not(.card-desc):not(.timeline-date):not(.stat-label):not(.eyebrow):not(.article-intro) {
+  margin-bottom: clamp(1rem, 1.45vw, 1.3rem) !important;
+  padding-bottom: .1rem;
+  line-height: 1.82;
+}
+main .section-title p {
+  margin: 0 auto !important;
+  padding: 0;
+  line-height: 1.7;
+}
+main .card-desc,
+main .timeline-date,
+main .stat-label {
+  margin-bottom: .35rem !important;
+  padding: 0;
+  line-height: 1.58;
+}
+/* Biography and profile text must have visible separation between paragraphs. */
+.profile-info p,
+.profile-card .profile-info p,
+#profile .profile-info p,
+#leadership-profile .profile-info p,
+.leadership-bio p,
+.biography p,
+.bio-content p,
+#owner-message p,
+#why-built .quote-block p {
+  margin-bottom: 1.35rem !important;
+  padding-bottom: .16rem;
+  line-height: 1.88 !important;
+}
+.profile-info p:last-child,
+.profile-card .profile-info p:last-child,
+.biography p:last-child,
+.bio-content p:last-child {
+  margin-bottom: 0 !important;
+}
+main .quote-block p {
+  margin-bottom: 1rem !important;
+  padding-bottom: .12rem;
+  line-height: 1.9 !important;
+}
