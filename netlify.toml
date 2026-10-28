@@ -625,6 +625,53 @@
   status = 200
   force = true
 
+# Articles hub clean URL
+[[redirects]]
+  from = "/frontend/articles.html"
+  to = "/frontend/articles"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/articles"
+  to = "/frontend/articles.html"
+  status = 200
+  force = true
+
+# Individual article canonical URLs: static HTML is served through clean permalinks.
+[[redirects]]
+  from = "/frontend/articles/five-core-organs.html"
+  to = "/frontend/articles/five-core-organs"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/five-core-organs"
+  to = "/frontend/articles/five-core-organs.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/frontend/articles/sub-companies-projects-platforms.html"
+  to = "/frontend/articles/sub-companies-projects-platforms"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/sub-companies-projects-platforms"
+  to = "/frontend/articles/sub-companies-projects-platforms.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/frontend/articles/seo-friendly-static-websites.html"
+  to = "/frontend/articles/seo-friendly-static-websites"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/seo-friendly-static-websites"
+  to = "/frontend/articles/seo-friendly-static-websites.html"
+  status = 200
+  force = true
+
 # Global Security Headers & Asset Caching
 [[headers]]
   for = "/*"
