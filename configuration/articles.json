@@ -319,6 +319,105 @@
           "url": "/frontend/articles"
         }
       ]
+    },
+    {
+      "slug": "jset-james-social-engineering-toolkit",
+      "title": "JSET — James Social Engineering Toolkit: Cognitive Security and Social Network Influence",
+      "description": "Explore JSET's proposed research direction for cognitive security, networked influence analysis, information integrity, and safeguards against social manipulation.",
+      "category": "Cybersecurity Research",
+      "author": "AR. Abhinav Ranjan / Abhinav Ranjan",
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-29",
+      "excerpt": "JSET is a proposed research and toolset concept associated with James Web Networking (JWN), part of Luminary Technicals. It explores how networked influence can affect public information environments and how risks can be studied and reduced responsibly.",
+      "tags": [
+        "JSET",
+        "James Social Engineering Toolkit",
+        "Cognitive Security",
+        "Social Network Influence",
+        "FIMI",
+        "Cybersecurity Research",
+        "Information Integrity"
+      ],
+      "sections": [
+        {
+          "heading": "What does JSET stand for?",
+          "paragraphs": [
+            "JSET stands for James Social Engineering Toolkit. Its proposed research direction looks beyond individual scams or attempts to obtain access, to the wider information environment created by connected social networks, where posts, narratives, relationships and repeated claims may shape public understanding.",
+            "The phrase “social engineering toolkit” is not newly invented. A separate, established project called the Social-Engineer Toolkit (SET) is associated with TrustedSec and focuses on social-engineering security testing. JSET is a distinct project name and is not affiliated with TrustedSec."
+          ]
+        },
+        {
+          "heading": "Why social-network influence deserves attention",
+          "paragraphs": [
+            "Online networks make communication fast and scalable. Their structure can also make it difficult to distinguish genuine grassroots discussion from coordinated, deceptive activity. Influence efforts can use misleading narratives, impersonation, fake personas, or artificial amplification to distort the information people encounter.",
+            "Public institutions researching these risks use terms such as disinformation and Foreign Information Manipulation and Interference (FIMI). ENISA's September 30, 2026 update reports that identified AI-enabled FIMI campaigns in its reporting rose from 41 to 147 over one year. That is a finding within ENISA's monitoring context, not a count of every campaign worldwide and not evidence about JSET itself."
+          ]
+        },
+        {
+          "heading": "Is influence more powerful than physical weapons?",
+          "paragraphs": [
+            "The comparison is a metaphor, not a measurable universal fact. Physical violence and information manipulation cause different kinds of harm. Influence operations may work indirectly—by changing what people notice, trust, fear, or repeat—and their effects can spread through relationships and public discussion. Physical weapons can cause immediate bodily harm; information manipulation can undermine informed choice, inflame tensions or weaken trust over time.",
+            "The responsible conclusion is not that one is always more powerful than the other. It is that non-physical influence can create serious real-world consequences and deserves careful research, safeguards and accountability."
+          ]
+        },
+        {
+          "heading": "Proposed JSET research areas",
+          "paragraphs": [
+            "Network analysis: study public or authorised datasets in aggregate to understand how information travels between communities without profiling private individuals.",
+            "Narrative provenance: record sources, timestamps and context so researchers can distinguish traceable evidence from unsupported or recycled claims.",
+            "Coordination indicators: explore transparent signals of potentially coordinated or inauthentic activity, with human review and uncertainty clearly shown.",
+            "Influence-risk assessment: assess campaign-level risks such as deception, impersonation, artificial amplification and missing source transparency—not people's private beliefs.",
+            "Controlled simulation: test hypotheses using synthetic data or closed research environments, rather than targeting real communities or manipulating live platforms.",
+            "Defensive reporting: help researchers and authorised teams document patterns, explain limitations, support media literacy and suggest proportionate responses.",
+            "These are proposed research areas, not a verified list of features currently available in JSET. Any future implementation should publish its methods, limitations, testing conditions and data-handling rules."
+          ]
+        },
+        {
+          "heading": "What JSET should not do",
+          "paragraphs": [
+            "A tool that studies social influence can itself become a source of harm if its purpose is to manipulate people. JSET's responsible direction should exclude covert mass persuasion, fake-account operations, impersonation, disinformation campaigns, harassment, doxxing, unauthorised access, private-data collection, and attempts to suppress lawful expression.",
+            "It should not claim to control a social network or the minds of its users. Networks are made of people, platforms, institutions and social contexts; any analytic output is incomplete and should not be presented as certainty about what a population believes or why."
+          ]
+        },
+        {
+          "heading": "Principles for responsible development",
+          "paragraphs": [
+            "Authorisation: test only systems and data for which permission and a valid research basis exist.",
+            "Transparency: distinguish observations, hypotheses and automated estimates; document methods and limitations.",
+            "Privacy: minimise data collection, aggregate where possible, and avoid unnecessary personal profiling.",
+            "Human oversight: require review before consequential conclusions or responses are made.",
+            "Accountability: keep audit records, provide a way to challenge errors, and assess potential harm to individuals and communities.",
+            "Public benefit: prioritise awareness, resilience, detection and research over covert manipulation."
+          ]
+        },
+        {
+          "heading": "JWN, Luminary Technicals and project credits",
+          "paragraphs": [
+            "JSET is described as an example of an advanced toolkit concept from James Web Networking (JWN), associated with Luminary Technicals. Its intended direction is to explore the social and cognitive side of digital security alongside conventional technical security research.",
+            "Concept and project direction: AR. Abhinav Ranjan / Abhinav Ranjan. James Web Networking: https://jwn.qzz.io/. JSET contact: jset@jwn.qzz.io."
+          ]
+        },
+        {
+          "heading": "Current status",
+          "paragraphs": [
+            "This publication explains the JSET concept, its proposed research direction and the safeguards that should guide it. It does not assert a production release, operational social-network control, a verified number of working tools, or measured real-world influence. Future status updates should be tied to verifiable demonstrations, documentation, code or controlled evaluation results."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "label": "James Web Networking",
+          "url": "https://jwn.qzz.io/"
+        },
+        {
+          "label": "JSET contact",
+          "url": "mailto:jset@jwn.qzz.io"
+        },
+        {
+          "label": "Luminary Technicals Articles",
+          "url": "/frontend/articles"
+        }
+      ]
     }
   ]
 }
