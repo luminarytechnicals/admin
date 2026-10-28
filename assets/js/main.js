@@ -107,6 +107,15 @@ async function initJsonNavigation() {
       });
     }
 
+    // Keep static footer/body links consistent with the JSON-driven Updates route.
+    document.querySelectorAll('a[href]').forEach(anchor => {
+      const href = anchor.getAttribute('href') || '';
+      if (/(^|\\/)news\\.html(?=$|[?#])/i.test(href)) {
+        anchor.setAttribute('href', href.replace(/news\\.html/i, 'updates.html'));
+        if (anchor.textContent.trim().toLowerCase() === 'news') anchor.textContent = 'Updates';
+      }
+    });
+
     markActiveNavigation();
   } catch (error) {
     console.warn('JSON navigation could not be loaded; using the built-in navigation.', error);
