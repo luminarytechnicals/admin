@@ -54,6 +54,26 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://luminarytechnicals.dpdns.org/#website",
+      "url": "https://luminarytechnicals.dpdns.org/",
+      "name": "Luminary Technicals",
+      "publisher": {
+        "@id": "https://luminarytechnicals.dpdns.org/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://luminarytechnicals.dpdns.org/#organization",
+      "name": "Luminary Technicals",
+      "url": "https://luminarytechnicals.dpdns.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.webp"
+      }
+    },
+    {
       "@type": "Article",
       "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard#article",
       "headline": "AR. Writing Standard: Capital A, Capital R, No Space, One Period",
@@ -85,8 +105,7 @@
         }
       },
       "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard"
+        "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard#page"
       },
       "articleSection": "Identity & Branding",
       "keywords": [
@@ -120,12 +139,29 @@
           "item": "https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard"
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard#page",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard",
+      "name": "AR. Writing Standard: Capital A, Capital R, No Space, One Period",
+      "description": "The official writing rule for AR.: uppercase A and R together, followed immediately by one period, then a space before the person's name.",
+      "isPartOf": {
+        "@id": "https://luminarytechnicals.dpdns.org/#website"
+      },
+      "publisher": {
+        "@id": "https://luminarytechnicals.dpdns.org/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard#article"
+      },
+      "inLanguage": "en"
     }
   ]
 }
 </script>
 <noscript><style>#preloader{display:none!important}</style></noscript>
-</head>
+
 <body class="article-detail">
 <div id="preloader" aria-hidden="true"><div class="loader"></div></div>
 <a href="#main-content" class="skip-link">Skip to main content</a>
