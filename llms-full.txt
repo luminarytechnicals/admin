@@ -37,7 +37,7 @@ Exactly five core organs operate under Luminary Technicals, each representing a 
    Modular UI component libraries, developer CLI tools, REST & GraphQL integration APIs, cross-organ system connectors. Coordinates the **Luminary Webs** collaboration (→ Luminary Wishes).
 
 5. **ENGAGE — Luminary Federals** (`/frontend/federals.html`)
-   Civic-tech research, open institutional technology standards, sovereign digital protocols, technology governance studies, and institutional dialogues. Operates the **Luminary Updates** platform. (Strictly non-governmental, non-statutory civic research entity.)
+   Civic-tech research, open institutional technology standards, sovereign digital protocols, technology governance studies, and institutional dialogues. Operates the **Updates** platform. (Strictly non-governmental, non-statutory civic research entity.)
 
 ### 2.2 Direct Associated Entity (Top-Level — NOT a Core Organ)
 - **Luminary Trust** (`/frontend/trust.html`)
@@ -85,7 +85,7 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 - **URL:** `/frontend/afterverse.html`
 - Creative technology lab exploring interactive 3D WebGL environments, real-time particle physics, ambient spatial audio, and next-generation sensory web navigation at 60 FPS.
 
-### Luminary Updates (Information Platform)
+### Updates (Information Platform)
 - **Parent:** Luminary Federals
 - **Type:** Official Initiative / Platform
 - **URL:** `/frontend/updates.html`
@@ -135,8 +135,8 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 ### Q: Is Luminary Trust one of the five organs?
 **A:** No. Luminary Trust is a top-level entity directly associated with Luminary Technicals, separate from the five operational organs. It handles public-interest and philanthropic initiatives, including the Radhika Research Foundation.
 
-### Q: Where does Luminary Updates belong?
-**A:** Luminary Updates is an official initiative/platform under Luminary Federals (the 5th core organ). It is NOT an independent organ and NOT under Luminary Trust or Luminary Cares.
+### Q: Where does Updates belong?
+**A:** Updates is an official initiative/platform under Luminary Federals (the 5th core organ). It is NOT an independent organ and NOT under Luminary Trust or Luminary Cares.
 
 ### Q: Who is AR. Abhinav Ranjan?
 **A:** AR. Abhinav Ranjan is the Founder & CEO of Luminary Technicals. He provides central strategic direction, system architecture, and leadership across the entire ecosystem.
@@ -150,39 +150,53 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 ---
 
 ## 7. Official Canonical Resource Map
-- **Home:** https://luminarytechnicals.dpdns.org/index.html
-- **About:** https://luminarytechnicals.dpdns.org/frontend/about.html
-- **Organization Architecture:** https://luminarytechnicals.dpdns.org/frontend/organization.html
-- **Ecosystem Visualizer:** https://luminarytechnicals.dpdns.org/frontend/ecosystem.html
-- **Organs Directory:** https://luminarytechnicals.dpdns.org/frontend/organs.html
-- **Luminary Servers:** https://luminarytechnicals.dpdns.org/frontend/servers.html | Subdomain: https://servers.luminarytechnicals.dpdns.org/
-- **Luminary Developers:** https://luminarytechnicals.dpdns.org/frontend/developers.html | Subdomain: https://developers.luminarytechnicals.dpdns.org/
-- **Luminary Cares:** https://luminarytechnicals.dpdns.org/frontend/cares.html | Subdomain: https://cares.luminarytechnicals.dpdns.org/
-- **Luminary Kits:** https://luminarytechnicals.dpdns.org/frontend/kits.html | Subdomain: https://kits.luminarytechnicals.dpdns.org/
-- **Luminary Federals:** https://luminarytechnicals.dpdns.org/frontend/federals.html | Subdomain: https://federals.luminarytechnicals.dpdns.org/
-- **Luminary Trust:** https://luminarytechnicals.dpdns.org/frontend/trust.html | Domain: https://luminarytrust.dpdns.org/
-- **AgroScan:** https://luminarytechnicals.dpdns.org/frontend/agroscan.html
-- **Luminary Afterverse:** https://luminarytechnicals.dpdns.org/frontend/afterverse.html
-- **Luminary Updates:** https://luminarytechnicals.dpdns.org/frontend/updates.html
-- **Research Portal:** https://luminarytechnicals.dpdns.org/frontend/research.html
-- **Technology Hub:** https://luminarytechnicals.dpdns.org/frontend/technology.html
-- **Leadership:** https://luminarytechnicals.dpdns.org/frontend/leadership.html
-- **Founder & Owner:** https://luminarytechnicals.dpdns.org/frontend/owner.html
-- **Projects:** https://luminarytechnicals.dpdns.org/frontend/projects.html
-- **Collaborate:** https://luminarytechnicals.dpdns.org/frontend/collab.html
-- **Contact:** https://luminarytechnicals.dpdns.org/frontend/contact.html
-- **Resources:** https://luminarytechnicals.dpdns.org/frontend/resources.html
-- **FAQ:** https://luminarytechnicals.dpdns.org/frontend/faq.html
-- **Glossary:** https://luminarytechnicals.dpdns.org/frontend/glossary.html
-- **Privacy Policy:** https://luminarytechnicals.dpdns.org/frontend/privacy-policy.html
-- **Terms of Service:** https://luminarytechnicals.dpdns.org/frontend/terms.html
-- **Security:** https://luminarytechnicals.dpdns.org/frontend/security.html
-- **Accessibility:** https://luminarytechnicals.dpdns.org/frontend/accessibility.html
-- **Cookies Policy:** https://luminarytechnicals.dpdns.org/frontend/cookies.html
-- **Disclaimer:** https://luminarytechnicals.dpdns.org/frontend/disclaimer.html
+- **Home:** https://luminarytechnicals.dpdns.org/
+- **About:** https://luminarytechnicals.dpdns.org/frontend/about
+- **Organization Architecture:** https://luminarytechnicals.dpdns.org/frontend/organization
+- **Ecosystem Visualizer:** https://luminarytechnicals.dpdns.org/frontend/ecosystem
+- **Organs Directory:** https://luminarytechnicals.dpdns.org/frontend/organs
+- **Luminary Servers:** https://luminarytechnicals.dpdns.org/frontend/servers | Subdomain: https://servers.luminarytechnicals.dpdns.org/
+- **Luminary Developers:** https://luminarytechnicals.dpdns.org/frontend/developers | Subdomain: https://developers.luminarytechnicals.dpdns.org/
+- **Luminary Cares:** https://luminarytechnicals.dpdns.org/frontend/cares | Subdomain: https://cares.luminarytechnicals.dpdns.org/
+- **Luminary Kits:** https://luminarytechnicals.dpdns.org/frontend/kits | Subdomain: https://kits.luminarytechnicals.dpdns.org/
+- **Luminary Federals:** https://luminarytechnicals.dpdns.org/frontend/federals | Subdomain: https://federals.luminarytechnicals.dpdns.org/
+- **Luminary Trust:** https://luminarytechnicals.dpdns.org/frontend/trust | Domain: https://luminarytrust.dpdns.org/
+- **AgroScan:** https://luminarytechnicals.dpdns.org/frontend/agroscan
+- **Luminary Afterverse:** https://luminarytechnicals.dpdns.org/frontend/afterverse
+- **Updates:** https://luminarytechnicals.dpdns.org/frontend/updates
+- **Research Portal:** https://luminarytechnicals.dpdns.org/frontend/research
+- **Technology Hub:** https://luminarytechnicals.dpdns.org/frontend/technology
+- **Leadership:** https://luminarytechnicals.dpdns.org/frontend/leadership
+- **Founder & Owner:** https://luminarytechnicals.dpdns.org/frontend/owner
+- **Projects:** https://luminarytechnicals.dpdns.org/frontend/projects
+- **Collaborate:** https://luminarytechnicals.dpdns.org/frontend/collab
+- **Contact:** https://luminarytechnicals.dpdns.org/frontend/contact
+- **Resources:** https://luminarytechnicals.dpdns.org/frontend/resources
+- **FAQ:** https://luminarytechnicals.dpdns.org/frontend/faq
+- **Glossary:** https://luminarytechnicals.dpdns.org/frontend/glossary
+- **Privacy Policy:** https://luminarytechnicals.dpdns.org/frontend/privacy-policy
+- **Terms of Service:** https://luminarytechnicals.dpdns.org/frontend/terms
+- **Security:** https://luminarytechnicals.dpdns.org/frontend/security
+- **Accessibility:** https://luminarytechnicals.dpdns.org/frontend/accessibility
+- **Cookies Policy:** https://luminarytechnicals.dpdns.org/frontend/cookies
+- **Disclaimer:** https://luminarytechnicals.dpdns.org/frontend/disclaimer
 
 
 ## Additional Directory Pages
-- **Luminary Common:** https://luminarytechnicals.dpdns.org/frontend/common.html — Shared navigation and overview of all five core organs.
-- **JSET Project:** https://luminarytechnicals.dpdns.org/frontend/jset.html — Dedicated JSET project detail page.
-- **Luminary Updates:** https://luminarytechnicals.dpdns.org/frontend/updates.html — JSON-driven announcements and update feed.
+- **Luminary Common:** https://luminarytechnicals.dpdns.org/frontend/common — Shared navigation and overview of all five core organs.
+- **JSET Project:** https://luminarytechnicals.dpdns.org/frontend/jset — Dedicated JSET project detail page.
+- **Updates:** https://luminarytechnicals.dpdns.org/frontend/updates — JSON-driven announcements and update feed.
+
+
+## Article Library
+- **Articles overview:** https://luminarytechnicals.dpdns.org/frontend/articles
+- **Inside Luminary Technicals: How the Five Core Organs Work Together:** https://luminarytechnicals.dpdns.org/frontend/articles/five-core-organs
+- **Sub-companies, Projects, and Platforms:** https://luminarytechnicals.dpdns.org/frontend/articles/sub-companies-projects-platforms
+- **The Meaning of AR.:** https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar
+- **AR. Writing Standard:** https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard
+- **JSET — James Social Engineering Toolkit:** https://luminarytechnicals.dpdns.org/frontend/articles/jset-james-social-engineering-toolkit — proposed cognitive-security and networked-influence research concept; its proposed features are not claimed to be implemented.
+- **Legal Management: Government-Related Challenges, Coordination and Accountability:** https://luminarytechnicals.dpdns.org/frontend/articles/legal-management-coordination-accountability — general organisational process guidance. It does not assert a specific government dispute, court proceeding, or allegation of misconduct.
+
+## Legal & Compliance
+- **Legal contact:** legal@luminarytechnicals.dpdns.org
+- This is a contact channel, not confirmation that a legal professional has accepted a matter or established a professional engagement.
