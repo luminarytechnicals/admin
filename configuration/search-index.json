@@ -3,7 +3,7 @@
     "title": "Luminary Technicals — Home",
     "category": "HOME",
     "badge": "Ecosystem Hub",
-    "url": "index.html",
+    "url": "/",
     "keywords": "luminary technicals home ecosystem master formula power create empower connect engage infrastructure technology ai cloud",
     "text": "The central hub of Luminary Technicals connecting five core organs (Servers, Developers, Cares, Kits, Federals) and Luminary Trust."
   },
@@ -11,7 +11,7 @@
     "title": "About Luminary Technicals",
     "category": "ORGANIZATION",
     "badge": "About",
-    "url": "frontend/about.html",
+    "url": "frontend/about",
     "keywords": "about luminary technicals mission vision values history roadmap philosophy master formula abhinav ranjan",
     "text": "Learn about the mission, strategic vision, technical philosophy, and architectural governance behind Luminary Technicals."
   },
@@ -19,7 +19,7 @@
     "title": "Organizational Structure & Governance",
     "category": "ORGANIZATION",
     "badge": "Governance",
-    "url": "frontend/organization.html",
+    "url": "frontend/organization",
     "keywords": "organization structure governance organs trust constitution hierarchy charters operations",
     "text": "Detailed overview of Luminary Technicals organizational structure, constitutional charters, independent organs, and executive oversight."
   },
@@ -27,7 +27,7 @@
     "title": "Ecosystem Architecture",
     "category": "ORGANIZATION",
     "badge": "Ecosystem",
-    "url": "frontend/ecosystem.html",
+    "url": "frontend/ecosystem",
     "keywords": "ecosystem architecture five organs servers developers cares kits federals trust radhika foundation network",
     "text": "Comprehensive architectural map of the five core organs and Luminary Trust functioning as a cohesive digital ecosystem."
   },
@@ -35,7 +35,7 @@
     "title": "Core Organs Overview",
     "category": "ORGAN",
     "badge": "Core Organs",
-    "url": "frontend/organs.html",
+    "url": "frontend/organs",
     "keywords": "organs five core servers developers cares kits federals power create empower connect engage",
     "text": "Comprehensive guide to all five core organs of Luminary Technicals and their defining operational formulas."
   },
@@ -43,7 +43,7 @@
     "title": "Luminary Servers",
     "category": "ORGAN",
     "badge": "Core Organ · Power",
-    "url": "frontend/servers.html",
+    "url": "frontend/servers",
     "keywords": "servers servers.luminarytechnicals.dpdns.org hosting cloud vps dns ssl cdn infrastructure power bare metal high availability datacenter anycast",
     "text": "Core organ responsible for cloud infrastructure, bare-metal server management, authoritative Anycast DNS routing, high-availability VPS hosting, and AI inference compute nodes. Dedicated portal: servers.luminarytechnicals.dpdns.org. Formula: POWER."
   },
@@ -51,7 +51,7 @@
     "title": "Luminary Developers",
     "category": "ORGAN",
     "badge": "Core Organ · Create",
-    "url": "frontend/developers.html",
+    "url": "frontend/developers",
     "keywords": "developers developers.luminarytechnicals.dpdns.org software engineering web applications ai automation pwa afterverse create programming open source",
     "text": "Core organ responsible for software engineering, artificial intelligence agent automation, progressive web apps, and incubating the Luminary Afterverse spatial computing lab. Dedicated portal: developers.luminarytechnicals.dpdns.org. Formula: CREATE."
   },
@@ -59,7 +59,7 @@
     "title": "Luminary Cares",
     "category": "ORGAN",
     "badge": "Core Organ · Empower",
-    "url": "frontend/cares.html",
+    "url": "frontend/cares",
     "keywords": "cares cares.luminarytechnicals.dpdns.org empower education community mentorship digital literacy inclusion books social impact outreach",
     "text": "Core organ dedicated to technology education, open-access developer mentorship, digital literacy in underserved communities, and technical whitepapers through Luminary Books. Dedicated portal: cares.luminarytechnicals.dpdns.org. Formula: EMPOWER."
   },
@@ -67,7 +67,7 @@
     "title": "Luminary Kits",
     "category": "ORGAN",
     "badge": "Core Organ · Connect",
-    "url": "frontend/kits.html",
+    "url": "frontend/kits",
     "keywords": "kits kits.luminarytechnicals.dpdns.org connect developer toolkits apis sdks components integrations luminary webs collaboration libraries",
     "text": "Core organ responsible for reusable UI tokens, CLI utilities, developer toolkits, cross-system APIs, and coordinating official partner web collaborations including Luminary Webs. Dedicated portal: kits.luminarytechnicals.dpdns.org. Formula: CONNECT."
   },
@@ -75,15 +75,15 @@
     "title": "Luminary Federals",
     "category": "ORGAN",
     "badge": "Core Organ · Engage",
-    "url": "frontend/federals.html",
+    "url": "frontend/federals",
     "keywords": "federals federals.luminarytechnicals.dpdns.org engage civic technology governance public affairs news media communication policy research",
-    "text": "Core organ focused on civic engagement, open technology governance, sovereign digital systems research, and operating the official Luminary Updates platform. Dedicated portal: federals.luminarytechnicals.dpdns.org. Formula: ENGAGE."
+    "text": "Core organ focused on civic engagement, open technology governance, sovereign digital systems research, and operating the official Updates platform. Dedicated portal: federals.luminarytechnicals.dpdns.org. Formula: ENGAGE."
   },
   {
     "title": "Luminary Trust",
     "category": "ASSOCIATED ENTITY",
     "badge": "Associated Entity · Public Interest",
-    "url": "frontend/trust.html",
+    "url": "frontend/trust",
     "keywords": "luminary trust associated entity public interest philanthropy foundation radhika research endowment public welfare",
     "text": "Top-level entity directly associated with Luminary Technicals, separate from the five core organs. Oversees public-welfare missions, philanthropic endowments, and the Radhika Research Foundation."
   },
@@ -91,7 +91,7 @@
     "title": "Radhika Research Foundation",
     "category": "FOUNDATION",
     "badge": "Foundation · Luminary Trust",
-    "url": "frontend/trust.html#radhika-foundation",
+    "url": "frontend/trust#radhika-foundation",
     "keywords": "radhika research foundation trust science social inquiry public interest grants endowment",
     "text": "Specialized scientific and social research foundation operating under the auspices of Luminary Trust to advance public-good discoveries and research initiatives."
   },
@@ -99,7 +99,7 @@
     "title": "Projects & Platforms Portfolio",
     "category": "PROJECT",
     "badge": "Project Portfolio",
-    "url": "frontend/projects.html",
+    "url": "frontend/projects",
     "keywords": "projects portfolio agroscan afterverse webs wishes ai tools platforms products",
     "text": "Full directory of active, incubator, and research projects developed across the Luminary Technicals ecosystem."
   },
@@ -107,7 +107,7 @@
     "title": "AgroScan",
     "category": "PROJECT",
     "badge": "Flagship Research Project",
-    "url": "frontend/agroscan.html",
+    "url": "frontend/agroscan",
     "keywords": "agroscan agriculture crop disease detection vision transformer ai iot esp32 revival 2027 farming diagnostics",
     "text": "Flagship AI-driven precision agricultural diagnostic platform combining Computer Vision (ViT/CNNs) with edge IoT sensors for early disease identification and soil intelligence. Under active development in the Revival Program 2027."
   },
@@ -115,7 +115,7 @@
     "title": "Luminary Afterverse",
     "category": "PROJECT",
     "badge": "Spatial XR Lab",
-    "url": "frontend/afterverse.html",
+    "url": "frontend/afterverse",
     "keywords": "afterverse immersive 3d webgl canvas spatial computing digital universe developers xr creative particles",
     "text": "Next-generation spatial digital universe and creative technology lab under Luminary Developers, featuring interactive WebGL particle physics and 3D sensory web interfaces."
   },
@@ -123,7 +123,7 @@
     "title": "Luminary Webs",
     "category": "PROJECT",
     "badge": "Luminary Kits · Collaboration",
-    "url": "frontend/projects.html#luminary-webs",
+    "url": "frontend/projects#luminary-webs",
     "keywords": "luminary webs kits collaboration websites web solutions client digital tools showcases",
     "text": "Flagship web solutions hub and live digital showcases established as an official collaboration under Luminary Kits."
   },
@@ -131,23 +131,23 @@
     "title": "Luminary Wishes",
     "category": "PROJECT",
     "badge": "Social Tool · Luminary Webs",
-    "url": "frontend/projects.html#luminary-wishes",
+    "url": "frontend/projects#luminary-wishes",
     "keywords": "luminary wishes social tool celebration greetings milestone cards webs digital cards",
     "text": "Personalized digital celebration experiences and experiential milestone cards operated as a sub-project of Luminary Webs."
   },
   {
-    "title": "Luminary Updates",
+    "title": "Updates",
     "category": "INITIATIVE",
     "badge": "Official Updates Feed",
-    "url": "frontend/updates.html",
-    "keywords": "luminary updates announcements platform releases latest project changes research news official updates registry",
+    "url": "frontend/updates",
+    "keywords": "updates announcements platform releases latest project changes research news official updates registry",
     "text": "Official updates feed with organization announcements, project changes, research notes, and platform milestones, operated under Luminary Federals."
   },
   {
     "title": "Research Portal & Publications",
     "category": "RESEARCH",
     "badge": "Research Programs",
-    "url": "frontend/research.html",
+    "url": "frontend/research",
     "keywords": "research whitepapers publications experiments agricultural ai spatial computing cloud resilience academic papers",
     "text": "Explore Luminary Technicals scientific research areas, peer-reviewed whitepapers, active experimental testbeds, and academic archives."
   },
@@ -155,7 +155,7 @@
     "title": "Technology Hub & Architecture",
     "category": "TECHNOLOGY",
     "badge": "Technology Architecture",
-    "url": "frontend/technology.html",
+    "url": "frontend/technology",
     "keywords": "technology infrastructure software ai cybersecurity web technology open projects stack architecture",
     "text": "Deep architectural analysis of Luminary cloud infrastructure, AI models, zero-framework web engineering, and defensive cybersecurity standards."
   },
@@ -163,7 +163,7 @@
     "title": "Leadership & Founder Profile",
     "category": "LEADERSHIP",
     "badge": "Executive Leadership",
-    "url": "frontend/leadership.html",
+    "url": "frontend/leadership",
     "keywords": "abhinav ranjan founder ceo owner leadership architect director profile biography executive",
     "text": "AR. Abhinav Ranjan is the Founder & CEO of Luminary Technicals, providing central strategic direction, system architecture, and leadership across the ecosystem."
   },
@@ -171,7 +171,7 @@
     "title": "Ownership & Entity Profile",
     "category": "ORGANIZATION",
     "badge": "Corporate Entity",
-    "url": "frontend/owner.html",
+    "url": "frontend/owner",
     "keywords": "owner ownership entity legal structure abhinav ranjan proprietary governance registration",
     "text": "Transparent ownership disclosures, legal structure, founding constitution, and principal entity records of Luminary Technicals."
   },
@@ -179,7 +179,7 @@
     "title": "Collaborate With Luminary",
     "category": "COLLABORATION",
     "badge": "Partner Intake",
-    "url": "frontend/collab.html",
+    "url": "frontend/collab",
     "keywords": "collaborate developers organizations researchers creators partners contact intake proposals partnerships",
     "text": "Dedicated collaboration pathways for developers, institutions, researchers, creators, and enterprise partners across the Luminary ecosystem."
   },
@@ -187,7 +187,7 @@
     "title": "Resources & Documentation",
     "category": "DOCUMENTATION",
     "badge": "Resources Hub",
-    "url": "frontend/resources.html",
+    "url": "frontend/resources",
     "keywords": "resources documentation downloads brand assets faq public information guides manuals logos",
     "text": "Central repository for technical documentation, brand assets, downloadable toolkits, media packs, and public knowledge records."
   },
@@ -195,7 +195,7 @@
     "title": "Contact Channels",
     "category": "CONTACT",
     "badge": "Contact Hub",
-    "url": "frontend/contact.html",
+    "url": "frontend/contact",
     "keywords": "contact email whatsapp telegram inquiry support message feedback address communication",
     "text": "Direct communication channels to reach Luminary Technicals: Email, WhatsApp, Telegram, and encrypted collaboration forms."
   },
@@ -203,7 +203,7 @@
     "title": "FAQ Center",
     "category": "FAQ",
     "badge": "Frequently Asked Questions",
-    "url": "frontend/faq.html",
+    "url": "frontend/faq",
     "keywords": "faq questions answers organization organs trust projects security contact general help",
     "text": "Comprehensive multi-category FAQ center addressing organizational structure, core organs, Luminary Trust, projects, technology, and governance."
   },
@@ -211,7 +211,7 @@
     "title": "Glossary of Technical Terms",
     "category": "DOCUMENTATION",
     "badge": "Technical Glossary",
-    "url": "frontend/glossary.html",
+    "url": "frontend/glossary",
     "keywords": "glossary terms definitions acronyms master formula power create empower connect engage organ vps",
     "text": "Authoritative glossary defining proprietary terminology, architectural concepts, organ formulas, and technical definitions."
   },
@@ -219,7 +219,7 @@
     "title": "Security & Vulnerability Disclosure",
     "category": "LEGAL",
     "badge": "Security & Trust",
-    "url": "frontend/security.html",
+    "url": "frontend/security",
     "keywords": "security vulnerability disclosure bug bounty encryption privacy pgp defensive cybersecurity reporting",
     "text": "Security policies, vulnerability reporting guidelines, defensive standards, and responsible disclosure practices."
   },
@@ -227,15 +227,15 @@
     "title": "Editorial & Fact-Checking Policy",
     "category": "LEGAL",
     "badge": "Editorial Standards",
-    "url": "frontend/editorial-policy.html",
+    "url": "frontend/editorial-policy",
     "keywords": "editorial policy journalism fact-checking corrections ethics news transparency standards",
-    "text": "Editorial integrity guidelines, fact-checking verification frameworks, and correction protocols governing Luminary News."
+    "text": "Editorial integrity guidelines, fact-checking verification frameworks, and correction protocols governing Updates."
   },
   {
     "title": "Privacy Policy",
     "category": "LEGAL",
     "badge": "Legal Compliance",
-    "url": "frontend/privacy-policy.html",
+    "url": "frontend/privacy-policy",
     "keywords": "privacy policy data protection gdpr tracking cookies storage personal information rights",
     "text": "Our privacy commitments, zero-tracking policy, data collection scopes, and user privacy rights."
   },
@@ -243,7 +243,7 @@
     "title": "Terms of Service",
     "category": "LEGAL",
     "badge": "Terms & Conditions",
-    "url": "frontend/terms.html",
+    "url": "frontend/terms",
     "keywords": "terms service conditions acceptable use intellectual property liability agreement",
     "text": "Terms and conditions governing the access, use, and code licensing of Luminary Technicals web platforms."
   },
@@ -251,7 +251,7 @@
     "title": "Cookie Policy",
     "category": "LEGAL",
     "badge": "Cookie Compliance",
-    "url": "frontend/cookies.html",
+    "url": "frontend/cookies",
     "keywords": "cookies policy storage localstorage consent trackers analytics preferences",
     "text": "Explanation of essential browser storage and cookie usage across Luminary Technicals digital properties."
   },
@@ -259,7 +259,7 @@
     "title": "Accessibility Statement",
     "category": "LEGAL",
     "badge": "WCAG 2.1 AA",
-    "url": "frontend/accessibility.html",
+    "url": "frontend/accessibility",
     "keywords": "accessibility statement wcag a11y screen readers contrast keyboard navigation aria",
     "text": "Commitment to digital accessibility, inclusive design standards, and WCAG 2.1 AA conformance."
   },
@@ -267,7 +267,7 @@
     "title": "Legal Disclaimer",
     "category": "LEGAL",
     "badge": "Legal Disclaimers",
-    "url": "frontend/disclaimer.html",
+    "url": "frontend/disclaimer",
     "keywords": "disclaimer legal liability third-party links warranties research informational purposes",
     "text": "General legal disclaimer regarding informational content, experimental technology, and external hyperlinks."
   },
@@ -275,7 +275,7 @@
     "title": "Offices & Global Headquarters",
     "category": "ORGANIZATION",
     "badge": "Head Office",
-    "url": "frontend/offices.html",
+    "url": "frontend/offices",
     "keywords": "offices headquarters bengaluru karnataka google maps address location directions c v raman nagar nagavarapalya",
     "text": "Official registered headquarters and operations hub of Luminary Technicals in Bengaluru, Karnataka, India with verified Google Maps profile."
   },
@@ -283,7 +283,7 @@
     "title": "Luminary Common",
     "category": "ORGANIZATION",
     "badge": "Shared Foundation",
-    "url": "frontend/common.html",
+    "url": "frontend/common",
     "keywords": "common shared organization overview five core organs developers cares kits servers federals common resources navigation",
     "text": "Shared orientation page for Luminary Technicals with quick links to the five core organs, companies, projects, research, and official updates."
   },
@@ -291,7 +291,7 @@
     "title": "JSET Project",
     "category": "PROJECT",
     "badge": "Project · James Web Networking",
-    "url": "frontend/jset.html",
+    "url": "frontend/jset",
     "keywords": "jset project james web networking government of india naira national artificial intelligence regulation authority funds audit",
     "text": "JSET project detail page with the funding amount and issuer listed in the projects directory and a link to the James Web Networking funds audit."
   }
