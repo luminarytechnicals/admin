@@ -114,8 +114,9 @@
   status = 200
   force = true
 
-# Clean URLs: redirect legacy .html addresses to extensionless canonical paths.
-# Legacy News platform is now simply /frontend/updates.
+# Clean URLs: use explicit routes instead of dynamic :page placeholders.
+# A dynamic placeholder was being exposed literally in navigation, sending requests to /frontend/:page.
+# News is a legacy alias for Updates.
 [[redirects]]
   from = "/frontend/news.html"
   to = "/frontend/updates"
@@ -128,16 +129,486 @@
   status = 301
   force = true
 
+# Each public static HTML page gets an explicit extensionless route.
+# The exact mappings avoid unresolved placeholder text in live URLs.
+# Exact clean URL mapping for about
 [[redirects]]
-  from = "/frontend/:page.html"
-  to = "/frontend/:page"
+  from = "/frontend/about.html"
+  to = "/frontend/about"
   status = 301
   force = true
 
-# Rewrite clean paths to the existing static HTML files without changing the address bar.
 [[redirects]]
-  from = "/frontend/:page"
-  to = "/frontend/:page.html"
+  from = "/frontend/about"
+  to = "/frontend/about.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for accessibility
+[[redirects]]
+  from = "/frontend/accessibility.html"
+  to = "/frontend/accessibility"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/accessibility"
+  to = "/frontend/accessibility.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for afterverse
+[[redirects]]
+  from = "/frontend/afterverse.html"
+  to = "/frontend/afterverse"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/afterverse"
+  to = "/frontend/afterverse.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for agroscan
+[[redirects]]
+  from = "/frontend/agroscan.html"
+  to = "/frontend/agroscan"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/agroscan"
+  to = "/frontend/agroscan.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for cares
+[[redirects]]
+  from = "/frontend/cares.html"
+  to = "/frontend/cares"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/cares"
+  to = "/frontend/cares.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for collab
+[[redirects]]
+  from = "/frontend/collab.html"
+  to = "/frontend/collab"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/collab"
+  to = "/frontend/collab.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for common
+[[redirects]]
+  from = "/frontend/common.html"
+  to = "/frontend/common"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/common"
+  to = "/frontend/common.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for contact
+[[redirects]]
+  from = "/frontend/contact.html"
+  to = "/frontend/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/contact"
+  to = "/frontend/contact.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for cookies
+[[redirects]]
+  from = "/frontend/cookies.html"
+  to = "/frontend/cookies"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/cookies"
+  to = "/frontend/cookies.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for developers
+[[redirects]]
+  from = "/frontend/developers.html"
+  to = "/frontend/developers"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/developers"
+  to = "/frontend/developers.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for disclaimer
+[[redirects]]
+  from = "/frontend/disclaimer.html"
+  to = "/frontend/disclaimer"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/disclaimer"
+  to = "/frontend/disclaimer.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for ecosystem
+[[redirects]]
+  from = "/frontend/ecosystem.html"
+  to = "/frontend/ecosystem"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/ecosystem"
+  to = "/frontend/ecosystem.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for editorial-policy
+[[redirects]]
+  from = "/frontend/editorial-policy.html"
+  to = "/frontend/editorial-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/editorial-policy"
+  to = "/frontend/editorial-policy.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for faq
+[[redirects]]
+  from = "/frontend/faq.html"
+  to = "/frontend/faq"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/faq"
+  to = "/frontend/faq.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for federals
+[[redirects]]
+  from = "/frontend/federals.html"
+  to = "/frontend/federals"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/federals"
+  to = "/frontend/federals.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for glossary
+[[redirects]]
+  from = "/frontend/glossary.html"
+  to = "/frontend/glossary"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/glossary"
+  to = "/frontend/glossary.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for james-web-networking
+[[redirects]]
+  from = "/frontend/james-web-networking.html"
+  to = "/frontend/james-web-networking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/james-web-networking"
+  to = "/frontend/james-web-networking.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for jset
+[[redirects]]
+  from = "/frontend/jset.html"
+  to = "/frontend/jset"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/jset"
+  to = "/frontend/jset.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for kits
+[[redirects]]
+  from = "/frontend/kits.html"
+  to = "/frontend/kits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/kits"
+  to = "/frontend/kits.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for leadership
+[[redirects]]
+  from = "/frontend/leadership.html"
+  to = "/frontend/leadership"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/leadership"
+  to = "/frontend/leadership.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for luminary-books
+[[redirects]]
+  from = "/frontend/luminary-books.html"
+  to = "/frontend/luminary-books"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/luminary-books"
+  to = "/frontend/luminary-books.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for luminary-webs
+[[redirects]]
+  from = "/frontend/luminary-webs.html"
+  to = "/frontend/luminary-webs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/luminary-webs"
+  to = "/frontend/luminary-webs.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for offices
+[[redirects]]
+  from = "/frontend/offices.html"
+  to = "/frontend/offices"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/offices"
+  to = "/frontend/offices.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for organization
+[[redirects]]
+  from = "/frontend/organization.html"
+  to = "/frontend/organization"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/organization"
+  to = "/frontend/organization.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for organs
+[[redirects]]
+  from = "/frontend/organs.html"
+  to = "/frontend/organs"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/organs"
+  to = "/frontend/organs.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for owner
+[[redirects]]
+  from = "/frontend/owner.html"
+  to = "/frontend/owner"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/owner"
+  to = "/frontend/owner.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for privacy-policy
+[[redirects]]
+  from = "/frontend/privacy-policy.html"
+  to = "/frontend/privacy-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/privacy-policy"
+  to = "/frontend/privacy-policy.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for projects
+[[redirects]]
+  from = "/frontend/projects.html"
+  to = "/frontend/projects"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/projects"
+  to = "/frontend/projects.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for research
+[[redirects]]
+  from = "/frontend/research.html"
+  to = "/frontend/research"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/research"
+  to = "/frontend/research.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for resources
+[[redirects]]
+  from = "/frontend/resources.html"
+  to = "/frontend/resources"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/resources"
+  to = "/frontend/resources.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for security
+[[redirects]]
+  from = "/frontend/security.html"
+  to = "/frontend/security"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/security"
+  to = "/frontend/security.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for servers
+[[redirects]]
+  from = "/frontend/servers.html"
+  to = "/frontend/servers"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/servers"
+  to = "/frontend/servers.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for sub-companies
+[[redirects]]
+  from = "/frontend/sub-companies.html"
+  to = "/frontend/sub-companies"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/sub-companies"
+  to = "/frontend/sub-companies.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for technology
+[[redirects]]
+  from = "/frontend/technology.html"
+  to = "/frontend/technology"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/technology"
+  to = "/frontend/technology.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for terms
+[[redirects]]
+  from = "/frontend/terms.html"
+  to = "/frontend/terms"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/terms"
+  to = "/frontend/terms.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for trust
+[[redirects]]
+  from = "/frontend/trust.html"
+  to = "/frontend/trust"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/trust"
+  to = "/frontend/trust.html"
+  status = 200
+  force = true
+
+# Exact clean URL mapping for updates
+[[redirects]]
+  from = "/frontend/updates.html"
+  to = "/frontend/updates"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/updates"
+  to = "/frontend/updates.html"
   status = 200
   force = true
 
