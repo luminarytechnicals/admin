@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v14-menu-fixes';
+const CACHE_NAME = 'luminary-v15-independent-navigation';
 const OFFLINE_URL = '/offline.html';
 
 // Core assets to pre-cache for complete offline availability
