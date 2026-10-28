@@ -157,7 +157,7 @@ const ORGANS = [
     page: "federals.html",
     url: "frontend/federals.html",
     subdomain: "https://federals.luminarytechnicals.dpdns.org/",
-    description: "The public engagement, information, and institutional-dialogue organ of Luminary Technicals. Focuses on open technology governance, civic-tech research, sovereign digital infrastructure studies, public-interest communication, and publishing the official Luminary Updates feed. (Strictly a non-governmental, non-statutory civic research entity).",
+    description: "The public engagement, information, and institutional-dialogue organ of Luminary Technicals. Focuses on open technology governance, civic-tech research, sovereign digital infrastructure studies, public-interest communication, and publishing the official Updates feed. (Strictly a non-governmental, non-statutory civic research entity).",
     focusAreas: [
       "Public Engagement & Media Communication",
       "Open Information & Editorial Initiatives",
@@ -168,13 +168,13 @@ const ORGANS = [
     ],
     initiatives: [
       {
-        name: "Luminary Updates",
+        name: "Updates",
         id: "luminary-news",
         type: "initiative",
         parent: "luminary-federals",
         badge: "Luminary Federals · Platform",
         page: "updates.html",
-        url: "frontend/updates.html",
+        url: "frontend/updates",
         description: "The official JSON-driven updates feed, release notes, and announcement platform operated under Luminary Federals."
       }
     ]
