@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v19-set-article';
+const CACHE_NAME = 'luminary-v20-naira-article';
 const OFFLINE_URL = '/offline';
 
 // Core assets to pre-cache for complete offline availability
@@ -18,6 +18,7 @@ const ASSETS = [
   '/frontend/articles/ar-writing-standard',
   '/frontend/articles/jset-james-social-engineering-toolkit',
   '/frontend/articles/set-social-engineering-toolkit',
+  '/frontend/articles/naira-bill-national-artificial-intelligence-regulation-authority',
   '/frontend/articles/legal-management-coordination-accountability',
   '/frontend/leadership',
   '/frontend/owner',
