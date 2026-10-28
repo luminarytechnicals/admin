@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v11-fresh';
+const CACHE_NAME = 'luminary-v12-updates-navigation';
 const OFFLINE_URL = '/offline.html';
 
 // Core assets to pre-cache for complete offline availability
@@ -9,6 +9,7 @@ const ASSETS = [
   '/403.html',
   '/frontend/about.html',
   '/frontend/organization.html',
+  '/frontend/common.html',
   '/frontend/leadership.html',
   '/frontend/owner.html',
   '/frontend/ecosystem.html',
@@ -23,6 +24,7 @@ const ASSETS = [
   '/frontend/agroscan.html',
   '/frontend/afterverse.html',
   '/frontend/news.html',
+  '/frontend/updates.html',
   '/frontend/research.html',
   '/frontend/technology.html',
   '/frontend/resources.html',
@@ -44,6 +46,7 @@ const ASSETS = [
   '/assets/js/main.js',
   '/assets/js/search.js',
   '/assets/js/news-engine.js',
+  '/assets/js/updates-engine.js',
   '/assets/js/automation.js',
   '/assets/js/lazy-load.js',
   '/assets/js/pwa.js',
@@ -52,6 +55,8 @@ const ASSETS = [
   '/configuration/google-maps-details.js',
   '/assets/js/google-maps-navigator.js',
   '/configuration/search-index.json',
+  '/configuration/navigation.json',
+  '/configuration/updates.json',
   '/assets/images/logo-luminarytechnicals.png',
   '/assets/images/logo-luminarytechnicals.webp',
   '/assets/images/og-default.webp',
