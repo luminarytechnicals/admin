@@ -9,14 +9,14 @@
       "date": "2026-10-28",
       "category": "Projects",
       "author": "Luminary Technicals",
-      "summary": "The projects directory now identifies the stated issuer for JSET, AgroScan, Luminary Wishes, and Luminary News funding entries. The Luminary AI funding card was removed.",
+      "summary": "The projects directory now identifies the stated issuer for JSET, AgroScan, Luminary Wishes, and Updates funding entries. The Luminary AI funding card was removed.",
       "relatedOrgan": "Luminary Technicals",
       "tags": [
         "Projects",
         "Funding",
         "Transparency"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/projects.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/projects"
     },
     {
       "id": "projects-audit-links-status-2026-10-28",
@@ -31,7 +31,7 @@
         "Audits",
         "Transparency"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/projects.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/projects"
     },
     {
       "id": "core-organ-structure-2026-09-30",
@@ -46,7 +46,7 @@
         "Architecture",
         "Core Organs"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/organs.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/organs"
     },
     {
       "id": "developers-research-2026-09-28",
@@ -62,7 +62,7 @@
         "Software",
         "Automation"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/developers.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/developers"
     },
     {
       "id": "servers-infrastructure-2026-09-26",
@@ -78,7 +78,7 @@
         "Hosting",
         "Cloud"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/servers.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/servers"
     },
     {
       "id": "cares-education-community-2026-09-24",
@@ -94,7 +94,7 @@
         "Mentorship",
         "Community"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/cares.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/cares"
     },
     {
       "id": "kits-collaboration-2026-09-22",
@@ -110,7 +110,7 @@
         "APIs",
         "Toolkits"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/kits.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/kits"
     },
     {
       "id": "federals-civic-engagement-2026-09-20",
@@ -126,7 +126,7 @@
         "Governance",
         "Public Affairs"
       ],
-      "url": "https://luminarytechnicals.dpdns.org/frontend/federals.html"
+      "url": "https://luminarytechnicals.dpdns.org/frontend/federals"
     }
   ]
 }
