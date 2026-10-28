@@ -3,31 +3,31 @@
   "header": [
     {
       "label": "Home",
-      "href": "/index.html"
+      "href": "/"
     },
     {
       "label": "About",
-      "href": "/frontend/about.html"
+      "href": "/frontend/about"
     },
     {
       "label": "Ecosystem",
-      "href": "/frontend/ecosystem.html"
+      "href": "/frontend/ecosystem"
     },
     {
       "label": "Organs",
-      "href": "/frontend/organs.html"
+      "href": "/frontend/organs"
     },
     {
       "label": "Sub Companies",
-      "href": "/frontend/sub-companies.html"
+      "href": "/frontend/sub-companies"
     },
     {
       "label": "Updates",
-      "href": "/frontend/updates.html"
+      "href": "/frontend/updates"
     },
     {
       "label": "Collaborate",
-      "href": "/frontend/collab.html"
+      "href": "/frontend/collab"
     }
   ],
   "sections": [
@@ -37,19 +37,19 @@
       "items": [
         {
           "label": "Home",
-          "href": "/index.html"
+          "href": "/"
         },
         {
           "label": "About Luminary Technicals",
-          "href": "/frontend/about.html"
+          "href": "/frontend/about"
         },
         {
           "label": "Organization Overview",
-          "href": "/frontend/organization.html"
+          "href": "/frontend/organization"
         },
         {
           "label": "Ecosystem",
-          "href": "/frontend/ecosystem.html"
+          "href": "/frontend/ecosystem"
         }
       ]
     },
@@ -59,28 +59,28 @@
       "items": [
         {
           "label": "Common",
-          "href": "/frontend/common.html",
+          "href": "/frontend/common",
           "description": "Shared organization overview"
         },
         {
           "label": "Developers",
-          "href": "/frontend/developers.html"
+          "href": "/frontend/developers"
         },
         {
           "label": "Cares",
-          "href": "/frontend/cares.html"
+          "href": "/frontend/cares"
         },
         {
           "label": "Kits",
-          "href": "/frontend/kits.html"
+          "href": "/frontend/kits"
         },
         {
           "label": "Servers",
-          "href": "/frontend/servers.html"
+          "href": "/frontend/servers"
         },
         {
           "label": "Federals",
-          "href": "/frontend/federals.html"
+          "href": "/frontend/federals"
         }
       ]
     },
@@ -90,7 +90,7 @@
       "items": [
         {
           "label": "All Sub Companies",
-          "href": "/frontend/sub-companies.html"
+          "href": "/frontend/sub-companies"
         },
         {
           "label": "James Web Networking",
@@ -109,11 +109,11 @@
         },
         {
           "label": "Luminary Afterverse",
-          "href": "/frontend/afterverse.html"
+          "href": "/frontend/afterverse"
         },
         {
           "label": "Luminary Trust",
-          "href": "/frontend/trust.html"
+          "href": "/frontend/trust"
         }
       ]
     },
@@ -123,15 +123,15 @@
       "items": [
         {
           "label": "Projects Directory",
-          "href": "/frontend/projects.html"
+          "href": "/frontend/projects"
         },
         {
           "label": "JSET",
-          "href": "/frontend/jset.html"
+          "href": "/frontend/jset"
         },
         {
           "label": "AgroScan",
-          "href": "/frontend/agroscan.html"
+          "href": "/frontend/agroscan"
         },
         {
           "label": "Luminary Wishes",
@@ -139,8 +139,8 @@
           "external": true
         },
         {
-          "label": "Luminary Updates",
-          "href": "/frontend/updates.html"
+          "label": "Updates",
+          "href": "/frontend/updates"
         }
       ]
     },
@@ -150,11 +150,11 @@
       "items": [
         {
           "label": "Latest Updates",
-          "href": "/frontend/updates.html"
+          "href": "/frontend/updates"
         },
         {
           "label": "Project and Platform Updates",
-          "href": "/frontend/updates.html#updates-articles-grid"
+          "href": "/frontend/updates#updates-articles-grid"
         }
       ]
     },
@@ -164,23 +164,23 @@
       "items": [
         {
           "label": "Research",
-          "href": "/frontend/research.html"
+          "href": "/frontend/research"
         },
         {
           "label": "Technology",
-          "href": "/frontend/technology.html"
+          "href": "/frontend/technology"
         },
         {
           "label": "Security",
-          "href": "/frontend/security.html"
+          "href": "/frontend/security"
         },
         {
           "label": "Resources",
-          "href": "/frontend/resources.html"
+          "href": "/frontend/resources"
         },
         {
           "label": "Glossary",
-          "href": "/frontend/glossary.html"
+          "href": "/frontend/glossary"
         }
       ]
     },
@@ -190,27 +190,27 @@
       "items": [
         {
           "label": "Founder / Owner",
-          "href": "/frontend/owner.html"
+          "href": "/frontend/owner"
         },
         {
           "label": "Leadership",
-          "href": "/frontend/leadership.html"
+          "href": "/frontend/leadership"
         },
         {
           "label": "Offices",
-          "href": "/frontend/offices.html"
+          "href": "/frontend/offices"
         },
         {
           "label": "Collaborate",
-          "href": "/frontend/collab.html"
+          "href": "/frontend/collab"
         },
         {
           "label": "Contact",
-          "href": "/frontend/contact.html"
+          "href": "/frontend/contact"
         },
         {
           "label": "FAQ",
-          "href": "/frontend/faq.html"
+          "href": "/frontend/faq"
         }
       ]
     },
@@ -220,23 +220,23 @@
       "items": [
         {
           "label": "Terms of Service",
-          "href": "/frontend/terms.html"
+          "href": "/frontend/terms"
         },
         {
           "label": "Privacy Policy",
-          "href": "/frontend/privacy-policy.html"
+          "href": "/frontend/privacy-policy"
         },
         {
           "label": "Cookies",
-          "href": "/frontend/cookies.html"
+          "href": "/frontend/cookies"
         },
         {
           "label": "Disclaimer",
-          "href": "/frontend/disclaimer.html"
+          "href": "/frontend/disclaimer"
         },
         {
           "label": "Accessibility",
-          "href": "/frontend/accessibility.html"
+          "href": "/frontend/accessibility"
         }
       ]
     }
