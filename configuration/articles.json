@@ -420,6 +420,121 @@
       ]
     },
     {
+      "slug": "set-social-engineering-toolkit",
+      "title": "SET — Social Engineering Toolkit: Online Security and Influence",
+      "description": "Explore two distinct concepts: the established Social-Engineer Toolkit and a separate Social Engineering Toolkit concept focused on online persuasion, influence, and responsible research.",
+      "category": "Cybersecurity Research",
+      "author": "AR. Abhinav Ranjan / Luminary Technicals",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "excerpt": "A careful distinction between the established Social-Engineer Toolkit and a separate Social Engineering Toolkit concept examining online persuasion, influence, information integrity, and responsible research.",
+      "tags": [
+        "SET",
+        "Social-Engineer Toolkit",
+        "Social Engineering Toolkit",
+        "Online Influence",
+        "Persuasion",
+        "Phishing",
+        "Cybersecurity Research",
+        "Information Integrity"
+      ],
+      "sections": [
+        {
+          "heading": "Two names, two concepts",
+          "paragraphs": [
+            "Social-Engineer Toolkit refers to the established cybersecurity testing framework associated with TrustedSec.",
+            "Social Engineering Toolkit, without the hyphen in Social-Engineer, is the separate concept discussed in this article. It focuses on online influence, persuasion, and the ways digital communication can shape perceptions and decisions.",
+            "The shared initials SET do not make these concepts the same. Naming and claims about implementation should make clear which concept is being discussed."
+          ]
+        },
+        {
+          "heading": "The established Social-Engineer Toolkit",
+          "paragraphs": [
+            "The established Social-Engineer Toolkit is an open-source framework associated with TrustedSec. It supports authorized social-engineering assessments and related penetration-testing work, including phishing-related testing.",
+            "The phrase online malware and phishing may describe a wider threat environment, but it should not be taken to mean every release includes every malware capability. Specific functionality must be checked against current official documentation.",
+            "Authorization, scope, containment, and responsible handling of information are essential to security testing."
+          ]
+        },
+        {
+          "heading": "The separate Social Engineering Toolkit concept",
+          "paragraphs": [
+            "The unhyphenated Social Engineering Toolkit concept examines the wider power of online influence: how messages, narratives, social signals, persuasive framing, and network dynamics may affect attention, interpretation, confidence, and choice.",
+            "This is a distinct conceptual framing, not a claim of affiliation with TrustedSec and not a statement that a separate product has already been implemented.",
+            "The concept is a research subject unless and until concrete functions, implementation evidence, and testing results are documented."
+          ]
+        },
+        {
+          "heading": "Influence beyond phishing",
+          "paragraphs": [
+            "Phishing typically attempts to induce a specific risky action. Online influence can be broader and may operate over repeated interactions rather than a single message.",
+            "Relevant areas include framing and narrative, credibility and trust signals, social proof and group dynamics, attention and emotional salience, network spread, and persuasion within decision contexts.",
+            "These are subjects for study, not guaranteed methods for controlling people. Engagement does not by itself prove belief, agreement, or lasting behavioural change."
+          ],
+          "bullets": [
+            "Framing and narrative",
+            "Credibility and trust signals",
+            "Social proof and group dynamics",
+            "Attention and emotional salience",
+            "Network spread and repeated exposure",
+            "Persuasion and decision context"
+          ]
+        },
+        {
+          "heading": "Research framework for online influence",
+          "paragraphs": [
+            "Observe the information environment using public, consented, or otherwise authorized data.",
+            "Describe the influence mechanism and distinguish observed facts from hypotheses about intent or effect.",
+            "Define measurable outcomes such as reach, recall, reporting, comprehension, or a decision in a controlled exercise.",
+            "Review unintended effects including misinformation, coercion, privacy loss, reputational harm, and impacts on non-consenting people.",
+            "Document the methods, limitations, uncertainty, and what the findings do not establish."
+          ]
+        },
+        {
+          "heading": "Responsible applications and boundaries",
+          "paragraphs": [
+            "Research into online persuasion can support digital literacy, public-interest communication, security awareness, crisis messaging, media literacy, user education, and the study of information integrity.",
+            "Similar knowledge can be misused for deception, fraud, covert mass persuasion, impersonation, harassment, or manipulation of vulnerable people. Responsible work should distinguish transparent persuasion from covert manipulation.",
+            "Use clear purpose, consent where appropriate, privacy minimization, human review, verifiable evidence, and proportionate methods."
+          ],
+          "bullets": [
+            "Do not impersonate people or institutions to obtain access or trust.",
+            "Do not collect credentials or unnecessary private data to measure influence.",
+            "Do not fabricate evidence or simulate genuine consensus with inauthentic activity.",
+            "Use controlled environments and suitable participant safeguards.",
+            "Separate proposed capabilities from tested results."
+          ]
+        },
+        {
+          "heading": "Terminology, attribution, and status",
+          "paragraphs": [
+            "The established Social-Engineer Toolkit is associated with TrustedSec. This article does not claim TrustedSec created, endorses, or is affiliated with the separate unhyphenated concept.",
+            "This article does not establish that the separate concept is deployed software or that specific influence techniques have been implemented or experimentally verified. Those claims require technical evidence and reproducible evaluation."
+          ]
+        },
+        {
+          "heading": "Conclusion",
+          "paragraphs": [
+            "Social-Engineer Toolkit is the established, hyphenated cybersecurity framework; Social Engineering Toolkit is the separate, unhyphenated concept described here around online influence and powerful persuasion techniques.",
+            "Clear naming protects the distinction, while transparent methods and verifiable evidence protect research credibility."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "label": "Research Portal",
+          "url": "/frontend/research"
+        },
+        {
+          "label": "Technology Hub",
+          "url": "/frontend/technology"
+        },
+        {
+          "label": "Security & Trust",
+          "url": "/frontend/security"
+        }
+      ]
+    },
+    {
       "slug": "legal-management-coordination-accountability",
       "title": "Legal Management: Government-Related Challenges, Coordination and Accountability",
       "description": "How Luminary Technicals approaches legal correspondence, records, deadline awareness, professional referrals, privacy, and accountability in government-related processes.",
