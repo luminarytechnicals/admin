@@ -200,35 +200,24 @@ async function initJsonNavigation() {
         sidePanel.appendChild(group);
       });
 
-      // Each section opens and closes independently; opening one never closes another.
-      const storageKey = 'lt_navigation_open_sections';
-      let savedSections = [];
-      try {
-        const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
-        if (Array.isArray(saved)) savedSections = saved;
-      } catch (_) {}
-
-      const saveOpenSections = () => {
-        const opened = Array.from(sidePanel.querySelectorAll('.nav-accordion')).filter(group => {
-          const button = group.querySelector('.nav-accordion-title');
-          return button && button.getAttribute('aria-expanded') === 'true';
-        }).map(group => group.dataset.section);
-        try { localStorage.setItem(storageKey, JSON.stringify(opened)); } catch (_) {}
-      };
-
+      // Single-open accordion: only one group may be expanded at a time.
+      // The active page's group is selected below after links are marked active.
       sidePanel.querySelectorAll('.nav-accordion').forEach(group => {
         const button = group.querySelector('.nav-accordion-title');
         const links = group.querySelector('.nav-subitems');
-        const open = savedSections.includes(group.dataset.section);
-        button.setAttribute('aria-expanded', String(open));
-        links.hidden = !open;
-        group.classList.toggle('is-open', open);
+        button.setAttribute('aria-expanded', 'false');
+        links.hidden = true;
+        group.classList.remove('is-open');
         button.addEventListener('click', () => {
           const nextOpen = button.getAttribute('aria-expanded') !== 'true';
-          button.setAttribute('aria-expanded', String(nextOpen));
-          links.hidden = !nextOpen;
-          group.classList.toggle('is-open', nextOpen);
-          saveOpenSections();
+          sidePanel.querySelectorAll('.nav-accordion').forEach(other => {
+            const otherButton = other.querySelector('.nav-accordion-title');
+            const otherLinks = other.querySelector('.nav-subitems');
+            const open = other === group && nextOpen;
+            otherButton.setAttribute('aria-expanded', String(open));
+            otherLinks.hidden = !open;
+            other.classList.toggle('is-open', open);
+          });
         });
       });
     }
@@ -243,8 +232,12 @@ async function initJsonNavigation() {
 
 function markActiveNavigation() {
   const normalize = (pathname) => {
-    const clean = decodeURI(pathname || '/').replace(/\/+$/, '');
-    return clean === '' || clean === '/' ? '/index.html' : clean.toLowerCase();
+    let clean = decodeURI(pathname || '/').replace(/\/+$/, '').toLowerCase();
+    if (clean === '' || clean === '/') return '/';
+    if (clean === '/index.html') return '/';
+    if (clean.endsWith('/index.html')) clean = clean.slice(0, -'index.html'.length);
+    if (clean.endsWith('.html')) clean = clean.slice(0, -'.html'.length);
+    return clean.replace(/\/+$/, '') || '/';
   };
   const currentPath = normalize(window.location.pathname);
   document.querySelectorAll('.nav-links a, .mobile-menu a[data-nav]').forEach(anchor => {
@@ -258,21 +251,18 @@ function markActiveNavigation() {
       anchor.setAttribute('aria-current', 'page');
       const group = anchor.closest('.nav-accordion');
       if (group) {
-        const toggle = group.querySelector('.nav-accordion-title');
-        const links = group.querySelector('.nav-subitems');
-        if (toggle && links) {
-          toggle.setAttribute('aria-expanded', 'true');
-          links.hidden = false;
-          group.classList.add('is-open');
-          const key = 'lt_navigation_open_sections';
-          try {
-            const saved = JSON.parse(localStorage.getItem(key) || '[]');
-            const opened = Array.isArray(saved) ? saved : [];
-            if (!opened.includes(group.dataset.section)) {
-              opened.push(group.dataset.section);
-              localStorage.setItem(key, JSON.stringify(opened));
+        const sidePanel = group.closest('.mobile-menu');
+        if (sidePanel) {
+          sidePanel.querySelectorAll('.nav-accordion').forEach(other => {
+            const toggle = other.querySelector('.nav-accordion-title');
+            const links = other.querySelector('.nav-subitems');
+            const open = other === group;
+            if (toggle && links) {
+              toggle.setAttribute('aria-expanded', String(open));
+              links.hidden = !open;
+              other.classList.toggle('is-open', open);
             }
-          } catch (_) {}
+          });
         }
       }
     } else {
