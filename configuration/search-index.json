@@ -294,5 +294,45 @@
     "url": "frontend/jset",
     "keywords": "jset project james web networking government of india naira national artificial intelligence regulation authority funds audit",
     "text": "JSET project detail page with the funding amount and issuer listed in the projects directory and a link to the James Web Networking funds audit."
+  },
+  {
+    "title": "Luminary Technicals Articles",
+    "category": "ARTICLES",
+    "badge": "Knowledge Library",
+    "url": "/frontend/articles",
+    "keywords": "articles guides explainers luminary technicals five core organs sub-companies projects identity AR Authority Representative",
+    "text": "Browse the article library covering Luminary Technicals organization, ecosystem structure, and the AR. identity designation."
+  },
+  {
+    "title": "Inside Luminary Technicals: How the Five Core Organs Work Together",
+    "category": "ARTICLES",
+    "badge": "Organization Guide",
+    "url": "/frontend/articles/five-core-organs",
+    "keywords": "five core organs luminary servers developers cares kits federals power create empower connect engage organizational structure",
+    "text": "A practical explanation of Luminary Technicals' five core organs and how their different roles work together."
+  },
+  {
+    "title": "Sub-companies, Projects, and Platforms: Understanding the Luminary Technicals Ecosystem",
+    "category": "ARTICLES",
+    "badge": "Ecosystem Guide",
+    "url": "/frontend/articles/sub-companies-projects-platforms",
+    "keywords": "sub companies projects platforms luminary webs wishes agroscan james web networking ecosystem",
+    "text": "Understand the distinction between organizational ventures, focused projects, digital platforms, and associated entities."
+  },
+  {
+    "title": "The Meaning of AR.",
+    "category": "ARTICLES",
+    "badge": "Identity & Branding",
+    "url": "/frontend/articles/meaning-of-ar",
+    "keywords": "AR. meaning Authority Representative Abhinav Ranjan founder CEO honorific identity designation recognition 5 February 2023",
+    "text": "The meaning, stated origin, recognition history, and organizational context of AR. within Luminary Technicals."
+  },
+  {
+    "title": "AR. Writing Standard: Capital A, Capital R, No Space, One Period",
+    "category": "ARTICLES",
+    "badge": "Writing Standard",
+    "url": "/frontend/articles/ar-writing-standard",
+    "keywords": "AR. writing style spelling capitalization capital A capital R no space period punctuation official form",
+    "text": "The required written form is AR.: capital A, capital R with no internal space, and one period immediately after R."
   }
 ]
