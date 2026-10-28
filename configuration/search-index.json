@@ -286,5 +286,13 @@
     "url": "frontend/common.html",
     "keywords": "common shared organization overview five core organs developers cares kits servers federals common resources navigation",
     "text": "Shared orientation page for Luminary Technicals with quick links to the five core organs, companies, projects, research, and official updates."
+  },
+  {
+    "title": "JSET Project",
+    "category": "PROJECT",
+    "badge": "Project · James Web Networking",
+    "url": "frontend/jset.html",
+    "keywords": "jset project james web networking government of india naira national artificial intelligence regulation authority funds audit",
+    "text": "JSET project detail page with the funding amount and issuer listed in the projects directory and a link to the James Web Networking funds audit."
   }
 ]
