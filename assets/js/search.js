@@ -207,12 +207,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function resolveUrl(rawUrl) {
-    let url = rawUrl;
+    let url = String(rawUrl || '');
     if (isFrontend) {
-      if (url === 'index.html') url = '../index.html';
+      if (url === 'index.html' || url === '/index.html') url = '../';
       else if (url.startsWith('frontend/')) url = url.replace('frontend/', '');
+    } else if (url === 'index.html') {
+      url = '/';
     }
-    return url;
+
+    try {
+      const target = new URL(url, window.location.href);
+      if (target.origin === window.location.origin) {
+        let pathname = target.pathname;
+        const lower = pathname.toLowerCase();
+        if (lower === '/frontend/news.html' || lower === '/frontend/news') {
+          pathname = '/frontend/updates';
+        } else if (lower === '/index.html') {
+          pathname = '/';
+        } else if (lower.endsWith('.html')) {
+          pathname = pathname.slice(0, -'.html'.length);
+        }
+        return pathname + target.search + target.hash;
+      }
+    } catch (_) {}
+    return url.replace(/\\.html(?=([?#]|$))/i, '');
   }
 
   function renderPopularSuggestions() {
