@@ -694,6 +694,17 @@
   force = true
 
 [[redirects]]
+  from = "/frontend/articles/legal-management-coordination-accountability.html"
+  to = "/frontend/articles/legal-management-coordination-accountability"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/legal-management-coordination-accountability"
+  to = "/frontend/articles/legal-management-coordination-accountability.html"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/frontend/articles/seo-friendly-static-websites.html"
   to = "/frontend/articles"
   status = 301
