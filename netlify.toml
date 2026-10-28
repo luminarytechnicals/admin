@@ -612,6 +612,19 @@
   status = 200
   force = true
 
+# Luminary Wishes profile clean URL
+[[redirects]]
+  from = "/frontend/luminary-wishes.html"
+  to = "/frontend/luminary-wishes"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/luminary-wishes"
+  to = "/frontend/luminary-wishes.html"
+  status = 200
+  force = true
+
 # Global Security Headers & Asset Caching
 [[headers]]
   for = "/*"
