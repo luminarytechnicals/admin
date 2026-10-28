@@ -109,10 +109,22 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://luminarytechnicals.dpdns.org/frontend/news.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/updates.html</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/common.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/jset.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- KNOWLEDGE & RESEARCH HUBS -->
