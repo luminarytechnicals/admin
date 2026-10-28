@@ -683,6 +683,17 @@
   status = 200
   force = true
 [[redirects]]
+  from = "/frontend/articles/jset-james-social-engineering-toolkit.html"
+  to = "/frontend/articles/jset-james-social-engineering-toolkit"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/jset-james-social-engineering-toolkit"
+  to = "/frontend/articles/jset-james-social-engineering-toolkit.html"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/frontend/articles/seo-friendly-static-websites.html"
   to = "/frontend/articles"
   status = 301
