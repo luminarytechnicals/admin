@@ -8,7 +8,9 @@
 .article-detail .article-hero {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(3.2rem, 7vw, 6rem);
+  /* Keep article headings and breadcrumbs clear of the fixed navigation bar. */
+  padding-top: calc(var(--nav-h, 76px) + clamp(3.2rem, 7vw, 6rem));
+  padding-bottom: clamp(3.2rem, 7vw, 6rem);
   text-align: center;
   background:
     radial-gradient(ellipse at 15% 10%, rgba(59,130,246,.16), transparent 42%),
