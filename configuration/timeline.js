@@ -62,9 +62,9 @@ const TIMELINE = [
     phase: "CURRENT PHASE",
     year: "2026",
     title: "Canonical Architecture V2 & Public Knowledge Hub",
-    description: "Comprehensive rollout of the central public knowledge hub, integrating global search, PWA offline shell, and Luminary News under Luminary Federals.",
+    description: "Comprehensive rollout of the central public knowledge hub, integrating global search, PWA offline shell, and Luminary Updates under Luminary Federals.",
     milestones: [
-      "Luminary News deployed as an official platform under Luminary Federals",
+      "Luminary Updates deployed as an official platform under Luminary Federals",
       "Launch of the centralized data layer and Single-Source-of-Truth engine",
       "Kickoff of the AgroScan Revival Program 2027 engineering cycle"
     ]
