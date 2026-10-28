@@ -117,11 +117,11 @@ const PROJECTS = [
     featured: true,
     badge: "Luminary Federals · Platform",
     icon: "📰",
-    url: "frontend/news.html",
-    directPage: "news.html",
-    shortDesc: "Official news wire, announcements, press releases, and ecosystem updates.",
+    url: "frontend/updates.html",
+    directPage: "updates.html",
+    shortDesc: "Official updates feed, announcements, project changes, and ecosystem releases.",
     description: "The primary communications and public information platform of Luminary Technicals, operated under Luminary Federals. Delivers editorial updates, technical release notes, research announcements, and ecosystem milestones.",
-    technologies: ["Dynamic News Engine", "Category Filtering", "In-Browser Article Reader", "RSS / Feed Syndication"]
+    technologies: ["JSON-Driven Updates Feed", "Category Filtering", "Repository-Maintained Registry"]
   },
   {
     id: "luminary-books",
