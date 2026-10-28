@@ -131,7 +131,7 @@ function initNavbar() {
 /* ── JSON-DRIVEN GLOBAL NAVIGATION ── */
 async function initJsonNavigation() {
   const isFrontend = window.location.pathname.startsWith('/frontend/');
-  const source = isFrontend ? '../configuration/navigation.json' : 'configuration/navigation.json';
+  const source = '/configuration/navigation.json';
   try {
     const response = await fetch(source, { cache: 'no-cache' });
     if (!response.ok) throw new Error('Navigation JSON returned HTTP ' + response.status);
