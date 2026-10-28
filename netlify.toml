@@ -715,6 +715,19 @@
   status = 301
   force = true
 
+
+# SET article clean permalink
+[[redirects]]
+  from = "/frontend/articles/set-social-engineering-toolkit.html"
+  to = "/frontend/articles/set-social-engineering-toolkit"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/set-social-engineering-toolkit"
+  to = "/frontend/articles/set-social-engineering-toolkit.html"
+  status = 200
+  force = true
+
 # Global Security Headers & Asset Caching
 [[headers]]
   for = "/*"
