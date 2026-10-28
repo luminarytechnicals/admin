@@ -11,7 +11,7 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 - **Luminary Developers (CREATE):** Software engineering, AI systems, progressive web apps, and the Luminary Afterverse spatial computing lab. Lead: `https://luminarytechnicals.dpdns.org/frontend/developers.html` | Dedicated Subdomain: `https://developers.luminarytechnicals.dpdns.org/`
 - **Luminary Cares (EMPOWER):** Technology education, digital literacy, mentorship, and community empowerment via Luminary Books. Lead: `https://luminarytechnicals.dpdns.org/frontend/cares.html` | Dedicated Subdomain: `https://cares.luminarytechnicals.dpdns.org/`
 - **Luminary Kits (CONNECT):** Reusable developer toolkits, APIs, SDKs, and partner web collaborations including Luminary Webs. Lead: `https://luminarytechnicals.dpdns.org/frontend/kits.html` | Dedicated Subdomain: `https://kits.luminarytechnicals.dpdns.org/`
-- **Luminary Federals (ENGAGE):** Civic technology, public affairs, governance research, and the official Luminary News platform. Lead: `https://luminarytechnicals.dpdns.org/frontend/federals.html` | Dedicated Subdomain: `https://federals.luminarytechnicals.dpdns.org/`
+- **Luminary Federals (ENGAGE):** Civic technology, public affairs, governance research, and the official Luminary Updates platform. Lead: `https://luminarytechnicals.dpdns.org/frontend/federals.html` | Dedicated Subdomain: `https://federals.luminarytechnicals.dpdns.org/`
 
 **Direct Associated Entity** (top-level, separate from the 5 organs):
 - **Luminary Trust:** Public-interest, philanthropic ecosystem directly associated with Luminary Technicals. Oversees the **Radhika Research Foundation**. (`https://luminarytechnicals.dpdns.org/frontend/trust.html`)
@@ -19,7 +19,7 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 ## Key Projects & Initiatives
 - **AgroScan** (`https://luminarytechnicals.dpdns.org/frontend/agroscan.html`): AI-driven precision agricultural diagnostics.
 - **Luminary Afterverse** (`https://luminarytechnicals.dpdns.org/frontend/afterverse.html`): Spatial computing and 3D interactive laboratory.
-- **Luminary News** (`https://luminarytechnicals.dpdns.org/frontend/news.html`): Official editorial and ecosystem news platform.
+- **Luminary Updates** (`https://luminarytechnicals.dpdns.org/frontend/updates.html`): Official editorial and ecosystem news platform.
 - **Luminary Webs / Luminary Wishes** (`https://luminarytechnicals.dpdns.org/frontend/projects.html`): Curated web platforms and applications.
 - **Luminary Books** (`https://luminarytechnicals.dpdns.org/frontend/resources.html#books`): Technical guides, manuals, and open-access literature under Luminary Cares.
 
