@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let focusedIndex = -1;
   let activeFilter = 'ALL';
 
+  // Root-relative path works from both root pages and nested clean article permalinks.
   const isFrontend = window.location.pathname.includes('/frontend/');
-  const indexPath = isFrontend ? '../configuration/search-index.json' : 'configuration/search-index.json';
+  const indexPath = '/configuration/search-index.json';
 
   // Load search index
   fetch(indexPath)
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { label: 'All', value: 'ALL' },
     { label: 'Organs', value: 'ORGAN' },
     { label: 'Projects', value: 'PROJECT' },
+    { label: 'Articles', value: 'ARTICLES' },
     { label: 'Research', value: 'RESEARCH' },
     { label: 'Docs', value: 'DOCUMENTATION' },
     { label: 'Legal', value: 'LEGAL' }
