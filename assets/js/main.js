@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   initThemeToggle();
+  initJsonNavigation();
   initNavbar();
   initMobileMenu();
   initScrollAnimations();
@@ -37,16 +38,100 @@ function initNavbar() {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
   
-  // Active link resolution
-  const path = window.location.pathname.toLowerCase();
-  let filename = path.split('/').pop() || 'index.html';
-  if (filename === '' || filename === '/') filename = 'index.html';
-  
-  document.querySelectorAll('.nav-links a, .mobile-menu a[data-nav]').forEach(a => {
-    const href = (a.getAttribute('href') || '').toLowerCase();
-    const linkFile = href.split('/').pop();
-    if (linkFile === filename) {
-      a.classList.add('active');
+  markActiveNavigation();
+}
+
+/* ── JSON-DRIVEN GLOBAL NAVIGATION ── */
+async function initJsonNavigation() {
+  const isFrontend = window.location.pathname.startsWith('/frontend/');
+  const source = isFrontend ? '../configuration/navigation.json' : 'configuration/navigation.json';
+  try {
+    const response = await fetch(source, { cache: 'no-cache' });
+    if (!response.ok) throw new Error('Navigation JSON returned HTTP ' + response.status);
+    const config = await response.json();
+
+    const makeLink = (item) => {
+      const a = document.createElement('a');
+      a.href = item.href;
+      a.textContent = item.label;
+      a.dataset.nav = '';
+      if (item.external || /^https?:\/\//i.test(item.href)) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+      if (item.description) a.title = item.description;
+      return a;
+    };
+
+    const desktopNav = document.querySelector('.nav-links');
+    if (desktopNav && Array.isArray(config.header)) {
+      desktopNav.replaceChildren(...config.header.map(item => {
+        const li = document.createElement('li');
+        li.appendChild(makeLink(item));
+        return li;
+      }));
+    }
+
+    const sidePanel = document.querySelector('.mobile-menu');
+    if (sidePanel && Array.isArray(config.sections)) {
+      const closeButton = sidePanel.querySelector('.close-btn');
+      sidePanel.replaceChildren();
+      if (closeButton) sidePanel.appendChild(closeButton);
+
+      config.sections.forEach((section, index) => {
+        const details = document.createElement('details');
+        details.className = 'nav-accordion';
+        details.dataset.section = section.title || String(index);
+
+        const summary = document.createElement('summary');
+        summary.className = 'nav-accordion-title';
+        const icon = document.createElement('span');
+        icon.className = 'nav-accordion-icon';
+        icon.setAttribute('aria-hidden', 'true');
+        icon.textContent = section.icon || '›';
+        const title = document.createElement('span');
+        title.className = 'nav-accordion-label';
+        title.textContent = section.title || 'Explore';
+        summary.append(icon, title);
+        details.appendChild(summary);
+
+        const links = document.createElement('div');
+        links.className = 'nav-subitems';
+        (Array.isArray(section.items) ? section.items : []).forEach(item => {
+          const link = makeLink(item);
+          if (!item.external && !/^https?:\/\//i.test(item.href)) link.dataset.nav = '';
+          links.appendChild(link);
+        });
+        details.appendChild(links);
+        sidePanel.appendChild(details);
+      });
+    }
+
+    markActiveNavigation();
+  } catch (error) {
+    console.warn('JSON navigation could not be loaded; using the built-in navigation.', error);
+  }
+}
+
+function markActiveNavigation() {
+  const normalize = (pathname) => {
+    const clean = decodeURI(pathname || '/').replace(/\/+$/, '');
+    return clean === '' || clean === '/' ? '/index.html' : clean.toLowerCase();
+  };
+  const currentPath = normalize(window.location.pathname);
+  document.querySelectorAll('.nav-links a, .mobile-menu a[data-nav]').forEach(anchor => {
+    let isActive = false;
+    try {
+      const target = new URL(anchor.getAttribute('href') || '', window.location.origin);
+      isActive = target.origin === window.location.origin && normalize(target.pathname) === currentPath;
+    } catch (_) {}
+    anchor.classList.toggle('active', isActive);
+    if (isActive) {
+      anchor.setAttribute('aria-current', 'page');
+      const group = anchor.closest('.nav-accordion');
+      if (group) group.open = true;
+    } else {
+      anchor.removeAttribute('aria-current');
     }
   });
 }
@@ -66,7 +151,10 @@ function initMobileMenu() {
   btn.addEventListener('click', () => toggle(true));
   if (closeBtn) closeBtn.addEventListener('click', () => toggle(false));
   if (overlay) overlay.addEventListener('click', () => toggle(false));
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggle(false)));
+  // Delegation also covers links injected later from navigation.json.
+  menu.addEventListener('click', (event) => {
+    if (event.target.closest('a')) toggle(false);
+  });
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && menu.classList.contains('open')) {
