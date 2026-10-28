@@ -737,6 +737,107 @@
           "url": "/frontend/contact"
         }
       ]
+    },
+    {
+      "slug": "shareholding-review-ipo-notice",
+      "title": "Shareholding Review & IPO Notice — 12 March 2025",
+      "description": "A dated management-supplied shareholding statement and pause notice. Ownership percentages, historical growth and exchange-trading claims require supporting documentation.",
+      "category": "Governance & Shareholder Notice",
+      "author": "Luminary Technicals",
+      "datePublished": "2025-03-12",
+      "dateModified": "2026-10-29",
+      "excerpt": "A notice dated 12 March 2025 records a supplied shareholding schedule and a pause on new IPO or issuance activity until a further declaration. It is not an independent audit, and the ownership, growth and exchange-trading claims have not been independently verified.",
+      "tags": [
+        "Shareholding Statement",
+        "IPO Notice",
+        "Governance",
+        "Shareholder Communication",
+        "NSE",
+        "BSE",
+        "Luminary Technicals"
+      ],
+      "sections": [
+        {
+          "heading": "Notice and scope",
+          "paragraphs": [
+            "This page records a management-supplied notice dated 12 March 2025 concerning a stated shareholding distribution and a pause on new IPO or new-issuance activity until a further formal declaration. It is a record of the information supplied for publication, not an independent statutory audit, stock-exchange filing, prospectus, or verified trading notice.",
+            "The supplied note frames the pause as a period for economic consolidation and governance review. It does not provide a detailed or formally documented reason for the decision. No additional reason has been inferred here."
+          ]
+        },
+        {
+          "heading": "Shareholding schedule supplied for this notice",
+          "paragraphs": [
+            "The following ownership breakdown was supplied for inclusion in the notice. These percentages have not been independently audited or substantiated by a share register, allotment records, signed confirmations, or other primary documents. Listing a name does not establish that the named organization has confirmed the holding, endorsed Luminary Technicals, or authorized use of its name."
+          ],
+          "bullets": [
+            "AR. Abhinav Ranjan — 84%",
+            "Tata Telecom — 7%",
+            "Huawei — 2%",
+            "Radhika Research Foundation — 2%",
+            "Private individual shareholders — 5%",
+            "Total of the supplied percentages — 100%"
+          ]
+        },
+        {
+          "heading": "Reported growth since March 2023",
+          "paragraphs": [
+            "The supplied statement describes growth of more than 172,000% across the period beginning in March 2023 and covering roughly the following two years. The source material does not clarify what the figure measures, the starting and ending values, the calculation method, the valuation basis, or whether an independent auditor reviewed it.",
+            "For that reason, this figure is presented only as a claim contained in the supplied statement. It must not be read as a verified share-price return, an independently established valuation increase, a promise of future performance, or a guarantee of investor gains. Supporting calculations and dated primary records would be needed before the figure could be presented as verified performance."
+          ]
+        },
+        {
+          "heading": "Pause on new IPO or issuance activity",
+          "paragraphs": [
+            "The notice states that no new IPO or new issuance for holders will be announced until a subsequent formal declaration. It does not provide a confirmed date for that next declaration. This is a record of the stated management position, not proof that an IPO had previously been approved, filed, or accepted by a regulator or exchange.",
+            "The notice does not, by itself, amend any shareholder's existing legal rights, change a share register, authorize a transfer, or establish whether any security is publicly listed. Those matters depend on the issuer's formal records and applicable requirements."
+          ]
+        },
+        {
+          "heading": "NSE and BSE trading status must be verified",
+          "paragraphs": [
+            "The material supplied for the requested notice states that existing shares may be bought and sold on both the National Stock Exchange of India (NSE) and BSE. However, no official issuer listing name, ticker or scrip code, ISIN, exchange circular, or other primary listing record was supplied, and the listing status could not be independently verified for this page.",
+            "Accordingly, this page does not confirm that Luminary Technicals shares are listed or tradable on NSE or BSE. Before considering any transaction, a reader should verify the exact legal issuer name and security directly against official exchange records and consult a registered broker or depository participant. Do not rely on this webpage alone as evidence that a security exists, is listed, or can be traded."
+          ]
+        },
+        {
+          "heading": "Records needed to substantiate the statement",
+          "paragraphs": [
+            "A meaningful shareholding audit or public disclosure should be supported by the legal name and registration details of the issuer, a dated share register, allotment and transfer records, relevant board or shareholder resolutions, and an independent auditor's report where applicable. Any claim of exchange listing should be matched to the official security identifier, exchange symbol or scrip code, ISIN, and the relevant exchange record.",
+            "The reported growth figure should also identify exactly what was measured and provide the dated starting and ending values, calculation method, valuation or market-price basis, and the records supporting the result. Without those documents, the figures remain supplied claims rather than independently verified findings."
+          ]
+        },
+        {
+          "heading": "Next declaration and governance review",
+          "paragraphs": [
+            "The next formal notice should identify the decision-maker, clarify the scope and duration of the pause, explain the reason to the extent authorized for disclosure, and state whether the notice concerns a proposed IPO, a new primary issuance, or another specific action. Any future update should be dated and linked to the relevant supporting documents.",
+            "Until such a declaration is published, this page records only the notice information supplied for 12 March 2025. It does not predict when an offering will occur or make any promise about the value or liquidity of any holding."
+          ]
+        },
+        {
+          "heading": "Important limitation",
+          "paragraphs": [
+            "This is an informational website article, not an investment offer, solicitation, recommendation, or independent audit opinion. The percentages, names, growth claim, and exchange-trading statement are not independently verified by this publication. The article does not establish the legal identity or status of an issuer, confirm third-party ownership, or prove an NSE or BSE listing."
+          ]
+        }
+      ],
+      "relatedLinks": [
+        {
+          "label": "Legal Management & Accountability",
+          "url": "/frontend/articles/legal-management-coordination-accountability"
+        },
+        {
+          "label": "Luminary Technicals governance overview",
+          "url": "/frontend/organization"
+        },
+        {
+          "label": "All articles",
+          "url": "/frontend/articles"
+        },
+        {
+          "label": "Contact Luminary Technicals",
+          "url": "/frontend/contact"
+        }
+      ]
     }
   ]
 }
