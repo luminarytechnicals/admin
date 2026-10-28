@@ -115,7 +115,7 @@
   force = true
 
 # Clean URLs: use explicit routes instead of dynamic :page placeholders.
-# A dynamic placeholder was being exposed literally in navigation, sending requests to /frontend/:page.
+# Explicit page mappings prevent unresolved dynamic placeholders in public URLs.
 # News is a legacy alias for Updates.
 [[redirects]]
   from = "/frontend/news.html"
