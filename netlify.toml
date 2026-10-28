@@ -77,6 +77,43 @@
   force = true
 
 
+# Extensionless routes for root-level system pages.
+[[redirects]]
+  from = "/404.html"
+  to = "/404"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/403.html"
+  to = "/403"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/offline.html"
+  to = "/offline"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/404"
+  to = "/404.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/403"
+  to = "/403.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/offline"
+  to = "/offline.html"
+  status = 200
+  force = true
+
 # Clean URLs: redirect legacy .html addresses to extensionless canonical paths.
 # Legacy News platform is now simply /frontend/updates.
 [[redirects]]
