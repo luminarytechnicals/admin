@@ -38,3 +38,8 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 - **Legal & Compliance:** legal@luminarytechnicals.dpdns.org
 - **Fallback / Backup Email:** luminarytechnicals@gmail.com (in case of dedicated email delivery issues)
 - **Official Website:** https://luminarytechnicals.dpdns.org/
+
+## Directory Pages
+- **Luminary Common:** https://luminarytechnicals.dpdns.org/frontend/common.html — shared starting point and links to the five core organs.
+- **JSET Project:** https://luminarytechnicals.dpdns.org/frontend/jset.html — dedicated JSET project detail page.
+- **Luminary Updates:** https://luminarytechnicals.dpdns.org/frontend/updates.html — repository JSON-driven platform updates.
