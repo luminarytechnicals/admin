@@ -741,6 +741,20 @@
   status = 200
   force = true
 
+
+# Shareholding review and IPO notice clean permalink
+[[redirects]]
+  from = "/frontend/articles/shareholding-review-ipo-notice.html"
+  to = "/frontend/articles/shareholding-review-ipo-notice"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/articles/shareholding-review-ipo-notice"
+  to = "/frontend/articles/shareholding-review-ipo-notice.html"
+  status = 200
+  force = true
+
 # Global Security Headers & Asset Caching
 [[headers]]
   for = "/*"
