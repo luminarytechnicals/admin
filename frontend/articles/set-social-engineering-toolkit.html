@@ -242,82 +242,153 @@
 </div></section>
 <section class="section article-reading-section"><div class="container article-reading-container">
 <article class="glass-card article-content-card">
-<p class="article-intro"><strong>SET</strong> is used here to discuss two distinct concepts that must not be confused: the established <strong>Social-Engineer Toolkit</strong> (hyphenated), a cybersecurity testing framework associated with TrustedSec; and a separate <strong>Social Engineering Toolkit</strong> concept described in this article, focused on online influence, persuasion, and the ways digital communication can shape perceptions and decisions.</p>
-<div class="article-callout"><p><strong>Terminology note:</strong> The hyphenated and unhyphenated names are deliberately distinguished in this article. The second concept is an independent conceptual framing, not a claim of affiliation with TrustedSec and not a statement that a separate software product has already been implemented.</p></div>
+<p class="article-intro"><strong>SET</strong> is used here for two distinct concepts that must not be confused: the established <strong>Social-Engineer Toolkit</strong> (hyphenated), a cybersecurity testing framework associated with TrustedSec; and the separate <strong>Social Engineering Toolkit</strong> concept discussed in this article, which examines online phishing-related communication and highly influential persuasion techniques as subjects of research.</p>
+<div class="article-callout"><p><strong>Terminology note:</strong> The hyphenated and unhyphenated names are deliberately distinguished. The second concept is an independent conceptual framing, not a claim of affiliation with TrustedSec and not a statement that separate software has already been implemented.</p></div>
 
 <section class="article-section"><h2>1. Two names, two concepts</h2>
-<p><strong>Social-Engineer Toolkit</strong> refers to the established software framework used in social-engineering security assessments. It is commonly associated with phishing-related testing and the study of how people and technical controls respond to deceptive scenarios.</p>
-<p><strong>Social Engineering Toolkit</strong>, without the hyphen in “Social-Engineer,” is the distinct concept described here. It concerns the broader power of online influence: how messages, narratives, social signals, persuasive framing, and network dynamics may affect attention, interpretation, confidence, and choice.</p>
-<p>The shared initials <strong>SET</strong> do not make these concepts the same. The spelling, context, project identity, intended scope, and claims about implementation should make clear which one is being discussed.</p>
+<p><strong>Social-Engineer Toolkit</strong> refers to the established software framework used in social-engineering security assessments. It is commonly associated with phishing-related testing and the evaluation of how people and technical controls respond to deceptive scenarios.</p>
+<p><strong>Social Engineering Toolkit</strong>, without the hyphen in “Social-Engineer,” is the distinct concept described here. It concerns online influence at a broader level: phishing-related communication, persuasion, narrative framing, social signals, audience context, and the ways digital communication may shape perceptions and decisions.</p>
+<p>The shared initials <strong>SET</strong> do not make these concepts the same. The spelling, context, project identity, intended scope, and claims about implementation should make clear which one is being discussed. This article does not suggest that the two names refer to the same product or team.</p>
 </section>
 
-<section class="article-section"><h2>2. The established Social-Engineer Toolkit</h2>
-<p>The established Social-Engineer Toolkit is an open-source framework associated with TrustedSec. It supports authorized social-engineering assessments and related penetration-testing work. In this context, phishing is one recognizable kind of scenario, but social engineering is broader than email scams alone: it can involve impersonation, deceptive requests, exploitation of trust, and attempts to induce unsafe actions.</p>
-<p>The phrase “online malware and phishing” may describe a wider threat environment in which security assessments take place. It should not be taken to mean that every SET release contains every malware capability, or that running a security tool makes a test authorized. Specific functionality must be checked against the official project documentation and version being used.</p>
-<p>Used with permission and suitable safeguards, this kind of framework can help assess whether awareness training, verification processes, reporting channels, and technical protections work as intended. Unauthorized targeting, credential theft, or deployment of harmful software is not justified simply because a technique can be used in a security test.</p>
-</section>
-
-<section class="article-section"><h2>3. The separate Social Engineering Toolkit concept</h2>
-<p>The unhyphenated <strong>Social Engineering Toolkit</strong> concept starts from a wider question: how does online influence operate, and why can certain messages or narratives become unusually persuasive?</p>
-<p>Online influence can involve much more than obtaining a password or persuading someone to click a link. It may affect what people notice, which sources they trust, how they interpret an event, whether they feel part of a group, and which claims they pass to others. Digital platforms can amplify these effects because communication is fast, connected, persistent, and capable of reaching large audiences.</p>
-<p>This concept can examine online phishing-related communication alongside highly influential persuasion techniques as connected but distinct mechanisms. Its broader research scope includes their mechanisms, conditions, measurable effects, limitations, and possible consequences. The concept should be presented as a framework or research direction unless and until concrete functions, implementation evidence, and testing results are documented.</p>
-</section>
-
-<section class="article-section"><h2>4. Influence beyond phishing</h2>
-<p>Phishing usually attempts to induce a specific risky action—such as opening a deceptive link, revealing information, approving a request, or sending money. Online influence can be broader and may operate over repeated interactions rather than one message.</p>
-<p>Areas relevant to influence research include:</p>
+<section class="article-section"><h2>2. Understanding social engineering</h2>
+<p>Social engineering is the use of interpersonal, psychological, or contextual methods to influence a person's decisions or actions. In cybersecurity, it may be used to persuade a person to reveal confidential information, disclose credentials, approve an unexpected change, transfer funds, open a suspicious attachment, visit a deceptive website, install an unauthorised application, or bypass an established verification process.</p>
+<p>It works by exploiting ordinary human circumstances rather than proving that a person is careless or unintelligent. People operate under time pressure, incomplete information, competing responsibilities, familiar routines, and varying levels of technical knowledge.</p>
 <ul>
-<li><strong>Framing and narrative:</strong> how the way information is presented changes the interpretation people are likely to consider.</li>
-<li><strong>Credibility and trust signals:</strong> how source identity, evidence, consistency, and transparent attribution affect confidence.</li>
-<li><strong>Social proof and group dynamics:</strong> how visible reactions and community norms can shape what appears popular or acceptable.</li>
-<li><strong>Attention and emotional salience:</strong> why urgency, novelty, fear, hope, or curiosity can affect what people notice and remember.</li>
-<li><strong>Network spread:</strong> how ideas move through communities, how repeated exposure changes familiarity, and how platform design can amplify selected content.</li>
-<li><strong>Persuasion and decision context:</strong> how explanations, evidence, and the timing of information can help people evaluate options.</li>
+<li><strong>Authority:</strong> a request appears to come from someone with power or responsibility.</li>
+<li><strong>Urgency or fear:</strong> the recipient is pressured to act before independently checking the request.</li>
+<li><strong>Familiarity:</strong> a message resembles a known colleague, service, organisation, or communication style.</li>
+<li><strong>Curiosity or emotional salience:</strong> the message promises interesting information or triggers a strong reaction.</li>
+<li><strong>Social proof:</strong> a recipient is encouraged to follow what supposedly everyone else is doing.</li>
+<li><strong>Reciprocity and routine:</strong> a request is framed as repayment for a favor or embedded in a familiar workflow.</li>
 </ul>
-<p>These are subject areas for study, not guaranteed methods for controlling people. Influence is contextual: the same message can affect different people in different ways, and observed engagement does not automatically prove belief, agreement, or a lasting change in behavior.</p>
+<p>No single factor guarantees success. Context, source identity, communication channels, technical controls, and organisational procedures all influence the outcome.</p>
 </section>
 
-<section class="article-section"><h2>5. A research framework for online influence</h2>
-<h3>Observe the information environment</h3><p>Identify the content, communication channels, and context relevant to a defined research question. Use public, consented, or otherwise authorized data and record its source and limitations.</p>
-<h3>Describe the influence mechanism</h3><p>Separate the message itself from its presentation, source, audience context, and distribution. Distinguish observed facts from hypotheses about intent or effect.</p>
-<h3>Measure outcomes carefully</h3><p>Define what is being measured—such as reach, recall, reporting, comprehension, or a decision made in a controlled exercise. Do not infer private beliefs from a click, like, share, or view alone.</p>
-<h3>Review unintended effects</h3><p>Consider misinformation, coercion, unfair pressure, privacy loss, reputational harm, and effects on people who did not agree to participate. A method can be influential and still be unreliable, harmful, or inappropriate.</p>
-<h3>Document evidence and limits</h3><p>Publish the conditions of observation, relevant uncertainties, and what the findings do not establish. Keep claims about proposed capabilities separate from tested results.</p>
+<section class="article-section"><h2>3. The established Social-Engineer Toolkit</h2>
+<p>The established Social-Engineer Toolkit is an open-source framework associated with TrustedSec. It supports authorised social-engineering assessments and related penetration-testing activities. Phishing-related assessments are one recognised area within the broader field, which also includes impersonation, deceptive requests, exploitation of trust, and attempts to induce unsafe actions.</p>
+<p>Online malware and phishing are part of the wider threat environment that defenders may need to understand. However, those words should not be taken to mean that every release of the established toolkit includes every malware capability. Exact functions, compatibility, and supported modules must be checked against the relevant version and official documentation.</p>
+<p>A controlled assessment can help an organisation examine how awareness training, verification procedures, reporting channels, identity controls, and incident-response processes behave during a simulated scenario. A tool is only one component of that process; authorisation, scope, evidence, interpretation, and remediation determine whether the assessment is useful.</p>
+<p>The existence of a security-testing framework does not make every possible use lawful or appropriate. Testing another organisation or person without permission, collecting real credentials, or deploying harmful software is not justified by a security-research label.</p>
 </section>
 
-<section class="article-section"><h2>6. Responsible applications and boundaries</h2>
-<p>Research into online persuasion can support digital literacy, public-interest communication, security awareness, crisis messaging, media literacy, user education, and the study of information integrity. It can help people recognize manipulative patterns and make better-informed decisions.</p>
-<p>The same general knowledge may be misused for deception, fraud, covert mass persuasion, impersonation, harassment, or manipulation of vulnerable people. A responsible research approach should therefore distinguish transparent persuasion from covert manipulation and should not treat influence over another person as proof of consent or agreement.</p>
+<section class="article-section"><h2>4. The separate Social Engineering Toolkit concept</h2>
+<p>The unhyphenated <strong>Social Engineering Toolkit</strong> concept asks a broader question: how can online communication and influence techniques shape what people notice, trust, share, and decide?</p>
+<p>Its conceptual scope can include online phishing-related communication as well as highly persuasive influence techniques. These mechanisms can overlap, but they are not identical. A phishing attempt often seeks a specific immediate action; broader influence can operate over repeated interactions, social networks, community identities, and the narratives people encounter over time.</p>
+<p>This concept can be examined through its mechanisms, conditions, potential impact, limitations, and safeguards. It should be described as a concept or research direction unless and until specific features, implementations, testing conditions, and results are documented. Powerful-sounding terminology is not evidence that a method works or that a particular system has been built.</p>
+<p>The concept is not presented here as an operational recipe for covertly targeting people. It is a framework for understanding the scope of online influence, studying its effects with evidence, and distinguishing transparent persuasion from deception or exploitation.</p>
+</section>
+
+<section class="article-section"><h2>5. Major categories of social-engineering risk</h2>
+<h3>Phishing</h3><p>Phishing uses deceptive electronic communication to persuade recipients to disclose information, visit unsafe destinations, or perform risky actions. Defensive review should examine sender identity, the actual destination of links, unexpected requests, and whether the message follows normal verification procedures.</p>
+<h3>Spearphishing</h3><p>Spearphishing directs a message toward a particular person, organisation, or group. A message can appear credible because it references a role, current project, or familiar business relationship. Correct grammar and personal details do not establish that a request is genuine.</p>
+<h3>Voice-based social engineering</h3><p>A caller may impersonate a colleague, support technician, manager, public authority, or service provider. A confident voice or familiar style is not sufficient proof of identity. Sensitive requests should be verified through an independent trusted channel.</p>
+<h3>SMS and messaging-based deception</h3><p>Texts and messaging platforms may carry fake account notifications, payment instructions, misleading links, or urgent requests. Display names and familiar conversation threads are not conclusive proof that the account or request is trustworthy.</p>
+<h3>Impersonation and pretexting</h3><p>Impersonation presents the sender as another person or organisation. Pretexting constructs a scenario that makes a request seem legitimate. Vendor bank-detail changes, unexpected IT requests, and demands for confidential documents should be checked independently.</p>
+<h3>Business email compromise</h3><p>Business email compromise uses deceptive business communication to induce financial transfers, changes to payment instructions, or disclosure of sensitive information. Email filters alone are insufficient; approval workflows, supplier verification, and separation of duties also matter.</p>
+<h3>Physical and in-person social engineering</h3><p>Someone may seek access by pretending to be a contractor, delivery worker, employee, visitor, or authorised technician. Physical access controls should combine identity checks, visitor procedures, staff awareness, and clear escalation routes.</p>
+<h3>Information manipulation</h3><p>Social engineering can overlap with disinformation, fraud, coordinated impersonation, and attempts to influence public opinion. These concepts are not interchangeable: misinformation may be shared unintentionally, while disinformation generally involves deliberate deception. Claims about intent should be based on evidence rather than assumption.</p>
+</section>
+
+<section class="article-section"><h2>6. How a responsible assessment should be structured</h2>
+<h3>Stage 1 — Define the objective</h3><p>Identify the defensive control being evaluated, such as whether staff independently verify unusual payment instructions or report suspicious account-reset requests. Define a measurable outcome before the exercise begins.</p>
+<h3>Stage 2 — Obtain written authorisation</h3><p>Document permission, scope, timing, responsibilities, approved methods, and restrictions. Identify covered systems and participant groups; third-party services may require separate permission.</p>
+<h3>Stage 3 — Establish safeguards</h3><p>Decide what data may be collected, how it will be protected, which actions are prohibited, how the test can be stopped, who receives urgent notifications, and how data will be retained or deleted. Real passwords and secrets should not be collected merely to measure susceptibility.</p>
+<h3>Stage 4 — Design a controlled scenario</h3><p>Use a scenario that is relevant to the objective without causing unnecessary harm. Controlled destinations, test identities, synthetic data, and predefined outcomes can measure a weakness without turning the exercise into a real compromise.</p>
+<h3>Stage 5 — Conduct within the agreed scope</h3><p>Run only the authorised exercise, monitor for unexpected effects, and stop if the agreed boundaries are exceeded.</p>
+<h3>Stage 6 — Analyse results</h3><p>Distinguish between recognising a suspicious message, reporting it, interacting with a simulated destination, and completing a risky action. Different outcomes imply different risks and should not be reduced to a simplistic pass-or-fail label.</p>
+<h3>Stage 7 — Remediate and educate</h3><p>Translate findings into improvements to verification, identity controls, reporting, communication, financial approvals, or awareness. The purpose is to improve systems and processes, not to embarrass individuals.</p>
+<h3>Stage 8 — Retest</h3><p>Use a comparable follow-up exercise to see whether controls improved. One successful test does not prove permanent resilience; threats and working practices change.</p>
+</section>
+
+<section class="article-section"><h2>7. Technical architecture and limitations</h2>
+<p>A controlled assessment may involve an authorised operator, a simulation environment, participant interaction, minimal event telemetry, and analysis and reporting. This is a conceptual assessment architecture, not a claim that every component is a separate module inside the established Social-Engineer Toolkit.</p>
+<p>Actual toolkit behaviour may depend on version, dependencies, operating environment, network configuration, and supported components. Researchers should check official documentation, release history, dependencies, and known limitations before selecting a framework.</p>
+<p>Testing should be isolated and bounded. Production accounts, personal devices, external organisations, and real customer data should not become accidental targets. Laboratory demonstrations do not automatically establish how a feature will behave in a real organisation.</p>
+</section>
+
+<section class="article-section"><h2>8. Measuring effectiveness</h2>
+<p>Metrics should correspond to the specific defensive objective. The number of messages sent or clicks recorded does not, by itself, establish the security posture of an organisation.</p>
 <ul>
-<li>Be transparent about identity, purpose, and sponsorship where they are relevant.</li>
-<li>Do not impersonate a person or institution to obtain access or trust.</li>
-<li>Do not collect credentials, private messages, or unnecessary personal data as a measure of influence.</li>
-<li>Do not use fabricated evidence or coordinated inauthentic activity to simulate genuine consensus.</li>
-<li>Use consent, controlled environments, proportional methods, and human review for research involving participants.</li>
-<li>Describe limitations honestly and correct claims that are unsupported by evidence.</li>
+<li><strong>Reporting rate:</strong> the proportion of recipients who report a simulated suspicious message through the approved channel.</li>
+<li><strong>Unsafe-action rate:</strong> the proportion who perform the specific risky action under assessment.</li>
+<li><strong>Verification rate:</strong> the proportion who independently verify a sensitive request.</li>
+<li><strong>Time to report:</strong> the interval between receiving a simulated message and reporting it.</li>
+<li><strong>Response quality:</strong> whether reports give the response team enough information to act.</li>
+<li><strong>Repeat performance:</strong> whether behaviour improves across comparable exercises.</li>
+<li><strong>Control effectiveness:</strong> whether technical and procedural safeguards prevent a simulated risk from becoming an incident.</li>
 </ul>
+<p><strong>Illustrative example, not an empirical finding:</strong> in an authorised exercise involving 100 participants, 80 might report the simulated message, 12 might interact with the simulated destination, and 8 might have no recorded outcome. That would mean an 80% reporting rate and a 12% interaction rate under those definitions. These measures describe different outcomes; they do not establish why any individual acted as they did or guarantee future performance.</p>
+<p>Every metric needs a definition, denominator, collection method, and explanation of limitations. Small samples, different scenarios, prior awareness, and test design can affect comparisons.</p>
 </section>
 
-<section class="article-section"><h2>7. Terminology, attribution, and implementation status</h2>
-<p>The established Social-Engineer Toolkit and the separate Social Engineering Toolkit concept should be named carefully in websites, documentation, presentations, and research notes. The existing tool is associated with TrustedSec; this article does not claim that TrustedSec created, endorses, or is affiliated with the unhyphenated concept described here.</p>
-<p>Likewise, this article does not establish that the separate concept is a deployed software package, that any specific influence technique has been implemented in code, or that its performance has been experimentally verified. Those claims require separate technical evidence, documentation, and reproducible evaluation.</p>
-<p>Where this concept is developed further, its purpose, scope, capabilities, and safeguards should be made explicit. Strong influence claims should be supported by evidence rather than by labels such as “super-powerful.”</p>
+<section class="article-section"><h2>9. Defensive controls that reduce risk</h2>
+<h3>Identity and authentication</h3><p>Use multifactor authentication where appropriate, phishing-resistant methods for high-risk accounts when feasible, secure recovery processes, and independent verification for sensitive changes.</p>
+<h3>Email and messaging security</h3><p>Use domain authentication controls, spam and malicious-link detection, attachment protections, clear reporting options, and established procedures for checking unusual requests. Technical filters help but cannot determine every message's intent.</p>
+<h3>Financial and administrative controls</h3><p>Require independent confirmation of new payment instructions, separation of duties, documented approvals, and confirmation through a known contact channel. Urgency should not bypass financial control.</p>
+<h3>Least privilege</h3><p>Limit access to the resources necessary for each role, review permissions, and separate administrative accounts from routine activity. Reducing privilege can limit the impact of a successful deception.</p>
+<h3>Awareness and reporting culture</h3><p>Provide practical training, make reporting easy, and treat reports as useful security signals rather than grounds for blame. Staff should know how to pause an unusual request and who to contact.</p>
+<h3>Incident response</h3><p>Prepare a process to contain suspected compromise, revoke sessions or credentials where needed, preserve evidence, notify appropriate teams, and review how the event occurred. Avoid deleting relevant evidence before it has been assessed.</p>
 </section>
 
-<section class="article-section"><h2>8. Conclusion</h2>
-<p>The central distinction is simple: <strong>Social-Engineer Toolkit</strong> is the established, hyphenated cybersecurity framework; <strong>Social Engineering Toolkit</strong> is the separate, unhyphenated concept described here around online influence and powerful persuasion techniques.</p>
-<p>The first provides a technical-security testing context. The second opens a broader research discussion about influence, communication, group dynamics, and how online information can shape decisions. Clear naming protects that distinction, while transparent methods and verifiable evidence protect the credibility of the research.</p>
+<section class="article-section"><h2>10. Legal, ethical, and privacy considerations</h2>
+<p>Authorisation and scope should be explicit before testing begins. A valid security objective does not provide unlimited permission to contact external people, access third-party systems, gather personal information, or disrupt services.</p>
+<p><strong>Data minimisation:</strong> collect only what is needed to answer the research question, restrict access, define retention periods, and prefer synthetic or aggregated data when possible.</p>
+<p><strong>Proportionality and fair treatment:</strong> keep a test proportionate to its objective and avoid humiliating participants or exploiting personal vulnerabilities.</p>
+<p><strong>Transparency and debriefing:</strong> plan how participants will receive an appropriate explanation, subject to the legitimate requirements of an authorised assessment.</p>
+<p><strong>Responsible disclosure:</strong> report discovered weaknesses through suitable channels, provide enough evidence for remediation, and avoid unnecessary publication of sensitive details that could increase risk.</p>
+<p>For the separate influence concept, the same principles support a distinction between transparent persuasion and covert manipulation. Research should not be used to justify impersonation, fraud, harassment, coercive targeting, or unnecessary profiling of private beliefs.</p>
+</section>
+
+<section class="article-section"><h2>11. Why social engineering matters in modern cybersecurity</h2>
+<p>Technical controls are essential, but many digital actions are initiated, approved, or interpreted by people. Trust, identity, communication, and routine processes create a human layer in security that attackers may try to exploit.</p>
+<p>For organisations, social-engineering resilience is therefore a combination of technical design, procedural controls, supportive training, clear accountability, and incident response. No single toolkit can replace these measures, and no completed assessment proves that every future scenario will be handled safely.</p>
+<p>At a broader information level, online influence may affect public understanding and institutional trust. Research in that area should clearly distinguish observable distribution patterns from conclusions about intent, belief, or causation.</p>
+</section>
+
+<section class="article-section"><h2>12. Research areas for the separate Social Engineering Toolkit concept</h2>
+<p>The unhyphenated concept can explore phishing-related communication and wider influence without claiming that a working product already exists. Potential research directions include:</p>
+<h3>Influence and persuasion</h3><p>Study framing, narrative structure, credibility, social proof, emotional salience, repeated exposure, audience context, and decision environments. Any conclusions should be supported by evidence and should describe uncertainty.</p>
+<h3>Network analysis</h3><p>Use public or authorised datasets in aggregate to understand how information travels without profiling private individuals unnecessarily.</p>
+<h3>Narrative provenance</h3><p>Record sources, timestamps, and context so researchers can distinguish traceable evidence from unsupported or recycled claims.</p>
+<h3>Coordination indicators</h3><p>Study transparent signals of potentially coordinated or inauthentic activity, with human review and uncertainty clearly shown.</p>
+<h3>Influence-risk assessment</h3><p>Assess campaign-level risks such as deception, impersonation, artificial amplification, and missing source transparency—not people's private beliefs.</p>
+<h3>Controlled simulation and defensive reporting</h3><p>Test hypotheses using synthetic data or closed research environments, document findings, support media literacy, and recommend proportionate responses.</p>
+<p>These are proposed research areas, not a verified list of existing features. Any future implementation should publish its methods, limitations, testing conditions, and data-handling rules.</p>
+</section>
+
+<section class="article-section"><h2>13. A proposed defensive framework: Detect, Verify, Interrupt, Report, Learn</h2>
+<h3>Detect</h3><p>Recognise unusual requests, identity inconsistencies, unexpected urgency, suspicious links, and deviations from normal procedures.</p>
+<h3>Verify</h3><p>Confirm a request through an independently trusted channel rather than relying on contact details or links provided in a suspicious message.</p>
+<h3>Interrupt</h3><p>Pause the potentially unsafe action. Do not disclose credentials, approve an unexpected change, or transfer funds until verification is complete.</p>
+<h3>Report</h3><p>Notify the designated security team, supervisor, financial-control function, service provider, or other appropriate contact.</p>
+<h3>Learn</h3><p>Analyse what happened, improve controls, communicate the lesson, and retest the process when appropriate.</p>
+<p>This is a proposed educational model in this article, not an established industry standard or a feature of the existing Social-Engineer Toolkit.</p>
+</section>
+
+<section class="article-section"><h2>14. Limitations and evidence standards</h2>
+<p>This article is a conceptual and defensive analysis, not a complete audit of the current source code, dependencies, security posture, or supported modules of the established Social-Engineer Toolkit.</p>
+<p>Software capabilities change between releases. Implementation-specific claims require direct examination of the relevant version, official documentation, source repository, and dependencies. This article does not establish that the separate Social Engineering Toolkit concept has been implemented, that any particular influence technique has been tested by it, or that any benchmark result has been independently verified.</p>
+<p>Illustrative measurements are examples only, not empirical findings. The two concepts should be described separately in future documentation, and claims about capability or effect should be tied to observable, reproducible evidence.</p>
+</section>
+
+<section class="article-section"><h2>15. Conclusion</h2>
+<p>The central distinction is clear: <strong>Social-Engineer Toolkit</strong> is the established, hyphenated cybersecurity testing framework; <strong>Social Engineering Toolkit</strong> is the separate, unhyphenated concept described here around online phishing-related communication and powerful influence techniques.</p>
+<p>The established tool belongs in a clearly authorised security-testing process. The separate concept opens a broader discussion about online persuasion, social dynamics, and how influence can be studied and evaluated. In both areas, accuracy, permissions, evidence, privacy, and accountability matter.</p>
+<p>The strategic principle is simple: understand the tactic, measure the risk, strengthen the defence, and treat evidence as the foundation of every claim.</p>
 </section>
 
 <section class="article-section article-references"><h2>References and further reading</h2>
 <ol>
 <li id="ref-1"><a href="https://github.com/trustedsec/social-engineer-toolkit" target="_blank" rel="noopener noreferrer">TrustedSec — Social-Engineer Toolkit source repository</a>. Primary project reference for the established, hyphenated toolkit.</li>
-<li id="ref-2"><a href="https://attack.mitre.org/techniques/T1684/" target="_blank" rel="noopener noreferrer">MITRE ATT&amp;CK — Social Engineering</a>. Reference for social-engineering behaviors and risks.</li>
+<li id="ref-2"><a href="https://attack.mitre.org/techniques/T1684/" target="_blank" rel="noopener noreferrer">MITRE ATT&amp;CK — Social Engineering</a>. Reference for social-engineering behaviours and risks.</li>
 <li id="ref-3"><a href="https://attack.mitre.org/techniques/T1566/" target="_blank" rel="noopener noreferrer">MITRE ATT&amp;CK — Phishing</a>. Reference for phishing as one category of social-engineering activity.</li>
-<li id="ref-4"><a href="https://capec.mitre.org/data/definitions/403.html" target="_blank" rel="noopener noreferrer">MITRE CAPEC — Social Engineering</a>. A catalog of patterns involving the manipulation of people.</li>
+<li id="ref-4"><a href="https://capec.mitre.org/data/definitions/403.html" target="_blank" rel="noopener noreferrer">MITRE CAPEC — Social Engineering</a>. Catalogue of patterns involving manipulation and exploitation of people.</li>
+<li id="ref-5"><a href="https://www.cisa.gov/sites/default/files/publications/Phishing%20General%20Security%20Postcard_6.24.2021_508cV2.pdf" target="_blank" rel="noopener noreferrer">U.S. Cybersecurity and Infrastructure Security Agency — Phishing guidance</a>. General defensive guidance.</li>
+<li id="ref-6"><a href="https://www.ic3.gov/PSA/2024/PSA240411" target="_blank" rel="noopener noreferrer">FBI Internet Crime Complaint Center — Cyber criminals target victims using social-engineering techniques</a>. Public advisory on social-engineering risks.</li>
 </ol>
 </section>
-<div class="article-callout"><p><strong>Editorial note:</strong> The article distinguishes the established Social-Engineer Toolkit from the separate Social Engineering Toolkit concept. The external references support general terminology for the established project and cybersecurity context; they do not verify implementation or performance of the separate concept.</p></div>
+<div class="article-callout"><p><strong>Editorial note:</strong> The article distinguishes the established Social-Engineer Toolkit from the separate Social Engineering Toolkit concept. External references support general terminology and cybersecurity context; they do not verify the implementation or performance of the separate concept.</p></div>
 <section class="article-related"><h2>Explore related pages</h2><ul><li><a href="/frontend/research">Research Portal →</a></li><li><a href="/frontend/technology">Technology Hub →</a></li><li><a href="/frontend/security">Security &amp; Trust →</a></li></ul><a href="/frontend/articles" class="btn btn-primary">← All Articles</a></section>
 </article></div></section>
 <section class="section" style="background:var(--bg2);"><div class="container"><div class="cta-banner"><h2>More from Luminary Technicals</h2><p>Explore organizational information, projects, and official platform updates.</p><a href="/frontend/organization" class="btn btn-primary">Organization Overview →</a><a href="/frontend/updates" class="btn btn-outline">Latest Updates →</a></div></div></section>
