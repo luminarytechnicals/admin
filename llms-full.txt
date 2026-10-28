@@ -37,7 +37,7 @@ Exactly five core organs operate under Luminary Technicals, each representing a 
    Modular UI component libraries, developer CLI tools, REST & GraphQL integration APIs, cross-organ system connectors. Coordinates the **Luminary Webs** collaboration (→ Luminary Wishes).
 
 5. **ENGAGE — Luminary Federals** (`/frontend/federals.html`)
-   Civic-tech research, open institutional technology standards, sovereign digital protocols, technology governance studies, and institutional dialogues. Operates the **Luminary News** platform. (Strictly non-governmental, non-statutory civic research entity.)
+   Civic-tech research, open institutional technology standards, sovereign digital protocols, technology governance studies, and institutional dialogues. Operates the **Luminary Updates** platform. (Strictly non-governmental, non-statutory civic research entity.)
 
 ### 2.2 Direct Associated Entity (Top-Level — NOT a Core Organ)
 - **Luminary Trust** (`/frontend/trust.html`)
@@ -85,10 +85,10 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 - **URL:** `/frontend/afterverse.html`
 - Creative technology lab exploring interactive 3D WebGL environments, real-time particle physics, ambient spatial audio, and next-generation sensory web navigation at 60 FPS.
 
-### Luminary News (Information Platform)
+### Luminary Updates (Information Platform)
 - **Parent:** Luminary Federals
 - **Type:** Official Initiative / Platform
-- **URL:** `/frontend/news.html`
+- **URL:** `/frontend/updates.html`
 - The primary communications and public information platform. Delivers editorial updates, technical release notes, research announcements, and ecosystem milestones.
 
 ### Luminary Webs (Web Collaboration)
@@ -135,8 +135,8 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 ### Q: Is Luminary Trust one of the five organs?
 **A:** No. Luminary Trust is a top-level entity directly associated with Luminary Technicals, separate from the five operational organs. It handles public-interest and philanthropic initiatives, including the Radhika Research Foundation.
 
-### Q: Where does Luminary News belong?
-**A:** Luminary News is an official initiative/platform under Luminary Federals (the 5th core organ). It is NOT an independent organ and NOT under Luminary Trust or Luminary Cares.
+### Q: Where does Luminary Updates belong?
+**A:** Luminary Updates is an official initiative/platform under Luminary Federals (the 5th core organ). It is NOT an independent organ and NOT under Luminary Trust or Luminary Cares.
 
 ### Q: Who is AR. Abhinav Ranjan?
 **A:** AR. Abhinav Ranjan is the Founder & CEO of Luminary Technicals. He provides central strategic direction, system architecture, and leadership across the entire ecosystem.
@@ -163,7 +163,7 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 - **Luminary Trust:** https://luminarytechnicals.dpdns.org/frontend/trust.html | Domain: https://luminarytrust.dpdns.org/
 - **AgroScan:** https://luminarytechnicals.dpdns.org/frontend/agroscan.html
 - **Luminary Afterverse:** https://luminarytechnicals.dpdns.org/frontend/afterverse.html
-- **Luminary News:** https://luminarytechnicals.dpdns.org/frontend/news.html
+- **Luminary Updates:** https://luminarytechnicals.dpdns.org/frontend/updates.html
 - **Research Portal:** https://luminarytechnicals.dpdns.org/frontend/research.html
 - **Technology Hub:** https://luminarytechnicals.dpdns.org/frontend/technology.html
 - **Leadership:** https://luminarytechnicals.dpdns.org/frontend/leadership.html
@@ -180,3 +180,9 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 - **Accessibility:** https://luminarytechnicals.dpdns.org/frontend/accessibility.html
 - **Cookies Policy:** https://luminarytechnicals.dpdns.org/frontend/cookies.html
 - **Disclaimer:** https://luminarytechnicals.dpdns.org/frontend/disclaimer.html
+
+
+## Additional Directory Pages
+- **Luminary Common:** https://luminarytechnicals.dpdns.org/frontend/common.html — Shared navigation and overview of all five core organs.
+- **JSET Project:** https://luminarytechnicals.dpdns.org/frontend/jset.html — Dedicated JSET project detail page.
+- **Luminary Updates:** https://luminarytechnicals.dpdns.org/frontend/updates.html — JSON-driven announcements and update feed.
