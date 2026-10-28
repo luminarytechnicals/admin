@@ -173,9 +173,9 @@ const ORGANS = [
         type: "initiative",
         parent: "luminary-federals",
         badge: "Luminary Federals · Platform",
-        page: "news.html",
-        url: "frontend/news.html",
-        description: "The official news wire, press hub, release notes, and announcement platform operated under Luminary Federals."
+        page: "updates.html",
+        url: "frontend/updates.html",
+        description: "The official updates feed, release notes, and announcement platform operated under Luminary Federals."
       }
     ]
   },
