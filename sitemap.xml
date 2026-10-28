@@ -107,6 +107,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- LUMINARY WISHES PROJECT PROFILE -->
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/luminary-wishes</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- DIRECT ASSOCIATED ENTITY -->
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/trust</loc>
