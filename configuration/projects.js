@@ -107,7 +107,7 @@ const PROJECTS = [
   },
   {
     id: "luminary-news",
-    name: "Luminary Updates",
+    name: "Updates",
     category: "Media & Information Platform",
     division: "Luminary Federals",
     parent: "luminary-federals",
@@ -117,8 +117,8 @@ const PROJECTS = [
     featured: true,
     badge: "Luminary Federals · Platform",
     icon: "📰",
-    url: "frontend/updates.html",
-    directPage: "updates.html",
+    url: "frontend/updates",
+    directPage: "updates",
     shortDesc: "Official updates feed, announcements, project changes, and ecosystem releases.",
     description: "The official updates feed of Luminary Technicals, operated under Luminary Federals. Publishes organization announcements, project changes, technical release notes, research updates, and ecosystem milestones.",
     technologies: ["JSON-Driven Updates Feed", "Category Filtering", "Repository-Maintained Registry"]
