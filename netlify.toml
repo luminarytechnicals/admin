@@ -76,6 +76,34 @@
   status = 301
   force = true
 
+
+# Clean URLs: redirect legacy .html addresses to extensionless canonical paths.
+# Legacy News platform is now simply /frontend/updates.
+[[redirects]]
+  from = "/frontend/news.html"
+  to = "/frontend/updates"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/news"
+  to = "/frontend/updates"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/:page.html"
+  to = "/frontend/:page"
+  status = 301
+  force = true
+
+# Rewrite clean paths to the existing static HTML files without changing the address bar.
+[[redirects]]
+  from = "/frontend/:page"
+  to = "/frontend/:page.html"
+  status = 200
+  force = true
+
 # Global Security Headers & Asset Caching
 [[headers]]
   for = "/*"
