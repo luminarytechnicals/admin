@@ -182,7 +182,7 @@
     },
     {
       "@context": "https://schema.org",
-      "@type": "NewsMediaOrganization",
+      "@type": "WebSite",
       "name": "Luminary Updates",
       "url": "https://luminarytechnicals.dpdns.org/frontend/updates.html",
       "parentOrganization": {
@@ -199,8 +199,8 @@
       "@type": "WebPage",
       "@id": "https://luminarytechnicals.dpdns.org/frontend/updates.html#webpage",
       "url": "https://luminarytechnicals.dpdns.org/frontend/updates.html",
-      "name": "Luminary Updates — Official Wire | Luminary Technicals",
-      "description": "Official news wire for Luminary Technicals: announcements, press releases, technical milestones, and project updates, operated under Luminary Federals.",
+      "name": "Luminary Updates | Luminary Technicals",
+      "description": "Current announcements, project updates, research notes, and platform milestones from Luminary Technicals, operated under Luminary Federals.",
       "isPartOf": {
         "@id": "https://luminarytechnicals.dpdns.org/#website"
       },
@@ -208,7 +208,7 @@
         "@id": "https://luminarytechnicals.dpdns.org/#organization"
       },
       "datePublished": "2025-01-01",
-      "dateModified": "2026-09-30"
+      "dateModified": "2026-10-28"
     },
     {
       "@type": "BreadcrumbList",
@@ -250,7 +250,7 @@
       <li><a href="ecosystem.html">Ecosystem</a></li>
       <li><a href="organs.html">Organs</a></li>
       <li><a href="sub-companies.html">Sub Companies</a></li>
-      <li><a href="news.html">News</a></li>
+      <li><a href="updates.html">Updates</a></li>
       <li><a href="collab.html">Collaborate</a></li>
     </ul>
     <div class="nav-actions">
@@ -279,7 +279,7 @@
   <a href="agroscan.html" data-nav>AgroScan</a>
   <a href="research.html" data-nav>Research</a>
   <a href="technology.html" data-nav>Technology</a>
-  <a href="news.html" data-nav>News</a>
+  <a href="updates.html" data-nav>Updates</a>
   <a href="trust.html" data-nav>Luminary Trust</a>
   <a href="leadership.html" data-nav>Leadership</a>
   <a href="collab.html" data-nav>Collaborate</a>
@@ -341,11 +341,11 @@
     <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:0.85rem; color:var(--slate);">
       <span>🏛️ <strong>Operating Organ:</strong> <a href="federals.html" style="color:var(--accent);">Luminary Federals (ENGAGE)</a></span>
       <span><strong>Feed Source:</strong> Repository-managed JSON updates</span>
-      <span><strong>Refresh:</strong> Updates load automatically from the published feed</span>
+      <span><strong>Data:</strong> Entries load from the repository-hosted JSON updates registry</span>
     </div>
   </section>
 
-  <!-- LUMINARY NEWS MOTIVE / ABOUT -->
+  <!-- PURPOSE OF THE UPDATES FEED -->
   <section class="section" style="padding-bottom: 40px;">
     <div class="container">
       <div class="glass-card" style="display: grid; grid-template-columns: 1fr; gap: 24px; background: rgba(124,58,237,0.05); border-color: rgba(124,58,237,0.2);">
@@ -366,7 +366,7 @@
   <section class="section">
     <div class="container">
       <div id="updates-articles-grid" class="card-grid">
-        <!-- Dynamically rendered via assets/js/news-engine.js -->
+        <!-- Dynamically rendered from configuration/updates.json via assets/js/updates-engine.js -->
       </div>
     </div>
   </section>
@@ -375,8 +375,8 @@
   <section class="section" style="background:var(--bg2);">
     <div class="container">
       <div class="cta-banner">
-        <h2>Press & Editorial Inquiries</h2>
-        <p>Journalists, researchers, and event organizers seeking official commentary, interviews, or media kits can reach the Luminary Federals communications office.</p>
+        <h2>Updates & Media Inquiries</h2>
+        <p>For questions about an announcement, project entry, or platform release, contact the Luminary Federals communications office.</p>
         <a href="contact.html" class="btn btn-primary">Contact Media Office</a>
       </div>
     </div>
@@ -416,7 +416,7 @@
         <h4>Projects &amp; Platforms</h4>
         <a href="agroscan.html">AgroScan (Revival 2027)</a>
         <a href="afterverse.html">Luminary Afterverse</a>
-        <a href="news.html">Luminary Updates</a>
+        <a href="updates.html">Luminary Updates</a>
         <a href="projects.html">All Projects</a>
         <a href="research.html">Research Portal</a>
         <a href="technology.html">Technology Hub</a>
