@@ -132,8 +132,7 @@
         },
         {
           "label": "Luminary Wishes",
-          "href": "https://luminarywishes.dpdns.org/",
-          "external": true
+          "href": "/frontend/luminary-wishes"
         },
         {
           "label": "Updates",
