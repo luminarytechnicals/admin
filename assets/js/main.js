@@ -82,6 +82,7 @@ async function initJsonNavigation() {
         const details = document.createElement('details');
         details.className = 'nav-accordion';
         details.dataset.section = section.title || String(index);
+        // Intentionally do not group <details> by name; sections are independent.
 
         const summary = document.createElement('summary');
         summary.className = 'nav-accordion-title';
@@ -105,15 +106,35 @@ async function initJsonNavigation() {
         details.appendChild(links);
         sidePanel.appendChild(details);
       });
+
+      // Store every open section so opening another section never collapses this one, even after navigation.
+      const storageKey = 'lt_navigation_open_sections';
+      let savedSections = [];
+      try {
+        const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+        if (Array.isArray(saved)) savedSections = saved;
+      } catch (_) {}
+      sidePanel.querySelectorAll('.nav-accordion').forEach(section => {
+        if (savedSections.includes(section.dataset.section)) section.open = true;
+        section.addEventListener('toggle', () => {
+          const opened = Array.from(sidePanel.querySelectorAll('.nav-accordion[open]')).map(item => item.dataset.section);
+          try { localStorage.setItem(storageKey, JSON.stringify(opened)); } catch (_) {}
+        });
+      });
     }
 
-    // Keep static footer/body links consistent with the JSON-driven Updates route.
+    // Keep remaining static footer/body links consistent with the JSON-driven Updates route.
     document.querySelectorAll('a[href]').forEach(anchor => {
       const href = anchor.getAttribute('href') || '';
-      if (/(^|\\/)news\\.html(?=$|[?#])/i.test(href)) {
-        anchor.setAttribute('href', href.replace(/news\\.html/i, 'updates.html'));
-        if (anchor.textContent.trim().toLowerCase() === 'news') anchor.textContent = 'Updates';
-      }
+      try {
+        const parsed = new URL(href, window.location.href);
+        const pathname = parsed.pathname.toLowerCase();
+        if (parsed.origin === window.location.origin && pathname.endsWith('/news.html')) {
+          const updatedPath = parsed.pathname.slice(0, -'news.html'.length) + 'updates.html';
+          anchor.setAttribute('href', updatedPath + parsed.search + parsed.hash);
+          if (anchor.textContent.trim().toLowerCase() === 'news') anchor.textContent = 'Updates';
+        }
+      } catch (_) {}
     });
 
     markActiveNavigation();
