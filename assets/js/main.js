@@ -156,7 +156,7 @@ async function initJsonNavigation() {
           const updatedPath = parsed.pathname.slice(0, -'news.html'.length) + 'updates.html';
           anchor.setAttribute('href', updatedPath + parsed.search + parsed.hash);
           anchor.textContent = anchor.textContent
-            .replace(/Luminary\\s+News/gi, 'Luminary Updates')
+            .replace(/Luminary\s+News/gi, 'Luminary Updates')
             .replace(/^News$/i, 'Updates');
         }
       } catch (_) {}
