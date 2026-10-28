@@ -334,5 +334,13 @@
     "url": "/frontend/articles/ar-writing-standard",
     "keywords": "AR. writing style spelling capitalization capital A capital R no space period punctuation official form",
     "text": "The required written form is AR.: capital A, capital R with no internal space, and one period immediately after R."
+  },
+  {
+    "title": "JSET — James Social Engineering Toolkit: Cognitive Security and Social Network Influence",
+    "category": "ARTICLES",
+    "badge": "Cybersecurity Research",
+    "url": "/frontend/articles/jset-james-social-engineering-toolkit",
+    "keywords": "JSET James Social Engineering Toolkit cognitive security social network influence information integrity disinformation FIMI ENISA cybersecurity defensive research",
+    "text": "JSET is a proposed James Web Networking research concept for understanding networked influence, cognitive security, information integrity, and safeguards against social manipulation. Its proposed capabilities are not claimed to be implemented."
   }
 ]
