@@ -10,10 +10,6 @@
       "href": "/frontend/about"
     },
     {
-      "label": "Ecosystem",
-      "href": "/frontend/ecosystem"
-    },
-    {
       "label": "Organs",
       "href": "/frontend/organs"
     },
@@ -24,6 +20,10 @@
     {
       "label": "Updates",
       "href": "/frontend/updates"
+    },
+    {
+      "label": "Articles",
+      "href": "/frontend/articles"
     },
     {
       "label": "Collaborate",
