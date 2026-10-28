@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v16-clean-urls';
+const CACHE_NAME = 'luminary-v17-editorial-seo';
 const OFFLINE_URL = '/offline';
 
 // Core assets to pre-cache for complete offline availability
@@ -11,6 +11,12 @@ const ASSETS = [
   '/frontend/organization',
   '/frontend/common',
   '/frontend/jset',
+  '/frontend/articles',
+  '/frontend/articles/five-core-organs',
+  '/frontend/articles/sub-companies-projects-platforms',
+  '/frontend/articles/meaning-of-ar',
+  '/frontend/articles/ar-writing-standard',
+  '/frontend/articles/jset-james-social-engineering-toolkit',
   '/frontend/leadership',
   '/frontend/owner',
   '/frontend/ecosystem',
@@ -43,10 +49,12 @@ const ASSETS = [
   '/assets/css/main.css',
   '/assets/css/animations.css',
   '/assets/css/responsive.css',
+  '/assets/css/articles.css',
   '/assets/js/main.js',
   '/assets/js/search.js',
   '/assets/js/news-engine.js',
   '/assets/js/updates-engine.js',
+  '/assets/js/articles-engine.js',
   '/assets/js/automation.js',
   '/assets/js/lazy-load.js',
   '/assets/js/pwa.js',
@@ -57,6 +65,7 @@ const ASSETS = [
   '/configuration/search-index.json',
   '/configuration/navigation.json',
   '/configuration/updates.json',
+  '/configuration/articles.json',
   '/assets/images/logo-luminarytechnicals.png',
   '/assets/images/logo-luminarytechnicals.webp',
   '/assets/images/og-default.webp',
