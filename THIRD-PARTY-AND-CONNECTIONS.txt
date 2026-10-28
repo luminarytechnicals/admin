@@ -71,8 +71,8 @@
 │  │  • Luminary Afterverse — Spatial computing lab           │                  │
 │  │    Page: /frontend/afterverse.html                      │                  │
 │  │                                                         │                  │
-│  │  • Luminary News — News platform (under Federals)       │                  │
-│  │    Page: /frontend/news.html                            │                  │
+│  │  • Luminary Updates — News platform (under Federals)       │                  │
+│  │    Page: /frontend/updates.html                            │                  │
 │  │                                                         │                  │
 │  │  • Luminary Webs — Web services (under Kits)            │                  │
 │  │  • Luminary Books — Knowledge repository (under Cares)  │                  │
@@ -151,7 +151,7 @@ FOUNDER PERSONAL DOMAINS
 │                                                                 │
 │  ── THIRD-PARTY APIs ──                                         │
 │  RSS2JSON (api.rss    │ RSS feed parsing for   │ ACTIVE          │
-│  2json.com)           │ Luminary News page     │ (news.html)     │
+│  2json.com)           │ Luminary Updates page     │ (news.html)     │
 │                                                                 │
 │  ── SCHEMA / STANDARDS ──                                       │
 │  schema.org           │ JSON-LD structured     │ ACTIVE          │
@@ -385,7 +385,7 @@ FRONTEND (31 pages):
     /frontend/afterverse.html      — Luminary Afterverse
 
   Information Pages:
-    /frontend/news.html            — Luminary News
+    /frontend/updates.html            — Luminary Updates
     /frontend/research.html        — Research Portal
     /frontend/technology.html      — Technology Hub
     /frontend/resources.html       — Resources
