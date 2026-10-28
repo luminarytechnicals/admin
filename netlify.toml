@@ -728,6 +728,19 @@
   status = 200
   force = true
 
+
+# NAIRA Bill article clean permalink
+[[redirects]]
+  from = "/frontend/articles/naira-bill-national-artificial-intelligence-regulation-authority.html"
+  to = "/frontend/articles/naira-bill-national-artificial-intelligence-regulation-authority"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/naira-bill-national-artificial-intelligence-regulation-authority"
+  to = "/frontend/articles/naira-bill-national-artificial-intelligence-regulation-authority.html"
+  status = 200
+  force = true
+
 # Global Security Headers & Asset Caching
 [[headers]]
   for = "/*"
