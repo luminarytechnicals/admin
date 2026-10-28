@@ -47,7 +47,7 @@
 │  │     Main Page:    /frontend/federals.html               │                  │
 │  │     Subdomain:    https://federals.luminarytechnicals    │                  │
 │  │                   .dpdns.org/                           │                  │
-│  │     Function:     Civic Technology & News Platform      │                  │
+│  │     Function:     Civic Technology & Updates Platform      │                  │
 │  │                                                         │                  │
 │  └─────────────────────────────────────────────────────────┘                  │
 │                                                                               │
@@ -150,10 +150,10 @@ FOUNDER PERSONAL DOMAINS
 │                       │ clarity.ms/tag/        │                 │
 │                                                                 │
 │  ── THIRD-PARTY APIs ──                                         │
-│  RSS2JSON (api.rss    │ RSS feed parsing for   │ ACTIVE          │
-│  2json.com)           │ Luminary Updates page     │ (news.html)     │
-│                                                                 │
-│  ── SCHEMA / STANDARDS ──                                       │
+│  Repository JSON        │ Updates loaded from      │ ACTIVE
+  registry              │ configuration/updates.json│ (updates.html)
+                                                                 │
+  ── SCHEMA / STANDARDS ──                                       │
 │  schema.org           │ JSON-LD structured     │ ACTIVE          │
 │                       │ data on all pages      │ (SEO)           │
 │  sitemaps.org         │ Sitemap XML schema     │ ACTIVE          │
@@ -261,7 +261,7 @@ FALLBACK / LEGACY EMAIL
   │organs.js │   │ecosystem.html│       │contact.js        │
   │faq.js    │   │organs.html   │       │automation.js     │
   │projects  │   │projects.html │       │pwa.js            │
-  │news.js   │   │news.html     │       │lazy-load.js      │
+  │news.js   │   │updates.html     │       │lazy-load.js      │
   │search-   │   │collab.html   │       │google-maps-nav.js│
   │index.json│   │contact.html  │       │main.css          │
   │google-   │   │faq.html      │       │animations.css    │
@@ -328,7 +328,7 @@ FALLBACK / LEGACY EMAIL
        │    │        OTHER THIRD-PARTY APIs                  │
        │    ├────────────────────────────────────────────────┤
        │    │  api.rss2json.com ─────→ RSS feed parsing      │
-       │    │                          (news.html only)      │
+       │    │                          (updates.html only)      │
        │    └────────────────────────────────────────────────┘
        │
        │    ┌────────────────────────────────────────────────┐
