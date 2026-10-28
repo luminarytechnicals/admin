@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v17-editorial-seo';
+const CACHE_NAME = 'luminary-v18-legal-seo';
 const OFFLINE_URL = '/offline';
 
 // Core assets to pre-cache for complete offline availability
@@ -17,6 +17,7 @@ const ASSETS = [
   '/frontend/articles/meaning-of-ar',
   '/frontend/articles/ar-writing-standard',
   '/frontend/articles/jset-james-social-engineering-toolkit',
+  '/frontend/articles/legal-management-coordination-accountability',
   '/frontend/leadership',
   '/frontend/owner',
   '/frontend/ecosystem',
