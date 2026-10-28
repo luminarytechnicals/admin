@@ -56,9 +56,13 @@ function cleanInternalURL(value, base = window.location.href) {
 }
 
 function normalizeCleanURLs(root = document) {
-  root.querySelectorAll('a[href]').forEach(anchor => {
+  const anchors = [];
+  if (root && root.nodeType === 1 && root.matches && root.matches('a[href]')) anchors.push(root);
+  if (root && root.querySelectorAll) anchors.push(...root.querySelectorAll('a[href]'));
+
+  anchors.forEach(anchor => {
     const raw = anchor.getAttribute('href') || '';
-    if (!raw || raw.startsWith('#') || ['mailto:', 'tel:', 'javascript:', 'data:'].some(prefix => raw.toLowerCase().startsWith(prefix))) return;
+    if (!raw || raw.startsWith('#') || ['mailto:', 'tel:', 'javascript:', 'data:', 'blob:'].some(prefix => raw.toLowerCase().startsWith(prefix))) return;
     const clean = cleanInternalURL(raw);
     if (!clean) return;
     anchor.setAttribute('href', clean);
@@ -67,6 +71,16 @@ function normalizeCleanURLs(root = document) {
       anchor.textContent = 'Updates';
     }
   });
+
+  // Also clean links inserted later by project cards, search results, or other renderers.
+  if (!window.__ltCleanURLObserver && document.body && typeof MutationObserver !== 'undefined') {
+    window.__ltCleanURLObserver = new MutationObserver(records => {
+      records.forEach(record => record.addedNodes.forEach(node => {
+        if (node && node.nodeType === 1) normalizeCleanURLs(node);
+      }));
+    });
+    window.__ltCleanURLObserver.observe(document.body, { childList: true, subtree: true });
+  }
 }
 
 function normalizePageMetadata() {
