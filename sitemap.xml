@@ -259,4 +259,29 @@
 
   <!-- AI & MACHINE KNOWLEDGE (AEO) -->
 
+  <!-- ARTICLES HUB AND ARTICLE PERMALINKS -->
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/articles</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/articles/five-core-organs</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/articles/sub-companies-projects-platforms</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/articles/seo-friendly-static-websites</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
