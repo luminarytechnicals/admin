@@ -159,6 +159,10 @@
       "icon": "⌘",
       "items": [
         {
+          "label": "Articles",
+          "href": "/frontend/articles"
+        },
+        {
           "label": "Research",
           "href": "/frontend/research"
         },
