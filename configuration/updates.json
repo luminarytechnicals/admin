@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "site": "Luminary Technicals",
+  "lastUpdated": "2026-10-28",
+  "updates": [
+    {
+      "id": "projects-funding-issuers-2026-10-28",
+      "title": "Project directory updated with fund-issuer details",
+      "date": "2026-10-28",
+      "category": "Projects",
+      "author": "Luminary Technicals",
+      "summary": "The projects directory now identifies the stated issuer for JSET, AgroScan, Luminary Wishes, and Luminary News funding entries. The Luminary AI funding card was removed.",
+      "relatedOrgan": "Luminary Technicals",
+      "tags": [
+        "Projects",
+        "Funding",
+        "Transparency"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/projects.html"
+    },
+    {
+      "id": "projects-audit-links-status-2026-10-28",
+      "title": "Project audit links and availability labels clarified",
+      "date": "2026-10-28",
+      "category": "Projects",
+      "author": "Luminary Technicals",
+      "summary": "Project listings distinguish available audit destinations from entries where an audit is not yet available, rather than presenting every project as having the same audit status.",
+      "relatedOrgan": "Luminary Technicals",
+      "tags": [
+        "Projects",
+        "Audits",
+        "Transparency"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/projects.html"
+    },
+    {
+      "id": "core-organ-structure-2026-09-30",
+      "title": "Luminary Technicals presents its five-core-organ structure",
+      "date": "2026-09-30",
+      "category": "Organization",
+      "author": "Luminary Technicals",
+      "summary": "The organizational framework groups core work into Servers, Developers, Cares, Kits, and Federals, with distinct responsibilities across infrastructure, technology, education, integration, and civic initiatives.",
+      "relatedOrgan": "Luminary Technicals",
+      "tags": [
+        "Organization",
+        "Architecture",
+        "Core Organs"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/organs.html"
+    },
+    {
+      "id": "developers-research-2026-09-28",
+      "title": "Luminary Developers focuses on software and emerging technology",
+      "date": "2026-09-28",
+      "category": "Technology",
+      "author": "Luminary Developers",
+      "summary": "The Developers organ covers software engineering, AI systems, automation, open-source development, and emerging technology experiments.",
+      "relatedOrgan": "Luminary Developers",
+      "tags": [
+        "Developers",
+        "AI",
+        "Software",
+        "Automation"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/developers.html"
+    },
+    {
+      "id": "servers-infrastructure-2026-09-26",
+      "title": "Luminary Servers covers infrastructure and digital operations",
+      "date": "2026-09-26",
+      "category": "Infrastructure",
+      "author": "Luminary Servers",
+      "summary": "The Servers organ describes the ecosystem's hosting, cloud, domain, networking, and infrastructure operations.",
+      "relatedOrgan": "Luminary Servers",
+      "tags": [
+        "Servers",
+        "Infrastructure",
+        "Hosting",
+        "Cloud"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/servers.html"
+    },
+    {
+      "id": "cares-education-community-2026-09-24",
+      "title": "Luminary Cares highlights education and community initiatives",
+      "date": "2026-09-24",
+      "category": "Community",
+      "author": "Luminary Cares",
+      "summary": "Luminary Cares focuses on technology education, mentorship, digital awareness, and community-oriented initiatives.",
+      "relatedOrgan": "Luminary Cares",
+      "tags": [
+        "Cares",
+        "Education",
+        "Mentorship",
+        "Community"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/cares.html"
+    },
+    {
+      "id": "kits-collaboration-2026-09-22",
+      "title": "Luminary Kits connects tools and collaborative projects",
+      "date": "2026-09-22",
+      "category": "Organization",
+      "author": "Luminary Kits",
+      "summary": "Luminary Kits is the connective organ for reusable tools, integrations, APIs, and collaboration across the ecosystem.",
+      "relatedOrgan": "Luminary Kits",
+      "tags": [
+        "Kits",
+        "Collaboration",
+        "APIs",
+        "Toolkits"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/kits.html"
+    },
+    {
+      "id": "federals-civic-engagement-2026-09-20",
+      "title": "Luminary Federals covers civic engagement and public affairs",
+      "date": "2026-09-20",
+      "category": "Community",
+      "author": "Luminary Federals",
+      "summary": "The Federals organ covers public affairs, civic engagement, governance, policy research, and public-interest initiatives.",
+      "relatedOrgan": "Luminary Federals",
+      "tags": [
+        "Federals",
+        "Civic Engagement",
+        "Governance",
+        "Public Affairs"
+      ],
+      "url": "https://luminarytechnicals.dpdns.org/frontend/federals.html"
+    }
+  ]
+}
