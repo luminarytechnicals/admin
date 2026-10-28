@@ -77,7 +77,7 @@
     "badge": "Core Organ · Engage",
     "url": "frontend/federals.html",
     "keywords": "federals federals.luminarytechnicals.dpdns.org engage civic technology governance public affairs news media communication policy research",
-    "text": "Core organ focused on civic engagement, open technology governance, sovereign digital systems research, and operating the official Luminary News platform. Dedicated portal: federals.luminarytechnicals.dpdns.org. Formula: ENGAGE."
+    "text": "Core organ focused on civic engagement, open technology governance, sovereign digital systems research, and operating the official Luminary Updates platform. Dedicated portal: federals.luminarytechnicals.dpdns.org. Formula: ENGAGE."
   },
   {
     "title": "Luminary Trust",
@@ -136,12 +136,12 @@
     "text": "Personalized digital celebration experiences and experiential milestone cards operated as a sub-project of Luminary Webs."
   },
   {
-    "title": "Luminary News",
+    "title": "Luminary Updates",
     "category": "INITIATIVE",
-    "badge": "Luminary Federals · Initiative",
-    "url": "frontend/news.html",
-    "keywords": "luminary news federals announcements press wire releases updates articles media official updates",
-    "text": "The official news wire, press hub, release notes, and announcement platform operated under Luminary Federals."
+    "badge": "Official Updates Feed",
+    "url": "frontend/updates.html",
+    "keywords": "luminary updates announcements platform releases latest project changes research news official updates registry",
+    "text": "Official updates feed with organization announcements, project changes, research notes, and platform milestones, operated under Luminary Federals."
   },
   {
     "title": "Research Portal & Publications",
@@ -278,5 +278,13 @@
     "url": "frontend/offices.html",
     "keywords": "offices headquarters bengaluru karnataka google maps address location directions c v raman nagar nagavarapalya",
     "text": "Official registered headquarters and operations hub of Luminary Technicals in Bengaluru, Karnataka, India with verified Google Maps profile."
+  },
+  {
+    "title": "Luminary Common",
+    "category": "ORGANIZATION",
+    "badge": "Shared Foundation",
+    "url": "frontend/common.html",
+    "keywords": "common shared organization overview five core organs developers cares kits servers federals common resources navigation",
+    "text": "Shared orientation page for Luminary Technicals with quick links to the five core organs, companies, projects, research, and official updates."
   }
 ]
