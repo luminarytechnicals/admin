@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const safeURL = (value) => {
     try {
-      const url = new URL(value || '/frontend/updates.html', window.location.origin);
-      return ['http:', 'https:'].includes(url.protocol) ? url.href : '/frontend/updates.html';
+      const url = new URL(value || '/frontend/updates', window.location.origin);
+      return ['http:', 'https:'].includes(url.protocol) ? url.href : '/frontend/updates';
     } catch (_) {
-      return '/frontend/updates.html';
+      return '/frontend/updates';
     }
   };
 
