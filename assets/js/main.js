@@ -155,7 +155,9 @@ async function initJsonNavigation() {
         if (parsed.origin === window.location.origin && pathname.endsWith('/news.html')) {
           const updatedPath = parsed.pathname.slice(0, -'news.html'.length) + 'updates.html';
           anchor.setAttribute('href', updatedPath + parsed.search + parsed.hash);
-          if (anchor.textContent.trim().toLowerCase() === 'news') anchor.textContent = 'Updates';
+          anchor.textContent = anchor.textContent
+            .replace(/Luminary\\s+News/gi, 'Luminary Updates')
+            .replace(/^News$/i, 'Updates');
         }
       } catch (_) {}
     });
