@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v12-updates-navigation';
+const CACHE_NAME = 'luminary-v13-complete-directory';
 const OFFLINE_URL = '/offline.html';
 
 // Core assets to pre-cache for complete offline availability
@@ -10,6 +10,7 @@ const ASSETS = [
   '/frontend/about.html',
   '/frontend/organization.html',
   '/frontend/common.html',
+  '/frontend/jset.html',
   '/frontend/leadership.html',
   '/frontend/owner.html',
   '/frontend/ecosystem.html',
