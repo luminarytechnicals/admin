@@ -330,3 +330,53 @@
   vertical-align: -0.06em;
   text-shadow: 0 0 12px rgba(245,197,24,.28);
 }
+
+
+/* Fixed-navbar clearance: outrank the generic .page-hero padding on article detail pages.
+   Bumped stylesheet URLs ensure mobile browsers do not keep the older cached rule. */
+body.article-detail main#main-content > section.page-hero.article-hero {
+  padding-top: calc(var(--nav-h, 72px) + clamp(4.5rem, 9vw, 7rem)) !important;
+}
+@media (max-width: 620px) {
+  body.article-detail main#main-content > section.page-hero.article-hero {
+    padding-top: calc(var(--nav-h, 72px) + 4.75rem) !important;
+  }
+}
+
+/* Accessible, scrollable data table styling for shareholding notices. */
+.article-detail .article-section .article-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  margin: 18px 0 24px;
+  overflow-x: auto;
+  border: 1px solid rgba(148,163,184,.2);
+  border-radius: 14px;
+  background: rgba(5,9,23,.35);
+  -webkit-overflow-scrolling: touch;
+}
+.article-detail .article-section .article-table-wrap table {
+  width: 100%;
+  min-width: 380px;
+  border-collapse: collapse;
+}
+.article-detail .article-section .article-table-wrap th,
+.article-detail .article-section .article-table-wrap td {
+  padding: 13px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(148,163,184,.14);
+  color: #b6c5d8;
+  line-height: 1.6;
+}
+.article-detail .article-section .article-table-wrap thead th {
+  color: #f6f8fc;
+  background: rgba(148,163,184,.08);
+  font-weight: 700;
+}
+.article-detail .article-section .article-table-wrap tbody tr:last-child th,
+.article-detail .article-section .article-table-wrap tbody tr:last-child td {
+  border-bottom: 0;
+}
+.article-detail .article-section .article-table-wrap tbody tr:last-child {
+  background: rgba(245,197,24,.055);
+}
