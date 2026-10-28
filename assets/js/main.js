@@ -79,46 +79,69 @@ async function initJsonNavigation() {
       if (closeButton) sidePanel.appendChild(closeButton);
 
       config.sections.forEach((section, index) => {
-        const details = document.createElement('details');
-        details.className = 'nav-accordion';
-        details.dataset.section = section.title || String(index);
-        // Intentionally do not group <details> by name; sections are independent.
+        const group = document.createElement('div');
+        group.className = 'nav-accordion';
+        group.dataset.section = section.title || String(index);
 
-        const summary = document.createElement('summary');
-        summary.className = 'nav-accordion-title';
+        const toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'nav-accordion-title';
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-controls', 'nav-subitems-' + index);
+
         const icon = document.createElement('span');
         icon.className = 'nav-accordion-icon';
         icon.setAttribute('aria-hidden', 'true');
         icon.textContent = section.icon || '›';
+
         const title = document.createElement('span');
         title.className = 'nav-accordion-label';
         title.textContent = section.title || 'Explore';
-        summary.append(icon, title);
-        details.appendChild(summary);
+        toggle.append(icon, title);
 
         const links = document.createElement('div');
         links.className = 'nav-subitems';
+        links.id = 'nav-subitems-' + index;
+        links.hidden = true;
         (Array.isArray(section.items) ? section.items : []).forEach(item => {
           const link = makeLink(item);
           if (!item.external && !/^https?:\/\//i.test(item.href)) link.dataset.nav = '';
           links.appendChild(link);
         });
-        details.appendChild(links);
-        sidePanel.appendChild(details);
+
+        group.append(toggle, links);
+        sidePanel.appendChild(group);
       });
 
-      // Store every open section so opening another section never collapses this one, even after navigation.
+      // Each section opens and closes independently; opening one never closes another.
       const storageKey = 'lt_navigation_open_sections';
       let savedSections = [];
       try {
         const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
         if (Array.isArray(saved)) savedSections = saved;
       } catch (_) {}
-      sidePanel.querySelectorAll('.nav-accordion').forEach(section => {
-        if (savedSections.includes(section.dataset.section)) section.open = true;
-        section.addEventListener('toggle', () => {
-          const opened = Array.from(sidePanel.querySelectorAll('.nav-accordion[open]')).map(item => item.dataset.section);
-          try { localStorage.setItem(storageKey, JSON.stringify(opened)); } catch (_) {}
+
+      const saveOpenSections = () => {
+        const opened = Array.from(sidePanel.querySelectorAll('.nav-accordion')).filter(group => {
+          const button = group.querySelector('.nav-accordion-title');
+          return button && button.getAttribute('aria-expanded') === 'true';
+        }).map(group => group.dataset.section);
+        try { localStorage.setItem(storageKey, JSON.stringify(opened)); } catch (_) {}
+      };
+
+      sidePanel.querySelectorAll('.nav-accordion').forEach(group => {
+        const button = group.querySelector('.nav-accordion-title');
+        const links = group.querySelector('.nav-subitems');
+        const open = savedSections.includes(group.dataset.section);
+        button.setAttribute('aria-expanded', String(open));
+        links.hidden = !open;
+        group.classList.toggle('is-open', open);
+        button.addEventListener('click', () => {
+          const nextOpen = button.getAttribute('aria-expanded') !== 'true';
+          button.setAttribute('aria-expanded', String(nextOpen));
+          links.hidden = !nextOpen;
+          group.classList.toggle('is-open', nextOpen);
+          saveOpenSections();
         });
       });
     }
@@ -159,7 +182,24 @@ function markActiveNavigation() {
     if (isActive) {
       anchor.setAttribute('aria-current', 'page');
       const group = anchor.closest('.nav-accordion');
-      if (group) group.open = true;
+      if (group) {
+        const toggle = group.querySelector('.nav-accordion-title');
+        const links = group.querySelector('.nav-subitems');
+        if (toggle && links) {
+          toggle.setAttribute('aria-expanded', 'true');
+          links.hidden = false;
+          group.classList.add('is-open');
+          const key = 'lt_navigation_open_sections';
+          try {
+            const saved = JSON.parse(localStorage.getItem(key) || '[]');
+            const opened = Array.isArray(saved) ? saved : [];
+            if (!opened.includes(group.dataset.section)) {
+              opened.push(group.dataset.section);
+              localStorage.setItem(key, JSON.stringify(opened));
+            }
+          } catch (_) {}
+        }
+      }
     } else {
       anchor.removeAttribute('aria-current');
     }
@@ -177,6 +217,8 @@ function initMobileMenu() {
     menu.classList.toggle('open', open);
     if (overlay) overlay.classList.toggle('open', open);
     document.body.style.overflow = open ? 'hidden' : '';
+    // Avoid reopening the drawer halfway down with its first rows clipped.
+    if (open) menu.scrollTop = 0;
   };
   btn.addEventListener('click', () => toggle(true));
   if (closeBtn) closeBtn.addEventListener('click', () => toggle(false));
