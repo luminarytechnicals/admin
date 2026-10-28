@@ -190,6 +190,7 @@ const ORGANS = [
     tagline: "Independent Public-Interest, Philanthropic & Foundation Ecosystem",
     page: "trust.html",
     url: "frontend/trust.html",
+    subdomain: "https://luminarytrust.dpdns.org/",
     description: "A top-level entity directly associated with Luminary Technicals, dedicated to public-interest initiatives, long-term philanthropic endeavors, and institutional scientific foundations. Separate from the five technical/operational organs.",
     focusAreas: [
       "Public-Interest Technology Advocacy",
