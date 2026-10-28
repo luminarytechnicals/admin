@@ -47,7 +47,7 @@
 | **Luminary Developers** | `CREATE` | Software engineering, AI multi-agent systems, progressive web applications, and Luminary Afterverse spatial computing. | [`frontend/developers.html`](file:///frontend/developers.html) | [developers.luminarytechnicals.dpdns.org](https://developers.luminarytechnicals.dpdns.org/) |
 | **Luminary Cares** | `EMPOWER` | Technology education, developer mentorship programs, digital literacy, and Luminary Books open publishing imprint. | [`frontend/cares.html`](file:///frontend/cares.html) | [cares.luminarytechnicals.dpdns.org](https://cares.luminarytechnicals.dpdns.org/) |
 | **Luminary Kits** | `CONNECT` | Reusable UI toolkits, SDKs, developer CLI tools, API integrations, and Luminary Webs partner collaborative hub. | [`frontend/kits.html`](file:///frontend/kits.html) | [kits.luminarytechnicals.dpdns.org](https://kits.luminarytechnicals.dpdns.org/) |
-| **Luminary Federals** | `ENGAGE` | Civic technology, digital sovereignty policy research, open-access tech governance, and Luminary News press wire. | [`frontend/federals.html`](file:///frontend/federals.html) | [federals.luminarytechnicals.dpdns.org](https://federals.luminarytechnicals.dpdns.org/) |
+| **Luminary Federals** | `ENGAGE` | Civic technology, digital sovereignty policy research, open-access tech governance, and Luminary Updates press wire. | [`frontend/federals.html`](file:///frontend/federals.html) | [federals.luminarytechnicals.dpdns.org](https://federals.luminarytechnicals.dpdns.org/) |
 
 ### 🛡️ Associated Public Entity
 * **Luminary Trust**: Direct associated philanthropic and public-welfare entity overseeing grant initiatives and the **Radhika Research Foundation** ([`frontend/trust.html`](file:///frontend/trust.html)).
@@ -59,7 +59,7 @@
 1. **AgroScan** ([`frontend/agroscan.html`](file:///frontend/agroscan.html)): Flagship precision agricultural AI combining Computer Vision (Vision Transformers & CNNs) with edge IoT sensors for early disease diagnosis and soil health monitoring (*Revival Program 2027*).
 2. **Luminary Afterverse** ([`frontend/afterverse.html`](file:///frontend/afterverse.html)): Interactive WebGL 3D spatial computing lab and digital universe sandbox.
 3. **Luminary Webs & Wishes** ([`frontend/projects.html`](file:///frontend/projects.html)): Flagship digital solutions hub and personalized experiential social milestone platforms.
-4. **Luminary News Wire** ([`frontend/news.html`](file:///frontend/news.html)): Official announcement platform and updates dispatch operated under Luminary Federals.
+4. **Luminary Updates Wire** ([`frontend/updates.html`](file:///frontend/updates.html)): Official announcement platform and updates dispatch operated under Luminary Federals.
 
 ---
 
@@ -119,7 +119,7 @@ admin-main/
     ├── projects.html             # Projects directory
     ├── agroscan.html             # AgroScan AI project
     ├── afterverse.html           # Luminary Afterverse spatial lab
-    ├── news.html                 # Luminary News platform
+    ├── updates.html              # JSON-driven site updates platform
     ├── research.html             # Research portal & whitepapers
     ├── technology.html           # Technology architecture
     ├── resources.html            # Documentation & media downloads
