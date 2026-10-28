@@ -54,6 +54,26 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://luminarytechnicals.dpdns.org/#website",
+      "url": "https://luminarytechnicals.dpdns.org/",
+      "name": "Luminary Technicals",
+      "publisher": {
+        "@id": "https://luminarytechnicals.dpdns.org/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://luminarytechnicals.dpdns.org/#organization",
+      "name": "Luminary Technicals",
+      "url": "https://luminarytechnicals.dpdns.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://luminarytechnicals.dpdns.org/assets/images/logo-luminarytechnicals.webp"
+      }
+    },
+    {
       "@type": "Article",
       "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar#article",
       "headline": "The Meaning of AR.",
@@ -85,8 +105,7 @@
         }
       },
       "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar"
+        "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar#page"
       },
       "articleSection": "Identity & Branding",
       "keywords": [
@@ -120,12 +139,29 @@
           "item": "https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar"
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar#page",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar",
+      "name": "The Meaning of AR.",
+      "description": "Understand what AR. means within Luminary Technicals, its recorded origin, how it is used with Abhinav Ranjan, and why it is an organizational honorific—not a professional qualification.",
+      "isPartOf": {
+        "@id": "https://luminarytechnicals.dpdns.org/#website"
+      },
+      "publisher": {
+        "@id": "https://luminarytechnicals.dpdns.org/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://luminarytechnicals.dpdns.org/frontend/articles/meaning-of-ar#article"
+      },
+      "inLanguage": "en"
     }
   ]
 }
 </script>
 <noscript><style>#preloader{display:none!important}</style></noscript>
-</head>
+
 <body class="article-detail">
 <div id="preloader" aria-hidden="true"><div class="loader"></div></div>
 <a href="#main-content" class="skip-link">Skip to main content</a>
