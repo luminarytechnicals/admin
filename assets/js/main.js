@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   initThemeToggle();
+  normalizeCleanURLs();
   initJsonNavigation();
   initNavbar();
   initMobileMenu();
@@ -29,6 +30,78 @@ document.addEventListener('DOMContentLoaded', () => {
   injectAnalytics();
   initAfterverseCanvas();
 });
+
+
+/* ── CLEAN URL NORMALIZATION ── */
+function cleanInternalURL(value, base = window.location.href) {
+  try {
+    const target = new URL(value, base);
+    if (target.origin !== window.location.origin) return null;
+
+    let path = target.pathname;
+    const lower = path.toLowerCase();
+    if (lower === '/frontend/news.html' || lower === '/frontend/news') {
+      path = '/frontend/updates';
+    } else if (lower === '/index.html') {
+      path = '/';
+    } else if (lower.endsWith('/index.html')) {
+      path = path.slice(0, -'index.html'.length);
+    } else if (lower.endsWith('.html')) {
+      path = path.slice(0, -'.html'.length);
+    }
+    return path + target.search + target.hash;
+  } catch (_) {
+    return null;
+  }
+}
+
+function normalizeCleanURLs(root = document) {
+  root.querySelectorAll('a[href]').forEach(anchor => {
+    const raw = anchor.getAttribute('href') || '';
+    if (!raw || raw.startsWith('#') || ['mailto:', 'tel:', 'javascript:', 'data:'].some(prefix => raw.toLowerCase().startsWith(prefix))) return;
+    const clean = cleanInternalURL(raw);
+    if (!clean) return;
+    anchor.setAttribute('href', clean);
+    const label = anchor.textContent.trim().toLowerCase();
+    if (label === 'luminary news' || label === 'luminary updates' || label === 'news') {
+      anchor.textContent = 'Updates';
+    }
+  });
+}
+
+function normalizePageMetadata() {
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) {
+    const clean = cleanInternalURL(canonical.href);
+    if (clean) canonical.href = new URL(clean, window.location.origin).href;
+  }
+
+  document.querySelectorAll('meta[property="og:url"], meta[name="twitter:url"]').forEach(meta => {
+    const clean = cleanInternalURL(meta.content);
+    if (clean) meta.content = new URL(clean, window.location.origin).href;
+  });
+
+  document.querySelectorAll('script[type="application/ld+json"]').forEach(script => {
+    try {
+      const parsed = JSON.parse(script.textContent);
+      const normalizeValue = value => {
+        if (Array.isArray(value)) return value.map(normalizeValue);
+        if (value && typeof value === 'object') {
+          Object.keys(value).forEach(key => { value[key] = normalizeValue(value[key]); });
+          return value;
+        }
+        if (typeof value === 'string' && (value.startsWith('https://') || value.startsWith('http://'))) {
+          const clean = cleanInternalURL(value);
+          return clean ? new URL(clean, window.location.origin).href : value;
+        }
+        return value;
+      };
+      script.textContent = JSON.stringify(normalizeValue(parsed));
+    } catch (_) {
+      // Leave any custom structured-data block untouched if parsing fails.
+    }
+  });
+}
 
 /* ── NAVBAR ── */
 function initNavbar() {
@@ -146,22 +219,8 @@ async function initJsonNavigation() {
       });
     }
 
-    // Keep remaining static footer/body links consistent with the JSON-driven Updates route.
-    document.querySelectorAll('a[href]').forEach(anchor => {
-      const href = anchor.getAttribute('href') || '';
-      try {
-        const parsed = new URL(href, window.location.href);
-        const pathname = parsed.pathname.toLowerCase();
-        if (parsed.origin === window.location.origin && pathname.endsWith('/news.html')) {
-          const updatedPath = parsed.pathname.slice(0, -'news.html'.length) + 'updates.html';
-          anchor.setAttribute('href', updatedPath + parsed.search + parsed.hash);
-          anchor.textContent = anchor.textContent
-            .replace(/Luminary\s+News/gi, 'Luminary Updates')
-            .replace(/^News$/i, 'Updates');
-        }
-      } catch (_) {}
-    });
-
+    normalizeCleanURLs();
+    normalizePageMetadata();
     markActiveNavigation();
   } catch (error) {
     console.warn('JSON navigation could not be loaded; using the built-in navigation.', error);
