@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "header": [
+    {
+      "label": "Home",
+      "href": "/index.html"
+    },
+    {
+      "label": "About",
+      "href": "/frontend/about.html"
+    },
+    {
+      "label": "Ecosystem",
+      "href": "/frontend/ecosystem.html"
+    },
+    {
+      "label": "Organs",
+      "href": "/frontend/organs.html"
+    },
+    {
+      "label": "Sub Companies",
+      "href": "/frontend/sub-companies.html"
+    },
+    {
+      "label": "Updates",
+      "href": "/frontend/updates.html"
+    },
+    {
+      "label": "Collaborate",
+      "href": "/frontend/collab.html"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Start Here",
+      "icon": "⌂",
+      "items": [
+        {
+          "label": "Home",
+          "href": "/index.html"
+        },
+        {
+          "label": "About Luminary Technicals",
+          "href": "/frontend/about.html"
+        },
+        {
+          "label": "Organization Overview",
+          "href": "/frontend/organization.html"
+        },
+        {
+          "label": "Ecosystem",
+          "href": "/frontend/ecosystem.html"
+        }
+      ]
+    },
+    {
+      "title": "Organs",
+      "icon": "◈",
+      "items": [
+        {
+          "label": "Common",
+          "href": "/frontend/organization.html",
+          "description": "Shared organization overview"
+        },
+        {
+          "label": "Developers",
+          "href": "/frontend/developers.html"
+        },
+        {
+          "label": "Cares",
+          "href": "/frontend/cares.html"
+        },
+        {
+          "label": "Kits",
+          "href": "/frontend/kits.html"
+        },
+        {
+          "label": "Servers",
+          "href": "/frontend/servers.html"
+        },
+        {
+          "label": "Federals",
+          "href": "/frontend/federals.html"
+        }
+      ]
+    },
+    {
+      "title": "Companies",
+      "icon": "▦",
+      "items": [
+        {
+          "label": "All Sub Companies",
+          "href": "/frontend/sub-companies.html"
+        },
+        {
+          "label": "James Web Networking",
+          "href": "https://jwn.qzz.io/",
+          "external": true
+        },
+        {
+          "label": "Luminary Webs",
+          "href": "https://luminarywebs.dpdns.org/",
+          "external": true
+        },
+        {
+          "label": "Luminary Books",
+          "href": "https://books.luminarytechnicals.dpdns.org/",
+          "external": true
+        },
+        {
+          "label": "Luminary Afterverse",
+          "href": "/frontend/afterverse.html"
+        },
+        {
+          "label": "Luminary Trust",
+          "href": "/frontend/trust.html"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "icon": "✦",
+      "items": [
+        {
+          "label": "Projects Directory",
+          "href": "/frontend/projects.html"
+        },
+        {
+          "label": "JSET",
+          "href": "/frontend/projects.html#jset"
+        },
+        {
+          "label": "AgroScan",
+          "href": "/frontend/agroscan.html"
+        },
+        {
+          "label": "Luminary Wishes",
+          "href": "https://luminarywishes.dpdns.org/",
+          "external": true
+        },
+        {
+          "label": "Luminary News Project",
+          "href": "/frontend/projects.html#luminary-news-project"
+        }
+      ]
+    },
+    {
+      "title": "Updates",
+      "icon": "◷",
+      "items": [
+        {
+          "label": "Latest Updates",
+          "href": "/frontend/updates.html"
+        },
+        {
+          "label": "Project and Platform Updates",
+          "href": "/frontend/updates.html#updates-articles-grid"
+        }
+      ]
+    },
+    {
+      "title": "Research & Knowledge",
+      "icon": "⌘",
+      "items": [
+        {
+          "label": "Research",
+          "href": "/frontend/research.html"
+        },
+        {
+          "label": "Technology",
+          "href": "/frontend/technology.html"
+        },
+        {
+          "label": "Security",
+          "href": "/frontend/security.html"
+        },
+        {
+          "label": "Resources",
+          "href": "/frontend/resources.html"
+        },
+        {
+          "label": "Glossary",
+          "href": "/frontend/glossary.html"
+        }
+      ]
+    },
+    {
+      "title": "People & Community",
+      "icon": "◎",
+      "items": [
+        {
+          "label": "Founder / Owner",
+          "href": "/frontend/owner.html"
+        },
+        {
+          "label": "Leadership",
+          "href": "/frontend/leadership.html"
+        },
+        {
+          "label": "Offices",
+          "href": "/frontend/offices.html"
+        },
+        {
+          "label": "Collaborate",
+          "href": "/frontend/collab.html"
+        },
+        {
+          "label": "Contact",
+          "href": "/frontend/contact.html"
+        },
+        {
+          "label": "FAQ",
+          "href": "/frontend/faq.html"
+        }
+      ]
+    },
+    {
+      "title": "Policies & Information",
+      "icon": "≡",
+      "items": [
+        {
+          "label": "Terms of Service",
+          "href": "/frontend/terms.html"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "/frontend/privacy-policy.html"
+        },
+        {
+          "label": "Cookies",
+          "href": "/frontend/cookies.html"
+        },
+        {
+          "label": "Disclaimer",
+          "href": "/frontend/disclaimer.html"
+        },
+        {
+          "label": "Accessibility",
+          "href": "/frontend/accessibility.html"
+        }
+      ]
+    }
+  ]
+}
