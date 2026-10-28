@@ -662,14 +662,35 @@
   force = true
 
 [[redirects]]
+  from = "/frontend/articles/meaning-of-ar.html"
+  to = "/frontend/articles/meaning-of-ar"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/meaning-of-ar"
+  to = "/frontend/articles/meaning-of-ar.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/frontend/articles/ar-writing-standard.html"
+  to = "/frontend/articles/ar-writing-standard"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/frontend/articles/ar-writing-standard"
+  to = "/frontend/articles/ar-writing-standard.html"
+  status = 200
+  force = true
+[[redirects]]
   from = "/frontend/articles/seo-friendly-static-websites.html"
-  to = "/frontend/articles/seo-friendly-static-websites"
+  to = "/frontend/articles"
   status = 301
   force = true
 [[redirects]]
   from = "/frontend/articles/seo-friendly-static-websites"
-  to = "/frontend/articles/seo-friendly-static-websites.html"
-  status = 200
+  to = "/frontend/articles"
+  status = 301
   force = true
 
 # Global Security Headers & Asset Caching
