@@ -53,6 +53,7 @@ Luminary Technicals is a multidisciplinary organization connecting digital infra
 - **AR. Writing Standard:** https://luminarytechnicals.dpdns.org/frontend/articles/ar-writing-standard
 - **SET — Social Engineering Toolkit: Online Security and Influence:** https://luminarytechnicals.dpdns.org/frontend/articles/set-social-engineering-toolkit — distinguishes the established Social-Engineer Toolkit from a separate Social Engineering Toolkit concept focused on online influence and persuasion.
 - **JSET — James Social Engineering Toolkit:** https://luminarytechnicals.dpdns.org/frontend/articles/jset-james-social-engineering-toolkit — proposed cognitive-security and networked-influence research concept; its proposed features are not claimed to be implemented.
+- **NAIRA Bill — National Artificial Intelligence Regulation Authority:** https://luminarytechnicals.dpdns.org/frontend/articles/naira-bill-national-artificial-intelligence-regulation-authority — NAIRA expands to National Artificial Intelligence Regulation Authority; the supplied project record associates the bill with December 2024.
 - **Legal Management: Government-Related Challenges, Coordination and Accountability:** https://luminarytechnicals.dpdns.org/frontend/articles/legal-management-coordination-accountability — general organisational process guidance. It does not assert a specific government dispute, court proceeding, or allegation of misconduct.
 
 ## Legal & Compliance
