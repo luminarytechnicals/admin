@@ -59,7 +59,7 @@
 1. **AgroScan** ([`frontend/agroscan.html`](file:///frontend/agroscan.html)): Flagship precision agricultural AI combining Computer Vision (Vision Transformers & CNNs) with edge IoT sensors for early disease diagnosis and soil health monitoring (*Revival Program 2027*).
 2. **Luminary Afterverse** ([`frontend/afterverse.html`](file:///frontend/afterverse.html)): Interactive WebGL 3D spatial computing lab and digital universe sandbox.
 3. **Luminary Webs & Wishes** ([`frontend/projects.html`](file:///frontend/projects.html)): Flagship digital solutions hub and personalized experiential social milestone platforms.
-4. **Luminary Updates Wire** ([`frontend/updates.html`](file:///frontend/updates.html)): Official announcement platform and updates dispatch operated under Luminary Federals.
+4. **Luminary Updates Feed** ([`frontend/updates.html`](file:///frontend/updates.html)): Official announcement platform and updates dispatch operated under Luminary Federals.
 
 ---
 
