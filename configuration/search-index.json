@@ -366,5 +366,13 @@
     "url": "/frontend/articles/legal-management-coordination-accountability",
     "keywords": "legal management governance legal correspondence government-related processes accountability privacy deadline awareness legal counsel legal management contact Luminary Technicals",
     "text": "Luminary Technicals' legal-management framework covers legal correspondence, records, deadline awareness, professional referrals, privacy, and accountability. The page does not claim a specific current government dispute or court case."
+  },
+  {
+    "title": "Domain Licence & Provider Disclosure",
+    "category": "LEGAL & POLICIES",
+    "badge": "Domain Disclosure",
+    "url": "/frontend/domain-licence",
+    "keywords": "domain licence domain registration DPDNS DigitalPlat Domains free domain namespace provider disclosure independent no affiliation domain ownership hosting Netlify DNS",
+    "text": "Explains the use of luminarytechnicals.dpdns.org, the separate roles of website publisher, domain namespace service, DNS configuration and hosting, and links to official provider documentation. This is a publisher disclosure, not a provider-issued licence or certification."
   }
 ]
