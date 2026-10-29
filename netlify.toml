@@ -144,6 +144,19 @@
   status = 200
   force = true
 
+# Exact clean URL mapping for domain licence disclosure
+[[redirects]]
+  from = "/frontend/domain-licence.html"
+  to = "/frontend/domain-licence"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontend/domain-licence"
+  to = "/frontend/domain-licence.html"
+  status = 200
+  force = true
+
 # Exact clean URL mapping for accessibility
 [[redirects]]
   from = "/frontend/accessibility.html"

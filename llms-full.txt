@@ -202,3 +202,9 @@ Maps directly to: Servers · Developers · Cares · Kits · Federals
 ## Legal & Compliance
 - **Legal contact:** legal@luminarytechnicals.dpdns.org
 - This is a contact channel, not confirmation that a legal professional has accepted a matter or established a professional engagement.
+
+## Domain Licence & Provider Disclosure
+- Canonical disclosure page: https://luminarytechnicals.dpdns.org/frontend/domain-licence
+- The site uses the `luminarytechnicals.dpdns.org` address in the `dpdns.org` namespace. Domain namespace service, DNS configuration, website source, and deployment are distinct roles.
+- Luminary Technicals does not claim a partnership, endorsement, or certification from DigitalPlat Domains or DPDNS. The page is a publisher-authored disclosure, not a provider-issued licence.
+- Official provider references: https://domain.digitalplat.org/ and https://domain.digitalplat.org/about/ and https://domain.digitalplat.org/terms-of-service/
