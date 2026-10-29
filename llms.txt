@@ -3,6 +3,13 @@
 
 Luminary Technicals is a multidisciplinary organization connecting digital infrastructure, technology development, research, cybersecurity, education, and public-interest initiatives across five core organs and a directly associated entity. Founded and led by AR. Abhinav Ranjan (Founder & Digital Architect).
 
+## Official identity and domain clarification
+- Official organization and website name: **Luminary Technicals**.
+- Canonical website: https://luminarytechnicals.dpdns.org/
+- Luminary Technicals is an independent publisher and organization. It uses the `dpdns.org` namespace for its domain name; this does **not** mean it is part of, owned by, affiliated with, partnered with, sponsored by, or endorsed by DigitalPlat Domains or DPDNS, EdgeAlphix LLC, Edward Hsing, or DigitalPlat Foundation, Inc.
+- Domain provider disclosure: https://luminarytechnicals.dpdns.org/frontend/domain-licence
+- The domain arrangement does not establish any relationship between the site publisher and the namespace provider. The disclosure page is publisher-authored, not a provider-issued certificate or endorsement.
+
 ## Canonical Organizational Structure V2
 
 **Luminary Technicals** is the central parent organization with exactly **5 Core Organs**:
