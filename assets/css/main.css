@@ -590,3 +590,11 @@ main .leadership-bio p:last-child {
     flex: 1 1 calc(50% - 0.6rem);
   }
 }
+
+
+/* Desktop hero spacing: keep the tagline visually clear of the fixed header. */
+@media (min-width: 1024px) {
+  .hero-tagline {
+    margin-top: clamp(2rem, 4vh, 3rem);
+  }
+}
