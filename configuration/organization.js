@@ -102,20 +102,7 @@ const ORGANIZATION = {
       { id: "github", label: "GitHub Organization", icon: "🐙", url: "https://github.com/DeveloperAbhinav" },
       { id: "instagram", label: "Instagram Channel", icon: "📸", url: "https://www.instagram.com/luminary_technicals" }
     ]
-  },
-
-  systemStatus: {
-    status: "OPERATIONAL",
-    uptime: "99.98%",
-    services: [
-      { name: "Luminary Servers & DNS", status: "Operational", ping: "24ms" },
-      { name: "Web Network & CDN", status: "Operational", ping: "18ms" },
-      { name: "Luminary Developers API", status: "Operational", ping: "32ms" },
-      { name: "Luminary News Wire", status: "Operational", ping: "21ms" },
-      { name: "AgroScan Dev Lab", status: "Active (Revival 2027)", ping: "35ms" }
-    ]
-  }
-};
+  }};
 
 if (typeof window !== "undefined") {
   window.ORGANIZATION = ORGANIZATION;

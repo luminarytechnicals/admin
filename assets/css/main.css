@@ -598,3 +598,18 @@ main .leadership-bio p:last-child {
     margin-top: clamp(2rem, 4vh, 3rem);
   }
 }
+
+
+/* Homepage domain disclosure: readable, quiet separation beneath founder attribution. */
+.hero-domain-note {
+  margin: 0.65rem auto 0;
+  max-width: 64ch;
+  color: var(--slate, #cbd5e1);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+.hero-domain-note a {
+  color: var(--accent, #8ab4f8);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}

@@ -392,27 +392,27 @@
           <tr>
             <td>Frontend Runtime</td>
             <td>Semantic HTML5, Vanilla CSS3, ES6+ ECMAScript</td>
-            <td>Eliminates framework bundle weight, ensuring instant sub-100ms first contentful paint and decade-long backward compatibility.</td>
+            <td>Avoids a large framework runtime; actual paint timing varies by device, network and page content and should be measured with field data.</td>
           </tr>
           <tr>
             <td>Progressive Web App</td>
             <td>Service Worker (CacheStorage + IndexedDB), Web Manifest</td>
-            <td>Allows offline shell execution, background synchronization, and instant mobile installability without app store friction.</td>
+            <td>Provides a web manifest and service-worker caching for selected pages/assets. Offline behavior depends on cache availability; background sync is not claimed unless implemented and tested.</td>
           </tr>
           <tr>
             <td>Edge Intelligence</td>
             <td>INT8 Quantized Vision Transformers, ONNX Runtime Web</td>
-            <td>Permits on-device rural diagnostic classification without requiring cellular data connectivity in remote farm fields.</td>
+            <td>Describes a potential on-device inference approach; model availability, offline behavior and diagnostic accuracy require a tested deployment.</td>
           </tr>
           <tr>
             <td>Search Engine</td>
             <td>Inverted scoring index (search-index.json) with client fuzzy search</td>
-            <td>Sub-millisecond global search across all organs, projects, news, and research without external database latency.</td>
+            <td>Client-side search reads a local JSON index; response time depends on device, index size and browser conditions.</td>
           </tr>
           <tr>
             <td>Hosting & CDN</td>
-            <td>Bare-metal VPS clusters, Anycast Edge Routing, Automated SSL</td>
-            <td>Guarantees 99.98% high availability, DDoS mitigation, and low-latency global delivery via apex domain routing.</td>
+            <td>Netlify static-site deployment, HTTPS and configured redirects/headers</td>
+            <td>Availability, edge behavior and protection depend on the hosting provider and its configuration. No uptime percentage or service-level guarantee is asserted on this page.</td>
           </tr>
         </tbody>
       </table>

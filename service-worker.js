@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v20-naira-article';
+const CACHE_NAME = 'luminary-v21-quality-audit';
 const OFFLINE_URL = '/offline';
 
 // Core assets to pre-cache for complete offline availability

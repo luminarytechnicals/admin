@@ -60,9 +60,9 @@ const RESEARCH = {
       authors: ["AR. Abhinav Ranjan", "Luminary Research Group"],
       year: "2026",
       category: "Agricultural AI",
-      summary: "An investigation into model quantization and memory pruning techniques for deploying Vision Transformer (ViT) backbones onto low-power edge microcontrollers without cloud latency.",
-      doi: "10.luminary/agroscan-vit-2026",
-      status: "Whitepaper Available",
+      summary: "Research concept exploring model quantization and memory pruning for possible on-device Vision Transformer deployment; benchmark results require validation.",
+      reference: "LT-RES-2026-01",
+      status: "Research note; review status not independently verified",
       relatedProject: "AgroScan"
     },
     {
@@ -71,9 +71,9 @@ const RESEARCH = {
       authors: ["AR. Abhinav Ranjan"],
       year: "2025",
       category: "Cloud Infrastructure",
-      summary: "A practical framework for building zero-dependency web platforms that achieve sub-50ms global First Contentful Paint while eliminating server-side injection vectors.",
-      doi: "10.luminary/static-resilience-2025",
-      status: "Published",
+      summary: "Technical note on dependency-light static web architecture; no independent sub-50ms performance benchmark or complete elimination of injection risk is claimed.",
+      reference: "LT-RES-2025-02",
+      status: "Site-hosted technical note; not a DOI-registered publication",
       relatedProject: "Luminary Servers"
     },
     {
@@ -82,9 +82,9 @@ const RESEARCH = {
       authors: ["Luminary Afterverse Lab", "AR. Abhinav Ranjan"],
       year: "2025",
       category: "Spatial Interfaces",
-      summary: "Exploring human-computer interaction paradigms inside 60-FPS continuous particle universes and the psychological impact of ambient audio feedback in WebGL.",
-      doi: "10.luminary/afterverse-spatial-2025",
-      status: "Experimental Preprint",
+      summary: "Exploratory concept on spatial interfaces, particle-based WebGL interaction and ambient audio feedback; performance and user-study outcomes are not claimed as independently validated.",
+      reference: "LT-RES-2025-01",
+      status: "Experimental preprint; not independently peer-reviewed",
       relatedProject: "Luminary Afterverse"
     }
   ],
@@ -93,20 +93,20 @@ const RESEARCH = {
     {
       id: "exp-2027-agri",
       title: "AgroScan Field Prototype 2027 Sensor Array",
-      stage: "Active Development",
-      objective: "Field test multispectral sensor nodes connected via ESP32 LoRa gateways to quantify leaf chlorophyll degradation 72 hours before visual symptoms appear."
+      stage: "Proposed field-test design; deployment status to be confirmed",
+      objective: "Proposed field test of multispectral sensor nodes and ESP32 LoRa gateways. Early-detection lead time remains a hypothesis until supported by measured field data."
     },
     {
       id: "exp-2026-canvas",
       title: "WebGL 10,000-Particle Interactive Fluid Dynamics",
-      stage: "Demonstrator Live",
-      objective: "Achieve stable 60 FPS particle simulation with cursor gravitational physics on low-spec mobile devices inside Afterverse."
+      stage: "Demonstrator concept; device-specific performance to be measured",
+      objective: "Measure particle-simulation frame rates and interaction latency across a documented set of mobile devices."
     },
     {
       id: "exp-2026-dns",
       title: "Sub-10ms DNS Failover Over Global Anycast",
-      stage: "Benchmarking",
-      objective: "Evaluate Anycast routing paths under simulated fiber severed link conditions to maintain seamless cluster failover."
+      stage: "Simulation/benchmark plan; no live global measurement claimed",
+      objective: "Simulate network-path failures and record DNS failover behavior; this does not imply a deployed global Anycast network."
     }
   ]
 };
