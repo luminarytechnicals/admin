@@ -517,3 +517,76 @@ main .bio-content p:last-child,
 main .leadership-bio p:last-child {
   margin-bottom: 0 !important;
 }
+
+
+/* SEO audit improvements: visible attribution, expertise and social sharing */
+.hero-attribution {
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  color: var(--slate, #cbd5e1);
+}
+.hero-attribution a,
+.owner-expertise a {
+  color: var(--accent, #8ab4f8);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.owner-expertise {
+  max-width: 62ch;
+  margin: 0.5rem 0 0.85rem;
+  color: var(--slate, #cbd5e1);
+  line-height: 1.65;
+  font-size: 0.92rem;
+}
+.founder-social-links,
+.social-links,
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+.founder-social-links a,
+.social-links a,
+.share-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--border, rgba(148,163,184,.35));
+  border-radius: 0.55rem;
+  color: var(--text, #e2e8f0);
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.25;
+  transition: border-color .18s ease, background-color .18s ease;
+}
+.founder-social-links a:hover,
+.social-links a:hover,
+.share-actions a:hover,
+.founder-social-links a:focus-visible,
+.social-links a:focus-visible,
+.share-actions a:focus-visible {
+  border-color: var(--accent, #8ab4f8);
+  background: rgba(138,180,248,.1);
+  outline-offset: 3px;
+}
+.page-share {
+  padding-top: clamp(2rem, 5vw, 4rem);
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
+.page-share p {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+.share-actions {
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+@media (max-width: 480px) {
+  .share-actions a {
+    flex: 1 1 calc(50% - 0.6rem);
+  }
+}
