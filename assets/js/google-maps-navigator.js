@@ -332,7 +332,7 @@
       embedIframe.style.display = "block";
     }
     if (demoBadge) {
-      demoBadge.innerHTML = '📍 Verified Google Maps Embed &bull; <a href="https://share.google/V1pNWZPIrYMU6uPvo" target="_blank" style="color:var(--accent);text-decoration:none;">Open Official Google Listing &rarr;</a>';
+      demoBadge.innerHTML = '📍 Google Maps Embed &bull; <a href="https://share.google/V1pNWZPIrYMU6uPvo" target="_blank" style="color:var(--accent);text-decoration:none;">Open Official Google Listing &rarr;</a>';
     }
   }
 
