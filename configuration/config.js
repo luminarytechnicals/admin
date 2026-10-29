@@ -32,7 +32,7 @@ const CONFIG = {
     name: "AR. Abhinav Ranjan",
     title: "Founder & CEO, Luminary Technicals",
     photo: "https://abhinavranjan.qzz.io/images/profile.png",
-    portfolio: "https://abhinavranjan.netlify.app",
+    portfolio: "https://abhinavranjan.qzz.io",
     bio: "AR. Abhinav Ranjan is the Founder & CEO of Luminary Technicals. He provides central strategic direction, system architecture, and leadership across technology development, cloud infrastructure, artificial intelligence, research, and public-interest initiatives.",
     message: "\"I didn't build Luminary Technicals to compete — I built it to create. Every organ, every project, every line of code is a reflection of what I believe the digital world can be.\"",
     social: {
@@ -40,7 +40,7 @@ const CONFIG = {
       instagram: "https://www.instagram.com/ar.abhinavranjan",
       twitter: "https://twitter.com/luminarytechnicals",
       email: "ceo@luminarytechnicals.dpdns.org",
-      portfolio: "https://abhinavranjan.netlify.app"
+      portfolio: "https://abhinavranjan.qzz.io"
     }
   },
 
