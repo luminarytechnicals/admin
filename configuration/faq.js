@@ -160,7 +160,7 @@ const FAQ_DATA = {
   contact: [
     {
       q: "What are the official contact channels?",
-      a: "Support: help@luminarytechnicals.dpdns.org<br>CEO Desk: ceo@luminarytechnicals.dpdns.org<br>Legal: legal@luminarytechnicals.dpdns.org<br>Backup Email: luminarytechnicals@gmail.com (in case of dedicated email delivery issues)<br>WhatsApp: +91 8294721929<br>Telegram: @luminarytechnicalsinternational<br>GitHub: github.com/DeveloperAbhinav<br>Founder: AR. Abhinav Ranjan (abhinavranjan.netlify.app)"
+      a: "Support: help@luminarytechnicals.dpdns.org<br>CEO Desk: ceo@luminarytechnicals.dpdns.org<br>Legal: legal@luminarytechnicals.dpdns.org<br>Backup Email: luminarytechnicals@gmail.com (in case of dedicated email delivery issues)<br>WhatsApp: +91 8294721929<br>Telegram: @luminarytechnicalsinternational<br>GitHub: github.com/DeveloperAbhinav<br>Founder: AR. Abhinav Ranjan (abhinavranjan.qzz.io)"
     }
   ]
 };

@@ -106,7 +106,7 @@ ASSOCIATED ENTITY DOMAIN
 
 FOUNDER PERSONAL DOMAINS
 ─────────────────────────
-• https://abhinavranjan.netlify.app               — Founder portfolio site
+• https://abhinavranjan.qzz.io               — Founder portfolio site
 • https://abhinavranjan.qzz.io                    — Founder image CDN / assets
 
 
@@ -169,7 +169,7 @@ ORGANIZATION ACCOUNTS
 ─────────────────────
 • Twitter/X:     https://twitter.com/luminarytechnicals
 • Instagram:     https://www.instagram.com/luminary_technicals
-• GitHub:        https://github.com/DeveloperAbhinav
+• GitHub:        https://github.com/ar-abhinavranjan
 • GitHub (Org):  https://github.com/luminarytechnicals
 • Telegram:      https://t.me/luminarytechnicalsinternational
 • WhatsApp:      https://wa.me/918294721929
@@ -179,7 +179,7 @@ FOUNDER PERSONAL ACCOUNTS (AR. Abhinav Ranjan)
 • Twitter/X:     https://twitter.com/arabhinavranjan
 • Instagram:     https://instagram.com/ar.abhinavranjan
 • LinkedIn:      https://linkedin.com/in/ar-abhinavranjan
-• GitHub:        https://github.com/ProAbhinavRanjan
+• GitHub:        https://github.com/ar-abhinavranjan
 • GitHub (alt):  https://github.com/ar-abhinavranjan
 • Facebook:      https://www.facebook.com/ar.abhinavranjan/
 • Pinterest:     https://www.pinterest.com/arabhinavranjan/
@@ -187,7 +187,7 @@ FOUNDER PERSONAL ACCOUNTS (AR. Abhinav Ranjan)
 • Reddit:        https://www.reddit.com/user/ar-abhinavranjan/
 • Snapchat:      https://www.snapchat.com/add/arabhinavranjan
 • Telegram:      https://t.me/ar_abhinavranjan
-• Portfolio:     https://abhinavranjan.netlify.app
+• Portfolio:     https://abhinavranjan.qzz.io
 
 
 ================================================================================

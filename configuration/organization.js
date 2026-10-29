@@ -5,7 +5,7 @@
 const ORGANIZATION = {
   name: "Luminary Technicals",
   legalName: "Luminary Technicals",
-  alternateNames: ["Luminary Technical", "LuminaryTechnicals", "Luminary Tech", "Luminary", "LT", "luminarytechnicals.dpdns.org"],
+  alternateNames: ["Luminary Technical", "LuminaryTechnicals", "Luminary Tech", "luminarytechnicals.dpdns.org"],
   url: "https://luminarytechnicals.dpdns.org",
   canonicalDomain: "luminarytechnicals.dpdns.org",
   tagline: "Building technology, researching possibilities, securing digital infrastructure, empowering people, and connecting ideas.",
@@ -51,7 +51,7 @@ const ORGANIZATION = {
     name: "AR. Abhinav Ranjan",
     title: "Founder & CEO, Luminary Technicals",
     photo: "https://abhinavranjan.qzz.io/images/profile.png",
-    portfolio: "https://abhinavranjan.netlify.app",
+    portfolio: "https://abhinavranjan.qzz.io",
     bio: "AR. Abhinav Ranjan is the Founder & CEO of Luminary Technicals. He provides central strategic direction, system architecture, and leadership across technology development, cloud infrastructure, artificial intelligence, research, and public-interest initiatives.",
     message: "\"I didn't build Luminary Technicals to compete — I built it to create. Every organ, every project, every line of code is a reflection of what I believe the digital world can be.\"",
     social: {
@@ -59,7 +59,7 @@ const ORGANIZATION = {
       instagram: "https://www.instagram.com/ar.abhinavranjan",
       twitter: "https://twitter.com/luminarytechnicals",
       email: "ceo@luminarytechnicals.dpdns.org",
-      portfolio: "https://abhinavranjan.netlify.app"
+      portfolio: "https://abhinavranjan.qzz.io"
     }
   },
 
