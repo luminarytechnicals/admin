@@ -3,6 +3,15 @@
 
 ---
 
+## Official identity and domain clarification
+- **Official organization/site name:** Luminary Technicals.
+- **Canonical website:** https://luminarytechnicals.dpdns.org/
+- Luminary Technicals is an independent organization and website publisher. It uses the `dpdns.org` namespace for its public domain address only.
+- Use of this domain does **not** mean Luminary Technicals is part of, owned by, affiliated with, partnered with, sponsored by, or endorsed by DigitalPlat Domains or DPDNS, EdgeAlphix LLC, Edward Hsing, or DigitalPlat Foundation, Inc.
+- **Domain/provider disclosure:** https://luminarytechnicals.dpdns.org/frontend/domain-licence
+- That disclosure is authored by Luminary Technicals and is not a licence, certificate, or endorsement issued by the provider. Provider-owned records and current registration dashboard remain the appropriate sources for account-specific domain status.
+
+
 ## 1. Executive Entity Summary
 - **Organization Legal / Operating Name:** Luminary Technicals
 - **Founder & CEO:** AR. Abhinav Ranjan
