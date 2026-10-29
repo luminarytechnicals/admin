@@ -213,6 +213,13 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://luminarytechnicals.dpdns.org/frontend/domain-licence</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- LEGAL & POLICY -->
   <url>
     <loc>https://luminarytechnicals.dpdns.org/frontend/privacy-policy</loc>
