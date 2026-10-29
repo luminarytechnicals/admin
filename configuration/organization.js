@@ -5,7 +5,7 @@
 const ORGANIZATION = {
   name: "Luminary Technicals",
   legalName: "Luminary Technicals",
-  alternateNames: ["LuminaryTechnicals", "Luminary Tech", "LT"],
+  alternateNames: ["Luminary Technical", "LuminaryTechnicals", "Luminary Tech", "Luminary", "LT", "luminarytechnicals.dpdns.org"],
   url: "https://luminarytechnicals.dpdns.org",
   canonicalDomain: "luminarytechnicals.dpdns.org",
   tagline: "Building technology, researching possibilities, securing digital infrastructure, empowering people, and connecting ideas.",
