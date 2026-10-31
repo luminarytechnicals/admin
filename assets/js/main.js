@@ -278,41 +278,96 @@ function initMobileMenu() {
   const overlay = document.querySelector('.mobile-menu-overlay');
   const closeBtn = document.querySelector('.mobile-menu .close-btn');
   if (!btn || !menu) return;
+
+  if (!menu.id) menu.id = 'mobile-navigation';
+  btn.type = 'button';
+  btn.setAttribute('aria-controls', menu.id);
+  btn.setAttribute('aria-haspopup', 'dialog');
+  btn.setAttribute('aria-expanded', 'false');
+  menu.setAttribute('role', 'dialog');
+  menu.setAttribute('aria-modal', 'true');
+  menu.setAttribute('aria-hidden', 'true');
+  menu.setAttribute('tabindex', '-1');
+  menu.setAttribute('inert', '');
+  if (overlay) overlay.setAttribute('aria-hidden', 'true');
+
+  const focusableSelector = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  let previousBodyOverflow = '';
+  let isOpen = false;
+
+  const getFocusable = () => Array.from(menu.querySelectorAll(focusableSelector))
+    .filter(element => element.getClientRects().length > 0 && !element.hasAttribute('disabled'));
+
   const toggle = (open) => {
+    if (open === isOpen) return;
+    isOpen = open;
     menu.classList.toggle('open', open);
-    if (overlay) overlay.classList.toggle('open', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-    // Avoid reopening the drawer halfway down with its first rows clipped.
-    if (open) menu.scrollTop = 0;
+    btn.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-hidden', String(!open));
+    if (open) {
+      previousBodyOverflow = document.body.style.overflow;
+      menu.removeAttribute('inert');
+      if (overlay) {
+        overlay.classList.add('open');
+        overlay.setAttribute('aria-hidden', 'false');
+      }
+      document.body.style.overflow = 'hidden';
+      // Avoid reopening the drawer halfway down with its first rows clipped.
+      menu.scrollTop = 0;
+      const first = getFocusable()[0];
+      (first || menu).focus();
+    } else {
+      menu.setAttribute('inert', '');
+      if (overlay) {
+        overlay.classList.remove('open');
+        overlay.setAttribute('aria-hidden', 'true');
+      }
+      document.body.style.overflow = previousBodyOverflow;
+      btn.focus();
+    }
   };
+
   btn.addEventListener('click', () => toggle(true));
   if (closeBtn) closeBtn.addEventListener('click', () => toggle(false));
   if (overlay) overlay.addEventListener('click', () => toggle(false));
+
   // Delegation also covers links injected later from navigation.json.
   menu.addEventListener('click', (event) => {
     if (event.target.closest('a')) toggle(false);
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && menu.classList.contains('open')) {
-      toggle(false);
+  menu.addEventListener('keydown', (event) => {
+    if (event.key !== 'Tab') return;
+    const items = getFocusable();
+    if (!items.length) {
+      event.preventDefault();
+      menu.focus();
+      return;
+    }
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (event.shiftKey && (document.activeElement === first || document.activeElement === menu)) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
     }
   });
 
-  // Swipe to close on touch devices
-  let touchStartX = 0;
-  let touchEndX = 0;
-  menu.addEventListener('touchstart', e => {
-    touchStartX = e.changedTouches[0].screenX;
-  }, { passive: true });
-  menu.addEventListener('touchmove', e => {
-    touchEndX = e.changedTouches[0].screenX;
-  }, { passive: true });
-  menu.addEventListener('touchend', () => {
-    if (touchEndX - touchStartX > 50) {
-      toggle(false);
-    }
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && isOpen) toggle(false);
   });
+
+  // Swipe to close on touch devices. Reset the end position for every gesture.
+  let touchStartX = 0;
+  menu.addEventListener('touchstart', event => {
+    touchStartX = event.changedTouches[0].screenX;
+  }, { passive: true });
+  menu.addEventListener('touchend', event => {
+    const touchEndX = event.changedTouches[0].screenX;
+    if (touchEndX - touchStartX > 50) toggle(false);
+  }, { passive: true });
 }
 
 /* ── SCROLL ANIMATIONS ── */
@@ -336,10 +391,6 @@ function initCookieConsent() {
     localStorage.setItem('lt_cookie_consent', 'accepted');
     banner.classList.remove('show');
   });
-  banner.querySelector('.cookie-learn')?.addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal('privacy');
-  });
   // Re-trigger from footer
   document.querySelector('.cookie-retrigger')?.addEventListener('click', (e) => {
     e.preventDefault();
@@ -349,34 +400,107 @@ function initCookieConsent() {
 }
 
 /* ── MODALS (Privacy / Terms) ── */
+let activeModalDialog = null;
+let modalReturnFocus = null;
+let modalPreviousBodyOverflow = '';
+
 function initModals() {
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.setAttribute('inert', '');
+    const dialog = overlay.querySelector('[role="dialog"]');
+    if (dialog) {
+      dialog.setAttribute('aria-modal', 'true');
+      dialog.setAttribute('tabindex', '-1');
+    }
+  });
+
   document.querySelectorAll('[data-modal]').forEach(trigger => {
-    trigger.addEventListener('click', (e) => {
-      e.preventDefault();
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
       openModal(trigger.dataset.modal);
     });
   });
   document.querySelectorAll('.modal-overlay').forEach(overlay => {
-    overlay.addEventListener('click', (e) => {
-      if (e.target === overlay) closeAllModals();
+    overlay.addEventListener('click', (event) => {
+      if (event.target === overlay) closeAllModals();
     });
   });
-  document.querySelectorAll('.modal-close').forEach(btn => {
-    btn.addEventListener('click', closeAllModals);
+  document.querySelectorAll('.modal-close').forEach(button => {
+    button.addEventListener('click', closeAllModals);
   });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeAllModals();
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && activeModalDialog) {
+      closeAllModals();
+      return;
+    }
+    if (event.key !== 'Tab' || !activeModalDialog) return;
+
+    const items = Array.from(activeModalDialog.querySelectorAll(
+      'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    )).filter(element => element.getClientRects().length > 0 && !element.hasAttribute('disabled'));
+    if (!items.length) {
+      event.preventDefault();
+      activeModalDialog.focus();
+      return;
+    }
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (event.shiftKey && (document.activeElement === first || document.activeElement === activeModalDialog)) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
   });
 }
 
 function openModal(id) {
-  const modal = document.getElementById('modal-' + id);
-  if (modal) { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  const overlay = document.getElementById('modal-' + id);
+  if (!overlay) return;
+  const dialog = overlay.querySelector('[role="dialog"]') || overlay;
+
+  if (!activeModalDialog) {
+    modalReturnFocus = document.activeElement;
+    modalPreviousBodyOverflow = document.body.style.overflow;
+  }
+  document.querySelectorAll('.modal-overlay.open').forEach(item => {
+    if (item !== overlay) {
+      item.classList.remove('open');
+      item.setAttribute('aria-hidden', 'true');
+      item.setAttribute('inert', '');
+    }
+  });
+
+  overlay.removeAttribute('inert');
+  overlay.setAttribute('aria-hidden', 'false');
+  overlay.classList.add('open');
+  dialog.setAttribute('aria-modal', 'true');
+  dialog.setAttribute('tabindex', '-1');
+  activeModalDialog = dialog;
+  document.body.style.overflow = 'hidden';
+
+  const first = dialog.querySelector(
+    'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+  );
+  (first || dialog).focus();
 }
 
 function closeAllModals() {
-  document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
-  document.body.style.overflow = '';
+  if (!activeModalDialog) return;
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.setAttribute('inert', '');
+  });
+  activeModalDialog = null;
+  document.body.style.overflow = modalPreviousBodyOverflow;
+
+  if (modalReturnFocus && document.contains(modalReturnFocus) && typeof modalReturnFocus.focus === 'function') {
+    modalReturnFocus.focus();
+  }
+  modalReturnFocus = null;
 }
 
 /* ── FAQ ACCORDION ── */
