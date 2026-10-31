@@ -1,4 +1,4 @@
-const CACHE_NAME = 'luminary-v21-quality-audit';
+const CACHE_NAME = 'luminary-v22-query-aware-assets';
 const OFFLINE_URL = '/offline';
 
 // Core assets to pre-cache for complete offline availability
@@ -142,14 +142,21 @@ self.addEventListener('fetch', (event) => {
   // CSS / JS / JSON -> Stale-While-Revalidate (updates apply on next load, no manual version bump needed)
   // Images and everything else -> Cache First. Only successful responses are cached.
   const url = new URL(event.request.url);
-  const isCode = url.origin === self.location.origin && /\.(css|js|json)$/.test(url.pathname);
+  const isCode = url.origin === self.location.origin && /\.(css|js|json)$/i.test(url.pathname);
+  // HTML links may request versioned assets (for example main.css?v=20261025),
+  // while the install list stores the same resource without a query string.
+  // Use one canonical cache key for same-origin code so those requests work offline.
+  const cacheKey = isCode ? new Request(url.origin + url.pathname) : event.request;
+
   event.respondWith(
-    caches.match(event.request).then((cached) => {
+    caches.match(cacheKey).then((cached) => {
       const netReq = isCode ? new Request(event.request, { cache: 'no-cache' }) : event.request;
       const network = fetch(netReq).then((netRes) => {
         if (netRes && netRes.ok && netRes.type !== 'opaque') {
-          const copy = netRes.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
+          return caches.open(CACHE_NAME)
+            .then(cache => cache.put(cacheKey, netRes.clone()))
+            .catch(() => {})
+            .then(() => netRes);
         }
         return netRes;
       });
