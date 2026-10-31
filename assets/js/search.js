@@ -11,15 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
   let focusedIndex = -1;
   let activeFilter = 'ALL';
 
-  // Root-relative path works from both root pages and nested clean article permalinks.
-  const isFrontend = window.location.pathname.includes('/frontend/');
   const indexPath = '/configuration/search-index.json';
 
-  // Load search index
-  fetch(indexPath)
-    .then(r => r.json())
-    .then(d => {
-      searchData = d;
+  // Escape all registry and user-supplied text before inserting it into HTML.
+  const escapeHTML = (value) => String(value == null ? '' : value).replace(/[&<>"']/g, character => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[character]);
+
+  // Load and validate the search index before rendering any result cards.
+  fetch(indexPath, { cache: 'no-cache' })
+    .then(response => {
+      if (!response.ok) throw new Error('Search index returned HTTP ' + response.status);
+      return response.json();
+    })
+    .then(data => {
+      if (!Array.isArray(data)) throw new Error('Search index must be a JSON array');
+      searchData = data.filter(item => item && typeof item.title === 'string' && typeof item.url === 'string');
       // Check for ?q= in URL
       const urlParams = new URLSearchParams(window.location.search);
       const initialQ = urlParams.get('q');
@@ -136,7 +143,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let candidates = searchData;
     if (activeFilter !== 'ALL') {
-      candidates = candidates.filter(item => item.category === activeFilter);
+      const categoryGroups = {
+        ORGAN: ['ORGAN', 'ORGANIZATION', 'ASSOCIATED ENTITY', 'FOUNDATION'],
+        PROJECT: ['PROJECT', 'INITIATIVE', 'COLLABORATION'],
+        ARTICLES: ['ARTICLES'],
+        RESEARCH: ['RESEARCH', 'TECHNOLOGY'],
+        DOCUMENTATION: ['DOCUMENTATION', 'FAQ', 'CONTACT'],
+        LEGAL: ['LEGAL', 'LEGAL & POLICIES']
+      };
+      const accepted = categoryGroups[activeFilter] || [activeFilter];
+      candidates = candidates.filter(item => accepted.includes(String(item.category || '').toUpperCase()));
     }
 
     const scored = candidates.map(item => {
@@ -209,30 +225,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function resolveUrl(rawUrl) {
-    let url = String(rawUrl || '');
-    if (isFrontend) {
-      if (url === 'index.html' || url === '/index.html') url = '../';
-      else if (url.startsWith('frontend/')) url = url.replace('frontend/', '');
-    } else if (url === 'index.html') {
-      url = '/';
-    }
+    const value = String(rawUrl || '').trim();
+    if (!value) return '/';
 
     try {
-      const target = new URL(url, window.location.href);
-      if (target.origin === window.location.origin) {
-        let pathname = target.pathname;
-        const lower = pathname.toLowerCase();
-        if (lower === '/frontend/news.html' || lower === '/frontend/news') {
-          pathname = '/frontend/updates';
-        } else if (lower === '/index.html') {
-          pathname = '/';
-        } else if (lower.endsWith('.html')) {
-          pathname = pathname.slice(0, -'.html'.length);
-        }
-        return pathname + target.search + target.hash;
+      // Search-index paths are site-root paths, not paths relative to the current page.
+      const target = new URL(value, window.location.origin + '/');
+      if (!['http:', 'https:'].includes(target.protocol)) return '/';
+
+      let pathname = target.pathname;
+      const lower = pathname.toLowerCase();
+      if (lower === '/frontend/news.html' || lower === '/frontend/news') {
+        pathname = '/frontend/updates';
+      } else if (lower === '/index.html') {
+        pathname = '/';
+      } else if (lower.endsWith('.html')) {
+        pathname = pathname.slice(0, -'.html'.length);
       }
-    } catch (_) {}
-    return url.replace(/\\.html(?=([?#]|$))/i, '');
+      return target.origin === window.location.origin
+        ? pathname + target.search + target.hash
+        : target.href;
+    } catch (_) {
+      return '/';
+    }
   }
 
   function renderPopularSuggestions() {
@@ -262,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!results.length) {
       resultsContainer.innerHTML = `
         <div class="search-no-results">
-          <p>No matches found for "<strong>${rawQuery}</strong>"</p>
+          <p>No matches found for "<strong>${escapeHTML(rawQuery)}</strong>"</p>
           <span style="font-size:0.8rem;color:var(--slate);">Try searching by keyword like <em>servers, AI, agro, trust, organs, or founder</em></span>
         </div>
       `;
@@ -274,9 +289,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     resultsContainer.innerHTML = results.map(r => {
       const url = resolveUrl(r.url);
-      const highlightedTitle = regex ? r.title.replace(regex, '<mark>$1</mark>') : r.title;
-      const categoryBadge = r.badge || r.category || 'Page';
-      const excerpt = r.text ? highlightExcerpt(r.text, tokens, regex) : r.url;
+      const highlightedTitle = regex
+        ? escapeHTML(r.title).replace(regex, '<mark>$1</mark>')
+        : escapeHTML(r.title);
+      const categoryBadge = escapeHTML(r.badge || r.category || 'Page');
+      const excerpt = r.text ? highlightExcerpt(r.text, tokens, regex) : escapeHTML(r.url);
 
       return `
         <a href="${url}" class="search-result-item" role="option">
@@ -291,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function highlightExcerpt(text, tokens, regex) {
-    if (!regex || !tokens.length) return text.substring(0, 100) + '...';
+    if (!regex || !tokens.length) return escapeHTML(text.substring(0, 100)) + '...';
 
     let firstIndex = -1;
     for (const tok of tokens) {
@@ -301,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    if (firstIndex === -1) return text.substring(0, 90) + '...';
+    if (firstIndex === -1) return escapeHTML(text.substring(0, 90)) + '...';
 
     const start = Math.max(0, firstIndex - 35);
     const end = Math.min(text.length, firstIndex + 85);
@@ -310,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (start > 0) excerpt = '...' + excerpt;
     if (end < text.length) excerpt = excerpt + '...';
 
-    return excerpt.replace(regex, '<mark>$1</mark>');
+    return escapeHTML(excerpt).replace(regex, '<mark>$1</mark>');
   }
 
   function updateFocus(items) {
