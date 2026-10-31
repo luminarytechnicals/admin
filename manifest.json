@@ -6,7 +6,7 @@
   "scope": "https://luminarytechnicals.dpdns.org/",
   "display": "standalone",
   "background_color": "#080b1a",
-  "theme_color": "#F5C518",
+  "theme_color": "#0A0F1E",
   "orientation": "portrait-primary",
   "categories": [
     "technology",
@@ -62,7 +62,7 @@
       "name": "Projects",
       "short_name": "Projects",
       "description": "View Luminary Projects",
-      "url": "https://luminarytechnicals.dpdns.org/frontend/projects.html",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/projects",
       "icons": [
         {
           "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png",
@@ -74,7 +74,7 @@
       "name": "Leadership",
       "short_name": "Leadership",
       "description": "Meet the Founder",
-      "url": "https://luminarytechnicals.dpdns.org/frontend/leadership.html",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/leadership",
       "icons": [
         {
           "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png",
@@ -86,7 +86,7 @@
       "name": "Collaborate",
       "short_name": "Collab",
       "description": "Start a Collaboration",
-      "url": "https://luminarytechnicals.dpdns.org/frontend/collab.html",
+      "url": "https://luminarytechnicals.dpdns.org/frontend/collab",
       "icons": [
         {
           "src": "https://luminarytechnicals.dpdns.org/icons/icon-96.png",
@@ -97,9 +97,9 @@
   ],
   "screenshots": [
     {
-      "src": "https://luminarytechnicals.dpdns.org/assets/images/og-default.png",
+      "src": "https://luminarytechnicals.dpdns.org/assets/images/og-default.webp",
       "sizes": "1376x768",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "wide"
     }
   ],
