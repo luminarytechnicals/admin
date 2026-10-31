@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   initThemeToggle();
+  initFounderPortraitFallbacks();
   normalizeCleanURLs();
   initJsonNavigation();
   initNavbar();
@@ -114,6 +115,21 @@ function normalizePageMetadata() {
     } catch (_) {
       // Leave any custom structured-data block untouched if parsing fails.
     }
+  });
+}
+
+/* ── FOUNDER PORTRAIT FALLBACK ── */
+function initFounderPortraitFallbacks() {
+  document.querySelectorAll('img[data-founder-photo]').forEach(image => {
+    const fallback = image.dataset.fallbackSrc;
+    if (!fallback) return;
+
+    image.addEventListener('error', () => {
+      // Do not loop if the alternate image also fails.
+      if (image.dataset.fallbackAttempted === 'true') return;
+      image.dataset.fallbackAttempted = 'true';
+      image.src = fallback;
+    }, { once: true });
   });
 }
 
