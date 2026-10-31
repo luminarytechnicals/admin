@@ -44,27 +44,19 @@ const CONFIG = {
     }
   },
 
-  contact: {
-    email: "help@luminarytechnicals.dpdns.org",
-    ceoEmail: "ceo@luminarytechnicals.dpdns.org",
-    legalEmail: "legal@luminarytechnicals.dpdns.org",
-    supportEmail: "help@luminarytechnicals.dpdns.org",
-    fallbackEmail: "luminarytechnicals@gmail.com"
-  },
-
   seo: {
     defaultTitle: "Luminary Technicals | Building, Researching, Securing, Empowering & Connecting",
     defaultDescription: "Luminary Technicals is a multidisciplinary organization connecting digital infrastructure, software development, AI research, cybersecurity, and public-interest initiatives across five core organs and direct associated entities.",
     defaultKeywords: "Luminary Technicals, AgroScan, Luminary Afterverse, Luminary Servers, Luminary Developers, Luminary Cares, Luminary Kits, Luminary Federals, Luminary Trust, Radhika Research Foundation, Luminary Updates, digital infrastructure, AI, cybersecurity, AR Abhinav Ranjan",
-    ogImage: "assets/images/og-default.png",
+    ogImage: "assets/images/og-default.webp",
     twitterHandle: "@luminarytechnicals",
     canonicalBase: "https://luminarytechnicals.dpdns.org"
   },
 
   pwa: {
     enabled: true,
-    offlinePage: "/offline.html",
-    cacheName: "luminary-v14-menu-fixes"
+    offlinePage: "/offline",
+    cacheName: "luminary-v22-query-aware-assets"
   },
 
   // CANONICAL NAVIGATION STRUCTURE
@@ -112,8 +104,10 @@ const CONFIG = {
 
   contact: {
     email: "help@luminarytechnicals.dpdns.org",
+    supportEmail: "help@luminarytechnicals.dpdns.org",
     ceoEmail: "ceo@luminarytechnicals.dpdns.org",
     legalEmail: "legal@luminarytechnicals.dpdns.org",
+    fallbackEmail: "luminarytechnicals@gmail.com",
     whatsapp: "+918294721929",
     telegram: "luminarytechnicalsinternational",
     address: "Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka 560093, India",
