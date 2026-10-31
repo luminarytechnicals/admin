@@ -778,14 +778,14 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
-# CSS/JS are not fingerprinted, so they must revalidate on every visit (Netlify default).
-# Only images and icons are cached (1 day).
+# Images and icons are stable static assets; use a moderate browser cache window.
+# Netlify edge assets are automatically invalidated when a new deploy changes their content.
 [[headers]]
   for = "/assets/images/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
 
 [[headers]]
   for = "/icons/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
